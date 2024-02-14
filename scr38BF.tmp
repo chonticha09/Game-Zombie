@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgup42pjy5r6"]
+
+[ext_resource type="Texture2D" uid="uid://c5q8meqy0gw8l" path="res://หน้าหลัก/ฉากกกกกก.png" id="1_hrosk"]
+
+[node name="Screen1" type="Node2D"]
+
+[node name="ฉากกกกกก" type="Sprite2D" parent="."]
+position = Vector2(610.5, 325)
+scale = Vector2(0.455146, 0.479315)
+texture = ExtResource("1_hrosk")
+
+[node name="ProgressBar" type="ProgressBar" parent="ฉากกกกกก"]
+self_modulate = Color(1, 0, 0, 1)
+offset_left = -414.153
+offset_top = -60.503
+offset_right = 525.847
+offset_bottom = 50.497
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+value = 10.0
+
+[node name="Timer" type="Timer" parent="ฉากกกกกก/ProgressBar"]
+wait_time = 0.224
+autostart = true
+
+[connection signal="timeout" from="ฉากกกกกก/ProgressBar/Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,159 @@
+[gd_scene load_steps=9 format=3 uid="uid://f3xl51m5kcsr"]
+
+[ext_resource type="Texture2D" uid="uid://bakhxk436snjw" path="res://ร้านพิซซ่า/ที่กดน้ำมีชื่อ.png" id="1_2jghh"]
+[ext_resource type="Texture2D" uid="uid://csq8drfa8qf55" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/แก้ววววว.png" id="2_85kdw"]
+[ext_resource type="Script" path="res://โค้ด/Control.gd" id="3_docjn"]
+[ext_resource type="Texture2D" uid="uid://bwefy1mlf5n1c" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/โหลด1.png" id="4_l86jm"]
+[ext_resource type="Texture2D" uid="uid://c21ve8ok1xtjh" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/โหลด2.png" id="5_1ei8k"]
+[ext_resource type="Texture2D" uid="uid://bc2khofct5j58" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/แก้วน้ำ.png" id="6_n0thj"]
+[ext_resource type="Script" path="res://โค้ด/Control 1.gd" id="7_823q2"]
+[ext_resource type="Script" path="res://โค้ด/Control 2.gd" id="8_rjjk2"]
+
+[node name="ตู้นำ1" type="Node2D"]
+
+[node name="ที่กดน้ำมีชื่อ" type="Sprite2D" parent="."]
+position = Vector2(638, 304)
+scale = Vector2(0.613941, 0.584184)
+texture = ExtResource("1_2jghh")
+
+[node name="แก้ววววว4" type="Sprite2D" parent="ที่กดน้ำมีชื่อ"]
+position = Vector2(-253, 182)
+scale = Vector2(0.3431, 0.3431)
+texture = ExtResource("2_85kdw")
+
+[node name="Control" type="Control" parent="ที่กดน้ำมีชื่อ/แก้ววววว4"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_docjn")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button1" type="Button" parent="ที่กดน้ำมีชื่อ/แก้ววววว4/Control"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = -244.0
+offset_top = -339.0
+offset_right = 265.0
+offset_bottom = 168.0
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="ที่กดน้ำมีชื่อ/แก้ววววว4/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -2.93113
+anchor_top = 0.16306
+anchor_right = -2.93113
+anchor_bottom = 0.16306
+offset_left = -215.743
+offset_top = 393.586
+offset_right = 672.257
+offset_bottom = 599.586
+scale = Vector2(0.733617, 0.760548)
+max_value = 60.0
+value = 5.0
+texture_under = ExtResource("4_l86jm")
+texture_progress = ExtResource("5_1ei8k")
+metadata/_edit_use_anchors_ = true
+
+[node name="แก้วน้ำ" type="Sprite2D" parent="ที่กดน้ำมีชื่อ/แก้ววววว4"]
+position = Vector2(-0.00012207, 0)
+scale = Vector2(0.999708, 0.999708)
+texture = ExtResource("6_n0thj")
+
+[node name="แก้ววววว2" type="Sprite2D" parent="ที่กดน้ำมีชื่อ"]
+position = Vector2(-18, 178)
+scale = Vector2(0.3431, 0.3431)
+texture = ExtResource("2_85kdw")
+
+[node name="Control 1" type="Control" parent="ที่กดน้ำมีชื่อ/แก้ววววว2"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -0.000488281
+offset_right = 39.9995
+offset_bottom = 40.0
+script = ExtResource("7_823q2")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="ที่กดน้ำมีชื่อ/แก้ววววว2/Control 1"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = -171.0
+offset_top = -360.0
+offset_right = 178.0
+offset_bottom = 93.0
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="ที่กดน้ำมีชื่อ/แก้ววววว2/Control 1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -2.28847
+anchor_top = -0.0118668
+anchor_right = -2.28847
+anchor_bottom = -0.0118668
+offset_left = -239.067
+offset_top = 408.163
+offset_right = 648.933
+offset_bottom = 544.163
+scale = Vector2(0.748869, 0.775914)
+max_value = 60.0
+value = 5.0
+texture_under = ExtResource("4_l86jm")
+texture_progress = ExtResource("5_1ei8k")
+metadata/_edit_use_anchors_ = true
+
+[node name="แก้วน้ำ" type="Sprite2D" parent="ที่กดน้ำมีชื่อ/แก้ววววว2"]
+position = Vector2(-0.000366211, 0)
+scale = Vector2(0.999708, 0.999708)
+texture = ExtResource("6_n0thj")
+
+[node name="แก้ววววว3" type="Sprite2D" parent="ที่กดน้ำมีชื่อ"]
+position = Vector2(238, 187)
+scale = Vector2(0.3431, 0.3431)
+texture = ExtResource("2_85kdw")
+
+[node name="Control 2" type="Control" parent="ที่กดน้ำมีชื่อ/แก้ววววว3"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -0.000488281
+offset_top = -14.573
+offset_right = 39.9995
+offset_bottom = 25.427
+script = ExtResource("8_rjjk2")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="ที่กดน้ำมีชื่อ/แก้ววววว3/Control 2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -3.10425
+anchor_top = 0.0610031
+anchor_right = -3.10425
+anchor_bottom = 0.0610031
+offset_left = -230.32
+offset_top = 393.586
+offset_right = 657.68
+offset_bottom = 529.586
+scale = Vector2(0.738781, 0.762529)
+max_value = 60.0
+value = 5.0
+texture_under = ExtResource("4_l86jm")
+texture_progress = ExtResource("5_1ei8k")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="ที่กดน้ำมีชื่อ/แก้ววววว3/Control 2"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = -180.0
+offset_top = -347.0
+offset_right = 182.0
+offset_bottom = 98.0
+
+[node name="แก้วน้ำ" type="Sprite2D" parent="ที่กดน้ำมีชื่อ/แก้ววววว3/Control 2"]
+position = Vector2(0.000244141, -0.000244141)
+scale = Vector2(0.999708, 0.999708)
+texture = ExtResource("6_n0thj")
+
+[connection signal="pressed" from="ที่กดน้ำมีชื่อ/แก้ววววว4/Control/Button1" to="ที่กดน้ำมีชื่อ/แก้ววววว4/Control" method="_on_button_1_pressed"]
+[connection signal="pressed" from="ที่กดน้ำมีชื่อ/แก้ววววว2/Control 1/Button" to="ที่กดน้ำมีชื่อ/แก้ววววว2/Control 1" method="_on_button_pressed"]
+[connection signal="pressed" from="ที่กดน้ำมีชื่อ/แก้ววววว3/Control 2/Button" to="ที่กดน้ำมีชื่อ/แก้ววววว3/Control 2" method="_on_button_pressed"]
+[connection signal="texture_changed" from="ที่กดน้ำมีชื่อ/แก้ววววว3/Control 2/แก้วน้ำ" to="ที่กดน้ำมีชื่อ/แก้ววววว3/Control 2" method="_on_แก้วน้ำ_texture_changed"]

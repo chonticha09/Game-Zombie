@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://e75313flcvlv"]
+
+[ext_resource type="Texture2D" uid="uid://c5q8meqy0gw8l" path="res://หน้าหลัก/ฉากกกกกก.png" id="1_8u3tc"]
+[ext_resource type="Script" path="res://Option.gd" id="2_68dqj"]
+[ext_resource type="Texture2D" uid="uid://bbfunqn3iq2bp" path="res://หน้าหลัก/ฟอนplay1.png" id="2_rdmn6"]
+[ext_resource type="Texture2D" uid="uid://cj4h6gq25hdng" path="res://หน้าหลัก/ฟอนplay.png" id="3_a7jak"]
+[ext_resource type="Texture2D" uid="uid://u36oyj1sbl4n" path="res://หน้าหลัก/ปุ่มbackmanu.png" id="3_tip64"]
+[ext_resource type="Texture2D" uid="uid://dh4wg8y8ro7tn" path="res://หน้าหลัก/ปุ่มbackmanu1.png" id="4_ueox1"]
+
+[node name="Option" type="Node2D"]
+
+[node name="ฉากกกกกก" type="Sprite2D" parent="."]
+position = Vector2(611, 336.25)
+scale = Vector2(0.46662, 0.477532)
+texture = ExtResource("1_8u3tc")
+
+[node name="Control" type="Control" parent="ฉากกกกกก"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_68dqj")
+
+[node name="TextureButton2" type="TextureButton" parent="ฉากกกกกก/Control"]
+layout_mode = 0
+offset_left = -306.459
+offset_top = -103.134
+offset_right = 462.541
+offset_bottom = 168.866
+scale = Vector2(0.92171, 0.92171)
+texture_normal = ExtResource("3_tip64")
+texture_hover = ExtResource("4_ueox1")
+
+[node name="TextureButton" type="TextureButton" parent="ฉากกกกกก/Control"]
+layout_mode = 0
+offset_left = -244.31
+offset_top = -371.179
+offset_right = 503.69
+offset_bottom = -120.179
+scale = Vector2(0.754831, 0.754831)
+texture_normal = ExtResource("2_rdmn6")
+texture_hover = ExtResource("3_a7jak")
+
+[connection signal="pressed" from="ฉากกกกกก/Control/TextureButton2" to="ฉากกกกกก/Control" method="_on_texture_button_2_pressed"]
+[connection signal="pressed" from="ฉากกกกกก/Control/TextureButton" to="ฉากกกกกก/Control" method="_on_texture_button_pressed"]

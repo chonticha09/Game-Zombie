@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bkgd1q2d4flcl"
+path="res://.godot/imported/AnyConv.com__cottagecore-17463 3.ogg-4a8711ce0ec79fa68bcabca2325a8fd0.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sound/AnyConv.com__cottagecore-17463 3.ogg"
+dest_files=["res://.godot/imported/AnyConv.com__cottagecore-17463 3.ogg-4a8711ce0ec79fa68bcabca2325a8fd0.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

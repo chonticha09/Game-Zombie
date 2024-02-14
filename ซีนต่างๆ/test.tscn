@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bkl8onlkwptt5"]
+
+[ext_resource type="Script" path="res://โค้ด/test.gd" id="1_toghf"]
+[ext_resource type="Texture2D" uid="uid://cdsqwcpikd4f5" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/มะเขือเทศชิ้น.png" id="2_octsl"]
+
+[node name="Test" type="Node2D"]
+script = ExtResource("1_toghf")
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 242.045
+offset_top = 157.856
+offset_right = 1020.04
+offset_bottom = 633.856
+
+[node name="มะเขือเทศชิ้น" type="Sprite2D" parent="."]
+position = Vector2(355, 227)
+scale = Vector2(0.298035, 0.298035)
+texture = ExtResource("2_octsl")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

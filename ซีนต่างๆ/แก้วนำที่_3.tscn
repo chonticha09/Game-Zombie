@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3vqecm2nu380"]
+
+[ext_resource type="Texture2D" uid="uid://bakhxk436snjw" path="res://ร้านพิซซ่า/ที่กดน้ำมีชื่อ.png" id="1_hp7jh"]
+[ext_resource type="Texture2D" uid="uid://bc2khofct5j58" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/แก้วน้ำ.png" id="2_cf3wm"]
+
+[node name="แก้วนำที่ 3" type="Node2D"]
+
+[node name="ที่กดน้ำมีชื่อ" type="Sprite2D" parent="."]
+position = Vector2(630.625, 404)
+scale = Vector2(0.750582, 0.714203)
+texture = ExtResource("1_hp7jh")
+
+[node name="แก้วน้ำ3" type="Sprite2D" parent="ที่กดน้ำมีชื่อ"]
+position = Vector2(238, 182)
+scale = Vector2(0.343, 0.343)
+texture = ExtResource("2_cf3wm")
+
+[node name="แก้วน้ำ2" type="Sprite2D" parent="ที่กดน้ำมีชื่อ"]
+position = Vector2(-253, 182)
+scale = Vector2(0.343, 0.343)
+texture = ExtResource("2_cf3wm")
+
+[node name="แก้วน้ำ1" type="Sprite2D" parent="ที่กดน้ำมีชื่อ"]
+position = Vector2(-18.0002, 178)
+scale = Vector2(0.343, 0.343)
+texture = ExtResource("2_cf3wm")

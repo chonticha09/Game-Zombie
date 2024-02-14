@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=3 uid="uid://boup1ry33pebq"]
+
+[ext_resource type="Texture2D" uid="uid://dxc7bhfj4gp2i" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ไมโคเวฟ.png" id="1_egbej"]
+[ext_resource type="Texture2D" uid="uid://t2qt78j3qi4y" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/เค้ก.png" id="2_e3042"]
+[ext_resource type="Script" path="res://โค้ด/Control 3.gd" id="3_lko27"]
+[ext_resource type="Texture2D" uid="uid://bwefy1mlf5n1c" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/โหลด1.png" id="4_87wxj"]
+[ext_resource type="Texture2D" uid="uid://c21ve8ok1xtjh" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/โหลด2.png" id="5_1mdsc"]
+
+[node name="เค้กอบ" type="Node2D"]
+position = Vector2(560, 404)
+
+[node name="ไมโคเวฟ" type="Sprite2D" parent="."]
+scale = Vector2(0.565123, 0.565123)
+texture = ExtResource("1_egbej")
+
+[node name="เค้ก" type="Sprite2D" parent="ไมโคเวฟ"]
+position = Vector2(-139.793, 95.5544)
+scale = Vector2(0.281516, 0.281515)
+texture = ExtResource("2_e3042")
+
+[node name="Control 3" type="Control" parent="ไมโคเวฟ/เค้ก"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_lko27")
+
+[node name="Button" type="Button" parent="ไมโคเวฟ/เค้ก/Control 3"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = -263.998
+offset_top = -113.143
+offset_right = 270.002
+offset_bottom = 414.857
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="ไมโคเวฟ/เค้ก/Control 3"]
+layout_mode = 0
+offset_left = -836.0
+offset_top = 515.429
+offset_right = 52.0
+offset_bottom = 754.429
+scale = Vector2(1.85083, 1.90476)
+max_value = 90.0
+value = 5.0
+texture_under = ExtResource("4_87wxj")
+texture_progress = ExtResource("5_1mdsc")
+
+[connection signal="pressed" from="ไมโคเวฟ/เค้ก/Control 3/Button" to="ไมโคเวฟ/เค้ก/Control 3" method="_on_button_pressed"]

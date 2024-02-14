@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://bvcrm0etgnyyw"]
+
+[ext_resource type="Texture2D" uid="uid://b1deabg1lbjwr" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/แป้งพิซซ่า.png" id="1_funnu"]
+[ext_resource type="Texture2D" uid="uid://d3mglnxrfa1ec" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/พซซอส.png" id="2_rdbkh"]
+[ext_resource type="Texture2D" uid="uid://dmnbpaw3vero2" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/3.png" id="3_57ohp"]
+[ext_resource type="Texture2D" uid="uid://dda0k2kwh6se0" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/d.png" id="4_w6sxm"]
+[ext_resource type="Texture2D" uid="uid://b8j8qj4jp6jpc" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/v.png" id="5_rhdak"]
+[ext_resource type="Texture2D" uid="uid://c4dgg7mfw38sr" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/9.png" id="6_gh105"]
+
+[node name="พิซซ่า 1" type="Node2D"]
+position = Vector2(2, 0)
+
+[node name="แป้งพิซซ่า" type="Sprite2D" parent="."]
+position = Vector2(190, 134)
+scale = Vector2(0.224926, 0.224926)
+texture = ExtResource("1_funnu")
+
+[node name="พซซอส" type="Sprite2D" parent="แป้งพิซซ่า"]
+texture = ExtResource("2_rdbkh")
+
+[node name="3" type="Sprite2D" parent="แป้งพิซซ่า"]
+texture = ExtResource("3_57ohp")
+
+[node name="D" type="Sprite2D" parent="แป้งพิซซ่า"]
+scale = Vector2(1.00033, 1.00033)
+texture = ExtResource("4_w6sxm")
+
+[node name="V" type="Sprite2D" parent="แป้งพิซซ่า"]
+scale = Vector2(1.00033, 1.00033)
+texture = ExtResource("5_rhdak")
+
+[node name="9" type="Sprite2D" parent="แป้งพิซซ่า"]
+scale = Vector2(1.00033, 1.00033)
+texture = ExtResource("6_gh105")

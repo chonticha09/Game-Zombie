@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dx8nejxc4sbcw"]
+
+[ext_resource type="Texture2D" uid="uid://b1deabg1lbjwr" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/แป้งพิซซ่า.png" id="1_35xdl"]
+
+[node name="ชั้นแป้งพิซซ่า" type="Node2D"]
+
+[node name="แป้งพิซซ่า" type="Sprite2D" parent="."]
+position = Vector2(661, 281)
+scale = Vector2(0.362959, 0.362959)
+texture = ExtResource("1_35xdl")
