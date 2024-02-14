@@ -1,123 +1,185 @@
-[gd_scene load_steps=5 format=3 uid="uid://bmpjcq0xt7crm"]
+[gd_scene load_steps=26 format=3 uid="uid://bmpjcq0xt7crm"]
 
 [ext_resource type="Texture2D" uid="uid://pc2kqufsp4gq" path="res://หน้าหลัก/ฉากเสร็จ1.png" id="1_ycnw3"]
 [ext_resource type="Script" path="res://โค้ด/เลือกด่าน.gd" id="2_4y57a"]
+[ext_resource type="Texture2D" uid="uid://bdat0hymvdgw4" path="res://ปุ่มเลข/ฉากเลือกด่านไม่มีดาว.png" id="2_uddcy"]
 [ext_resource type="AudioStream" uid="uid://ci8k27o68dtd1" path="res://Sound/tap-notification-180637.mp3" id="3_5idul"]
 [ext_resource type="AudioStream" uid="uid://bkgd1q2d4flcl" path="res://Sound/AnyConv.com__cottagecore-17463 3.ogg" id="4_ca0ki"]
+[ext_resource type="Texture2D" uid="uid://6x4itw6kfx2h" path="res://ปุ่มเลข/1.png" id="4_lwk44"]
+[ext_resource type="Texture2D" uid="uid://cb7m7ue0htat7" path="res://ปุ่มเลข/1.2.png" id="5_8fxpw"]
+[ext_resource type="Texture2D" uid="uid://dv4vixfaj785x" path="res://ปุ่มเลข/2.png" id="6_5vp11"]
+[ext_resource type="Texture2D" uid="uid://ceff0yink44xy" path="res://ปุ่มเลข/2.1.png" id="7_6k5b3"]
+[ext_resource type="Texture2D" uid="uid://rx4ldhy6hfue" path="res://ปุ่มเลข/3.png" id="8_7leet"]
+[ext_resource type="Texture2D" uid="uid://dkaa43v280c1u" path="res://ปุ่มเลข/3.2.png" id="9_j47gj"]
+[ext_resource type="Texture2D" uid="uid://bsgqongc7aqao" path="res://ปุ่มเลข/4.png" id="10_k666w"]
+[ext_resource type="Texture2D" uid="uid://c2xcy5nffyeou" path="res://ปุ่มเลข/4.2.png" id="11_u3kmk"]
+[ext_resource type="Texture2D" uid="uid://bpbyiyddlhbma" path="res://ปุ่มเลข/5.png" id="12_2d1ve"]
+[ext_resource type="Texture2D" uid="uid://dgcp2l5mn55m2" path="res://ปุ่มเลข/5.2.png" id="13_4jida"]
+[ext_resource type="Texture2D" uid="uid://4knvhjqm0gk2" path="res://ปุ่มเลข/6.png" id="14_tcm1e"]
+[ext_resource type="Texture2D" uid="uid://ds4l6vbj0t6uj" path="res://ปุ่มเลข/6.2.png" id="15_awkw5"]
+[ext_resource type="Texture2D" uid="uid://bkuswwhooqtpv" path="res://ปุ่มเลข/7.png" id="16_nwf5s"]
+[ext_resource type="Texture2D" uid="uid://p2x4qhyohsdw" path="res://ปุ่มเลข/7.1.png" id="17_kvx4o"]
+[ext_resource type="Texture2D" uid="uid://bvekjuuutn3qk" path="res://ปุ่มเลข/8.png" id="18_8vdr1"]
+[ext_resource type="Texture2D" uid="uid://cxw1yc711i5n1" path="res://ปุ่มเลข/8.1.png" id="19_0l1ug"]
+[ext_resource type="Texture2D" uid="uid://bkfgdwpwikuum" path="res://ปุ่มเลข/9.png" id="20_wnxsn"]
+[ext_resource type="Texture2D" uid="uid://bulkgjqkm6dgm" path="res://ปุ่มเลข/9.1.png" id="21_l8jx2"]
+[ext_resource type="Texture2D" uid="uid://btk7mbmnhhpdk" path="res://ปุ่มเลข/10.png" id="22_jaetd"]
+[ext_resource type="Texture2D" uid="uid://coqlgxq0jomdt" path="res://ปุ่มเลข/10.1.png" id="23_dth0q"]
 
 [node name="Screen2" type="Node2D"]
 
 [node name="ฉากเสร็จ1" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(629.054, 307.438)
 scale = Vector2(0.450246, 0.467925)
 texture = ExtResource("1_ycnw3")
 
-[node name="เลือกด่าน" type="Control" parent="ฉากเสร็จ1"]
+[node name="ฉากเลือกด่านไม่มีดาว" type="Sprite2D" parent="."]
+position = Vector2(629, 304.875)
+scale = Vector2(0.454545, 0.475457)
+texture = ExtResource("2_uddcy")
+
+[node name="เลือกด่าน" type="Control" parent="ฉากเลือกด่านไม่มีดาว"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 0.118774
+offset_top = 5.39063
+offset_right = 40.1188
+offset_bottom = 45.3906
 script = ExtResource("2_4y57a")
 
-[node name="TextureButton" type="TextureButton" parent="ฉากเสร็จ1/เลือกด่าน"]
+[node name="TextureButton" type="TextureButton" parent="ฉากเลือกด่านไม่มีดาว/เลือกด่าน"]
 layout_mode = 0
-offset_left = -1333.0
-offset_top = 57.0
-offset_right = -1178.0
-offset_bottom = 215.0
+offset_left = -2024.12
+offset_top = -579.312
+offset_right = -733.117
+offset_bottom = 746.688
+scale = Vector2(0.141241, 0.141241)
+pivot_offset = Vector2(756.881, 749.217)
+texture_normal = ExtResource("4_lwk44")
+texture_hover = ExtResource("5_8fxpw")
 
-[node name="TextureButton2" type="TextureButton" parent="ฉากเสร็จ1/เลือกด่าน"]
+[node name="TextureButton2" type="TextureButton" parent="ฉากเลือกด่านไม่มีดาว/เลือกด่าน"]
 layout_mode = 0
-offset_left = -1083.97
-offset_top = -30.8553
-offset_right = -928.972
-offset_bottom = 127.145
+offset_left = -1157.32
+offset_top = -66.1216
+offset_right = 133.682
+offset_bottom = 1200.88
+scale = Vector2(0.147153, 0.147153)
+texture_normal = ExtResource("6_5vp11")
+texture_hover = ExtResource("7_6k5b3")
 
-[node name="TextureButton3" type="TextureButton" parent="ฉากเสร็จ1/เลือกด่าน"]
+[node name="TextureButton3" type="TextureButton" parent="ฉากเลือกด่านไม่มีดาว/เลือกด่าน"]
 layout_mode = 0
-offset_left = -857.429
-offset_top = -69.3231
-offset_right = -702.429
-offset_bottom = 88.6769
+offset_left = -897.396
+offset_top = -106.0
+offset_right = 393.604
+offset_bottom = 1161.0
+scale = Vector2(0.138945, 0.138945)
+texture_normal = ExtResource("8_7leet")
+texture_hover = ExtResource("9_j47gj")
 
-[node name="TextureButton5" type="TextureButton" parent="ฉากเสร็จ1/เลือกด่าน"]
+[node name="TextureButton4" type="TextureButton" parent="ฉากเลือกด่านไม่มีดาว/เลือกด่าน"]
+layout_mode = 0
+offset_left = -640.319
+offset_top = -38.7798
+offset_right = 654.681
+offset_bottom = 1228.22
+scale = Vector2(0.143248, 0.143248)
+texture_normal = ExtResource("10_k666w")
+texture_hover = ExtResource("11_u3kmk")
+
+[node name="TextureButton5" type="TextureButton" parent="ฉากเลือกด่านไม่มีดาว/เลือกด่าน"]
 layout_mode = 0
 offset_left = -428.775
 offset_top = 125.153
 offset_right = -273.775
 offset_bottom = 283.153
+scale = Vector2(0.14526, 0.14526)
+texture_normal = ExtResource("12_2d1ve")
+texture_hover = ExtResource("13_4jida")
 
-[node name="TextureButton6" type="TextureButton" parent="ฉากเสร็จ1/เลือกด่าน"]
+[node name="TextureButton6" type="TextureButton" parent="ฉากเลือกด่านไม่มีดาว/เลือกด่าน"]
 layout_mode = 0
-offset_left = 290.832
-offset_top = 199.951
-offset_right = 445.832
-offset_bottom = 357.951
+offset_left = 281.481
+offset_top = 175.751
+offset_right = 1572.48
+offset_bottom = 1442.75
+scale = Vector2(0.138164, 0.138164)
+texture_normal = ExtResource("14_tcm1e")
+texture_hover = ExtResource("15_awkw5")
 
-[node name="TextureButton7" type="TextureButton" parent="ฉากเสร็จ1/เลือกด่าน"]
+[node name="TextureButton7" type="TextureButton" parent="ฉากเลือกด่านไม่มีดาว/เลือกด่าน"]
 layout_mode = 0
-offset_left = 437.419
-offset_top = 24.7091
-offset_right = 592.419
-offset_bottom = 182.709
+offset_left = 424.481
+offset_top = -17.7471
+offset_right = 1715.48
+offset_bottom = 1249.25
+scale = Vector2(0.138485, 0.138485)
+texture_normal = ExtResource("16_nwf5s")
+texture_hover = ExtResource("17_kvx4o")
 
-[node name="TextureButton8" type="TextureButton" parent="ฉากเสร็จ1/เลือกด่าน"]
+[node name="TextureButton8" type="TextureButton" parent="ฉากเลือกด่านไม่มีดาว/เลือกด่าน"]
 layout_mode = 0
-offset_left = 648.414
-offset_top = -112.065
-offset_right = 803.414
-offset_bottom = 45.9351
+offset_left = 646.214
+offset_top = -130.995
+offset_right = 1937.21
+offset_bottom = 1136.0
+scale = Vector2(0.146366, 0.146366)
+texture_normal = ExtResource("18_8vdr1")
+texture_hover = ExtResource("19_0l1ug")
 
-[node name="TextureButton4" type="TextureButton" parent="ฉากเสร็จ1/เลือกด่าน"]
+[node name="TextureButton9" type="TextureButton" parent="ฉากเลือกด่านไม่มีดาว/เลือกด่าน"]
 layout_mode = 0
-offset_left = -619.781
-offset_top = -7.34729
-offset_right = -464.781
-offset_bottom = 150.653
-
-[node name="TextureButton9" type="TextureButton" parent="ฉากเสร็จ1/เลือกด่าน"]
-layout_mode = 0
-offset_left = 937.146
+offset_left = 910.746
 offset_top = -141.984
-offset_right = 1092.15
-offset_bottom = 16.0157
+offset_right = 2201.75
+offset_bottom = 1125.02
+scale = Vector2(0.145557, 0.145557)
+texture_normal = ExtResource("20_wnxsn")
+texture_hover = ExtResource("21_l8jx2")
 
-[node name="TextureButton10" type="TextureButton" parent="ฉากเสร็จ1/เลือกด่าน"]
+[node name="TextureButton10" type="TextureButton" parent="ฉากเลือกด่านไม่มีดาว/เลือกด่าน"]
 layout_mode = 0
 offset_left = 1170.35
 offset_top = -97.1053
 offset_right = 1325.35
 offset_bottom = 60.8947
+scale = Vector2(0.148753, 0.148753)
+texture_normal = ExtResource("22_jaetd")
+texture_hover = ExtResource("23_dth0q")
 
-[node name="Sound1" type="AudioStreamPlayer2D" parent="ฉากเสร็จ1/เลือกด่าน"]
+[node name="Sound1" type="AudioStreamPlayer2D" parent="ฉากเลือกด่านไม่มีดาว/เลือกด่าน"]
 position = Vector2(-1257.21, 144.386)
 stream = ExtResource("3_5idul")
 
-[node name="Sound2" type="AudioStreamPlayer2D" parent="ฉากเสร็จ1/เลือกด่าน"]
+[node name="Sound2" type="AudioStreamPlayer2D" parent="ฉากเลือกด่านไม่มีดาว/เลือกด่าน"]
 stream = ExtResource("3_5idul")
 
-[node name="หน้าเกม" type="AudioStreamPlayer2D" parent="ฉากเสร็จ1"]
+[node name="หน้าเกม" type="AudioStreamPlayer2D" parent="ฉากเลือกด่านไม่มีดาว"]
+position = Vector2(0.118774, 5.39063)
+scale = Vector2(0.990541, 0.984158)
 stream = ExtResource("4_ca0ki")
 volume_db = 2.0
 autoplay = true
 
-[connection signal="mouse_entered" from="ฉากเสร็จ1/เลือกด่าน/TextureButton" to="ฉากเสร็จ1/เลือกด่าน" method="_on_texture_button_mouse_entered"]
-[connection signal="pressed" from="ฉากเสร็จ1/เลือกด่าน/TextureButton" to="ฉากเสร็จ1/เลือกด่าน" method="_on_texture_button_pressed"]
-[connection signal="mouse_entered" from="ฉากเสร็จ1/เลือกด่าน/TextureButton2" to="ฉากเสร็จ1/เลือกด่าน" method="_on_texture_button_2_mouse_entered"]
-[connection signal="pressed" from="ฉากเสร็จ1/เลือกด่าน/TextureButton2" to="ฉากเสร็จ1/เลือกด่าน" method="_on_texture_button_pressed"]
-[connection signal="mouse_entered" from="ฉากเสร็จ1/เลือกด่าน/TextureButton3" to="ฉากเสร็จ1/เลือกด่าน" method="_on_texture_button_3_mouse_entered"]
-[connection signal="pressed" from="ฉากเสร็จ1/เลือกด่าน/TextureButton3" to="ฉากเสร็จ1/เลือกด่าน" method="_on_texture_button_pressed"]
-[connection signal="mouse_entered" from="ฉากเสร็จ1/เลือกด่าน/TextureButton5" to="ฉากเสร็จ1/เลือกด่าน" method="_on_texture_button_5_mouse_entered"]
-[connection signal="pressed" from="ฉากเสร็จ1/เลือกด่าน/TextureButton5" to="ฉากเสร็จ1/เลือกด่าน" method="_on_texture_button_pressed"]
-[connection signal="mouse_entered" from="ฉากเสร็จ1/เลือกด่าน/TextureButton6" to="ฉากเสร็จ1/เลือกด่าน" method="_on_texture_button_6_mouse_entered"]
-[connection signal="pressed" from="ฉากเสร็จ1/เลือกด่าน/TextureButton6" to="ฉากเสร็จ1/เลือกด่าน" method="_on_texture_button_pressed"]
-[connection signal="mouse_entered" from="ฉากเสร็จ1/เลือกด่าน/TextureButton7" to="ฉากเสร็จ1/เลือกด่าน" method="_on_texture_button_7_mouse_entered"]
-[connection signal="pressed" from="ฉากเสร็จ1/เลือกด่าน/TextureButton7" to="ฉากเสร็จ1/เลือกด่าน" method="_on_texture_button_pressed"]
-[connection signal="mouse_entered" from="ฉากเสร็จ1/เลือกด่าน/TextureButton8" to="ฉากเสร็จ1/เลือกด่าน" method="_on_texture_button_8_mouse_entered"]
-[connection signal="pressed" from="ฉากเสร็จ1/เลือกด่าน/TextureButton8" to="ฉากเสร็จ1/เลือกด่าน" method="_on_texture_button_pressed"]
-[connection signal="mouse_entered" from="ฉากเสร็จ1/เลือกด่าน/TextureButton4" to="ฉากเสร็จ1/เลือกด่าน" method="_on_texture_button_4_mouse_entered"]
-[connection signal="pressed" from="ฉากเสร็จ1/เลือกด่าน/TextureButton4" to="ฉากเสร็จ1/เลือกด่าน" method="_on_texture_button_pressed"]
-[connection signal="mouse_entered" from="ฉากเสร็จ1/เลือกด่าน/TextureButton9" to="ฉากเสร็จ1/เลือกด่าน" method="_on_texture_button_9_mouse_entered"]
-[connection signal="pressed" from="ฉากเสร็จ1/เลือกด่าน/TextureButton9" to="ฉากเสร็จ1/เลือกด่าน" method="_on_texture_button_pressed"]
-[connection signal="mouse_entered" from="ฉากเสร็จ1/เลือกด่าน/TextureButton10" to="ฉากเสร็จ1/เลือกด่าน" method="_on_texture_button_10_mouse_entered"]
-[connection signal="pressed" from="ฉากเสร็จ1/เลือกด่าน/TextureButton10" to="ฉากเสร็จ1/เลือกด่าน" method="_on_texture_button_pressed"]
+[connection signal="mouse_entered" from="ฉากเลือกด่านไม่มีดาว/เลือกด่าน/TextureButton" to="ฉากเลือกด่านไม่มีดาว/เลือกด่าน" method="_on_texture_button_mouse_entered"]
+[connection signal="pressed" from="ฉากเลือกด่านไม่มีดาว/เลือกด่าน/TextureButton" to="ฉากเลือกด่านไม่มีดาว/เลือกด่าน" method="_on_texture_button_pressed"]
+[connection signal="mouse_entered" from="ฉากเลือกด่านไม่มีดาว/เลือกด่าน/TextureButton2" to="ฉากเลือกด่านไม่มีดาว/เลือกด่าน" method="_on_texture_button_2_mouse_entered"]
+[connection signal="pressed" from="ฉากเลือกด่านไม่มีดาว/เลือกด่าน/TextureButton2" to="ฉากเลือกด่านไม่มีดาว/เลือกด่าน" method="_on_texture_button_pressed"]
+[connection signal="mouse_entered" from="ฉากเลือกด่านไม่มีดาว/เลือกด่าน/TextureButton3" to="ฉากเลือกด่านไม่มีดาว/เลือกด่าน" method="_on_texture_button_3_mouse_entered"]
+[connection signal="pressed" from="ฉากเลือกด่านไม่มีดาว/เลือกด่าน/TextureButton3" to="ฉากเลือกด่านไม่มีดาว/เลือกด่าน" method="_on_texture_button_pressed"]
+[connection signal="mouse_entered" from="ฉากเลือกด่านไม่มีดาว/เลือกด่าน/TextureButton4" to="ฉากเลือกด่านไม่มีดาว/เลือกด่าน" method="_on_texture_button_4_mouse_entered"]
+[connection signal="pressed" from="ฉากเลือกด่านไม่มีดาว/เลือกด่าน/TextureButton4" to="ฉากเลือกด่านไม่มีดาว/เลือกด่าน" method="_on_texture_button_pressed"]
+[connection signal="mouse_entered" from="ฉากเลือกด่านไม่มีดาว/เลือกด่าน/TextureButton5" to="ฉากเลือกด่านไม่มีดาว/เลือกด่าน" method="_on_texture_button_5_mouse_entered"]
+[connection signal="pressed" from="ฉากเลือกด่านไม่มีดาว/เลือกด่าน/TextureButton5" to="ฉากเลือกด่านไม่มีดาว/เลือกด่าน" method="_on_texture_button_pressed"]
+[connection signal="mouse_entered" from="ฉากเลือกด่านไม่มีดาว/เลือกด่าน/TextureButton6" to="ฉากเลือกด่านไม่มีดาว/เลือกด่าน" method="_on_texture_button_6_mouse_entered"]
+[connection signal="pressed" from="ฉากเลือกด่านไม่มีดาว/เลือกด่าน/TextureButton6" to="ฉากเลือกด่านไม่มีดาว/เลือกด่าน" method="_on_texture_button_pressed"]
+[connection signal="mouse_entered" from="ฉากเลือกด่านไม่มีดาว/เลือกด่าน/TextureButton7" to="ฉากเลือกด่านไม่มีดาว/เลือกด่าน" method="_on_texture_button_7_mouse_entered"]
+[connection signal="pressed" from="ฉากเลือกด่านไม่มีดาว/เลือกด่าน/TextureButton7" to="ฉากเลือกด่านไม่มีดาว/เลือกด่าน" method="_on_texture_button_pressed"]
+[connection signal="mouse_entered" from="ฉากเลือกด่านไม่มีดาว/เลือกด่าน/TextureButton8" to="ฉากเลือกด่านไม่มีดาว/เลือกด่าน" method="_on_texture_button_8_mouse_entered"]
+[connection signal="pressed" from="ฉากเลือกด่านไม่มีดาว/เลือกด่าน/TextureButton8" to="ฉากเลือกด่านไม่มีดาว/เลือกด่าน" method="_on_texture_button_pressed"]
+[connection signal="mouse_entered" from="ฉากเลือกด่านไม่มีดาว/เลือกด่าน/TextureButton9" to="ฉากเลือกด่านไม่มีดาว/เลือกด่าน" method="_on_texture_button_9_mouse_entered"]
+[connection signal="pressed" from="ฉากเลือกด่านไม่มีดาว/เลือกด่าน/TextureButton9" to="ฉากเลือกด่านไม่มีดาว/เลือกด่าน" method="_on_texture_button_pressed"]
+[connection signal="mouse_entered" from="ฉากเลือกด่านไม่มีดาว/เลือกด่าน/TextureButton10" to="ฉากเลือกด่านไม่มีดาว/เลือกด่าน" method="_on_texture_button_10_mouse_entered"]
+[connection signal="pressed" from="ฉากเลือกด่านไม่มีดาว/เลือกด่าน/TextureButton10" to="ฉากเลือกด่านไม่มีดาว/เลือกด่าน" method="_on_texture_button_pressed"]
