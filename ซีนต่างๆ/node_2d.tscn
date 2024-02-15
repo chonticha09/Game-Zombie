@@ -56,8 +56,8 @@ scale = Vector2(1.07155, 1.29969)
 texture = ExtResource("1_wc5qa")
 
 [node name="ตัวละคร" parent="." instance=ExtResource("3_6l2yx")]
-position = Vector2(236.932, -247.656)
-scale = Vector2(1.49124, 1.50036)
+position = Vector2(390.71, -184.78)
+scale = Vector2(1.27443, 1.28223)
 
 [node name="ฉากโต๊ะ" type="Sprite2D" parent="."]
 position = Vector2(720.118, 601.818)
@@ -118,14 +118,14 @@ scale = Vector2(0.190406, 0.156711)
 texture = ExtResource("17_grex4")
 
 [node name="ป้าย4" type="Sprite2D" parent="."]
-position = Vector2(731.299, 32.0798)
-scale = Vector2(0.32338, 0.336853)
+position = Vector2(737.292, 39.1126)
+scale = Vector2(0.332219, 0.405132)
 texture = ExtResource("18_dfor3")
 
 [node name="ป้าย3" type="Sprite2D" parent="."]
 visible = false
-position = Vector2(603, 43)
-scale = Vector2(0.437, 0.437)
+position = Vector2(732.378, 32.6718)
+scale = Vector2(0.322665, 0.343082)
 texture = ExtResource("19_wgi60")
 
 [node name="ป้าย2" type="Sprite2D" parent="."]
@@ -154,11 +154,11 @@ scale = Vector2(0.135171, 0.125213)
 texture = ExtResource("5_grneb")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 590.0
-offset_top = 18.0
-offset_right = 663.0
-offset_bottom = 49.0
-theme_override_font_sizes/font_size = 20
+offset_left = 584.0
+offset_top = 14.0
+offset_right = 634.0
+offset_bottom = 72.0
+theme_override_font_sizes/font_size = 35
 text = "60"
 script = ExtResource("15_ambe6")
 

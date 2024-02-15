@@ -1,14 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cffygemdbrf62"]
-
-[ext_resource type="Script" path="res://โค้ด/CharacterBody2D.gd" id="1_bnqh7"]
-[ext_resource type="Texture2D" uid="uid://b6eead8wq0c82" path="res://ร้านพิซซ่า/กับปะ.png" id="2_cvorl"]
-
-[sub_resource type="GDScript" id="GDScript_3h6ff"]
-script/source = "extends Sprite2D
+extends Sprite2D
 
 var speed = 100  # ปรับความเร็วตามต้องการ
 var moving = true
-var stopPosition = 50  # ปรับตำแหน่งที่ต้องการให้หยุด
+var stopPosition = 250  # ปรับตำแหน่งที่ต้องการให้หยุด
 var waitTime = 10.0  # ปรับเวลารอให้ตัวละครหยุด
 
 var elapsedTime = 0.0
@@ -35,15 +29,3 @@ func _process(delta):
 	if moving and pictureShown:
 		$YourPictureNode.visible = false  # ซ่อนรูปภาพเมื่อเริ่มเดิน
 		pictureShown = false
-"
-
-[node name="ตัวละคร" type="Node2D"]
-
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-script = ExtResource("1_bnqh7")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(609, 386)
-scale = Vector2(0.251293, 0.251293)
-texture = ExtResource("2_cvorl")
-script = SubResource("GDScript_3h6ff")

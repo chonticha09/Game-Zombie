@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bv3ndi3723mdd"
+path="res://.godot/imported/frying-steak-74556.mp3-4c7678f1ca539fd1c2f13aff783a60c6.mp3str"
+
+[deps]
+
+source_file="res://ร้านอาหารที่ 2/frying-steak-74556.mp3"
+dest_files=["res://.godot/imported/frying-steak-74556.mp3-4c7678f1ca539fd1c2f13aff783a60c6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
