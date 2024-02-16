@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://luyi6dqcdis7"]
+[gd_scene load_steps=33 format=3 uid="uid://luyi6dqcdis7"]
 
 [ext_resource type="Texture2D" uid="uid://kb8w6ldq5jnh" path="res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/แบ็กกราว.png" id="1_1t1du"]
 [ext_resource type="Texture2D" uid="uid://de038mx8pphaq" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ป้าย4.png" id="2_5n8yn"]
@@ -31,6 +31,7 @@
 [ext_resource type="Texture2D" uid="uid://b42xwpe1evu26" path="res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/เนิ้อสุก.png" id="23_hr0ks"]
 [ext_resource type="Texture2D" uid="uid://f2vpjhrh85hu" path="res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/มะเขื่อเทศ.png" id="24_0kodj"]
 [ext_resource type="AudioStream" uid="uid://qcbs3op7r83n" path="res://ร้านอาหารที่ 2/very-lush-and-swag-loop-74140.mp3" id="26_nrbv2"]
+[ext_resource type="Texture2D" uid="uid://d2xglppfsk2ft" path="res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/เนื้อสด.png" id="32_32qjv"]
 
 [node name="ร้านอาหารทะเล" type="Node2D"]
 position = Vector2(-16, -69)
@@ -41,7 +42,7 @@ scale = Vector2(0.532961, 0.464337)
 texture = ExtResource("1_1t1du")
 
 [node name="ป้าย4" type="Sprite2D" parent="."]
-position = Vector2(663.787, 108.69)
+position = Vector2(661.787, 108.69)
 scale = Vector2(0.38527, 0.353957)
 texture = ExtResource("2_5n8yn")
 
@@ -471,6 +472,10 @@ texture = ExtResource("24_0kodj")
 stream = ExtResource("26_nrbv2")
 volume_db = 9.5
 autoplay = true
+
+[node name="เนื้อสด" type="Sprite2D" parent="."]
+position = Vector2(795, 335)
+texture = ExtResource("32_32qjv")
 
 [connection signal="pressed" from="ถังไอติม/ถังไอติม" to="ถังไอติม" method="_on_ถังไอติม_pressed"]
 [connection signal="pressed" from="แซลม่อน1/ปลาก่อนย่าง" to="แซลม่อน1" method="_on_ปลาก่อนย่าง_pressed"]
