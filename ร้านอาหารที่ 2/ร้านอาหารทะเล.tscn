@@ -472,10 +472,6 @@ stream = ExtResource("26_nrbv2")
 volume_db = 9.5
 autoplay = true
 
-[node name="เลม่อนซีก" type="Sprite2D" parent="."]
-position = Vector2(625, 386)
-texture = ExtResource("21_fvce8")
-
 [connection signal="pressed" from="ถังไอติม/ถังไอติม" to="ถังไอติม" method="_on_ถังไอติม_pressed"]
 [connection signal="pressed" from="แซลม่อน1/ปลาก่อนย่าง" to="แซลม่อน1" method="_on_ปลาก่อนย่าง_pressed"]
 [connection signal="pressed" from="เนื้อ/เนื้อก่อนย่าง" to="เนื้อ" method="_on_เนื้อก่อนย่าง_pressed"]
