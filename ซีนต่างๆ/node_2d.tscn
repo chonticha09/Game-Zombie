@@ -51,8 +51,8 @@ scale = Vector2(1.07155, 1.29969)
 texture = ExtResource("1_wc5qa")
 
 [node name="ตัวละคร" parent="." instance=ExtResource("3_6l2yx")]
-position = Vector2(390.71, -184.78)
-scale = Vector2(1.27443, 1.28223)
+position = Vector2(529.68, -80.8411)
+scale = Vector2(1.06734, 1.07387)
 
 [node name="ฉากโต๊ะ" type="Sprite2D" parent="."]
 position = Vector2(720.118, 601.818)
@@ -121,8 +121,8 @@ scale = Vector2(0.437, 0.437)
 texture = ExtResource("21_dai0p")
 
 [node name="ตู้นำ1" parent="." instance=ExtResource("22_65sdy")]
-position = Vector2(986.457, 230.975)
-scale = Vector2(0.499552, 0.623805)
+position = Vector2(1062.78, 322.081)
+scale = Vector2(0.374812, 0.468039)
 
 [node name="เค้กอบ" parent="." instance=ExtResource("23_tl50s")]
 position = Vector2(1300.85, 686.508)
