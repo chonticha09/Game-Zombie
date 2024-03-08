@@ -7,21 +7,7 @@ func _process(_delta):
 func toggle():
 	visible = !visible
 	get_tree().paused = visible
- 
- 
-func _on_Start_pressed():
-	toggle()
-	get_tree().change_scene("yourgame.tscn")
- 
- 
-func _on_Options_pressed():
-	show_and_hide(options, menu)
- 
- 
-func _on_Exit_pressed():
-	get_tree().quit()
- 
- 
+
 func _on_Back_pressed():
 	show_and_hide(menu, options)
  
@@ -30,10 +16,7 @@ func show_and_hide(a,b):
 	b.hide()
  
  
-func _on_Video_pressed():
-	show_and_hide(videos, options)
- 
- 
+
 func _on_Audio_pressed():
 	show_and_hide(audio, options)
  
@@ -76,3 +59,36 @@ func _on_Sound_Fx_value_changed(value):
  
 func volume(bus_index, value):
 	AudioServer.set_bus_volume_db(bus_index, linear2db(value)-30)
+
+
+func _on_start_pressed():
+	toggle()
+	get_tree().change_scene("res://ซีนต่างๆ/screen_2.tscn")
+
+
+func _on_options_pressed():
+	show_and_hide(options, menu)
+	
+
+func _on_exit_pressed():
+	get_tree().quit()
+
+
+func _on_video_pressed():
+	show_and_hide(videos, options)
+
+
+func _on_audio_pressed():
+	pass # Replace with function body.
+
+
+func _on_backfrom_options_pressed():
+	pass # Replace with function body.
+
+
+func _on_backfrom_video_pressed():
+	pass # Replace with function body.
+
+
+func _on_backfrom_audio_pressed():
+	pass # Replace with function body.

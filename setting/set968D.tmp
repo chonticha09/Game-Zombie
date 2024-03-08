@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://dsqd6ugil0afi"]
 
-[ext_resource type="Script" path="res://setting/ตั้งค่า.gd" id="2_38afv"]
+[ext_resource type="Script" path="res://setting/Main Menu.gd" id="1_hiplx"]
 [ext_resource type="Texture2D" uid="uid://cjihuyx26qsl1" path="res://เพิ่มเติม/หน้าตั้งค่า.png" id="2_r323m"]
 [ext_resource type="Texture2D" uid="uid://0x72hgjpc72d" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มกลับ.png" id="3_o0ntj"]
 [ext_resource type="Texture2D" uid="uid://eabganfyu3yb" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มออก.png" id="4_5krue"]
@@ -15,6 +15,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 249.0
 offset_bottom = 226.0
+script = ExtResource("1_hiplx")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Main Menu"]
 layout_mode = 1
@@ -51,7 +52,6 @@ offset_bottom = 65.0
 text = "Exit"
 
 [node name="Options" type="Control" parent="Main Menu"]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -60,7 +60,6 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Main Menu/Options"]
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -75,17 +74,14 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Video" type="Button" parent="Main Menu/Options/VBoxContainer"]
-visible = false
 layout_mode = 2
 text = "Video"
 
 [node name="Audio" type="Button" parent="Main Menu/Options/VBoxContainer"]
-visible = false
 layout_mode = 2
 text = "Audio"
 
 [node name="BackfromOptions" type="Button" parent="Main Menu/Options"]
-visible = false
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -236,55 +232,30 @@ position = Vector2(303, 148)
 scale = Vector2(0.274869, 0.274869)
 texture = ExtResource("2_r323m")
 
-[node name="ตั้งค่า" type="Control" parent="หน้าตั้งค่า"]
-layout_mode = 3
-anchors_preset = 0
-offset_left = -1102.34
-offset_top = -538.438
-offset_right = -1062.34
-offset_bottom = -498.438
-script = ExtResource("2_38afv")
+[node name="หน้าตั้งค่าปุ่มกลับ" type="Sprite2D" parent="."]
+position = Vector2(286, 172)
+scale = Vector2(0.238095, 0.238095)
+texture = ExtResource("3_o0ntj")
 
-[node name="เสียง" type="TextureButton" parent="หน้าตั้งค่า/ตั้งค่า"]
-layout_mode = 0
-offset_left = 873.143
-offset_top = 356.533
-offset_right = 1077.14
-offset_bottom = 546.533
-scale = Vector2(0.695178, 0.698005)
-texture_normal = ExtResource("7_8d6mx")
+[node name="หน้าตั้งค่าปุ่มออก" type="Sprite2D" parent="."]
+position = Vector2(335.375, 171.378)
+scale = Vector2(0.234, 0.234)
+texture = ExtResource("4_5krue")
 
-[node name="เอฟเฟ็ก" type="TextureButton" parent="หน้าตั้งค่า/ตั้งค่า"]
-offset_left = 1062.32
-offset_top = 360.171
-offset_right = 1266.32
-offset_bottom = 550.171
-scale = Vector2(0.698005, 0.698005)
-texture_normal = ExtResource("6_uxvyq")
+[node name="หน้าตั้งค่าปุ่มเลือกเมนู" type="Sprite2D" parent="."]
+position = Vector2(233.748, 172)
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("5_u8rj1")
 
-[node name="รายการ" type="TextureButton" parent="หน้าตั้งค่า/ตั้งค่า"]
-offset_left = 796.743
-offset_top = 552.99
-offset_right = 922.743
-offset_bottom = 677.99
-scale = Vector2(1.00554, 1.00554)
-texture_normal = ExtResource("5_u8rj1")
+[node name="หน้าตั้งค่าปุ่มเพลง" type="Sprite2D" parent="."]
+position = Vector2(315.611, 122.5)
+scale = Vector2(0.18421, 0.18421)
+texture = ExtResource("6_uxvyq")
 
-[node name="เริ่มใหม่" type="TextureButton" parent="หน้าตั้งค่า/ตั้งค่า"]
-offset_left = 967.734
-offset_top = 549.352
-offset_right = 1093.73
-offset_bottom = 675.352
-scale = Vector2(1.05685, 1.05685)
-texture_normal = ExtResource("3_o0ntj")
-
-[node name="กลับหน่าหลัก" type="TextureButton" parent="หน้าตั้งค่า/ตั้งค่า"]
-offset_left = 1146.0
-offset_top = 549.353
-offset_right = 1272.0
-offset_bottom = 675.353
-scale = Vector2(1.05685, 1.05685)
-texture_normal = ExtResource("4_5krue")
+[node name="หน้าตั้งค่าปุ่มเสียง" type="Sprite2D" parent="."]
+position = Vector2(259.537, 122.5)
+scale = Vector2(0.184211, 0.18421)
+texture = ExtResource("7_8d6mx")
 
 [connection signal="pressed" from="Main Menu/VBoxContainer/Start" to="Main Menu" method="_on_start_pressed"]
 [connection signal="pressed" from="Main Menu/VBoxContainer/Start/Options" to="Main Menu" method="_on_options_pressed"]
@@ -294,8 +265,3 @@ texture_normal = ExtResource("4_5krue")
 [connection signal="pressed" from="Main Menu/Options/BackfromOptions" to="Main Menu" method="_on_backfrom_options_pressed"]
 [connection signal="pressed" from="Main Menu/Video/BackfromVideo" to="Main Menu" method="_on_backfrom_video_pressed"]
 [connection signal="pressed" from="Main Menu/Audio/BackfromAudio" to="Main Menu" method="_on_backfrom_audio_pressed"]
-[connection signal="pressed" from="หน้าตั้งค่า/ตั้งค่า/เสียง" to="หน้าตั้งค่า/ตั้งค่า" method="_on_เสียง_pressed"]
-[connection signal="pressed" from="หน้าตั้งค่า/ตั้งค่า/เอฟเฟ็ก" to="หน้าตั้งค่า/ตั้งค่า" method="_on_เอฟเฟ็ก_pressed"]
-[connection signal="pressed" from="หน้าตั้งค่า/ตั้งค่า/รายการ" to="หน้าตั้งค่า/ตั้งค่า" method="_on_รายการ_pressed"]
-[connection signal="pressed" from="หน้าตั้งค่า/ตั้งค่า/เริ่มใหม่" to="หน้าตั้งค่า/ตั้งค่า" method="_on_เริ่มใหม่_pressed"]
-[connection signal="pressed" from="หน้าตั้งค่า/ตั้งค่า/กลับหน่าหลัก" to="หน้าตั้งค่า/ตั้งค่า" method="_on_กลับหน่าหลัก_pressed"]

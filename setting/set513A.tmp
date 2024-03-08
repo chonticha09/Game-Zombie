@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://dsqd6ugil0afi"]
 
-[ext_resource type="Script" path="res://setting/ตั้งค่า.gd" id="2_38afv"]
 [ext_resource type="Texture2D" uid="uid://cjihuyx26qsl1" path="res://เพิ่มเติม/หน้าตั้งค่า.png" id="2_r323m"]
+[ext_resource type="Script" path="res://setting/เสียง.gd" id="3_cbfcv"]
 [ext_resource type="Texture2D" uid="uid://0x72hgjpc72d" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มกลับ.png" id="3_o0ntj"]
 [ext_resource type="Texture2D" uid="uid://eabganfyu3yb" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มออก.png" id="4_5krue"]
 [ext_resource type="Texture2D" uid="uid://vb183r2jb6bk" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มเลือกเมนู.png" id="5_u8rj1"]
@@ -243,7 +243,6 @@ offset_left = -1102.34
 offset_top = -538.438
 offset_right = -1062.34
 offset_bottom = -498.438
-script = ExtResource("2_38afv")
 
 [node name="เสียง" type="TextureButton" parent="หน้าตั้งค่า/ตั้งค่า"]
 layout_mode = 0
@@ -253,6 +252,7 @@ offset_right = 1077.14
 offset_bottom = 546.533
 scale = Vector2(0.695178, 0.698005)
 texture_normal = ExtResource("7_8d6mx")
+script = ExtResource("3_cbfcv")
 
 [node name="เอฟเฟ็ก" type="TextureButton" parent="หน้าตั้งค่า/ตั้งค่า"]
 offset_left = 1062.32
