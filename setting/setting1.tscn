@@ -255,6 +255,7 @@ scale = Vector2(0.695178, 0.698005)
 texture_normal = ExtResource("7_8d6mx")
 
 [node name="เอฟเฟ็ก" type="TextureButton" parent="หน้าตั้งค่า/ตั้งค่า"]
+layout_mode = 0
 offset_left = 1062.32
 offset_top = 360.171
 offset_right = 1266.32
@@ -263,6 +264,7 @@ scale = Vector2(0.698005, 0.698005)
 texture_normal = ExtResource("6_uxvyq")
 
 [node name="รายการ" type="TextureButton" parent="หน้าตั้งค่า/ตั้งค่า"]
+layout_mode = 0
 offset_left = 796.743
 offset_top = 552.99
 offset_right = 922.743
@@ -271,6 +273,7 @@ scale = Vector2(1.00554, 1.00554)
 texture_normal = ExtResource("5_u8rj1")
 
 [node name="เริ่มใหม่" type="TextureButton" parent="หน้าตั้งค่า/ตั้งค่า"]
+layout_mode = 0
 offset_left = 967.734
 offset_top = 549.352
 offset_right = 1093.73
@@ -279,6 +282,7 @@ scale = Vector2(1.05685, 1.05685)
 texture_normal = ExtResource("3_o0ntj")
 
 [node name="กลับหน่าหลัก" type="TextureButton" parent="หน้าตั้งค่า/ตั้งค่า"]
+layout_mode = 0
 offset_left = 1146.0
 offset_top = 549.353
 offset_right = 1272.0
