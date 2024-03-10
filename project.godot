@@ -15,6 +15,10 @@ run/main_scene="res://ซีนต่างๆ/node_2d.tscn"
 config/features=PackedStringArray("4.1", "GL Compatibility")
 config/icon="res://ร้านพิซซ่าใหม่-20231217T070034Z-001/icon.svg"
 
+[display]
+
+window/size/viewport_width=1252
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
