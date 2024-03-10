@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cufvf423vkgaa"]
+[gd_scene load_steps=14 format=3 uid="uid://cufvf423vkgaa"]
 
 [ext_resource type="Texture2D" uid="uid://b2krk2ejcqsdb" path="res://ร้านอาหารญี่ปุ่น/ฉากหลังร้านอาหารญี่ปุ่น.png" id="1_m8jqe"]
 [ext_resource type="Texture2D" uid="uid://1ajkhqu0wxxv" path="res://ร้านอาหารญี่ปุ่น/ครัว.png" id="2_4cb8c"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://cvat67kd2at1x" path="res://ร้านอาหารญี่ปุ่น/ถาดไม้.png" id="10_k5il1"]
 [ext_resource type="Texture2D" uid="uid://b13sa4v87cjkf" path="res://ร้านอาหารญี่ปุ่น/โชยุ.png" id="11_4enpg"]
 [ext_resource type="Texture2D" uid="uid://b1ukibmlix3ga" path="res://ร้านอาหารญี่ปุ่น/วาซาบิ.png" id="12_h7lwf"]
+[ext_resource type="Texture2D" uid="uid://bs61aigvw65yf" path="res://ร้านอาหารญี่ปุ่น/แก้วสาเก๋.png" id="13_phgiv"]
 
 [node name="ร้านอาหารญี่ปุ่น" type="Node2D"]
 metadata/_edit_horizontal_guides_ = []
@@ -21,9 +22,9 @@ position = Vector2(572.5, 327)
 scale = Vector2(0.413191, 0.459901)
 texture = ExtResource("1_m8jqe")
 
-[node name="ครัว" type="Sprite2D" parent="."]
-position = Vector2(577.5, 534)
-scale = Vector2(0.412704, 0.425926)
+[node name="ครัว" type="Sprite2D" parent="ฉากหลังร้านอาหารญี่ปุ่น"]
+position = Vector2(12.101, 450.097)
+scale = Vector2(0.998822, 0.926126)
 texture = ExtResource("2_4cb8c")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
@@ -139,6 +140,22 @@ texture_normal = ExtResource("11_4enpg")
 offset_left = 12.0
 offset_top = 477.0
 offset_right = 897.0
-offset_bottom = 1032.0
+offset_bottom = 1044.0
 scale = Vector2(0.086259, 0.086259)
 texture_normal = ExtResource("12_h7lwf")
+
+[node name="แก้วสาเก1" type="TextureButton" parent="."]
+offset_left = 1028.0
+offset_top = 481.0
+offset_right = 1895.0
+offset_bottom = 1199.0
+scale = Vector2(0.066105, 0.066105)
+texture_normal = ExtResource("13_phgiv")
+
+[node name="แก้วสาเก2" type="TextureButton" parent="."]
+offset_left = 1069.0
+offset_top = 502.0
+offset_right = 1936.0
+offset_bottom = 1220.0
+scale = Vector2(0.066105, 0.066105)
+texture_normal = ExtResource("13_phgiv")
