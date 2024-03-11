@@ -6,10 +6,8 @@ var current_texture_index: int = 0
 func _ready():
 	# Find TextureRects in the scene and store them in an array
 	texture_rect_nodes = [
-		get_node("เลม่อน1"),
-		get_node("เลม่อน2"),
-		get_node("เลม่อน3"),
-		get_node("เลม่อน4")
+		get_node("แซลม่อนย่าง3"),
+		get_node("แซลม่อนย่าง4")
 		
 	]
 	# Hide all TextureRects
@@ -17,7 +15,7 @@ func _ready():
 
 # Function to load mango texture
 func load_mango_texture(texture_rect: TextureRect) -> void:
-	var texture1 = preload("res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/เลม่อนซีก.png")
+	var texture1 = preload("res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/ชิ้นแซลม่อน.png")
 	texture_rect.texture = texture1
 
 # When the button is pressed (load mango texture)
