@@ -526,6 +526,7 @@ offset_right = 12.4287
 offset_bottom = 115.92
 
 [node name="เซ็ทติ้ง" type="TextureRect" parent="Menu"]
+visible = false
 layout_mode = 0
 offset_left = 221.0
 offset_top = 159.0
