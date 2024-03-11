@@ -271,6 +271,11 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("22_v6457")
 
+[node name="ถาดมะนาว2" type="Control" parent="รวมในจานอาหาร"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
 [node name="ถาดมะนาว" type="TextureButton" parent="รวมในจานอาหาร"]
 layout_mode = 0
 offset_left = 549.0
@@ -478,7 +483,7 @@ autoplay = true
 [connection signal="pressed" from="เนื้อ/เนื้อย่าง1" to="เนื้อ" method="_on_เนื้อย่าง1_pressed"]
 [connection signal="pressed" from="เนื้อ/เนื้อย่าง2" to="เนื้อ" method="_on_เนื้อย่าง2_pressed"]
 [connection signal="pressed" from="เฟรนฟราย/หม้อทอด" to="เฟรนฟราย" method="_on_หม้อทอด_pressed"]
-[connection signal="pressed" from="รวมในจานอาหาร/ถาดมะนาว" to="รวมในจานอาหาร" method="_on_ถาดมะนาว_pressed"]
+[connection signal="pressed" from="รวมในจานอาหาร/ถาดมะนาว" to="รวมในจานอาหาร/ถาดมะนาว" method="_on_pressed"]
 [connection signal="pressed" from="รวมในจานอาหาร/ถาดมะเขือเทศ" to="รวมในจานอาหาร" method="_on_ถาดมะเขือเทศ_pressed"]
 [connection signal="pressed" from="รวมในจานอาหาร/ถาดผักกาด" to="รวมในจานอาหาร" method="_on_ถาดผักกาด_pressed"]
 [connection signal="pressed" from="รวมในจานอาหาร/ถาดซอส" to="รวมในจานอาหาร" method="_on_ถาดซอส_pressed"]

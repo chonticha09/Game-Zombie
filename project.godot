@@ -17,8 +17,7 @@ config/icon="res://ร้านพิซซ่าใหม่-20231217T070034Z-0
 
 [display]
 
-window/size/viewport_width=426
-window/size/viewport_height=240
+window/size/viewport_width=1252
 
 [rendering]
 

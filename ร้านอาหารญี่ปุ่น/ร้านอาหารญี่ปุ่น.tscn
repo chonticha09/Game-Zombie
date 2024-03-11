@@ -1,0 +1,228 @@
+[gd_scene load_steps=22 format=3 uid="uid://cufvf423vkgaa"]
+
+[ext_resource type="Texture2D" uid="uid://b2krk2ejcqsdb" path="res://ร้านอาหารญี่ปุ่น/ฉากหลังร้านอาหารญี่ปุ่น.png" id="1_m8jqe"]
+[ext_resource type="Texture2D" uid="uid://1ajkhqu0wxxv" path="res://ร้านอาหารญี่ปุ่น/ครัว.png" id="2_4cb8c"]
+[ext_resource type="Texture2D" uid="uid://cehnb0dx2s7bv" path="res://ร้านอาหารญี่ปุ่น/ไข่กุ้งและสาหร่าย.png" id="3_j8lq5"]
+[ext_resource type="AudioStream" uid="uid://6qsw1dyfxddh" path="res://Sound/impatience-113686.mp3" id="3_lv08g"]
+[ext_resource type="Texture2D" uid="uid://brcmb0rmibxs0" path="res://ร้านอาหารญี่ปุ่น/ขวดสาเก๋.png" id="4_h7hay"]
+[ext_resource type="Texture2D" uid="uid://xywdhvn5abj0" path="res://ร้านอาหารญี่ปุ่น/ถาดกุ้ง.png" id="5_y7ghj"]
+[ext_resource type="Texture2D" uid="uid://cxlx4iss6y0eq" path="res://ร้านอาหารญี่ปุ่น/ถาดทูน่า.png" id="6_88ivh"]
+[ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/กุ้ง.gd" id="7_fvqxv"]
+[ext_resource type="Texture2D" uid="uid://dd1ocaa0x5kod" path="res://ร้านอาหารญี่ปุ่น/ถาดไข่หวาน.png" id="7_rtnbt"]
+[ext_resource type="Texture2D" uid="uid://6iijta6y8yle" path="res://ร้านอาหารญี่ปุ่น/ข้าวญี่ปุ่น.png" id="8_nl7he"]
+[ext_resource type="Texture2D" uid="uid://bfb5fwm62tgra" path="res://ร้านอาหารญี่ปุ่น/หม้อทอด.png" id="9_v73by"]
+[ext_resource type="Texture2D" uid="uid://cvat67kd2at1x" path="res://ร้านอาหารญี่ปุ่น/ถาดไม้.png" id="10_k5il1"]
+[ext_resource type="Texture2D" uid="uid://b13sa4v87cjkf" path="res://ร้านอาหารญี่ปุ่น/โชยุ.png" id="11_4enpg"]
+[ext_resource type="Texture2D" uid="uid://b1ukibmlix3ga" path="res://ร้านอาหารญี่ปุ่น/วาซาบิ.png" id="12_h7lwf"]
+[ext_resource type="Texture2D" uid="uid://bs61aigvw65yf" path="res://ร้านอาหารญี่ปุ่น/แก้วสาเก๋.png" id="13_phgiv"]
+[ext_resource type="Texture2D" uid="uid://bqcnwlj5jy0fi" path="res://ร้านอาหารญี่ปุ่น/กุ้งชุบแดป้งทอด.png" id="15_62kgo"]
+[ext_resource type="Texture2D" uid="uid://xg6uvbuiv6i2" path="res://ร้านอาหารญี่ปุ่น/ผ้ารอง.png" id="16_fv6ov"]
+[ext_resource type="Texture2D" uid="uid://bstreyho5wx3v" path="res://ร้านอาหารญี่ปุ่น/กุ้งทอด.png" id="17_rttrr"]
+[ext_resource type="Texture2D" uid="uid://dkrntsws1fsde" path="res://ร้านอาหารญี่ปุ่น/ซูซิไข่หวาน.png" id="18_cjv5v"]
+[ext_resource type="Texture2D" uid="uid://c3a3rodr1dlao" path="res://ร้านอาหารญี่ปุ่น/ซุซิทูน่า.png" id="19_abhai"]
+[ext_resource type="Texture2D" uid="uid://dnpxd00dwxadl" path="res://ร้านอาหารญี่ปุ่น/ซูซิกุ้ง.png" id="20_mpvjj"]
+
+[node name="ร้านอาหารญี่ปุ่น" type="Node2D"]
+metadata/_edit_horizontal_guides_ = []
+
+[node name="ฉากหลังร้านอาหารญี่ปุ่น" type="Sprite2D" parent="."]
+position = Vector2(622.5, 327)
+scale = Vector2(0.448841, 0.459901)
+texture = ExtResource("1_m8jqe")
+
+[node name="ครัว" type="Sprite2D" parent="ฉากหลังร้านอาหารญี่ปุ่น"]
+position = Vector2(12.101, 450.097)
+scale = Vector2(0.998822, 0.926126)
+texture = ExtResource("2_4cb8c")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_lv08g")
+autoplay = true
+
+[node name="ไข่กุ้งและสาหร่าย" type="Sprite2D" parent="."]
+position = Vector2(542, 597)
+scale = Vector2(0.219987, 0.219987)
+texture = ExtResource("3_j8lq5")
+
+[node name="สาหร่าย" type="Button" parent="ไข่กุ้งและสาหร่าย"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -177.283
+offset_top = -218.195
+offset_right = -98.2828
+offset_bottom = -174.195
+
+[node name="ไข่กุ้ง" type="Button" parent="ไข่กุ้งและสาหร่าย"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -177.283
+offset_top = -0.000244141
+offset_right = -98.2828
+offset_bottom = 43.9998
+
+[node name="ขวดสาเก๋" type="Sprite2D" parent="."]
+position = Vector2(1211, 412)
+scale = Vector2(0.126068, 0.126068)
+texture = ExtResource("4_h7hay")
+
+[node name="กุ้ง" type="TextureButton" parent="."]
+offset_left = -5.99999
+offset_top = 569.0
+offset_right = 1123.0
+offset_bottom = 1222.0
+rotation = -0.158966
+scale = Vector2(0.148543, 0.14425)
+texture_normal = ExtResource("5_y7ghj")
+script = ExtResource("7_fvqxv")
+
+[node name="ทูน่า" type="TextureButton" parent="."]
+offset_left = 151.0
+offset_top = 566.0
+offset_right = 1280.0
+offset_bottom = 1219.0
+rotation = -0.158966
+scale = Vector2(0.153951, 0.149501)
+texture_normal = ExtResource("6_88ivh")
+
+[node name="ไข่หวาน" type="TextureButton" parent="."]
+offset_left = 317.0
+offset_top = 563.0
+offset_right = 1446.0
+offset_bottom = 1216.0
+rotation = -0.158966
+scale = Vector2(0.155766, 0.151264)
+texture_normal = ExtResource("7_rtnbt")
+
+[node name="ข้าวญี่ปุ่น" type="TextureButton" parent="."]
+offset_left = 570.0
+offset_top = 547.0
+offset_right = 1385.0
+offset_bottom = 1012.0
+scale = Vector2(0.221581, 0.221581)
+texture_normal = ExtResource("8_nl7he")
+
+[node name="หม้อทอด 1" type="TextureRect" parent="."]
+offset_left = 918.0
+offset_top = 390.0
+offset_right = 2610.0
+offset_bottom = 1536.0
+scale = Vector2(0.081172, 0.081172)
+texture = ExtResource("9_v73by")
+
+[node name="หม้อทอด 2" type="TextureRect" parent="."]
+offset_left = 919.0
+offset_top = 474.0
+offset_right = 2611.0
+offset_bottom = 1620.0
+scale = Vector2(0.081172, 0.081172)
+texture = ExtResource("9_v73by")
+
+[node name="ถาดไม้1" type="TextureRect" parent="."]
+offset_left = 131.0
+offset_top = 414.0
+offset_right = 891.0
+offset_bottom = 911.0
+scale = Vector2(0.240053, 0.240053)
+texture = ExtResource("10_k5il1")
+
+[node name="ถาดไม้2" type="TextureRect" parent="."]
+offset_left = 321.0
+offset_top = 421.0
+offset_right = 1081.0
+offset_bottom = 918.0
+scale = Vector2(0.240053, 0.240053)
+texture = ExtResource("10_k5il1")
+
+[node name="ถาดไม้3" type="TextureRect" parent="."]
+offset_left = 527.0
+offset_top = 421.0
+offset_right = 1287.0
+offset_bottom = 918.0
+scale = Vector2(0.240053, 0.240053)
+texture = ExtResource("10_k5il1")
+
+[node name="โชยุ" type="TextureButton" parent="."]
+offset_left = 13.0
+offset_top = 424.0
+offset_right = 898.0
+offset_bottom = 979.0
+scale = Vector2(0.086259, 0.086259)
+texture_normal = ExtResource("11_4enpg")
+
+[node name="วาซาบิ" type="TextureButton" parent="."]
+offset_left = 12.0
+offset_top = 477.0
+offset_right = 897.0
+offset_bottom = 1044.0
+scale = Vector2(0.086259, 0.086259)
+texture_normal = ExtResource("12_h7lwf")
+
+[node name="แก้วสาเก1" type="TextureButton" parent="."]
+offset_left = 1122.0
+offset_top = 429.0
+offset_right = 1989.0
+offset_bottom = 1147.0
+scale = Vector2(0.066105, 0.066105)
+texture_normal = ExtResource("13_phgiv")
+
+[node name="แก้วสาเก2" type="TextureButton" parent="."]
+offset_left = 1167.0
+offset_top = 457.0
+offset_right = 2034.0
+offset_bottom = 1175.0
+scale = Vector2(0.066105, 0.066105)
+texture_normal = ExtResource("13_phgiv")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 1070.0
+offset_top = 507.0
+offset_right = 2093.0
+offset_bottom = 1025.0
+scale = Vector2(0.174699, 0.174699)
+texture_normal = ExtResource("15_62kgo")
+
+[node name="ผ้ารอง" type="Sprite2D" parent="."]
+position = Vector2(838, 507)
+rotation = 1.56963
+scale = Vector2(0.13721, 0.194965)
+texture = ExtResource("16_fv6ov")
+
+[node name="กุ้งทอด" type="TextureRect" parent="."]
+offset_left = 782.0
+offset_top = 417.0
+offset_right = 1889.0
+offset_bottom = 1338.0
+scale = Vector2(0.0953791, 0.0953791)
+texture = ExtResource("17_rttrr")
+
+[node name="กุ้งทอด2" type="TextureRect" parent="."]
+offset_left = 778.0
+offset_top = 500.0
+offset_right = 1885.0
+offset_bottom = 1421.0
+scale = Vector2(0.0953791, 0.0953791)
+texture = ExtResource("17_rttrr")
+
+[node name="ซูชิไข่หวาน" type="TextureRect" parent="."]
+offset_left = 544.0
+offset_top = 407.0
+offset_right = 1715.0
+offset_bottom = 1138.0
+scale = Vector2(0.127369, 0.127369)
+texture = ExtResource("18_cjv5v")
+
+[node name="ซูชิทูน่า" type="TextureRect" parent="."]
+offset_left = 341.0
+offset_top = 408.0
+offset_right = 1512.0
+offset_bottom = 1139.0
+scale = Vector2(0.127369, 0.127369)
+texture = ExtResource("19_abhai")
+
+[node name="ซูชิกุ้ง" type="TextureRect" parent="."]
+offset_left = 147.0
+offset_top = 403.0
+offset_right = 1318.0
+offset_bottom = 1134.0
+scale = Vector2(0.127369, 0.127369)
+texture = ExtResource("20_mpvjj")
+
+[connection signal="pressed" from="กุ้ง" to="กุ้ง" method="_on_pressed"]
