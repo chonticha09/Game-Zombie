@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://cufvf423vkgaa"]
+[gd_scene load_steps=23 format=3 uid="uid://cufvf423vkgaa"]
 
 [ext_resource type="Texture2D" uid="uid://b2krk2ejcqsdb" path="res://ร้านอาหารญี่ปุ่น/ฉากหลังร้านอาหารญี่ปุ่น.png" id="1_m8jqe"]
 [ext_resource type="Texture2D" uid="uid://1ajkhqu0wxxv" path="res://ร้านอาหารญี่ปุ่น/ครัว.png" id="2_4cb8c"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cxlx4iss6y0eq" path="res://ร้านอาหารญี่ปุ่น/ถาดทูน่า.png" id="6_88ivh"]
 [ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/กุ้ง.gd" id="7_fvqxv"]
 [ext_resource type="Texture2D" uid="uid://dd1ocaa0x5kod" path="res://ร้านอาหารญี่ปุ่น/ถาดไข่หวาน.png" id="7_rtnbt"]
+[ext_resource type="Texture2D" uid="uid://bq1clt8x7s7i" path="res://ร้านอาหารญี่ปุ่น/เทมปุระสุก.png" id="8_m2qxt"]
 [ext_resource type="Texture2D" uid="uid://6iijta6y8yle" path="res://ร้านอาหารญี่ปุ่น/ข้าวญี่ปุ่น.png" id="8_nl7he"]
 [ext_resource type="Texture2D" uid="uid://bfb5fwm62tgra" path="res://ร้านอาหารญี่ปุ่น/หม้อทอด.png" id="9_v73by"]
 [ext_resource type="Texture2D" uid="uid://cvat67kd2at1x" path="res://ร้านอาหารญี่ปุ่น/ถาดไม้.png" id="10_k5il1"]
@@ -37,7 +38,6 @@ texture = ExtResource("2_4cb8c")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_lv08g")
-autoplay = true
 
 [node name="ไข่กุ้งและสาหร่าย" type="Sprite2D" parent="."]
 position = Vector2(542, 597)
@@ -72,6 +72,14 @@ rotation = -0.158966
 scale = Vector2(0.148543, 0.14425)
 texture_normal = ExtResource("5_y7ghj")
 script = ExtResource("7_fvqxv")
+
+[node name="กุ้งทอดดดดด" type="TextureRect" parent="กุ้ง"]
+layout_mode = 0
+offset_left = 1846.84
+offset_top = -3191.53
+offset_right = 5202.84
+offset_bottom = -679.529
+texture = ExtResource("8_m2qxt")
 
 [node name="ทูน่า" type="TextureButton" parent="."]
 offset_left = 151.0

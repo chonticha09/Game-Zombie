@@ -1,6 +1,5 @@
 extends Control
 
-
 var texture_rect_nodes: Array
 var current_texture_index: int = 0
 
@@ -36,4 +35,3 @@ func show_next_mango_texture() -> void:
 func hide_all_texture_rects():
 	for texture_rect in texture_rect_nodes:
 		texture_rect.visible = false
-
