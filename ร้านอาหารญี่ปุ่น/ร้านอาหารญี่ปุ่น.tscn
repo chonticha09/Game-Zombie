@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://cufvf423vkgaa"]
+[gd_scene load_steps=22 format=3 uid="uid://cufvf423vkgaa"]
 
 [ext_resource type="Texture2D" uid="uid://b2krk2ejcqsdb" path="res://ร้านอาหารญี่ปุ่น/ฉากหลังร้านอาหารญี่ปุ่น.png" id="1_m8jqe"]
 [ext_resource type="Texture2D" uid="uid://1ajkhqu0wxxv" path="res://ร้านอาหารญี่ปุ่น/ครัว.png" id="2_4cb8c"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://brcmb0rmibxs0" path="res://ร้านอาหารญี่ปุ่น/ขวดสาเก๋.png" id="4_h7hay"]
 [ext_resource type="Texture2D" uid="uid://xywdhvn5abj0" path="res://ร้านอาหารญี่ปุ่น/ถาดกุ้ง.png" id="5_y7ghj"]
 [ext_resource type="Texture2D" uid="uid://cxlx4iss6y0eq" path="res://ร้านอาหารญี่ปุ่น/ถาดทูน่า.png" id="6_88ivh"]
+[ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/กุ้ง.gd" id="7_fvqxv"]
 [ext_resource type="Texture2D" uid="uid://dd1ocaa0x5kod" path="res://ร้านอาหารญี่ปุ่น/ถาดไข่หวาน.png" id="7_rtnbt"]
 [ext_resource type="Texture2D" uid="uid://6iijta6y8yle" path="res://ร้านอาหารญี่ปุ่น/ข้าวญี่ปุ่น.png" id="8_nl7he"]
 [ext_resource type="Texture2D" uid="uid://bfb5fwm62tgra" path="res://ร้านอาหารญี่ปุ่น/หม้อทอด.png" id="9_v73by"]
@@ -70,6 +71,7 @@ offset_bottom = 1222.0
 rotation = -0.158966
 scale = Vector2(0.148543, 0.14425)
 texture_normal = ExtResource("5_y7ghj")
+script = ExtResource("7_fvqxv")
 
 [node name="ทูน่า" type="TextureButton" parent="."]
 offset_left = 151.0
@@ -222,3 +224,5 @@ offset_right = 1318.0
 offset_bottom = 1134.0
 scale = Vector2(0.127369, 0.127369)
 texture = ExtResource("20_mpvjj")
+
+[connection signal="pressed" from="กุ้ง" to="กุ้ง" method="_on_pressed"]
