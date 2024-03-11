@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://cufvf423vkgaa"]
+[gd_scene load_steps=35 format=3 uid="uid://cufvf423vkgaa"]
 
 [ext_resource type="Texture2D" uid="uid://b2krk2ejcqsdb" path="res://ร้านอาหารญี่ปุ่น/ฉากหลังร้านอาหารญี่ปุ่น.png" id="1_m8jqe"]
 [ext_resource type="Texture2D" uid="uid://1ajkhqu0wxxv" path="res://ร้านอาหารญี่ปุ่น/ครัว.png" id="2_4cb8c"]
@@ -21,6 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://bstreyho5wx3v" path="res://ร้านอาหารญี่ปุ่น/กุ้งทอด.png" id="17_rttrr"]
 [ext_resource type="Texture2D" uid="uid://dkrntsws1fsde" path="res://ร้านอาหารญี่ปุ่น/ซูซิไข่หวาน.png" id="18_cjv5v"]
 [ext_resource type="Texture2D" uid="uid://c3a3rodr1dlao" path="res://ร้านอาหารญี่ปุ่น/ซุซิทูน่า.png" id="19_abhai"]
+[ext_resource type="Texture2D" uid="uid://ck4iawrbj0pe5" path="res://ร้านอาหารญี่ปุ่น/ข้าว.png" id="20_7yw6y"]
 [ext_resource type="Texture2D" uid="uid://dnpxd00dwxadl" path="res://ร้านอาหารญี่ปุ่น/ซูซิกุ้ง.png" id="20_mpvjj"]
 [ext_resource type="Script" path="res://โค้ด/Menu.gd" id="23_beylh"]
 [ext_resource type="Texture2D" uid="uid://dlw1hdxmkgic5" path="res://หน้าหลัก/ไอคอนเมนูจ้า.png" id="24_sylce"]
@@ -222,26 +223,49 @@ scale = Vector2(0.0953791, 0.0953791)
 texture = ExtResource("17_rttrr")
 
 [node name="ซูชิไข่หวาน" type="TextureRect" parent="."]
-offset_left = 544.0
-offset_top = 407.0
-offset_right = 1715.0
-offset_bottom = 1138.0
+offset_left = 541.0
+offset_top = 424.0
+offset_right = 1712.0
+offset_bottom = 1155.0
+scale = Vector2(0.127369, 0.127369)
+texture = ExtResource("20_7yw6y")
+
+[node name="ซูชิไข่หวาน" type="TextureRect" parent="ซูชิไข่หวาน"]
+offset_left = -15.7012
+offset_top = -62.8047
+offset_right = 9662.3
+offset_bottom = 5978.2
 scale = Vector2(0.127369, 0.127369)
 texture = ExtResource("18_cjv5v")
 
 [node name="ซูชิทูน่า" type="TextureRect" parent="."]
-offset_left = 341.0
-offset_top = 408.0
-offset_right = 1512.0
-offset_bottom = 1139.0
+offset_left = 339.0
+offset_top = 418.0
+offset_right = 1510.0
+offset_bottom = 1149.0
+scale = Vector2(0.127369, 0.127369)
+texture = ExtResource("20_7yw6y")
+
+[node name="ซูชิทูน่า" type="TextureRect" parent="ซูชิทูน่า"]
+offset_left = -31.4063
+offset_top = -78.5117
+offset_right = 9445.59
+offset_bottom = 6024.49
 scale = Vector2(0.127369, 0.127369)
 texture = ExtResource("19_abhai")
 
-[node name="ซูชิกุ้ง" type="TextureRect" parent="."]
-offset_left = 147.0
-offset_top = 403.0
-offset_right = 1318.0
-offset_bottom = 1134.0
+[node name="ซูชิกุ้ง2" type="TextureRect" parent="."]
+offset_left = 149.0
+offset_top = 413.0
+offset_right = 1259.0
+offset_bottom = 1065.0
+scale = Vector2(0.127369, 0.127369)
+texture = ExtResource("20_7yw6y")
+
+[node name="ซูชิกุ้ง" type="TextureRect" parent="ซูชิกุ้ง2"]
+offset_top = -54.959
+offset_right = 9673.0
+offset_bottom = 5678.04
 scale = Vector2(0.127369, 0.127369)
 texture = ExtResource("20_mpvjj")
 
