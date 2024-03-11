@@ -127,6 +127,7 @@ texture_normal = ExtResource("8_nl7he")
 script = ExtResource("12_3puq2")
 
 [node name="ซูชิไข่หวาน" type="TextureRect" parent="ข้าวญี่ปุ่น"]
+layout_mode = 0
 offset_left = 1809.82
 offset_top = -1064.89
 offset_right = 7485.82
@@ -136,6 +137,7 @@ scale = Vector2(0.211623, 0.211623)
 texture = ExtResource("20_7yw6y")
 
 [node name="ซูชิทูน่า" type="TextureRect" parent="ข้าวญี่ปุ่น"]
+layout_mode = 0
 offset_left = 1726.46
 offset_top = -2481.46
 offset_right = 7458.46
@@ -145,6 +147,7 @@ scale = Vector2(0.20342, 0.20342)
 texture = ExtResource("20_7yw6y")
 
 [node name="ซูชิกุ้ง2" type="TextureRect" parent="ข้าวญี่ปุ่น"]
+layout_mode = 0
 offset_left = 1769.31
 offset_top = -3862.89
 offset_right = 10468.3
@@ -183,6 +186,7 @@ texture_normal = ExtResource("5_y7ghj")
 script = ExtResource("7_fvqxv")
 
 [node name="ซูชิกุ้ง" type="TextureRect" parent="กุ้ง"]
+layout_mode = 0
 offset_left = 1026.27
 offset_top = -1010.52
 offset_right = 10794.3
@@ -203,6 +207,7 @@ script = ExtResource("15_e8i0a")
 
 [node name="ซูชิทูน่า" type="TextureRect" parent="ทูน่า"]
 visible = false
+layout_mode = 0
 offset_left = 1302.18
 offset_top = -939.82
 offset_right = 10462.2
@@ -222,6 +227,7 @@ texture_normal = ExtResource("7_rtnbt")
 script = ExtResource("18_y151y")
 
 [node name="ซูชิไข่หวาน" type="TextureRect" parent="ไข่หวาน"]
+layout_mode = 0
 offset_left = 1517.33
 offset_top = -847.563
 offset_right = 10753.3
@@ -240,6 +246,7 @@ texture_normal = ExtResource("42_afocw")
 script = ExtResource("20_o6sad")
 
 [node name="แซลมอน" type="TextureRect" parent="ถาดแซลมอน"]
+layout_mode = 0
 offset_left = -727.553
 offset_top = -755.176
 offset_right = 4820.45
