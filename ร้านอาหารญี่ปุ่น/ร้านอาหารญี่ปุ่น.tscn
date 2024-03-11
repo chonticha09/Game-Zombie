@@ -209,7 +209,7 @@ offset_bottom = 1138.0
 scale = Vector2(0.127369, 0.127369)
 texture = ExtResource("18_cjv5v")
 
-[node name="ซูชิไข่หวาน2" type="TextureRect" parent="."]
+[node name="ซูชิทูน่า" type="TextureRect" parent="."]
 offset_left = 341.0
 offset_top = 408.0
 offset_right = 1512.0
@@ -217,7 +217,7 @@ offset_bottom = 1139.0
 scale = Vector2(0.127369, 0.127369)
 texture = ExtResource("19_abhai")
 
-[node name="ซูชิไข่หวาน3" type="TextureRect" parent="."]
+[node name="ซูชิกุ้ง" type="TextureRect" parent="."]
 offset_left = 147.0
 offset_top = 403.0
 offset_right = 1318.0
