@@ -3,7 +3,7 @@ extends Sprite2D
 var speed = 100  # ปรับความเร็วตามต้องการ
 var moving = true
 var stopPosition = 250  # ปรับตำแหน่งที่ต้องการให้หยุด
-var waitTime = 10.0  # ปรับเวลารอให้ตัวละครหยุด
+var waitTime = 15.0  # ปรับเวลาที่ต้องการให้ตัวละครหยุด
 
 var elapsedTime = 0.0
 var pictureShown = false
@@ -21,11 +21,18 @@ func _process(delta):
 
 	if !moving:
 		elapsedTime += delta
-		if elapsedTime >= waitTime:
-			moving = true
-			elapsedTime = 0.0
 
-	# แสดงรูปภาพเมื่อตัวละครเดินกลับมาที่ตำแหน่งเริ่มต้น
-	if moving and pictureShown:
-		$YourPictureNode.visible = false  # ซ่อนรูปภาพเมื่อเริ่มเดิน
-		pictureShown = false
+		# แสดงรูปภาพเมื่อตัวละครหยุดภายในเฟรม
+		if !pictureShown:
+			$กล่องข้อความ.visible = true
+			pictureShown = true
+
+		if elapsedTime >= waitTime:
+			queue_free()  # ออกจากเฟรมเมื่อครบระยะเวลาที่กำหนด
+			return
+
+	# ซ่อนรูปภาพเมื่อตัวละครเคลื่อนที่ออกจากเฟรม
+	if position.x >= get_viewport_rect().size.x:
+		if pictureShown:
+			$กล่องข้อความ.visible = false
+			pictureShown = false

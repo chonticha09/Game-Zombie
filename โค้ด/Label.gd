@@ -1,6 +1,6 @@
 extends Label
 
-var countdown_time : float = 60.0  # Change the type to float for more precise timing
+var countdown_time : float = 120.0  # Change the type to float for more precise timing
 var countdown_speed : float = 1.0  # Adjust this value to control the countdown speed
 
 # Called when the node enters the scene tree for the first time.
