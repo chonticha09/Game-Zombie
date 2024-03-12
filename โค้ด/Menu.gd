@@ -12,7 +12,7 @@ func _ready():
 
 func load_texture(path: String, texture_rect: TextureRect) -> void:
 	# โหลดรูปภาพจาก path และกำหนดให้ TextureRect
-	var texture = preload("res://เพิ่มเติม/หน้าตั้งค่า.png")
+	var texture = preload("res://กล่องข้อความ.png")
 	texture_rect.texture = texture
 
 # เมื่อปุ่มถูกกด
@@ -23,7 +23,7 @@ func _on_button_pressed():
 		hide_texture_rect()
 	else:
 		# โหลดและแสดงรูปภาพ
-		load_texture("res://เพิ่มเติม/หน้าตั้งค่า.png", texture_rect_node)
+		load_texture("res://กล่องข้อความ.png", texture_rect_node)
 		texture_rect_node.visible = true
 		current_texture_index += 1
 		

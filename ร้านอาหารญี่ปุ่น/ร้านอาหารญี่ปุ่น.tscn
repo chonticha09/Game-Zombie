@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://cufvf423vkgaa"]
+[gd_scene load_steps=42 format=3 uid="uid://cufvf423vkgaa"]
 
 [ext_resource type="Texture2D" uid="uid://b2krk2ejcqsdb" path="res://ร้านอาหารญี่ปุ่น/ฉากหลังร้านอาหารญี่ปุ่น.png" id="1_m8jqe"]
 [ext_resource type="Texture2D" uid="uid://1ajkhqu0wxxv" path="res://ร้านอาหารญี่ปุ่น/ครัว.png" id="2_4cb8c"]
@@ -6,7 +6,6 @@
 [ext_resource type="AudioStream" uid="uid://6qsw1dyfxddh" path="res://Sound/impatience-113686.mp3" id="3_lv08g"]
 [ext_resource type="Texture2D" uid="uid://c7x3itvoe431i" path="res://ร้านพิซซ่า/มันม่าวง.png" id="3_y3ibh"]
 [ext_resource type="Texture2D" uid="uid://brcmb0rmibxs0" path="res://ร้านอาหารญี่ปุ่น/ขวดสาเก๋.png" id="4_h7hay"]
-[ext_resource type="Texture2D" uid="uid://dmnh3ne7uww8i" path="res://กล่องข้อความ.png" id="4_n4qjt"]
 [ext_resource type="Script" path="res://ร้านอาหารที่ 2/มันม่าวง.gd" id="4_xldh6"]
 [ext_resource type="Texture2D" uid="uid://xywdhvn5abj0" path="res://ร้านอาหารญี่ปุ่น/ถาดกุ้ง.png" id="5_y7ghj"]
 [ext_resource type="Texture2D" uid="uid://cxlx4iss6y0eq" path="res://ร้านอาหารญี่ปุ่น/ถาดทูน่า.png" id="6_88ivh"]
@@ -61,11 +60,6 @@ position = Vector2(1219.81, -93.4984)
 scale = Vector2(0.567067, 0.55343)
 texture = ExtResource("3_y3ibh")
 script = ExtResource("4_xldh6")
-
-[node name="กล่องข้อความ" type="Sprite2D" parent="ฉากหลังร้านอาหารญี่ปุ่น/มันม่าวง"]
-position = Vector2(345.742, -278.953)
-scale = Vector2(0.933756, 0.933756)
-texture = ExtResource("4_n4qjt")
 
 [node name="ครัว" type="Sprite2D" parent="ฉากหลังร้านอาหารญี่ปุ่น"]
 position = Vector2(8.91192, 450.097)
