@@ -87,6 +87,14 @@ offset_right = 585.0
 offset_bottom = -103.0
 texture = ExtResource("7_fsbky")
 
+[node name="แซลม่อนย่าง3" type="TextureRect" parent="มันม่าวง"]
+offset_left = 1079.57
+offset_top = -3161.6
+offset_right = 2044.57
+offset_bottom = -2294.6
+texture = ExtResource("19_soglo")
+script = ExtResource("31_0xjmr")
+
 [node name="ครัว" type="Sprite2D" parent="."]
 position = Vector2(638, 533.5)
 scale = Vector2(0.5225, 0.482278)
