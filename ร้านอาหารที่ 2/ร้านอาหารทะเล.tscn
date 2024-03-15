@@ -75,7 +75,7 @@ metadata/_edit_use_anchors_ = true
 script = ExtResource("4_i5hhp")
 
 [node name="มันม่าวง" type="Sprite2D" parent="."]
-position = Vector2(1171, 310)
+position = Vector2(1171, 322)
 scale = Vector2(0.254523, 0.254523)
 texture = ExtResource("5_lvs0i")
 script = ExtResource("6_ombh6")
@@ -88,6 +88,7 @@ offset_bottom = -103.0
 texture = ExtResource("7_fsbky")
 
 [node name="แซลม่อนย่าง3" type="TextureRect" parent="มันม่าวง"]
+visible = false
 offset_left = 1079.57
 offset_top = -3161.6
 offset_right = 2044.57
