@@ -1,22 +1,23 @@
 extends Sprite2D
 
-var speed = 100  # ปรับความเร็วตามต้องการ
+var speed = 100
 var moving = true
-var stopPosition = 250  # ปรับตำแหน่งที่ต้องการให้หยุด
-var waitTime = 15.0  # ปรับเวลารอให้ตัวละครหยุด (15 วินาที)
-
+var stopPosition = 250
+var waitTime = 15.0
 var elapsedTime = 0.0
+
+onready var popup = $Popup  # การอ้างอิงไปยังโหนด Popup ของคุณ ปรับเส้นทางตามที่ต้องการ
+onready var pictureTexture = preload("res://กล่องข้อความ.png") # ปรับเส้นทางไปยังรูปของคุณ
 
 func _process(delta):
 	if moving:
-		# เคลื่อนที่ตัวละครไปทางซ้าย
 		var movement = Vector2.LEFT * speed * delta
 		position += movement
 
-		# ตรวจสอบว่าตัวละครได้ถึงตำแหน่งหยุดหรือไม่
 		if position.x <= stopPosition:
 			moving = false
 			elapsedTime = 0.0
+			show_popup()  # เรียกใช้ฟังก์ชันเพื่อแสดง Popup เมื่อซอมบี้หยุด
 
 	if !moving:
 		elapsedTime += delta
@@ -24,10 +25,17 @@ func _process(delta):
 			moving = true
 			elapsedTime = 0.0
 
-			# เคลื่อนที่ตัวละครไปทางขวา
 			var movement = Vector2.RIGHT * speed * delta
 			position += movement
 
-			# เช็คเงื่อนไขว่าตัวละครได้ถึงตำแหน่งหยุดต่อไปหรือไม่
 			if position.x >= stopPosition:
 				moving = true
+
+func show_popup():
+	popup.visible = true  # แสดง Popup เมื่อซอมบี้หยุดเคลื่อนที่
+	var texturereact = popup.get_node("กล่องข้อความ")
+	texturereact.texture = pictureTexture
+
+# แบบเพิ่มเติม: เพิ่มฟังก์ชันเพื่อซ่อน Popup
+func hide_popup():
+	popup.visible = false

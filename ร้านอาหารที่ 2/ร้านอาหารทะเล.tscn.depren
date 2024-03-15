@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://luyi6dqcdis7"]
+[gd_scene load_steps=46 format=3 uid="uid://luyi6dqcdis7"]
 
 [ext_resource type="Texture2D" uid="uid://kb8w6ldq5jnh" path="res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/แบ็กกราว.png" id="1_1t1du"]
 [ext_resource type="Texture2D" uid="uid://de038mx8pphaq" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ป้าย4.png" id="2_5n8yn"]
@@ -8,7 +8,6 @@
 [ext_resource type="Texture2D" uid="uid://draaee8kij6aa" path="res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/ถาดฟ้า.png" id="5_yag4j"]
 [ext_resource type="Texture2D" uid="uid://s8v0s175vlyb" path="res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/ครัว.png" id="6_i0af6"]
 [ext_resource type="Script" path="res://ร้านอาหารที่ 2/มันม่าวง.gd" id="6_ombh6"]
-[ext_resource type="Texture2D" uid="uid://dmnh3ne7uww8i" path="res://กล่องข้อความ.png" id="7_fsbky"]
 [ext_resource type="Texture2D" uid="uid://dnwqkx4gf4nrg" path="res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/ถังไอศครีม.png" id="7_i226k"]
 [ext_resource type="Texture2D" uid="uid://baowsme0wgbvm" path="res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/ตัวแผ่นแซลม่อน.png" id="8_auhl7"]
 [ext_resource type="Texture2D" uid="uid://b3vkbsgthvjui" path="res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/ถาดเนื้อ.png" id="9_nuinl"]
@@ -56,8 +55,8 @@ scale = Vector2(0.523772, 0.464337)
 texture = ExtResource("1_1t1du")
 
 [node name="ป้าย4" type="Sprite2D" parent="."]
-position = Vector2(637, 97)
-scale = Vector2(0.262963, 0.24159)
+position = Vector2(661.787, 108.69)
+scale = Vector2(0.38527, 0.353957)
 texture = ExtResource("2_5n8yn")
 
 [node name="Label" type="Label" parent="ป้าย4"]
@@ -75,17 +74,10 @@ metadata/_edit_use_anchors_ = true
 script = ExtResource("4_i5hhp")
 
 [node name="มันม่าวง" type="Sprite2D" parent="."]
-position = Vector2(1171, 310)
+position = Vector2(1170, 284)
 scale = Vector2(0.254523, 0.254523)
 texture = ExtResource("5_lvs0i")
 script = ExtResource("6_ombh6")
-
-[node name="กล่องข้อความ" type="TextureRect" parent="มันม่าวง"]
-offset_left = 200.0
-offset_top = -774.0
-offset_right = 585.0
-offset_bottom = -103.0
-texture = ExtResource("7_fsbky")
 
 [node name="ครัว" type="Sprite2D" parent="."]
 position = Vector2(638, 533.5)
@@ -252,7 +244,6 @@ texture_normal = ExtResource("9_nuinl")
 script = ExtResource("18_wflm4")
 
 [node name="เนื้อย่าง1" type="TextureRect" parent="เนื้อก่อนย่าง"]
-layout_mode = 0
 offset_left = 1478.46
 offset_top = -2879.15
 offset_right = 2525.46
@@ -260,7 +251,6 @@ offset_bottom = -1907.15
 texture = ExtResource("23_hr0ks")
 
 [node name="เนื้อย่าง2" type="TextureRect" parent="เนื้อก่อนย่าง"]
-layout_mode = 0
 offset_left = 1442.39
 offset_top = -1451.47
 offset_right = 2489.39
