@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7jp0qudomjsj"
-path="res://.godot/imported/จานผักมะนาวซอสปลา.png-eaebea15f12dbd3a594cf3a2173f6c0f.ctex"
+path="res://.godot/imported/จานผักมะนาวซอสปลา.png-be0492dc24ce0716083cc158f68dac2d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/จานผักมะนาวซอสปลา.png"
-dest_files=["res://.godot/imported/จานผักมะนาวซอสปลา.png-eaebea15f12dbd3a594cf3a2173f6c0f.ctex"]
+source_file="res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/จานผักมะนาวซอสปลา.png"
+dest_files=["res://.godot/imported/จานผักมะนาวซอสปลา.png-be0492dc24ce0716083cc158f68dac2d.ctex"]
 
 [params]
 

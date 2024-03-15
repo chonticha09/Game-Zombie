@@ -16,7 +16,7 @@ func _ready():
 
 func load_texture(path: String, texture_button: TextureButton) -> void:
 	# โหลดรูปภาพจาก path และกำหนดให้ TextureButton
-	var texture = preload("res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/ไอติมเขียว.png")
+	var texture = preload("res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/ไอติมเขียว.png")
 	if texture:
 		texture_button.texture_normal = texture
 	else:
@@ -26,7 +26,7 @@ func load_texture(path: String, texture_button: TextureButton) -> void:
 func _on_ถังไอติม_pressed():
 	if current_texture_index < texture_button_nodes.size():
 		var current_texture_button = texture_button_nodes[current_texture_index]
-		load_texture("res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/ไอติมเขียว.png", current_texture_button)
+		load_texture("res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/ไอติมเขียว.png", current_texture_button)
 		current_texture_button.visible = true
 		current_texture_index += 1
 	else:

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dilkry2fxelyh"
-path="res://.godot/imported/ไอติมเขียว.png-2ea8748e72f523348c44e8d5cf53e6a5.ctex"
+uid="uid://ks0op8ln6d0b"
+path="res://.godot/imported/จานเนื้อผักมะเขือ.png-1ff3b544af94ee03334b87a012af5f1a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/ไอติมเขียว.png"
-dest_files=["res://.godot/imported/ไอติมเขียว.png-2ea8748e72f523348c44e8d5cf53e6a5.ctex"]
+source_file="res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/จานเนื้อผักมะเขือ.png"
+dest_files=["res://.godot/imported/จานเนื้อผักมะเขือ.png-1ff3b544af94ee03334b87a012af5f1a.ctex"]
 
 [params]
 

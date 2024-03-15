@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ks0op8ln6d0b"
-path="res://.godot/imported/จานเนื้อผักมะเขือ.png-239643eecb85e2743664379da456efa1.ctex"
+uid="uid://b0a80go1i1177"
+path="res://.godot/imported/จานเนื้อมะเขื่อเทศซอส.png-38e928637567f657bc9db9346a6ffe10.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/จานเนื้อผักมะเขือ.png"
-dest_files=["res://.godot/imported/จานเนื้อผักมะเขือ.png-239643eecb85e2743664379da456efa1.ctex"]
+source_file="res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/จานเนื้อมะเขื่อเทศซอส.png"
+dest_files=["res://.godot/imported/จานเนื้อมะเขื่อเทศซอส.png-38e928637567f657bc9db9346a6ffe10.ctex"]
 
 [params]
 
