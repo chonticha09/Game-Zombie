@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://sebutmuadj6c"]
+[gd_scene load_steps=39 format=3 uid="uid://sebutmuadj6c"]
 
 [ext_resource type="Texture2D" uid="uid://52v0ets1jibd" path="res://ร้านพิซซ่า/ร้านพิซ่าาาาาาาา.png" id="1_vwu2x"]
 [ext_resource type="Texture2D" uid="uid://c46cxx2h76ag3" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ฉากฟ้า.png" id="1_wc5qa"]
@@ -31,8 +31,12 @@
 [ext_resource type="Texture2D" uid="uid://ctga8jmxufgxu" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/หน้าสมอง.png" id="32_7xvxw"]
 [ext_resource type="Script" path="res://โค้ด/Menu.gd" id="35_mkqk8"]
 [ext_resource type="Texture2D" uid="uid://dlw1hdxmkgic5" path="res://หน้าหลัก/ไอคอนเมนูจ้า.png" id="35_t345u"]
+[ext_resource type="Texture2D" uid="uid://cjihuyx26qsl1" path="res://เพิ่มเติม/หน้าตั้งค่า.png" id="35_xa4na"]
 [ext_resource type="Texture2D" uid="uid://0tx1lq5gjtd3" path="res://หน้าหลัก/ไอคอน.png" id="36_le263"]
+[ext_resource type="Texture2D" uid="uid://cxwfd6sbr2rvx" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มเสียง.png" id="36_nw81s"]
 [ext_resource type="Script" path="res://โค้ด/คู่มือเกม.gd" id="37_5n7q1"]
+[ext_resource type="Texture2D" uid="uid://0x72hgjpc72d" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มกลับ.png" id="37_vqjdx"]
+[ext_resource type="Texture2D" uid="uid://eabganfyu3yb" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มออก.png" id="38_ser1u"]
 [ext_resource type="Texture2D" uid="uid://6cklxth5g3d7" path="res://หน้าหลัก/สมุดเมนู.png" id="39_dhnsu"]
 
 [node name="หน้าเกมร้านพิซซ่า" type="Node2D"]
@@ -98,8 +102,8 @@ scale = Vector2(0.190406, 0.156711)
 texture = ExtResource("17_grex4")
 
 [node name="ป้าย4" type="Sprite2D" parent="."]
-position = Vector2(737.292, 39.1126)
-scale = Vector2(0.332219, 0.405132)
+position = Vector2(752.943, 38.4958)
+scale = Vector2(0.368778, 0.405132)
 texture = ExtResource("18_dfor3")
 
 [node name="ป้าย3" type="Sprite2D" parent="."]
@@ -129,10 +133,10 @@ position = Vector2(1300.85, 686.508)
 scale = Vector2(0.419655, 0.419655)
 
 [node name="Label" type="Label" parent="."]
-offset_left = 584.0
-offset_top = 14.0
-offset_right = 634.0
-offset_bottom = 72.0
+offset_left = 591.191
+offset_top = 12.8319
+offset_right = 641.191
+offset_bottom = 70.8319
 theme_override_font_sizes/font_size = 35
 text = "60"
 script = ExtResource("15_ambe6")
@@ -511,28 +515,6 @@ stream = ExtResource("29_42cr0")
 volume_db = 2.0
 autoplay = true
 
-[node name="Menu" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 86.5713
-offset_top = 32.0798
-offset_right = 126.571
-offset_bottom = 72.0798
-script = ExtResource("35_mkqk8")
-
-[node name="ไอคอนเมนูจ้า" type="Sprite2D" parent="Menu"]
-position = Vector2(-6.83459, 44.9118)
-scale = Vector2(0.0695094, 0.0695094)
-texture = ExtResource("35_t345u")
-
-[node name="Button" type="Button" parent="Menu"]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 0
-offset_left = -40.0
-offset_top = 10.0
-offset_right = 28.0
-offset_bottom = 82.0
-
 [node name="คู่มือเกม" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
@@ -568,11 +550,70 @@ offset_bottom = 70.8319
 [node name="Sound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("24_r646c")
 
+[node name="Menu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 88.0
+offset_top = 33.0
+offset_right = 154.0
+offset_bottom = 154.0
+script = ExtResource("35_mkqk8")
+
+[node name="ไอคอนเมนูจ้า" type="Sprite2D" parent="Menu"]
+position = Vector2(-24.5713, 80.9202)
+scale = Vector2(0.0695094, 0.0695094)
+texture = ExtResource("35_t345u")
+
+[node name="Button" type="Button" parent="Menu"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = -55.5713
+offset_top = 43.9202
+offset_right = 12.4287
+offset_bottom = 115.92
+
+[node name="เซ็ทติ้ง" type="TextureRect" parent="Menu"]
+visible = false
+layout_mode = 0
+offset_left = 248.033
+offset_top = 124.833
+offset_right = 1504.03
+offset_bottom = 1066.83
+scale = Vector2(0.67015, 0.67015)
+texture = ExtResource("35_xa4na")
+
+[node name="เสียง" type="TextureRect" parent="Menu/เซ็ทติ้ง"]
+layout_mode = 0
+offset_left = 463.58
+offset_top = 230.489
+offset_right = 667.58
+offset_bottom = 420.489
+scale = Vector2(0.888706, 0.888706)
+texture = ExtResource("36_nw81s")
+
+[node name="ย้อนกลับ" type="TextureRect" parent="Menu/เซ็ทติ้ง"]
+layout_mode = 0
+offset_left = 368.393
+offset_top = 471.751
+offset_right = 494.393
+offset_bottom = 597.751
+scale = Vector2(1.27452, 1.1815)
+texture = ExtResource("37_vqjdx")
+
+[node name="ไปหน้าหลัก" type="TextureRect" parent="Menu/เซ็ทติ้ง"]
+layout_mode = 0
+offset_left = 574.065
+offset_top = 471.752
+offset_right = 707.065
+offset_bottom = 597.752
+scale = Vector2(1.18601, 1.1819)
+texture = ExtResource("38_ser1u")
+
 [connection signal="pressed" from="ชั้นแป้งพิซซ่า/Control/ชั้นแป้งพิซซ่า" to="รวมอาหารพิซซ่า" method="_on_ชั้นแป้งพิซซ่า_pressed"]
 [connection signal="pressed" from="ซุปแดง/Control/ซอส" to="รวมอาหารพิซซ่า" method="_on_ซอส_pressed"]
 [connection signal="pressed" from="จานเขื่อเทศ/Control/มะเขือเทศ" to="รวมอาหารพิซซ่า" method="_on_มะเขือเทศ_pressed"]
 [connection signal="pressed" from="จานพริกหยวก/Control/พริกหยวก" to="รวมอาหารพิซซ่า" method="_on_พริกหยวก_pressed"]
 [connection signal="pressed" from="จานตา/Control/ตา" to="รวมอาหารพิซซ่า" method="_on_ตา_pressed"]
 [connection signal="pressed" from="สมอง/Control/สมอง" to="รวมอาหารพิซซ่า" method="_on_สมอง_pressed"]
-[connection signal="pressed" from="Menu/Button" to="Menu" method="_on_button_pressed"]
 [connection signal="pressed" from="คู่มือเกม/Button" to="คู่มือเกม" method="_on_button_pressed"]
+[connection signal="pressed" from="Menu/Button" to="Menu" method="_on_button_pressed"]

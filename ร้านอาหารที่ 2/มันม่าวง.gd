@@ -3,10 +3,9 @@ extends Sprite2D
 var speed = 100  # ปรับความเร็วตามต้องการ
 var moving = true
 var stopPosition = 250  # ปรับตำแหน่งที่ต้องการให้หยุด
-var waitTime = 10.0  # ปรับเวลารอให้ตัวละครหยุด
+var waitTime = 15.0  # ปรับเวลารอให้ตัวละครหยุด (15 วินาที)
 
 var elapsedTime = 0.0
-var pictureShown = false
 
 func _process(delta):
 	if moving:
@@ -25,7 +24,10 @@ func _process(delta):
 			moving = true
 			elapsedTime = 0.0
 
-	# แสดงรูปภาพเมื่อตัวละครเดินกลับมาที่ตำแหน่งเริ่มต้น
-	if moving and pictureShown:
-		$YourPictureNode.visible = false  # ซ่อนรูปภาพเมื่อเริ่มเดิน
-		pictureShown = false
+			# เคลื่อนที่ตัวละครไปทางขวา
+			var movement = Vector2.RIGHT * speed * delta
+			position += movement
+
+			# เช็คเงื่อนไขว่าตัวละครได้ถึงตำแหน่งหยุดต่อไปหรือไม่
+			if position.x >= stopPosition:
+				moving = true
