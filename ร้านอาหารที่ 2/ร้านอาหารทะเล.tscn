@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://luyi6dqcdis7"]
+[gd_scene load_steps=48 format=3 uid="uid://luyi6dqcdis7"]
 
 [ext_resource type="Texture2D" uid="uid://kb8w6ldq5jnh" path="res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/แบ็กกราว.png" id="1_1t1du"]
 [ext_resource type="Texture2D" uid="uid://de038mx8pphaq" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ป้าย4.png" id="2_5n8yn"]
@@ -46,6 +46,7 @@
 [ext_resource type="Texture2D" uid="uid://6cklxth5g3d7" path="res://หน้าหลัก/สมุดเมนู.png" id="40_1mcbj"]
 [ext_resource type="Texture2D" uid="uid://0x72hgjpc72d" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มกลับ.png" id="40_okkti"]
 [ext_resource type="Texture2D" uid="uid://eabganfyu3yb" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มออก.png" id="41_wxc1r"]
+[ext_resource type="Texture2D" uid="uid://djetnxapys18a" path="res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/จานผักซอสปลา.png" id="47_wy2gk"]
 
 [node name="ร้านอาหารทะเล" type="Node2D"]
 position = Vector2(-16, -69)
@@ -67,7 +68,7 @@ offset_top = -48.4002
 offset_right = -361.303
 offset_bottom = 50.5998
 theme_override_font_sizes/font_size = 70
-text = "60"
+text = "120"
 script = ExtResource("3_m1ivo")
 metadata/_edit_use_anchors_ = true
 
@@ -490,9 +491,9 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="เพลงหน้าเกม" type="AudioStreamPlayer2D" parent="."]
+scale = Vector2(0.234722, 0.234722)
 stream = ExtResource("26_nrbv2")
 volume_db = 9.5
-autoplay = true
 
 [node name="Menu" type="Control" parent="."]
 layout_mode = 3
@@ -601,6 +602,11 @@ offset_left = 59.6016
 offset_top = 48.3538
 offset_right = 119.601
 offset_bottom = 106.354
+
+[node name="จานผักซอสปลา" type="Sprite2D" parent="."]
+position = Vector2(1296, 166)
+scale = Vector2(0.0600743, 0.0600743)
+texture = ExtResource("47_wy2gk")
 
 [connection signal="pressed" from="ถังไอติม/ถังไอติม" to="ถังไอติม" method="_on_ถังไอติม_pressed"]
 [connection signal="pressed" from="ถาดผักกาด" to="ถาดผักกาด" method="_on_pressed"]

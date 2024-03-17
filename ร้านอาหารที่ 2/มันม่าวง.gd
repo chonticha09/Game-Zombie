@@ -1,8 +1,8 @@
 extends Sprite2D
 
-var speed = 100
+var speed = 80
 var moving = true
-var stopPosition = 250
+var stopPosition = 950
 var waitTime = 5.0
 var elapsedTime = 0.0
 
