@@ -2,8 +2,7 @@ extends Sprite2D
 
 var speed = 80
 var moving = true
-var stopPosition = 950
-var waitTime = 5.0
+var stopPosition = 100
 var elapsedTime = 0.0
 
 var textureRect = null
@@ -27,22 +26,18 @@ func _process(delta):
 			moving = false
 			elapsedTime = 0.0
 
-	if !moving:
+	else:
 		elapsedTime += delta
 
-		if elapsedTime >= waitTime:
-			hide_textureRect()
-			moving = true
-			elapsedTime = 0.0
-			
 	if position.x < -100:  # Check if character goes out of frame
 		position = initialPosition  # Reset position to initial position
 
 func show_textureRect():
 	if textureRect != null:
 		pictureTexture = preload("res://กล่องข้อความ.png")
-		textureRect.texture = pictureTexture
-		textureRect.visible = true
+		if pictureTexture != null:
+			textureRect.texture = pictureTexture
+			textureRect.visible = true
 
 func hide_textureRect():
 	if textureRect != null:
