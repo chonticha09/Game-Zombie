@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://enqs25ysmuyn"]
+[gd_scene load_steps=11 format=3 uid="uid://enqs25ysmuyn"]
 
 [ext_resource type="Texture2D" uid="uid://cs5lxbhobrpjw" path="res://อาหารจีน/พื้นหลังอาหารจีน.png" id="1_huasp"]
 [ext_resource type="Texture2D" uid="uid://bi8qnd8lwyrm1" path="res://อาหารจีน/ครัวอาหารจีนnew.png" id="2_47thu"]
@@ -6,8 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://dj05ndrh64ygy" path="res://อาหารจีน/รูปร้านอาหารจีน.png" id="3_hsai2"]
 [ext_resource type="Texture2D" uid="uid://bkg5ianvpqg8l" path="res://อาหารจีน/จาน+เป็ด.png" id="4_tepdu"]
 [ext_resource type="Texture2D" uid="uid://ptgbe6hgld36" path="res://อาหารจีน/แตงกวา+จาน.png" id="5_w8o44"]
-[ext_resource type="AudioStream" path="res://อาหารจีน/a-ride-through-chinese-valley-62241.mp3" id="7_hip7w"]
-[ext_resource type="Script" path="res://ซีนต่างๆ/Main.gd" id="8_t6yhb"]
+[ext_resource type="Texture2D" uid="uid://b3ftt6rgvl84n" path="res://อาหารจีน/จาน.png" id="6_h7h7f"]
+[ext_resource type="AudioStream" uid="uid://cu4e1yscnd4bt" path="res://a-ride-through-chinese-valley-62241.mp3" id="7_0ob4d"]
+[ext_resource type="Texture2D" uid="uid://78jah1reb6ru" path="res://อาหารจีน/ถังซอส.png" id="7_u2kfk"]
+[ext_resource type="Script" path="res://ซีนต่างๆ/Mainn.gd" id="8_2x5bi"]
 
 [node name="ร้านอาหารจีน" type="Node2D"]
 
@@ -44,13 +46,35 @@ offset_bottom = 1115.73
 scale = Vector2(0.37013, 0.37013)
 texture_normal = ExtResource("5_w8o44")
 
+[node name="จาน" type="TextureRect" parent="พื้นหลังอาหารจีน"]
+offset_left = -1277.58
+offset_top = 58.2898
+offset_right = 456.415
+offset_bottom = 1768.29
+scale = Vector2(0.215574, 0.194371)
+texture = ExtResource("6_h7h7f")
+
+[node name="จาน2" type="TextureRect" parent="พื้นหลังอาหารจีน"]
+offset_left = -848.371
+offset_top = 58.2888
+offset_right = 885.629
+offset_bottom = 1768.29
+scale = Vector2(0.215574, 0.194371)
+texture = ExtResource("6_h7h7f")
+
+[node name="TextureButton" type="TextureButton" parent="พื้นหลังอาหารจีน"]
+offset_left = -392.332
+offset_top = 28.342
+offset_right = 709.668
+offset_bottom = 1133.34
+scale = Vector2(0.168656, 0.168656)
+texture_normal = ExtResource("7_u2kfk")
+
 [node name="รูปร้านอาหารจีน" type="Sprite2D" parent="."]
 position = Vector2(1769, 315)
 scale = Vector2(0.331071, 0.331071)
 texture = ExtResource("3_hsai2")
 
-[node name="Main" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("7_hip7w")
-volume_db = 1.0
-autoplay = true
-script = ExtResource("8_t6yhb")
+[node name="Mainn" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_0ob4d")
+script = ExtResource("8_2x5bi")
