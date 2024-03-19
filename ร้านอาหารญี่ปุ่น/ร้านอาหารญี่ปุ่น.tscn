@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://cufvf423vkgaa"]
+[gd_scene load_steps=42 format=3 uid="uid://cufvf423vkgaa"]
 
 [ext_resource type="Texture2D" uid="uid://b2krk2ejcqsdb" path="res://ร้านอาหารญี่ปุ่น/ฉากหลังร้านอาหารญี่ปุ่น.png" id="1_m8jqe"]
 [ext_resource type="Texture2D" uid="uid://1ajkhqu0wxxv" path="res://ร้านอาหารญี่ปุ่น/ครัว.png" id="2_4cb8c"]
@@ -9,7 +9,6 @@
 [ext_resource type="Script" path="res://ร้านอาหารที่ 2/มันม่าวง.gd" id="4_xldh6"]
 [ext_resource type="Texture2D" uid="uid://xywdhvn5abj0" path="res://ร้านอาหารญี่ปุ่น/ถาดกุ้ง.png" id="5_y7ghj"]
 [ext_resource type="Texture2D" uid="uid://cxlx4iss6y0eq" path="res://ร้านอาหารญี่ปุ่น/ถาดทูน่า.png" id="6_88ivh"]
-[ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/main.gd" id="6_e7a31"]
 [ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/กุ้ง.gd" id="7_fvqxv"]
 [ext_resource type="Texture2D" uid="uid://dd1ocaa0x5kod" path="res://ร้านอาหารญี่ปุ่น/ถาดไข่หวาน.png" id="7_rtnbt"]
 [ext_resource type="Texture2D" uid="uid://6iijta6y8yle" path="res://ร้านอาหารญี่ปุ่น/ข้าวญี่ปุ่น.png" id="8_nl7he"]
@@ -51,6 +50,11 @@ position = Vector2(622.5, 327)
 scale = Vector2(0.448841, 0.459901)
 texture = ExtResource("1_m8jqe")
 
+[node name="CharacterBody2D" type="CharacterBody2D" parent="ฉากหลังร้านอาหารญี่ปุ่น"]
+visible = false
+position = Vector2(-1386.91, -711.023)
+scale = Vector2(2.22796, 2.17438)
+
 [node name="มันม่าวง" type="Sprite2D" parent="ฉากหลังร้านอาหารญี่ปุ่น"]
 position = Vector2(1219.81, -93.4984)
 scale = Vector2(0.567067, 0.55343)
@@ -58,15 +62,13 @@ texture = ExtResource("3_y3ibh")
 script = ExtResource("4_xldh6")
 
 [node name="ครัว" type="Sprite2D" parent="ฉากหลังร้านอาหารญี่ปุ่น"]
-position = Vector2(8.91199, 450.097)
+position = Vector2(8.91192, 450.097)
 scale = Vector2(0.996969, 0.935298)
 texture = ExtResource("2_4cb8c")
 
-[node name="main" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_lv08g")
-volume_db = 1.0
 autoplay = true
-script = ExtResource("6_e7a31")
 
 [node name="ขวดสาเก๋" type="Sprite2D" parent="."]
 position = Vector2(1211, 412)
@@ -336,6 +338,7 @@ offset_right = -4.0
 offset_bottom = 58.0
 
 [node name="เซ็ทติ้ง" type="TextureRect" parent="Menu"]
+visible = false
 layout_mode = 0
 offset_left = 215.0
 offset_top = 83.0
@@ -371,8 +374,8 @@ offset_bottom = 542.324
 texture = ExtResource("28_gvhvq")
 
 [node name="ป้าย4" type="Sprite2D" parent="."]
-position = Vector2(670.5, 32.692)
-scale = Vector2(0.382743, 0.342796)
+position = Vector2(670.5, 36.692)
+scale = Vector2(0.382743, 0.381631)
 texture = ExtResource("29_nuswn")
 
 [node name="ป้าย3" type="Sprite2D" parent="."]
@@ -394,12 +397,12 @@ scale = Vector2(0.437, 0.437)
 texture = ExtResource("32_ac6rh")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 485.0
-offset_top = 6.0
-offset_right = 545.0
-offset_bottom = 58.0
+offset_left = 489.0
+offset_top = 12.0
+offset_right = 529.0
+offset_bottom = 64.0
 theme_override_font_sizes/font_size = 35
-text = "120"
+text = "60"
 script = ExtResource("33_t808b")
 
 [connection signal="pressed" from="ข้าวญี่ปุ่น" to="ข้าวญี่ปุ่น" method="_on_pressed"]

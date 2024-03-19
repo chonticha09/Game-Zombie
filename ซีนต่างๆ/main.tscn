@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b3gg6avnuypx6"]
+[gd_scene load_steps=8 format=3 uid="uid://b3gg6avnuypx6"]
 
 [ext_resource type="Texture2D" uid="uid://c5q8meqy0gw8l" path="res://หน้าหลัก/ฉากกกกกก.png" id="1_7c4r1"]
 [ext_resource type="Texture2D" uid="uid://4vr3hvcfsr6a" path="res://หน้าหลัก/ฟอนซอมบี็.png" id="2_es13g"]
@@ -6,14 +6,13 @@
 [ext_resource type="AudioStream" uid="uid://doutnasnxuaej" path="res://Sound/upbeat-funky-retro-131297 (1).mp3" id="4_cy848"]
 [ext_resource type="Script" path="res://โค้ด/Main.gd" id="4_ua0t8"]
 [ext_resource type="AudioStream" uid="uid://c3na8qgteo4ps" path="res://Sound/shooting-sound-fx-159024.mp3" id="5_0458e"]
-[ext_resource type="Script" path="res://ซีนต่างๆ/Sound_main.gd" id="5_vyee2"]
 [ext_resource type="Texture2D" uid="uid://bbfunqn3iq2bp" path="res://หน้าหลัก/ฟอนplay1.png" id="7_oqj4f"]
 
 [node name="Main" type="Node2D"]
 
 [node name="ฉากกกกกก" type="Sprite2D" parent="."]
-position = Vector2(617.5, 328.5)
-scale = Vector2(0.45306, 0.465763)
+position = Vector2(582.5, 328.5)
+scale = Vector2(0.42872, 0.465763)
 texture = ExtResource("1_7c4r1")
 
 [node name="Main" type="Control" parent="ฉากกกกกก"]
@@ -27,13 +26,13 @@ script = ExtResource("4_ua0t8")
 
 [node name="Sound_play" type="AudioStreamPlayer2D" parent="ฉากกกกกก/Main"]
 stream = ExtResource("5_0458e")
-volume_db = 15.0
+volume_db = 6.0
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="ฉากกกกกก/Main"]
+[node name="Sound_main" type="AudioStreamPlayer2D" parent="ฉากกกกกก/Main"]
 stream = ExtResource("4_cy848")
+volume_db = -6.5
 autoplay = true
 panning_strength = 0.5
-script = ExtResource("5_vyee2")
 
 [node name="TextureButton" type="TextureButton" parent="ฉากกกกกก/Main"]
 layout_mode = 0
