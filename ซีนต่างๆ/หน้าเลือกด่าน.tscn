@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://cocfgpg68g847"]
+[gd_scene load_steps=38 format=3 uid="uid://cocfgpg68g847"]
 
 [ext_resource type="Texture2D" uid="uid://bsuax7duhxeco" path="res://ฉากเลือกด่านใหม่/ฉากหลัง.png" id="1_f4xjm"]
 [ext_resource type="Script" path="res://ซีนต่างๆ/การเลือกด่าน.gd" id="2_1h2d5"]
@@ -35,6 +35,8 @@
 [ext_resource type="Texture2D" uid="uid://3cl5qhocvl0w" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/14.png" id="30_0h3ro"]
 [ext_resource type="Texture2D" uid="uid://bhb7jalcmha1c" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/15.png" id="31_ap1tb"]
 [ext_resource type="Texture2D" uid="uid://blc0f7kv01f2r" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/15.png" id="32_mdm7l"]
+[ext_resource type="Texture2D" uid="uid://ia2j8bh8vo30" path="res://ย้อนกลับ/Back-Button-PNG-Picture.png" id="34_tlii6"]
+[ext_resource type="Texture2D" uid="uid://bxrjgyvhbk8af" path="res://ย้อนกลับ/Back.png" id="35_5xp28"]
 
 [node name="หน้าเลือกด่าน" type="Node2D"]
 
@@ -200,6 +202,15 @@ scale = Vector2(0.190585, 0.190585)
 texture_normal = ExtResource("31_ap1tb")
 texture_hover = ExtResource("32_mdm7l")
 
+[node name="Back" type="TextureButton" parent="ฉากหลัง/การเลือกด่าน"]
+offset_left = -1380.0
+offset_top = -670.0
+offset_right = -611.0
+offset_bottom = 88.0
+scale = Vector2(0.234667, 0.218952)
+texture_normal = ExtResource("34_tlii6")
+texture_hover = ExtResource("35_5xp28")
+
 [node name="S1" type="AudioStreamPlayer" parent="ฉากหลัง/การเลือกด่าน"]
 stream = ExtResource("18_kg6no")
 volume_db = 2.0
@@ -240,3 +251,5 @@ script = ExtResource("20_sa1mp")
 [connection signal="pressed" from="ฉากหลัง/การเลือกด่าน/ด่านที14" to="ฉากหลัง/การเลือกด่าน" method="_on_ด่านที14_pressed"]
 [connection signal="mouse_entered" from="ฉากหลัง/การเลือกด่าน/ด่านที15" to="ฉากหลัง/การเลือกด่าน" method="_on_ด่านที15_mouse_entered"]
 [connection signal="pressed" from="ฉากหลัง/การเลือกด่าน/ด่านที15" to="ฉากหลัง/การเลือกด่าน" method="_on_ด่านที15_pressed"]
+[connection signal="mouse_entered" from="ฉากหลัง/การเลือกด่าน/Back" to="ฉากหลัง/การเลือกด่าน" method="_on_back_mouse_entered"]
+[connection signal="pressed" from="ฉากหลัง/การเลือกด่าน/Back" to="ฉากหลัง/การเลือกด่าน" method="_on_back_pressed"]
