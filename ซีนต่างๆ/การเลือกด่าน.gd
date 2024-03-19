@@ -101,6 +101,5 @@ func _on_ด่านที15_mouse_entered():
 
 func _on_back_pressed():
 	get_tree().change_scene_to_file("res://ซีนต่างๆ/main.tscn")
-
 func _on_back_mouse_entered():
 		$S1.play()
