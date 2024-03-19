@@ -1,32 +1,40 @@
-[gd_scene load_steps=28 format=3 uid="uid://cocfgpg68g847"]
+[gd_scene load_steps=36 format=3 uid="uid://cocfgpg68g847"]
 
 [ext_resource type="Texture2D" uid="uid://bsuax7duhxeco" path="res://ฉากเลือกด่านใหม่/ฉากหลัง.png" id="1_f4xjm"]
 [ext_resource type="Script" path="res://ซีนต่างๆ/การเลือกด่าน.gd" id="2_1h2d5"]
-[ext_resource type="Texture2D" uid="uid://byclun1x0ylvp" path="res://ฉากเลือกด่านใหม่/1.png" id="2_klg41"]
-[ext_resource type="Texture2D" uid="uid://ysb8ngc0gote" path="res://ฉากเลือกด่านใหม่/2.png" id="3_g8k3c"]
-[ext_resource type="Texture2D" uid="uid://dvj7pgja4eyj1" path="res://ฉากเลือกด่านใหม่/3.png" id="4_jwnu3"]
+[ext_resource type="Texture2D" uid="uid://cc17us72xo044" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/1.png" id="3_j7fc6"]
 [ext_resource type="Texture2D" uid="uid://du4pkptmkyaub" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/1.png" id="4_p6hlq"]
-[ext_resource type="Texture2D" uid="uid://cwyasfeufehr5" path="res://ฉากเลือกด่านใหม่/4.png" id="5_5a0ka"]
-[ext_resource type="Texture2D" uid="uid://dmix7sq136jsi" path="res://ฉากเลือกด่านใหม่/5.png" id="6_0ac3x"]
+[ext_resource type="Texture2D" uid="uid://cgpun5td16ob8" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/2.png" id="5_g7f1r"]
 [ext_resource type="Texture2D" uid="uid://ibxeljl2rpqf" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/2.png" id="6_kfvoc"]
-[ext_resource type="Texture2D" uid="uid://drxrgnrr35wwj" path="res://ฉากเลือกด่านใหม่/6.png" id="7_tp1mm"]
-[ext_resource type="Texture2D" uid="uid://cnpysg33xwt1i" path="res://ฉากเลือกด่านใหม่/7.png" id="8_8xt20"]
+[ext_resource type="Texture2D" uid="uid://orpjh1j4jn4j" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/3.png" id="7_kui1n"]
 [ext_resource type="Texture2D" uid="uid://c3tnm16ao55eu" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/3.png" id="8_lt8vm"]
-[ext_resource type="Texture2D" uid="uid://b8yaax6n8gylf" path="res://ฉากเลือกด่านใหม่/8.png" id="9_hc2yc"]
+[ext_resource type="Texture2D" uid="uid://cp11qsn30eirk" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/4.png" id="9_22od5"]
 [ext_resource type="Texture2D" uid="uid://c6fssp2mswdgm" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/4.png" id="10_00hvg"]
-[ext_resource type="Texture2D" uid="uid://b226gfq5ok58k" path="res://ฉากเลือกด่านใหม่/9.png" id="10_hp1wf"]
-[ext_resource type="Texture2D" uid="uid://x11xbuyop64x" path="res://ฉากเลือกด่านใหม่/10.png" id="11_kitfv"]
-[ext_resource type="Texture2D" uid="uid://dc11rr2jwuf1k" path="res://ฉากเลือกด่านใหม่/11.png" id="12_3fdqm"]
+[ext_resource type="Texture2D" uid="uid://b5v6w0ud1fqbh" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/5.png" id="11_xp32x"]
 [ext_resource type="Texture2D" uid="uid://cqtr63tun2r4f" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/5.png" id="12_bpaoq"]
-[ext_resource type="Texture2D" uid="uid://boioqqcqfu7d2" path="res://ฉากเลือกด่านใหม่/12.png" id="13_4xx06"]
-[ext_resource type="Texture2D" uid="uid://b6dhd2lgbbc42" path="res://ฉากเลือกด่านใหม่/13.1.png" id="14_f257p"]
+[ext_resource type="Texture2D" uid="uid://4cwiouo2ub2u" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/6.png" id="13_0fs8e"]
 [ext_resource type="Texture2D" uid="uid://elx2dacde1o" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/6.png" id="14_jiyjq"]
-[ext_resource type="Texture2D" uid="uid://dqgifk6mtcyuo" path="res://ฉากเลือกด่านใหม่/14.png" id="15_ijlql"]
+[ext_resource type="Texture2D" uid="uid://c7d5igy0plqi0" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/7.png" id="15_uccy3"]
 [ext_resource type="Texture2D" uid="uid://bnxsb676iuiax" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/7.png" id="16_6yrdp"]
-[ext_resource type="Texture2D" uid="uid://bhy478yjv2y3j" path="res://ฉากเลือกด่านใหม่/15.png" id="16_hwofx"]
+[ext_resource type="Texture2D" uid="uid://h13tokbu6nv0" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/8.png" id="17_04lun"]
 [ext_resource type="AudioStream" uid="uid://cd1eani34p7lw" path="res://Sound/joyful-snowman_60sec-176773.mp3" id="17_jj52d"]
+[ext_resource type="Texture2D" uid="uid://qaloqa0qfyuf" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/8.png" id="18_bfkjt"]
 [ext_resource type="AudioStream" uid="uid://cksppv16gcpua" path="res://Sound/multi-pop-1-188165.mp3" id="18_kg6no"]
+[ext_resource type="Texture2D" uid="uid://cdrc8anf2o7e7" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/9.png" id="19_vrto0"]
+[ext_resource type="Texture2D" uid="uid://bh0j15p4mpfe3" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/9.png" id="20_36wpi"]
 [ext_resource type="Script" path="res://ซีนต่างๆ/เสียงหน้าเกม.gd" id="20_sa1mp"]
+[ext_resource type="Texture2D" uid="uid://dgdda0lxpp33c" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/10.png" id="21_4m4o5"]
+[ext_resource type="Texture2D" uid="uid://blfmfe3wpspit" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/10.png" id="22_1h8og"]
+[ext_resource type="Texture2D" uid="uid://d1p5iof6slvwx" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/11.png" id="23_od6n3"]
+[ext_resource type="Texture2D" uid="uid://belxt5ex1x75u" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/11.png" id="24_pr6py"]
+[ext_resource type="Texture2D" uid="uid://m2xikcmeqggt" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/12.png" id="25_86511"]
+[ext_resource type="Texture2D" uid="uid://eqxwe2yl7elj" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/12.png" id="26_ixywg"]
+[ext_resource type="Texture2D" uid="uid://dr2rqtnnjll76" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/13.png" id="27_f1sjt"]
+[ext_resource type="Texture2D" uid="uid://dbegsk13vdghs" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/13.png" id="28_y67bs"]
+[ext_resource type="Texture2D" uid="uid://b60yw37m1aohe" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/14.png" id="29_ngsp1"]
+[ext_resource type="Texture2D" uid="uid://3cl5qhocvl0w" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/14.png" id="30_0h3ro"]
+[ext_resource type="Texture2D" uid="uid://bhb7jalcmha1c" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/15.png" id="31_ap1tb"]
+[ext_resource type="Texture2D" uid="uid://blc0f7kv01f2r" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/15.png" id="32_mdm7l"]
 
 [node name="หน้าเลือกด่าน" type="Node2D"]
 
@@ -48,8 +56,8 @@ offset_left = -1386.23
 offset_top = 507.198
 offset_right = -873.23
 offset_bottom = 957.198
-scale = Vector2(0.307699, 0.307699)
-texture_normal = ExtResource("2_klg41")
+scale = Vector2(0.215571, 0.215571)
+texture_normal = ExtResource("3_j7fc6")
 texture_hover = ExtResource("4_p6hlq")
 
 [node name="ด่านที่2" type="TextureButton" parent="ฉากหลัง/การเลือกด่าน"]
@@ -58,8 +66,8 @@ offset_left = -1332.7
 offset_top = 337.779
 offset_right = -819.7
 offset_bottom = 787.779
-scale = Vector2(0.302304, 0.302304)
-texture_normal = ExtResource("3_g8k3c")
+scale = Vector2(0.210554, 0.210554)
+texture_normal = ExtResource("5_g7f1r")
 texture_hover = ExtResource("6_kfvoc")
 
 [node name="ด่านที3" type="TextureButton" parent="ฉากหลัง/การเลือกด่าน"]
@@ -68,8 +76,8 @@ offset_left = -1174.34
 offset_top = 229.774
 offset_right = -661.34
 offset_bottom = 679.774
-scale = Vector2(0.313417, 0.313417)
-texture_normal = ExtResource("4_jwnu3")
+scale = Vector2(0.206516, 0.206516)
+texture_normal = ExtResource("7_kui1n")
 texture_hover = ExtResource("8_lt8vm")
 
 [node name="ด่านที4" type="TextureButton" parent="ฉากหลัง/การเลือกด่าน"]
@@ -78,28 +86,28 @@ offset_left = -982.52
 offset_top = 174.713
 offset_right = -469.52
 offset_bottom = 624.713
-scale = Vector2(0.313169, 0.313169)
-texture_normal = ExtResource("5_5a0ka")
+scale = Vector2(0.207776, 0.207776)
+texture_normal = ExtResource("9_22od5")
 texture_hover = ExtResource("10_00hvg")
 
 [node name="ด่านที5" type="TextureButton" parent="ฉากหลัง/การเลือกด่าน"]
 layout_mode = 0
-offset_left = -781.778
-offset_top = 123.887
-offset_right = -268.778
-offset_bottom = 573.887
-scale = Vector2(0.313594, 0.313594)
-texture_normal = ExtResource("6_0ac3x")
+offset_left = -790.7
+offset_top = 134.476
+offset_right = 83.2998
+offset_bottom = 884.476
+scale = Vector2(0.204192, 0.204192)
+texture_normal = ExtResource("11_xp32x")
 texture_hover = ExtResource("12_bpaoq")
 
 [node name="ด่านที6" type="TextureButton" parent="ฉากหลัง/การเลือกด่าน"]
 layout_mode = 0
-offset_left = -572.114
-offset_top = 77.2974
-offset_right = -59.114
-offset_bottom = 527.297
-scale = Vector2(0.307464, 0.307464)
-texture_normal = ExtResource("7_tp1mm")
+offset_left = -587.728
+offset_top = 75.1797
+offset_right = 286.272
+offset_bottom = 825.18
+scale = Vector2(0.204154, 0.204154)
+texture_normal = ExtResource("13_0fs8e")
 texture_hover = ExtResource("14_jiyjq")
 
 [node name="ด่านที7" type="TextureButton" parent="ฉากหลัง/การเลือกด่าน"]
@@ -108,8 +116,8 @@ offset_left = -395.908
 offset_top = 5.29437
 offset_right = 117.092
 offset_bottom = 455.294
-scale = Vector2(0.296409, 0.296409)
-texture_normal = ExtResource("8_8xt20")
+scale = Vector2(0.202021, 0.202021)
+texture_normal = ExtResource("15_uccy3")
 texture_hover = ExtResource("16_6yrdp")
 
 [node name="ด่านที8" type="TextureButton" parent="ฉากหลัง/การเลือกด่าน"]
@@ -118,8 +126,9 @@ offset_left = -224.162
 offset_top = -73.0619
 offset_right = 288.838
 offset_bottom = 376.938
-scale = Vector2(0.307569, 0.307569)
-texture_normal = ExtResource("9_hc2yc")
+scale = Vector2(0.197982, 0.197982)
+texture_normal = ExtResource("17_04lun")
+texture_hover = ExtResource("18_bfkjt")
 
 [node name="ด่านที9" type="TextureButton" parent="ฉากหลัง/การเลือกด่าน"]
 layout_mode = 0
@@ -127,8 +136,9 @@ offset_left = -23.42
 offset_top = -81.5327
 offset_right = 489.58
 offset_bottom = 368.467
-scale = Vector2(0.307697, 0.307697)
-texture_normal = ExtResource("10_hp1wf")
+scale = Vector2(0.191723, 0.191723)
+texture_normal = ExtResource("19_vrto0")
+texture_hover = ExtResource("20_36wpi")
 
 [node name="ด่านที10" type="TextureButton" parent="ฉากหลัง/การเลือกด่าน"]
 layout_mode = 0
@@ -136,8 +146,9 @@ offset_left = 177.322
 offset_top = -56.12
 offset_right = 690.322
 offset_bottom = 393.88
-scale = Vector2(0.311823, 0.311823)
-texture_normal = ExtResource("11_kitfv")
+scale = Vector2(0.190577, 0.190577)
+texture_normal = ExtResource("21_4m4o5")
+texture_hover = ExtResource("22_1h8og")
 
 [node name="ด่านที11" type="TextureButton" parent="ฉากหลัง/การเลือกด่าน"]
 layout_mode = 0
@@ -145,8 +156,9 @@ offset_left = 382.525
 offset_top = -58.2378
 offset_right = 895.525
 offset_bottom = 391.762
-scale = Vector2(0.305128, 0.305128)
-texture_normal = ExtResource("12_3fdqm")
+scale = Vector2(0.186695, 0.186695)
+texture_normal = ExtResource("23_od6n3")
+texture_hover = ExtResource("24_pr6py")
 
 [node name="ด่านที12" type="TextureButton" parent="ฉากหลัง/การเลือกด่าน"]
 layout_mode = 0
@@ -154,8 +166,9 @@ offset_left = 583.267
 offset_top = -30.7072
 offset_right = 1096.27
 offset_bottom = 419.293
-scale = Vector2(0.308599, 0.308599)
-texture_normal = ExtResource("13_4xx06")
+scale = Vector2(0.188801, 0.188801)
+texture_normal = ExtResource("25_86511")
+texture_hover = ExtResource("26_ixywg")
 
 [node name="ด่านที13" type="TextureButton" parent="ฉากหลัง/การเลือกด่าน"]
 layout_mode = 0
@@ -163,8 +176,9 @@ offset_left = 786.239
 offset_top = -22.2362
 offset_right = 1299.24
 offset_bottom = 427.764
-scale = Vector2(0.301171, 0.301171)
-texture_normal = ExtResource("14_f257p")
+scale = Vector2(0.193814, 0.193814)
+texture_normal = ExtResource("27_f1sjt")
+texture_hover = ExtResource("28_y67bs")
 
 [node name="ด่านที14" type="TextureButton" parent="ฉากหลัง/การเลือกด่าน"]
 layout_mode = 0
@@ -172,8 +186,9 @@ offset_left = 982.52
 offset_top = -45.5316
 offset_right = 1495.52
 offset_bottom = 404.468
-scale = Vector2(0.301954, 0.301954)
-texture_normal = ExtResource("15_ijlql")
+scale = Vector2(0.184201, 0.184201)
+texture_normal = ExtResource("29_ngsp1")
+texture_hover = ExtResource("30_0h3ro")
 
 [node name="ด่านที15" type="TextureButton" parent="ฉากหลัง/การเลือกด่าน"]
 layout_mode = 0
@@ -181,8 +196,9 @@ offset_left = 1176.57
 offset_top = -49.7671
 offset_right = 1689.57
 offset_bottom = 400.233
-scale = Vector2(0.299514, 0.299514)
-texture_normal = ExtResource("16_hwofx")
+scale = Vector2(0.190585, 0.190585)
+texture_normal = ExtResource("31_ap1tb")
+texture_hover = ExtResource("32_mdm7l")
 
 [node name="S1" type="AudioStreamPlayer" parent="ฉากหลัง/การเลือกด่าน"]
 stream = ExtResource("18_kg6no")
