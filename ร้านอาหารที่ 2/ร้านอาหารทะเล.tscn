@@ -489,7 +489,7 @@ offset_bottom = 40.0
 [node name="เพลงหน้าเกม" type="AudioStreamPlayer2D" parent="."]
 scale = Vector2(0.234722, 0.234722)
 stream = ExtResource("26_nrbv2")
-volume_db = 9.5
+volume_db = 1.0
 autoplay = true
 script = ExtResource("37_22nk6")
 

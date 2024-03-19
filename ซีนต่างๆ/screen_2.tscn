@@ -160,7 +160,7 @@ stream = ExtResource("3_5idul")
 position = Vector2(0.118774, 5.39063)
 scale = Vector2(0.990541, 0.984158)
 stream = ExtResource("4_ca0ki")
-volume_db = 2.0
+volume_db = 1.0
 autoplay = true
 
 [connection signal="pressed" from="ฉากเลือกด่านไม่มีดาว/เลือกด่าน/TextureButton" to="ฉากเลือกด่านไม่มีดาว/เลือกด่าน" method="_on_texture_button_pressed"]

@@ -12,8 +12,8 @@
 [node name="Main" type="Node2D"]
 
 [node name="ฉากกกกกก" type="Sprite2D" parent="."]
-position = Vector2(582.5, 328.5)
-scale = Vector2(0.42872, 0.465763)
+position = Vector2(617.5, 328.5)
+scale = Vector2(0.45306, 0.465763)
 texture = ExtResource("1_7c4r1")
 
 [node name="Main" type="Control" parent="ฉากกกกกก"]
@@ -27,11 +27,10 @@ script = ExtResource("4_ua0t8")
 
 [node name="Sound_play" type="AudioStreamPlayer2D" parent="ฉากกกกกก/Main"]
 stream = ExtResource("5_0458e")
-volume_db = 6.0
+volume_db = 15.0
 
-[node name="Sound_main" type="AudioStreamPlayer2D" parent="ฉากกกกกก/Main"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="ฉากกกกกก/Main"]
 stream = ExtResource("4_cy848")
-volume_db = -6.5
 autoplay = true
 panning_strength = 0.5
 script = ExtResource("5_vyee2")
