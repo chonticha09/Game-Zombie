@@ -12,7 +12,7 @@
 [ext_resource type="Script" path="res://ซีนต่างๆ/Mainn.gd" id="8_2x5bi"]
 [ext_resource type="Texture2D" uid="uid://bwqyscirbjxok" path="res://เพิ่มเติม/R1.png" id="8_ka2q5"]
 [ext_resource type="Texture2D" uid="uid://d0usu5d6oirt5" path="res://เพิ่มเติม/R.png" id="9_o1jvg"]
-[ext_resource type="Script" path="res://ร้านอาหารทะเลใหม่/ร้านอาหารที่ 2/Home.gd" id="10_cmp83"]
+[ext_resource type="Script" path="res://ร้านอาหารทะเล/Home.gd" id="10_8ahyb"]
 [ext_resource type="Texture2D" uid="uid://cjihuyx26qsl1" path="res://เพิ่มเติม/หน้าตั้งค่า.png" id="11_gvrof"]
 [ext_resource type="Texture2D" uid="uid://cxwfd6sbr2rvx" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มเสียง.png" id="12_fo4qk"]
 [ext_resource type="Texture2D" uid="uid://0x72hgjpc72d" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มกลับ.png" id="13_qvms0"]
@@ -85,7 +85,7 @@ offset_bottom = 1074.6
 scale = Vector2(0.0783729, 0.0783729)
 texture_normal = ExtResource("8_ka2q5")
 texture_hover = ExtResource("9_o1jvg")
-script = ExtResource("10_cmp83")
+script = ExtResource("10_8ahyb")
 
 [node name="เซ็ทติ้ง" type="TextureRect" parent="พื้นหลังอาหารจีน/Home"]
 visible = false

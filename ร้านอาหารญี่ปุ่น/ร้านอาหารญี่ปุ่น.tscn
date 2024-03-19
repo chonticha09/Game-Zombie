@@ -1,8 +1,8 @@
-[gd_scene load_steps=48 format=3 uid="uid://cufvf423vkgaa"]
+[gd_scene load_steps=49 format=3 uid="uid://cufvf423vkgaa"]
 
 [ext_resource type="Texture2D" uid="uid://b2krk2ejcqsdb" path="res://ร้านอาหารญี่ปุ่น/ฉากหลังร้านอาหารญี่ปุ่น.png" id="1_m8jqe"]
 [ext_resource type="Texture2D" uid="uid://1ajkhqu0wxxv" path="res://ร้านอาหารญี่ปุ่น/ครัว.png" id="2_4cb8c"]
-[ext_resource type="Script" path="res://ร้านอาหารทะเลใหม่/ร้านอาหารที่ 2/มันม่าวง.gd" id="3_43cd4"]
+[ext_resource type="Script" path="res://ร้านอาหารทะเล/มันม่าวง.gd" id="3_i4sbl"]
 [ext_resource type="Texture2D" uid="uid://cehnb0dx2s7bv" path="res://ร้านอาหารญี่ปุ่น/ไข่กุ้งและสาหร่าย.png" id="3_j8lq5"]
 [ext_resource type="AudioStream" uid="uid://6qsw1dyfxddh" path="res://Sound/impatience-113686.mp3" id="3_lv08g"]
 [ext_resource type="Texture2D" uid="uid://c7x3itvoe431i" path="res://ร้านพิซซ่า/มันม่าวง.png" id="3_y3ibh"]
@@ -43,10 +43,11 @@
 [ext_resource type="Texture2D" uid="uid://dcud12j30hnx8" path="res://ร้านอาหารญี่ปุ่น/ถาดแซลม่อน.png" id="42_afocw"]
 [ext_resource type="Texture2D" uid="uid://bwqyscirbjxok" path="res://เพิ่มเติม/R1.png" id="42_njulb"]
 [ext_resource type="Texture2D" uid="uid://d0usu5d6oirt5" path="res://เพิ่มเติม/R.png" id="43_75ejs"]
+[ext_resource type="Script" path="res://ร้านอาหารทะเล/Home.gd" id="44_xqjyx"]
 [ext_resource type="Texture2D" uid="uid://mupjbtr614wp" path="res://เพิ่มเติม/Sound(1)_0.png" id="45_kkx3s"]
-[ext_resource type="Script" path="res://ร้านอาหารทะเลใหม่/ร้านอาหารที่ 2/Home.gd" id="45_myvms"]
 [ext_resource type="Script" path="res://Setting23/ปิดเสียง.gd" id="45_vxskn"]
 [ext_resource type="Texture2D" uid="uid://rrv2h2sc6nbf" path="res://เพิ่มเติม/Sound(2)_0.png" id="46_jns3q"]
+[ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/กลับหน้าเลือกด่าน.gd" id="48_vr2am"]
 
 [node name="ร้านอาหารญี่ปุ่น" type="Node2D"]
 metadata/_edit_horizontal_guides_ = []
@@ -65,7 +66,7 @@ scale = Vector2(2.22796, 2.17438)
 position = Vector2(1219.81, -93.4984)
 scale = Vector2(0.567067, 0.55343)
 texture = ExtResource("3_y3ibh")
-script = ExtResource("3_43cd4")
+script = ExtResource("3_i4sbl")
 
 [node name="ครัว" type="Sprite2D" parent="ฉากหลังร้านอาหารญี่ปุ่น"]
 position = Vector2(8.91192, 450.097)
@@ -420,9 +421,10 @@ offset_bottom = 1764.0
 scale = Vector2(0.0363166, 0.0363166)
 texture_normal = ExtResource("42_njulb")
 texture_hover = ExtResource("43_75ejs")
-script = ExtResource("45_myvms")
+script = ExtResource("44_xqjyx")
 
 [node name="หน้าตั้งค่า2" type="TextureRect" parent="Home"]
+visible = false
 layout_mode = 0
 offset_left = 7655.0
 offset_top = 3194.0
@@ -431,6 +433,7 @@ offset_bottom = 15337.0
 texture = ExtResource("25_hkx5c")
 
 [node name="เปิดเสียง" type="TextureButton" parent="Home/หน้าตั้งค่า2"]
+layout_mode = 0
 offset_left = 4763.56
 offset_top = 4102.94
 offset_right = 5441.56
@@ -449,13 +452,16 @@ offset_bottom = 528.823
 scale = Vector2(1.22069, 1.22069)
 texture = ExtResource("46_jns3q")
 
-[node name="TextureButton2" type="TextureButton" parent="Home/หน้าตั้งค่า2"]
-offset_left = 7902.63
-offset_top = 4405.83
-offset_right = 8027.63
-offset_bottom = 4531.83
-scale = Vector2(19.2631, 19.2631)
-texture_normal = ExtResource("28_gvhvq")
+[node name="กลับหน้าเลือกด่าน" type="TextureButton" parent="Home/หน้าตั้งค่า2"]
+layout_mode = 0
+offset_left = 8012.77
+offset_top = 4185.54
+offset_right = 9762.77
+offset_bottom = 5935.54
+scale = Vector2(1.67477, 1.67477)
+texture_normal = ExtResource("42_njulb")
+texture_hover = ExtResource("43_75ejs")
+script = ExtResource("48_vr2am")
 
 [connection signal="pressed" from="ข้าวญี่ปุ่น" to="ข้าวญี่ปุ่น" method="_on_pressed"]
 [connection signal="pressed" from="กุ้ง" to="กุ้ง" method="_on_pressed"]
@@ -465,3 +471,4 @@ texture_normal = ExtResource("28_gvhvq")
 [connection signal="pressed" from="Menu/Button" to="Menu" method="_on_button_pressed"]
 [connection signal="pressed" from="Home" to="Home" method="_on_pressed"]
 [connection signal="pressed" from="Home/หน้าตั้งค่า2/เปิดเสียง" to="Home/หน้าตั้งค่า2/เปิดเสียง" method="_on_pressed"]
+[connection signal="pressed" from="Home/หน้าตั้งค่า2/กลับหน้าเลือกด่าน" to="Home/หน้าตั้งค่า2/กลับหน้าเลือกด่าน" method="_on_pressed"]
