@@ -26,4 +26,4 @@ func change_scene_to_next():
 	# ตรวจสอบว่าวิดีโอเล่นเสร็จแล้วหรือไม่
 	if video_finished:
 		# โหลดหน้าจอหรือฉากต่อไป
-		get_tree().change_scene_to_file("res://ซีนต่างๆ/screen_2.tscn")
+		get_tree().change_scene_to_file("res://ซีนต่างๆ/หน้าเลือกด่าน.tscn")
