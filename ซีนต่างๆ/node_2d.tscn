@@ -512,7 +512,7 @@ offset_bottom = -63.0
 
 [node name="หน้าเกม" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("29_42cr0")
-volume_db = 2.0
+volume_db = 1.0
 autoplay = true
 
 [node name="คู่มือเกม" type="Control" parent="."]

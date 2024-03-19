@@ -12,7 +12,7 @@ func _ready():
 
 func load_texture(path: String, texture_rect: TextureRect) -> void:
 	# โหลดรูปภาพจาก path และกำหนดให้ TextureRect
-	var texture = preload("res://กล่องข้อความ.png")
+	var texture = preload("res://เพิ่มเติม/หน้าตั้งค่า.png")
 	texture_rect.texture = texture
 
 # เมื่อปุ่มถูกกด

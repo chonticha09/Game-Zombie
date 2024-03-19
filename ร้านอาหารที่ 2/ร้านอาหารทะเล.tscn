@@ -3,7 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://kb8w6ldq5jnh" path="res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/แบ็กกราว.png" id="1_1t1du"]
 [ext_resource type="Texture2D" uid="uid://de038mx8pphaq" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ป้าย4.png" id="2_5n8yn"]
 [ext_resource type="Script" path="res://โค้ด/Label.gd" id="3_m1ivo"]
-[ext_resource type="Script" path="res://ร้านอาหารที่ 2/น้องมันม่วง.gd" id="4_i5hhp"]
 [ext_resource type="Texture2D" uid="uid://c7x3itvoe431i" path="res://ร้านพิซซ่า/มันม่าวง.png" id="5_lvs0i"]
 [ext_resource type="Texture2D" uid="uid://draaee8kij6aa" path="res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/ถาดฟ้า.png" id="5_yag4j"]
 [ext_resource type="Texture2D" uid="uid://s8v0s175vlyb" path="res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/ครัว.png" id="6_i0af6"]
@@ -38,6 +37,7 @@
 [ext_resource type="Script" path="res://ร้านอาหารที่ 2/ถาดผักกาด.gd" id="31_7ghl3"]
 [ext_resource type="Script" path="res://ร้านอาหารที่ 2/ถาดซอส.gd" id="33_e3q8r"]
 [ext_resource type="Script" path="res://โค้ด/Menu.gd" id="36_l7swh"]
+[ext_resource type="Script" path="res://ร้านอาหารที่ 2/เพลงหน้าเกม.gd" id="37_22nk6"]
 [ext_resource type="Texture2D" uid="uid://dlw1hdxmkgic5" path="res://หน้าหลัก/ไอคอนเมนูจ้า.png" id="37_ssxr3"]
 [ext_resource type="Texture2D" uid="uid://cjihuyx26qsl1" path="res://เพิ่มเติม/หน้าตั้งค่า.png" id="38_hx4y2"]
 [ext_resource type="Script" path="res://โค้ด/คู่มือเกม.gd" id="38_tv0o1"]
@@ -71,10 +71,6 @@ theme_override_font_sizes/font_size = 70
 text = "120"
 script = ExtResource("3_m1ivo")
 metadata/_edit_use_anchors_ = true
-
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-visible = false
-script = ExtResource("4_i5hhp")
 
 [node name="มันม่าวง" type="Sprite2D" parent="."]
 position = Vector2(1171, 322)
@@ -156,7 +152,7 @@ scale = Vector2(0.124069, 0.124069)
 texture = ExtResource("5_yag4j")
 
 [node name="กะทะnew" type="Sprite2D" parent="."]
-position = Vector2(351, 420)
+position = Vector2(360, 420)
 scale = Vector2(0.173015, 0.173015)
 texture = ExtResource("10_ovkgd")
 
@@ -166,7 +162,7 @@ scale = Vector2(0.173015, 0.173015)
 texture = ExtResource("10_ovkgd")
 
 [node name="กะทะnew3" type="Sprite2D" parent="."]
-position = Vector2(348, 544)
+position = Vector2(354, 544)
 scale = Vector2(0.173015, 0.173015)
 texture = ExtResource("10_ovkgd")
 
@@ -493,7 +489,9 @@ offset_bottom = 40.0
 [node name="เพลงหน้าเกม" type="AudioStreamPlayer2D" parent="."]
 scale = Vector2(0.234722, 0.234722)
 stream = ExtResource("26_nrbv2")
-volume_db = 9.5
+volume_db = 1.0
+autoplay = true
+script = ExtResource("37_22nk6")
 
 [node name="Menu" type="Control" parent="."]
 layout_mode = 3
