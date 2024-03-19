@@ -1,0 +1,56 @@
+[gd_scene load_steps=9 format=3 uid="uid://enqs25ysmuyn"]
+
+[ext_resource type="Texture2D" uid="uid://cs5lxbhobrpjw" path="res://อาหารจีน/พื้นหลังอาหารจีน.png" id="1_huasp"]
+[ext_resource type="Texture2D" uid="uid://bi8qnd8lwyrm1" path="res://อาหารจีน/ครัวอาหารจีนnew.png" id="2_47thu"]
+[ext_resource type="Texture2D" uid="uid://btfm6apq0j1c5" path="res://อาหารจีน/ต้นหอม+จาน.png" id="3_g5uch"]
+[ext_resource type="Texture2D" uid="uid://dj05ndrh64ygy" path="res://อาหารจีน/รูปร้านอาหารจีน.png" id="3_hsai2"]
+[ext_resource type="Texture2D" uid="uid://bkg5ianvpqg8l" path="res://อาหารจีน/จาน+เป็ด.png" id="4_tepdu"]
+[ext_resource type="Texture2D" uid="uid://ptgbe6hgld36" path="res://อาหารจีน/แตงกวา+จาน.png" id="5_w8o44"]
+[ext_resource type="AudioStream" path="res://อาหารจีน/a-ride-through-chinese-valley-62241.mp3" id="7_hip7w"]
+[ext_resource type="Script" path="res://ซีนต่างๆ/Main.gd" id="8_t6yhb"]
+
+[node name="ร้านอาหารจีน" type="Node2D"]
+
+[node name="พื้นหลังอาหารจีน" type="Sprite2D" parent="."]
+position = Vector2(624.502, 326.75)
+scale = Vector2(0.44733, 0.4675)
+texture = ExtResource("1_huasp")
+
+[node name="ครัวอาหารจีนnew" type="Sprite2D" parent="พื้นหลังอาหารจีน"]
+position = Vector2(-3.3573, 314.973)
+texture = ExtResource("2_47thu")
+
+[node name="ต้นหอม" type="TextureButton" parent="พื้นหลังอาหารจีน"]
+offset_left = -1360.3
+offset_top = 456.15
+offset_right = -439.298
+offset_bottom = 1115.15
+scale = Vector2(0.357986, 0.357986)
+texture_normal = ExtResource("3_g5uch")
+
+[node name="เป็ด" type="TextureButton" parent="พื้นหลังอาหารจีน"]
+offset_left = -1000.38
+offset_top = 451.872
+offset_right = -79.3843
+offset_bottom = 1114.87
+scale = Vector2(0.364783, 0.364783)
+texture_normal = ExtResource("4_tepdu")
+
+[node name="แตงกวา" type="TextureButton" parent="พื้นหลังอาหารจีน"]
+offset_left = -642.707
+offset_top = 449.733
+offset_right = 278.293
+offset_bottom = 1115.73
+scale = Vector2(0.37013, 0.37013)
+texture_normal = ExtResource("5_w8o44")
+
+[node name="รูปร้านอาหารจีน" type="Sprite2D" parent="."]
+position = Vector2(1769, 315)
+scale = Vector2(0.331071, 0.331071)
+texture = ExtResource("3_hsai2")
+
+[node name="Main" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_hip7w")
+volume_db = 1.0
+autoplay = true
+script = ExtResource("8_t6yhb")
