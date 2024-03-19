@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://cocfgpg68g847"]
+[gd_scene load_steps=28 format=3 uid="uid://cocfgpg68g847"]
 
 [ext_resource type="Texture2D" uid="uid://bsuax7duhxeco" path="res://ฉากเลือกด่านใหม่/ฉากหลัง.png" id="1_f4xjm"]
 [ext_resource type="Script" path="res://ซีนต่างๆ/การเลือกด่าน.gd" id="2_1h2d5"]
@@ -11,16 +11,21 @@
 [ext_resource type="Texture2D" uid="uid://ibxeljl2rpqf" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/2.png" id="6_kfvoc"]
 [ext_resource type="Texture2D" uid="uid://drxrgnrr35wwj" path="res://ฉากเลือกด่านใหม่/6.png" id="7_tp1mm"]
 [ext_resource type="Texture2D" uid="uid://cnpysg33xwt1i" path="res://ฉากเลือกด่านใหม่/7.png" id="8_8xt20"]
+[ext_resource type="Texture2D" uid="uid://c3tnm16ao55eu" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/3.png" id="8_lt8vm"]
 [ext_resource type="Texture2D" uid="uid://b8yaax6n8gylf" path="res://ฉากเลือกด่านใหม่/8.png" id="9_hc2yc"]
+[ext_resource type="Texture2D" uid="uid://c6fssp2mswdgm" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/4.png" id="10_00hvg"]
 [ext_resource type="Texture2D" uid="uid://b226gfq5ok58k" path="res://ฉากเลือกด่านใหม่/9.png" id="10_hp1wf"]
 [ext_resource type="Texture2D" uid="uid://x11xbuyop64x" path="res://ฉากเลือกด่านใหม่/10.png" id="11_kitfv"]
 [ext_resource type="Texture2D" uid="uid://dc11rr2jwuf1k" path="res://ฉากเลือกด่านใหม่/11.png" id="12_3fdqm"]
+[ext_resource type="Texture2D" uid="uid://cqtr63tun2r4f" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/5.png" id="12_bpaoq"]
 [ext_resource type="Texture2D" uid="uid://boioqqcqfu7d2" path="res://ฉากเลือกด่านใหม่/12.png" id="13_4xx06"]
 [ext_resource type="Texture2D" uid="uid://b6dhd2lgbbc42" path="res://ฉากเลือกด่านใหม่/13.1.png" id="14_f257p"]
+[ext_resource type="Texture2D" uid="uid://elx2dacde1o" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/6.png" id="14_jiyjq"]
 [ext_resource type="Texture2D" uid="uid://dqgifk6mtcyuo" path="res://ฉากเลือกด่านใหม่/14.png" id="15_ijlql"]
+[ext_resource type="Texture2D" uid="uid://bnxsb676iuiax" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/7.png" id="16_6yrdp"]
 [ext_resource type="Texture2D" uid="uid://bhy478yjv2y3j" path="res://ฉากเลือกด่านใหม่/15.png" id="16_hwofx"]
 [ext_resource type="AudioStream" uid="uid://cd1eani34p7lw" path="res://Sound/joyful-snowman_60sec-176773.mp3" id="17_jj52d"]
-[ext_resource type="AudioStream" path="res://Sound/multi-pop-1-188165.mp3" id="18_kg6no"]
+[ext_resource type="AudioStream" uid="uid://cksppv16gcpua" path="res://Sound/multi-pop-1-188165.mp3" id="18_kg6no"]
 [ext_resource type="Script" path="res://ซีนต่างๆ/เสียงหน้าเกม.gd" id="20_sa1mp"]
 
 [node name="หน้าเลือกด่าน" type="Node2D"]
@@ -65,6 +70,7 @@ offset_right = -661.34
 offset_bottom = 679.774
 scale = Vector2(0.313417, 0.313417)
 texture_normal = ExtResource("4_jwnu3")
+texture_hover = ExtResource("8_lt8vm")
 
 [node name="ด่านที4" type="TextureButton" parent="ฉากหลัง/การเลือกด่าน"]
 layout_mode = 0
@@ -74,6 +80,7 @@ offset_right = -469.52
 offset_bottom = 624.713
 scale = Vector2(0.313169, 0.313169)
 texture_normal = ExtResource("5_5a0ka")
+texture_hover = ExtResource("10_00hvg")
 
 [node name="ด่านที5" type="TextureButton" parent="ฉากหลัง/การเลือกด่าน"]
 layout_mode = 0
@@ -83,6 +90,7 @@ offset_right = -268.778
 offset_bottom = 573.887
 scale = Vector2(0.313594, 0.313594)
 texture_normal = ExtResource("6_0ac3x")
+texture_hover = ExtResource("12_bpaoq")
 
 [node name="ด่านที6" type="TextureButton" parent="ฉากหลัง/การเลือกด่าน"]
 layout_mode = 0
@@ -92,6 +100,7 @@ offset_right = -59.114
 offset_bottom = 527.297
 scale = Vector2(0.307464, 0.307464)
 texture_normal = ExtResource("7_tp1mm")
+texture_hover = ExtResource("14_jiyjq")
 
 [node name="ด่านที7" type="TextureButton" parent="ฉากหลัง/การเลือกด่าน"]
 layout_mode = 0
@@ -101,6 +110,7 @@ offset_right = 117.092
 offset_bottom = 455.294
 scale = Vector2(0.296409, 0.296409)
 texture_normal = ExtResource("8_8xt20")
+texture_hover = ExtResource("16_6yrdp")
 
 [node name="ด่านที8" type="TextureButton" parent="ฉากหลัง/การเลือกด่าน"]
 layout_mode = 0
@@ -174,14 +184,12 @@ offset_bottom = 400.233
 scale = Vector2(0.299514, 0.299514)
 texture_normal = ExtResource("16_hwofx")
 
-[node name="Sound" type="AudioStreamPlayer" parent="ฉากหลัง/การเลือกด่าน"]
+[node name="S1" type="AudioStreamPlayer" parent="ฉากหลัง/การเลือกด่าน"]
 stream = ExtResource("18_kg6no")
-volume_db = -13.929
+volume_db = 2.0
 
 [node name="เสียงหน้าเกม" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("17_jj52d")
-volume_db = 1.0
-autoplay = true
 script = ExtResource("20_sa1mp")
 
 [connection signal="mouse_entered" from="ฉากหลัง/การเลือกด่าน/ด่านที่1" to="ฉากหลัง/การเลือกด่าน" method="_on_ด่านที่1_mouse_entered"]
