@@ -11,8 +11,8 @@
 [node name="Main" type="Node2D"]
 
 [node name="ฉากกกกกก" type="Sprite2D" parent="."]
-position = Vector2(582.5, 328.5)
-scale = Vector2(0.42872, 0.465763)
+position = Vector2(615.5, 328.5)
+scale = Vector2(0.451669, 0.465763)
 texture = ExtResource("1_7c4r1")
 
 [node name="Main" type="Control" parent="ฉากกกกกก"]
