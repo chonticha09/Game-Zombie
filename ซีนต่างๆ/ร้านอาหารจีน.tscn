@@ -172,6 +172,7 @@ scale = Vector2(0.371824, 0.371824)
 texture_normal = ExtResource("19_2clxw")
 
 [node name="ซาลาเปา3" type="TextureButton" parent="พื้นหลังอาหารจีน/ที่นึ่ง"]
+layout_mode = 0
 offset_left = 162.329
 offset_top = 5.75244
 offset_right = 1447.33
@@ -188,6 +189,7 @@ scale = Vector2(0.371824, 0.371824)
 texture_normal = ExtResource("19_2clxw")
 
 [node name="ขนมจีบ2" type="TextureButton" parent="พื้นหลังอาหารจีน/ที่นึ่ง2"]
+layout_mode = 0
 offset_left = 150.306
 offset_top = -28.7639
 offset_right = 1420.31
@@ -204,6 +206,7 @@ scale = Vector2(0.371824, 0.371824)
 texture_normal = ExtResource("19_2clxw")
 
 [node name="ซาลาเปา4" type="TextureButton" parent="พื้นหลังอาหารจีน/ที่นึ่ง3"]
+layout_mode = 0
 offset_left = 138.274
 offset_top = -17.259
 offset_right = 1423.27
@@ -220,6 +223,7 @@ scale = Vector2(0.371824, 0.371824)
 texture_normal = ExtResource("19_2clxw")
 
 [node name="ขนมจีบ2" type="TextureButton" parent="พื้นหลังอาหารจีน/ที่นึ่ง4"]
+layout_mode = 0
 offset_left = 126.256
 offset_top = -51.7744
 offset_right = 1396.26
@@ -286,6 +290,7 @@ scale = Vector2(0.202934, 0.190478)
 texture_normal = ExtResource("6_h7h7f")
 
 [node name="แป้ง2" type="TextureRect" parent="พื้นหลังอาหารจีน/จาน2"]
+layout_mode = 0
 offset_left = 457.788
 offset_top = 1409.92
 offset_right = 1140.79

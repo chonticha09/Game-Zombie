@@ -1,0 +1,175 @@
+[gd_scene load_steps=32 format=3 uid="uid://dpaacrwry2qnk"]
+
+[ext_resource type="Texture2D" uid="uid://bsuax7duhxeco" path="res://ฉากเลือกด่านใหม่/ฉากหลัง.png" id="1_hclt0"]
+[ext_resource type="Texture2D" uid="uid://cc17us72xo044" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/1.png" id="2_s63al"]
+[ext_resource type="Texture2D" uid="uid://du4pkptmkyaub" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/1.png" id="3_bmlqs"]
+[ext_resource type="Texture2D" uid="uid://cgpun5td16ob8" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/2.png" id="4_y55s1"]
+[ext_resource type="Texture2D" uid="uid://ibxeljl2rpqf" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/2.png" id="5_l7yjd"]
+[ext_resource type="Texture2D" uid="uid://orpjh1j4jn4j" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/3.png" id="6_gen01"]
+[ext_resource type="Texture2D" uid="uid://c3tnm16ao55eu" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/3.png" id="7_mnmmn"]
+[ext_resource type="Texture2D" uid="uid://cp11qsn30eirk" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/4.png" id="8_xorao"]
+[ext_resource type="Texture2D" uid="uid://c6fssp2mswdgm" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/4.png" id="9_bf055"]
+[ext_resource type="Texture2D" uid="uid://b5v6w0ud1fqbh" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/5.png" id="10_xvxi8"]
+[ext_resource type="Texture2D" uid="uid://cqtr63tun2r4f" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/5.png" id="11_4subi"]
+[ext_resource type="Texture2D" uid="uid://4cwiouo2ub2u" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/6.png" id="12_lswg1"]
+[ext_resource type="Texture2D" uid="uid://elx2dacde1o" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/6.png" id="13_ytgh8"]
+[ext_resource type="Texture2D" uid="uid://c7d5igy0plqi0" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/7.png" id="14_fybp0"]
+[ext_resource type="Texture2D" uid="uid://bnxsb676iuiax" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/7.png" id="15_ltev3"]
+[ext_resource type="Texture2D" uid="uid://h13tokbu6nv0" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/8.png" id="16_r4w5b"]
+[ext_resource type="Texture2D" uid="uid://qaloqa0qfyuf" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/8.png" id="17_ysrnt"]
+[ext_resource type="Texture2D" uid="uid://cdrc8anf2o7e7" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/9.png" id="18_1sjh1"]
+[ext_resource type="Texture2D" uid="uid://bh0j15p4mpfe3" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/9.png" id="19_heyta"]
+[ext_resource type="Texture2D" uid="uid://dgdda0lxpp33c" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/10.png" id="20_4gmoj"]
+[ext_resource type="Texture2D" uid="uid://blfmfe3wpspit" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/10.png" id="21_bip4q"]
+[ext_resource type="Texture2D" uid="uid://d1p5iof6slvwx" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/11.png" id="22_edqrr"]
+[ext_resource type="Texture2D" uid="uid://belxt5ex1x75u" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/11.png" id="23_nwayn"]
+[ext_resource type="Texture2D" uid="uid://m2xikcmeqggt" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/12.png" id="24_te71o"]
+[ext_resource type="Texture2D" uid="uid://eqxwe2yl7elj" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/12.png" id="25_jtxk5"]
+[ext_resource type="Texture2D" uid="uid://dr2rqtnnjll76" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/13.png" id="26_ff2rl"]
+[ext_resource type="Texture2D" uid="uid://dbegsk13vdghs" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/13.png" id="27_yvgew"]
+[ext_resource type="Texture2D" uid="uid://b60yw37m1aohe" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/14.png" id="28_i7cub"]
+[ext_resource type="Texture2D" uid="uid://3cl5qhocvl0w" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/14.png" id="29_mcyhn"]
+[ext_resource type="Texture2D" uid="uid://bhb7jalcmha1c" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/15.png" id="30_pt3eu"]
+[ext_resource type="Texture2D" uid="uid://blc0f7kv01f2r" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/15.png" id="31_acybo"]
+
+[node name="หน้าเลือกด่านแก้" type="Node2D"]
+
+[node name="ฉากหลัง" type="Sprite2D" parent="."]
+position = Vector2(632.5, 329.5)
+scale = Vector2(0.452583, 0.472203)
+texture = ExtResource("1_hclt0")
+
+[node name="ด่านที่1" type="TextureButton" parent="ฉากหลัง"]
+offset_left = -1371.02
+offset_top = 513.551
+offset_right = -497.019
+offset_bottom = 1263.55
+scale = Vector2(0.198839, 0.198839)
+texture_normal = ExtResource("2_s63al")
+texture_hover = ExtResource("3_bmlqs")
+
+[node name="ด่านที่2" type="TextureButton" parent="ฉากหลัง"]
+offset_left = -1320.2
+offset_top = 339.896
+offset_right = -446.2
+offset_bottom = 1089.9
+scale = Vector2(0.198839, 0.198839)
+texture_normal = ExtResource("4_y55s1")
+texture_hover = ExtResource("5_l7yjd")
+
+[node name="ด่านที่3" type="TextureButton" parent="ฉากหลัง"]
+offset_left = -1167.74
+offset_top = 223.421
+offset_right = -293.741
+offset_bottom = 973.421
+scale = Vector2(0.198839, 0.198839)
+texture_normal = ExtResource("6_gen01")
+texture_hover = ExtResource("7_mnmmn")
+
+[node name="ด่านที่4" type="TextureButton" parent="ฉากหลัง"]
+offset_left = -966.673
+offset_top = 170.478
+offset_right = -92.6729
+offset_bottom = 920.478
+scale = Vector2(0.198839, 0.198839)
+texture_normal = ExtResource("8_xorao")
+texture_hover = ExtResource("9_bf055")
+
+[node name="ด่านที่5" type="TextureButton" parent="ฉากหลัง"]
+offset_left = -774.443
+offset_top = 123.887
+offset_right = 99.5566
+offset_bottom = 873.887
+scale = Vector2(0.198839, 0.198839)
+texture_normal = ExtResource("10_xvxi8")
+texture_hover = ExtResource("11_4subi")
+
+[node name="ด่านที่6" type="TextureButton" parent="ฉากหลัง"]
+offset_left = -577.794
+offset_top = 70.9443
+offset_right = 296.206
+offset_bottom = 820.944
+scale = Vector2(0.198839, 0.198839)
+texture_normal = ExtResource("12_lswg1")
+texture_hover = ExtResource("13_ytgh8")
+
+[node name="ด่านที่7" type="TextureButton" parent="ฉากหลัง"]
+offset_left = -405.45
+offset_top = -30.707
+offset_right = 468.55
+offset_bottom = 719.293
+scale = Vector2(0.198839, 0.198839)
+texture_normal = ExtResource("14_fybp0")
+texture_hover = ExtResource("15_ltev3")
+
+[node name="ด่านที่8" type="TextureButton" parent="ฉากหลัง"]
+offset_left = -213.221
+offset_top = -83.6504
+offset_right = 660.779
+offset_bottom = 666.35
+scale = Vector2(0.198839, 0.198839)
+texture_normal = ExtResource("16_r4w5b")
+texture_hover = ExtResource("17_ysrnt")
+
+[node name="ด่านที่9" type="TextureButton" parent="ฉากหลัง"]
+offset_left = -20.9907
+offset_top = -77.2971
+offset_right = 853.009
+offset_bottom = 672.703
+scale = Vector2(0.198839, 0.198839)
+texture_normal = ExtResource("18_1sjh1")
+texture_hover = ExtResource("19_heyta")
+
+[node name="ด่านที่10" type="TextureButton" parent="ฉากหลัง"]
+offset_left = 180.077
+offset_top = -56.1199
+offset_right = 1054.08
+offset_bottom = 693.88
+scale = Vector2(0.198839, 0.198839)
+texture_normal = ExtResource("20_4gmoj")
+texture_hover = ExtResource("21_bip4q")
+
+[node name="ด่านที่11" type="TextureButton" parent="ฉากหลัง"]
+offset_left = 378.936
+offset_top = -66.7085
+offset_right = 1252.94
+offset_bottom = 683.292
+scale = Vector2(0.198839, 0.198839)
+texture_normal = ExtResource("22_edqrr")
+texture_hover = ExtResource("23_nwayn")
+
+[node name="ด่านที่12" type="TextureButton" parent="ฉากหลัง"]
+offset_left = 568.956
+offset_top = -30.707
+offset_right = 1442.96
+offset_bottom = 719.293
+scale = Vector2(0.198839, 0.198839)
+texture_normal = ExtResource("24_te71o")
+texture_hover = ExtResource("25_jtxk5")
+
+[node name="ด่านที่13" type="TextureButton" parent="ฉากหลัง"]
+offset_left = 758.976
+offset_top = -26.4717
+offset_right = 1632.98
+offset_bottom = 723.528
+scale = Vector2(0.198839, 0.198839)
+texture_normal = ExtResource("26_ff2rl")
+texture_hover = ExtResource("27_yvgew")
+
+[node name="ด่านที่14" type="TextureButton" parent="ฉากหลัง"]
+offset_left = 960.045
+offset_top = -34.9426
+offset_right = 1834.04
+offset_bottom = 715.057
+scale = Vector2(0.198839, 0.198839)
+texture_normal = ExtResource("28_i7cub")
+texture_hover = ExtResource("29_mcyhn")
+
+[node name="ด่านที่15" type="TextureButton" parent="ฉากหลัง"]
+offset_left = 1172.16
+offset_top = -45.5313
+offset_right = 2046.16
+offset_bottom = 704.469
+scale = Vector2(0.198839, 0.198839)
+texture_normal = ExtResource("30_pt3eu")
+texture_hover = ExtResource("31_acybo")
