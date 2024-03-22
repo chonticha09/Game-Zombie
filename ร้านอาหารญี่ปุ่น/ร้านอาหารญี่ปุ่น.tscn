@@ -460,6 +460,7 @@ texture_hover = ExtResource("43_75ejs")
 script = ExtResource("44_0wjbt")
 
 [node name="หน้าตั้งค่า" type="TextureRect" parent="Home"]
+visible = false
 layout_mode = 0
 offset_left = 9665.0
 offset_top = 3854.98
