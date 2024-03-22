@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://luyi6dqcdis7"]
+[gd_scene load_steps=49 format=3 uid="uid://luyi6dqcdis7"]
 
 [ext_resource type="AudioStream" uid="uid://qcbs3op7r83n" path="res://ร้านอาหารทะเล/very-lush-and-swag-loop-74140.mp3" id="1_a0s4p"]
 [ext_resource type="Texture2D" uid="uid://de038mx8pphaq" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ป้าย4.png" id="2_ccpjq"]
@@ -42,6 +42,7 @@
 [ext_resource type="Texture2D" uid="uid://cxwfd6sbr2rvx" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มเสียง.png" id="27_u778j"]
 [ext_resource type="Texture2D" uid="uid://chnupe4abe3le" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ถาดปลา.png" id="28_ccylc"]
 [ext_resource type="Texture2D" uid="uid://0x72hgjpc72d" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มกลับ.png" id="28_pvwug"]
+[ext_resource type="Texture2D" uid="uid://b5mt735b50e7j" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เลม่อนซีก.png" id="29_f2ont"]
 [ext_resource type="Texture2D" uid="uid://eabganfyu3yb" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มออก.png" id="29_yjd3p"]
 [ext_resource type="Texture2D" uid="uid://bw1ye1ydl48qg" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ชิ้นแซลม่อน.png" id="30_i7xh5"]
 [ext_resource type="Texture2D" uid="uid://6eq1u1fejowj" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ผ้าฟ้า.png" id="33_7gvbo"]
@@ -101,9 +102,9 @@ scale = Vector2(0.53, 0.431646)
 texture = ExtResource("9_xqmxv")
 
 [node name="ถาดฟ้า2" type="Sprite2D" parent="ครัว2"]
-position = Vector2(-1000.31, -148.85)
+position = Vector2(-1006.57, -124.31)
 rotation = -1.52488
-scale = Vector2(0.381346, 0.468239)
+scale = Vector2(0.341471, 0.455506)
 texture = ExtResource("10_g48yl")
 
 [node name="ถังไอติม" type="Control" parent="."]
@@ -327,14 +328,16 @@ offset_top = -1622.98
 offset_right = 97.0132
 offset_bottom = -685.981
 scale = Vector2(0.323027, 0.323027)
+texture = ExtResource("20_cboob")
 
 [node name="ซอส2" type="TextureRect" parent="ถาดซอส"]
 layout_mode = 0
-offset_left = -342.172
-offset_top = -1589.75
-offset_right = 836.828
-offset_bottom = -652.746
+offset_left = -21.7207
+offset_top = -1672.49
+offset_right = 1157.28
+offset_bottom = -735.484
 scale = Vector2(0.323027, 0.323027)
+texture = ExtResource("20_cboob")
 
 [node name="ถาดมะนาว" type="TextureButton" parent="."]
 offset_left = 571.0
@@ -347,35 +350,39 @@ script = ExtResource("14_khdwh")
 
 [node name="เลม่อน1" type="TextureRect" parent="ถาดมะนาว"]
 layout_mode = 0
-offset_left = 2920.0
-offset_top = -2699.0
-offset_right = 9474.0
-offset_bottom = 3519.0
+offset_left = 3291.38
+offset_top = -2866.25
+offset_right = 9845.38
+offset_bottom = 3351.75
 scale = Vector2(0.0752618, 0.0752618)
+texture = ExtResource("29_f2ont")
 
 [node name="เลม่อน2" type="TextureRect" parent="ถาดมะนาว"]
 layout_mode = 0
-offset_left = 2588.0
-offset_top = -2934.0
-offset_right = 8980.0
-offset_bottom = 3130.0
+offset_left = 3538.22
+offset_top = -2618.25
+offset_right = 9930.22
+offset_bottom = 3445.75
 scale = Vector2(0.0752618, 0.0752618)
+texture = ExtResource("29_f2ont")
 
 [node name="เลม่อน3" type="TextureRect" parent="ถาดมะนาว"]
 layout_mode = 0
-offset_left = 2527.04
-offset_top = -739.576
-offset_right = 3121.04
-offset_bottom = -155.577
+offset_left = 2509.66
+offset_top = -661.445
+offset_right = 3103.66
+offset_bottom = -77.4453
 scale = Vector2(0.758629, 0.758629)
+texture = ExtResource("29_f2ont")
 
 [node name="เลม่อน4" type="TextureRect" parent="ถาดมะนาว"]
 layout_mode = 0
-offset_left = 2993.18
-offset_top = -936.799
-offset_right = 3587.18
-offset_bottom = -352.799
+offset_left = 2770.22
+offset_top = -537.424
+offset_right = 3364.22
+offset_bottom = 46.5762
 scale = Vector2(0.758629, 0.758629)
+texture = ExtResource("29_f2ont")
 
 [node name="แซลม่อน1" type="Control" parent="."]
 layout_mode = 3

@@ -14,8 +14,8 @@ var initialPosition = Vector2(0, 0)
 
 func _ready():
 	textureRect = get_node("กล่องข้อความ")
-	hide_textureRect()
-	initialPosition = position  # Store the initial position
+	show_textureRect()  # เรียกใช้ฟังก์ชันเพื่อให้กล่องข้อความแสดง
+	initialPosition = position  # เก็บตำแหน่งเริ่มต้น
 
 func _process(delta):
 	if moving:
