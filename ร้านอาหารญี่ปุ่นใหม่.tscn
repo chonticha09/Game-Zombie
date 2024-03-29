@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://btfbojisesrsv"]
+
+[ext_resource type="Texture2D" uid="uid://b2krk2ejcqsdb" path="res://ร้านอาหารญี่ปุ่น/ฉากหลังร้านอาหารญี่ปุ่น.png" id="1_7hvm4"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ฉากหลังร้านอาหารญี่ปุ่น" type="Sprite2D" parent="."]
+position = Vector2(620, 316.5)
+scale = Vector2(0.446346, 0.46203)
+texture = ExtResource("1_7hvm4")
