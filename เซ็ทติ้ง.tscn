@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://e210oeyudokc"]
+
+[ext_resource type="Texture2D" uid="uid://cjihuyx26qsl1" path="res://เพิ่มเติม/หน้าตั้งค่า.png" id="1_7p1pj"]
+[ext_resource type="Texture2D" uid="uid://eabganfyu3yb" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มออก.png" id="2_xrmhi"]
+[ext_resource type="Texture2D" uid="uid://cxwfd6sbr2rvx" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มเสียง.png" id="3_ee1ex"]
+[ext_resource type="Texture2D" uid="uid://0x72hgjpc72d" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มกลับ.png" id="4_oj0fe"]
+
+[node name="เซ็ทติ้ง" type="Node2D"]
+
+[node name="หน้าตั้งค่า" type="Sprite2D" parent="."]
+position = Vector2(661, 379)
+texture = ExtResource("1_7p1pj")
+
+[node name="หน้าตั้งค่าปุ่มออก" type="Sprite2D" parent="."]
+position = Vector2(694, 478)
+texture = ExtResource("2_xrmhi")
+
+[node name="หน้าตั้งค่าปุ่มเสียง" type="Sprite2D" parent="."]
+position = Vector2(597, 275)
+texture = ExtResource("3_ee1ex")
+
+[node name="หน้าตั้งค่าปุ่มกลับ" type="Sprite2D" parent="."]
+position = Vector2(498, 479)
+texture = ExtResource("4_oj0fe")
