@@ -117,6 +117,7 @@ texture = ExtResource("6_a21h4")
 
 [node name="ทูน่า" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/มันม่าวง/กล่องข้อความ"]
 visible = false
+layout_mode = 0
 offset_left = 93.5962
 offset_top = 195.054
 offset_right = 1264.6
@@ -126,6 +127,7 @@ texture = ExtResource("21_o0ivk")
 
 [node name="กุ้ง" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/มันม่าวง/กล่องข้อความ"]
 visible = false
+layout_mode = 0
 offset_left = 93.5962
 offset_top = 195.054
 offset_right = 1264.6
@@ -135,6 +137,7 @@ texture = ExtResource("7_aq3hf")
 
 [node name="แซลม่อน" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/มันม่าวง/กล่องข้อความ"]
 visible = false
+layout_mode = 0
 offset_left = 93.5962
 offset_top = 195.054
 offset_right = 1264.6

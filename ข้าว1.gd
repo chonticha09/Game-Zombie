@@ -10,9 +10,7 @@ func _process(delta):
 
 # Called when the TextureButton is pressed.
 func _on_pressed():
-	# Hide the TextureButton node when clicked.
-	hide()
+	# Remove the TextureButton node from its parent.
 	
-	# Remove the TextureButton from the scene.
 	queue_free()
 

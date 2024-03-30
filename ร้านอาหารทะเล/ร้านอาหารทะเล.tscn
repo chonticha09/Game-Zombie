@@ -610,6 +610,7 @@ script = ExtResource("44_44l7h")
 
 [node name="หน้าตั้งค่า" type="TextureRect" parent="Home"]
 visible = false
+layout_mode = 0
 offset_left = 8838.91
 offset_top = 2670.95
 offset_right = 31328.9
