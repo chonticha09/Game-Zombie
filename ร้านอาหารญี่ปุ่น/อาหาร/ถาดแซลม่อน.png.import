@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxlx4iss6y0eq"
-path="res://.godot/imported/ถาดทูน่า.png-fc29767460ecdef36d702c00c59bbc24.ctex"
+uid="uid://dcud12j30hnx8"
+path="res://.godot/imported/ถาดแซลม่อน.png-0d5de875f8148841d826623ca90430c9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ร้านอาหารญี่ปุ่น/ถาดทูน่า.png"
-dest_files=["res://.godot/imported/ถาดทูน่า.png-fc29767460ecdef36d702c00c59bbc24.ctex"]
+source_file="res://ร้านอาหารญี่ปุ่น/อาหาร/ถาดแซลม่อน.png"
+dest_files=["res://.godot/imported/ถาดแซลม่อน.png-0d5de875f8148841d826623ca90430c9.ctex"]
 
 [params]
 
