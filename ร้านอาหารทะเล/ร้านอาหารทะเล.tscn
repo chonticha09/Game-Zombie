@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://luyi6dqcdis7"]
+[gd_scene load_steps=49 format=3 uid="uid://luyi6dqcdis7"]
 
 [ext_resource type="AudioStream" uid="uid://qcbs3op7r83n" path="res://ร้านอาหารทะเล/very-lush-and-swag-loop-74140.mp3" id="1_a0s4p"]
 [ext_resource type="Texture2D" uid="uid://de038mx8pphaq" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ป้าย4.png" id="2_ccpjq"]
@@ -44,6 +44,7 @@
 [ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/Home.gd" id="44_44l7h"]
 [ext_resource type="Texture2D" uid="uid://dg8vkcg53wx1n" path="res://หน้าตั้งค่าใหม่/กรอบสีเขียว.png" id="45_ob12r"]
 [ext_resource type="Texture2D" uid="uid://dnul2hd3pap1x" path="res://หน้าตั้งค่าใหม่/เสียงเปิดเขียว.png" id="46_osbch"]
+[ext_resource type="Texture2D" uid="uid://bn5d1uuwj5jpt" path="res://ฉากเริ่มเกมใหม่/ปุ่มplay.png" id="47_r2d6c"]
 [ext_resource type="Texture2D" uid="uid://bginhcf68ym1q" path="res://หน้าตั้งค่าใหม่/เสียงปิดเขียว.png" id="47_s5c7a"]
 [ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/กลับหน้าเลือกด่าน.gd" id="48_hiald"]
 
@@ -648,6 +649,15 @@ scale = Vector2(1.93884, 1.93884)
 texture_normal = ExtResource("23_krrxm")
 texture_hover = ExtResource("24_swqqp")
 script = ExtResource("48_hiald")
+
+[node name="เต็มหน้าจอ" type="TextureButton" parent="Home/หน้าตั้งค่า"]
+layout_mode = 0
+offset_left = 10709.6
+offset_top = 7902.92
+offset_right = 11266.6
+offset_bottom = 8092.92
+scale = Vector2(15.6748, 15.6748)
+texture_normal = ExtResource("47_r2d6c")
 
 [connection signal="pressed" from="ถังไอติม/ถังไอติม" to="ถังไอติม" method="_on_ถังไอติม_pressed"]
 [connection signal="pressed" from="ถาดผักกาด" to="ถาดผักกาด" method="_on_pressed"]

@@ -85,7 +85,6 @@ offset_bottom = 248.336
 texture = ExtResource("8_rfsa1")
 
 [node name="ข้าว1" type="TextureButton" parent="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน/ซูชิไข่หวาน"]
-visible = false
 layout_mode = 0
 offset_right = 1110.0
 offset_bottom = 616.0
