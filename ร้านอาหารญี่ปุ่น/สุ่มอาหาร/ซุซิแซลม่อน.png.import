@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3a3rodr1dlao"
-path="res://.godot/imported/ซุซิทูน่า.png-1dee2dd6cf207e5720857db159cd0a54.ctex"
+uid="uid://dcv482pniqs5c"
+path="res://.godot/imported/ซุซิแซลม่อน.png-131feb8c4f0cd9f75986917fc15aa048.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ร้านอาหารญี่ปุ่น/ซุซิทูน่า.png"
-dest_files=["res://.godot/imported/ซุซิทูน่า.png-1dee2dd6cf207e5720857db159cd0a54.ctex"]
+source_file="res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซุซิแซลม่อน.png"
+dest_files=["res://.godot/imported/ซุซิแซลม่อน.png-131feb8c4f0cd9f75986917fc15aa048.ctex"]
 
 [params]
 

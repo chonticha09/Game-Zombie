@@ -1,44 +1,22 @@
 extends Sprite2D
 
-var speed = 100
-var moving = true
-var stopPosition = 900
-var elapsedTime = 0.0
-
-var textureRect = null
-var pictureTexture = null
-
-# Initial position of the character
-var initialPosition = Vector2(0, 0)
-
-func _ready():
-	textureRect = get_node("กล่องข้อความ")
-	hide_textureRect()
-	initialPosition = position  # Store the initial position
+var speed = 25  # ความเร็วในการเคลื่อนที่
+var moving = true  # สถานะการเคลื่อนที่ของ Sprite
 
 func _process(delta):
 	if moving:
+		# คำนวณการเคลื่อนที่ของ Sprite ไปทางขวา
 		var movement = Vector2.LEFT * speed * delta
 		position += movement
 
-		if position.x >= stopPosition:  
-			show_textureRect()
-			moving = false
-			elapsedTime = 0.0
-			# Move the character to the right immediately
-			var movement = Vector2.RIGHT * speed * delta
-			position += movement
+		# ตรวจสอบว่า Sprite ได้เคลื่อนที่ออกนอกหน้าจอหรือไม่
+		if position.x > get_viewport_rect().size.x:
+			# ถ้าออกนอกหน้าจอให้สร้าง Sprite ใหม่ที่ตำแหน่งเริ่มต้น
+			position.x = 0
 
-	if !moving:
-		if position.x < initialPosition.x:  # Check if character goes out of frame
-			position = initialPosition  
-
-func show_textureRect():
-	if textureRect != null:
-		pictureTexture = preload("res://กล่องข้อความ.png")
-		textureRect.texture = pictureTexture
-		textureRect.visible = true
-
-func hide_textureRect():
-	if textureRect != null:
-		textureRect.visible = false
+func _ready():
+	# โหลดรูปภาพของ Sprite
+	var texture = preload("res://กล่องข้อความ.png")
+	# กำหนดรูปภาพให้กับ Sprite
+	texture = preload("res://ร้านพิซซ่า/มันม่าวง.png")
+	set_texture(texture)
