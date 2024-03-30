@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 [gd_scene load_steps=42 format=3 uid="uid://cufvf423vkgaa"]
 
 [ext_resource type="Texture2D" uid="uid://b2krk2ejcqsdb" path="res://ร้านอาหารญี่ปุ่น/ฉากหลังร้านอาหารญี่ปุ่น.png" id="1_m8jqe"]
 [ext_resource type="Texture2D" uid="uid://1ajkhqu0wxxv" path="res://ร้านอาหารญี่ปุ่น/ครัว.png" id="2_4cb8c"]
+=======
+[gd_scene load_steps=50 format=3 uid="uid://cufvf423vkgaa"]
+
+[ext_resource type="Texture2D" uid="uid://b2krk2ejcqsdb" path="res://ร้านอาหารญี่ปุ่น/ฉากหลังร้านอาหารญี่ปุ่น.png" id="1_m8jqe"]
+[ext_resource type="Texture2D" uid="uid://1ajkhqu0wxxv" path="res://ร้านอาหารญี่ปุ่น/ครัว.png" id="2_4cb8c"]
+[ext_resource type="Script" path="res://ร้านอาหารทะเล/มันม่าวง.gd" id="3_i4sbl"]
+>>>>>>> 2a03aaac627968a4438fb6cea82b6c4c085c4b45
 [ext_resource type="Texture2D" uid="uid://cehnb0dx2s7bv" path="res://ร้านอาหารญี่ปุ่น/ไข่กุ้งและสาหร่าย.png" id="3_j8lq5"]
 [ext_resource type="AudioStream" uid="uid://6qsw1dyfxddh" path="res://Sound/impatience-113686.mp3" id="3_lv08g"]
 [ext_resource type="Texture2D" uid="uid://c7x3itvoe431i" path="res://ร้านพิซซ่า/มันม่าวง.png" id="3_y3ibh"]
@@ -41,6 +49,43 @@
 [ext_resource type="Texture2D" uid="uid://dqooidv5hwmsu" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ป้าย1.png" id="32_ac6rh"]
 [ext_resource type="Script" path="res://โค้ด/Label.gd" id="33_t808b"]
 [ext_resource type="Texture2D" uid="uid://dcud12j30hnx8" path="res://ร้านอาหารญี่ปุ่น/ถาดแซลม่อน.png" id="42_afocw"]
+<<<<<<< HEAD
+=======
+[ext_resource type="Texture2D" uid="uid://bwqyscirbjxok" path="res://เพิ่มเติม/R1.png" id="42_njulb"]
+[ext_resource type="Texture2D" uid="uid://d0usu5d6oirt5" path="res://เพิ่มเติม/R.png" id="43_75ejs"]
+[ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/Home.gd" id="44_0wjbt"]
+[ext_resource type="Texture2D" uid="uid://dg8vkcg53wx1n" path="res://หน้าตั้งค่าใหม่/กรอบสีเขียว.png" id="45_ovg68"]
+[ext_resource type="Texture2D" uid="uid://dnul2hd3pap1x" path="res://หน้าตั้งค่าใหม่/เสียงเปิดเขียว.png" id="46_6plrg"]
+[ext_resource type="Texture2D" uid="uid://bginhcf68ym1q" path="res://หน้าตั้งค่าใหม่/เสียงปิดเขียว.png" id="47_au6ru"]
+[ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/กลับหน้าเลือกด่าน.gd" id="48_vr2am"]
+
+[sub_resource type="GDScript" id="GDScript_ted8u"]
+script/source = "extends TextureButton
+var audio_enabled = true
+var is_clicked = false
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass  # Replace with function body.
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+func _on_pressed():
+	if audio_enabled:
+		AudioServer.set_bus_mute(AudioServer.get_bus_index(\"Master\"), true)
+		audio_enabled = false
+	else:
+		AudioServer.set_bus_mute(AudioServer.get_bus_index(\"Master\"), false)
+		audio_enabled = true
+
+	# เปลี่ยนรูปภาพของ TextureButton เมื่อถูกคลิก
+	if is_clicked:
+		texture_normal = load(\"res://หน้าตั้งค่าใหม่/เสียงเปิดเขียว.png\")
+	else:
+		texture_normal = load(\"res://หน้าตั้งค่าใหม่/เสียงปิดเขียว.png\")
+
+	is_clicked = not is_clicked
+"
+>>>>>>> 2a03aaac627968a4438fb6cea82b6c4c085c4b45
 
 [node name="ร้านอาหารญี่ปุ่น" type="Node2D"]
 metadata/_edit_horizontal_guides_ = []
@@ -59,14 +104,18 @@ scale = Vector2(2.22796, 2.17438)
 position = Vector2(1219.81, -93.4984)
 scale = Vector2(0.567067, 0.55343)
 texture = ExtResource("3_y3ibh")
+<<<<<<< HEAD
 script = ExtResource("4_xldh6")
+=======
+script = ExtResource("3_i4sbl")
+>>>>>>> 2a03aaac627968a4438fb6cea82b6c4c085c4b45
 
 [node name="ครัว" type="Sprite2D" parent="ฉากหลังร้านอาหารญี่ปุ่น"]
 position = Vector2(8.91192, 450.097)
 scale = Vector2(0.996969, 0.935298)
 texture = ExtResource("2_4cb8c")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="Sound_play" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_lv08g")
 autoplay = true
 
@@ -285,7 +334,7 @@ offset_bottom = 1175.0
 scale = Vector2(0.066105, 0.066105)
 texture_normal = ExtResource("13_phgiv")
 
-[node name="TextureButton" type="TextureButton" parent="."]
+[node name="กุ้งสด" type="TextureButton" parent="."]
 offset_left = 1070.0
 offset_top = 507.0
 offset_right = 2093.0
@@ -402,12 +451,83 @@ offset_top = 12.0
 offset_right = 529.0
 offset_bottom = 64.0
 theme_override_font_sizes/font_size = 35
-text = "60"
+text = "120"
 script = ExtResource("33_t808b")
 
+<<<<<<< HEAD
+=======
+[node name="ตั้งค่า" type="TextureButton" parent="."]
+offset_left = 144.0
+offset_top = 47.0
+offset_right = 1894.0
+offset_bottom = 1797.0
+scale = Vector2(0.0371855, 0.0371855)
+texture_normal = ExtResource("42_njulb")
+texture_hover = ExtResource("43_75ejs")
+
+[node name="Home" type="TextureButton" parent="."]
+offset_left = 11.0
+offset_top = 14.0
+offset_right = 1761.0
+offset_bottom = 1764.0
+scale = Vector2(0.0363166, 0.0363166)
+texture_normal = ExtResource("42_njulb")
+texture_hover = ExtResource("43_75ejs")
+script = ExtResource("44_0wjbt")
+
+[node name="หน้าตั้งค่า" type="TextureRect" parent="Home"]
+visible = false
+layout_mode = 0
+offset_left = 9665.0
+offset_top = 3854.98
+offset_right = 28251.0
+offset_bottom = 15998.0
+scale = Vector2(0.745627, 0.745627)
+texture = ExtResource("45_ovg68")
+
+[node name="เปิดเสียง" type="TextureButton" parent="Home/หน้าตั้งค่า"]
+layout_mode = 0
+offset_left = 7076.55
+offset_top = 7159.39
+offset_right = 7319.55
+offset_bottom = 7392.39
+scale = Vector2(15.406, 15.406)
+texture_normal = ExtResource("46_6plrg")
+script = SubResource("GDScript_ted8u")
+
+[node name="ปิดเสียง" type="TextureRect" parent="Home/หน้าตั้งค่า/เปิดเสียง"]
+visible = false
+layout_mode = 0
+offset_left = -1.78711
+offset_top = 3.57471
+offset_right = 628.213
+offset_bottom = 603.575
+scale = Vector2(0.384583, 0.384583)
+texture = ExtResource("47_au6ru")
+
+[node name="กลับหน้าเลือกด่าน" type="TextureButton" parent="Home/หน้าตั้งค่า"]
+layout_mode = 0
+offset_left = 13437.3
+offset_top = 3497.16
+offset_right = 15187.3
+offset_bottom = 5247.16
+scale = Vector2(1.67477, 1.67477)
+texture_normal = ExtResource("42_njulb")
+texture_hover = ExtResource("43_75ejs")
+script = ExtResource("48_vr2am")
+
+>>>>>>> 2a03aaac627968a4438fb6cea82b6c4c085c4b45
 [connection signal="pressed" from="ข้าวญี่ปุ่น" to="ข้าวญี่ปุ่น" method="_on_pressed"]
 [connection signal="pressed" from="กุ้ง" to="กุ้ง" method="_on_pressed"]
 [connection signal="pressed" from="ทูน่า" to="ทูน่า" method="_on_pressed"]
 [connection signal="pressed" from="ไข่หวาน" to="ไข่หวาน" method="_on_pressed"]
 [connection signal="pressed" from="ถาดแซลมอน" to="ถาดแซลมอน" method="_on_pressed"]
 [connection signal="pressed" from="Menu/Button" to="Menu" method="_on_button_pressed"]
+<<<<<<< HEAD
+=======
+[connection signal="mouse_entered" from="ตั้งค่า" to="ตั้งค่า" method="_on_mouse_entered"]
+[connection signal="pressed" from="ตั้งค่า" to="ตั้งค่า" method="_on_pressed"]
+[connection signal="pressed" from="Home" to="Home" method="_on_pressed"]
+[connection signal="pressed" from="Home/หน้าตั้งค่า/เปิดเสียง" to="Home/หน้าตั้งค่า/เปิดเสียง" method="_on_pressed"]
+[connection signal="pressed" from="Home/หน้าตั้งค่า/กลับหน้าเลือกด่าน" to="Home/หน้าตั้งค่า/กลับหน้าเลือกด่าน" method="_on_pressed"]
+>>>>>>> 2a03aaac627968a4438fb6cea82b6c4c085c4b45

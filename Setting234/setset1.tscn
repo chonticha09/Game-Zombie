@@ -1,6 +1,10 @@
 [gd_scene load_steps=2 format=3 uid="uid://3c3clvsgvk8d"]
 
-[ext_resource type="Script" path="res://Setting23/Video.gd" id="1_fl32l"]
+[sub_resource type="GDScript" id="GDScript_wu4hb"]
+script/source = "extends TabBar
+
+
+"
 
 [node name="setset1" type="Node2D"]
 
@@ -15,7 +19,7 @@ grow_vertical = 2
 
 [node name="Video" type="TabBar" parent="UI/Setting"]
 layout_mode = 2
-script = ExtResource("1_fl32l")
+script = SubResource("GDScript_wu4hb")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="UI/Setting/Video"]
 layout_mode = 1

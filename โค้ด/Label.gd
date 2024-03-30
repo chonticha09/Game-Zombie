@@ -20,6 +20,5 @@ func _process(delta):
 	text = str(round(countdown_time))  # Round to the nearest integer for display
 
 
-
 func _on_ปลาก่อนย่าง_pressed():
 	pass # Replace with function body.
