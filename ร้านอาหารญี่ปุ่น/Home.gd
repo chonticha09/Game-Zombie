@@ -1,19 +1,33 @@
 extends TextureButton
 
+var texture_rect_node: TextureRect
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	# หา TextureRect ในฉากและเก็บไว้
+	texture_rect_node = get_node("หน้าตั้งค่า")
+	
+	# ทำให้ TextureRect ไม่แสดง
+	hide_texture_rect()
 
+func load_texture(path: String):
+	# โหลดรูปภาพจาก path และกำหนดให้ TextureRect
+	var texture = preload("res://หน้าตั้งค่าใหม่/กรอบสีเขียว.png")
+	texture_rect_node.texture = texture
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
+# เมื่อปุ่มถูกกด
 
 func _on_pressed():
-	get_tree().change_scene_to_file("res://หน้าตั้งค่าใหม่/กรอบสีเขียว.png")	
-	pass # Replace with function body.
+	# ถ้า TextureRect กำลังแสดง
+	if texture_rect_node.visible:
+		# ทำให้ TextureRect ไม่แสดง
+		hide_texture_rect()
+	else:
+		# โหลดและแสดงรูปภาพ
+		load_texture("res://หน้าตั้งค่าใหม่/กรอบสีเขียว.png")
+		texture_rect_node.visible = true
+		
+func hide_texture_rect():
+	# ทำให้ TextureRect ไม่แสดง
+	texture_rect_node.visible = false
 
-func _on_mouse_entered():
-	$Sound_play.play()
+

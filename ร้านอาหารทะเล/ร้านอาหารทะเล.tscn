@@ -4,7 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://de038mx8pphaq" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ป้าย4.png" id="2_ccpjq"]
 [ext_resource type="Texture2D" uid="uid://kb8w6ldq5jnh" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/แบ็กกราว.png" id="2_ojxqi"]
 [ext_resource type="Script" path="res://โค้ด/Label.gd" id="3_43xoi"]
-[ext_resource type="Script" path="res://ร้านอาหารทะเล/น้องมันม่วง.gd" id="4_dmhge"]
 [ext_resource type="Texture2D" uid="uid://c7x3itvoe431i" path="res://ร้านพิซซ่า/มันม่าวง.png" id="5_6cheu"]
 [ext_resource type="Script" path="res://ร้านอาหารทะเล/มันม่าวง.gd" id="6_d7mkw"]
 [ext_resource type="Texture2D" uid="uid://dmnh3ne7uww8i" path="res://กล่องข้อความ.png" id="7_ywiy8"]
@@ -36,18 +35,45 @@
 [ext_resource type="Texture2D" uid="uid://djetnxapys18a" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/จานผักซอสปลา.png" id="22_xukbd"]
 [ext_resource type="Texture2D" uid="uid://bwqyscirbjxok" path="res://เพิ่มเติม/R1.png" id="23_krrxm"]
 [ext_resource type="Texture2D" uid="uid://d0usu5d6oirt5" path="res://เพิ่มเติม/R.png" id="24_swqqp"]
-[ext_resource type="Script" path="res://ร้านอาหารทะเล/Home.gd" id="25_l3pir"]
-[ext_resource type="Texture2D" uid="uid://cjihuyx26qsl1" path="res://เพิ่มเติม/หน้าตั้งค่า.png" id="26_divcl"]
 [ext_resource type="Texture2D" uid="uid://b8tpwsrfjy5sj" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ถาดส้ม.png" id="26_g2vfd"]
-[ext_resource type="Texture2D" uid="uid://cxwfd6sbr2rvx" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มเสียง.png" id="27_u778j"]
 [ext_resource type="Texture2D" uid="uid://chnupe4abe3le" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ถาดปลา.png" id="28_ccylc"]
-[ext_resource type="Texture2D" uid="uid://0x72hgjpc72d" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มกลับ.png" id="28_pvwug"]
 [ext_resource type="Texture2D" uid="uid://b5mt735b50e7j" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เลม่อนซีก.png" id="29_f2ont"]
-[ext_resource type="Texture2D" uid="uid://eabganfyu3yb" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มออก.png" id="29_yjd3p"]
 [ext_resource type="Texture2D" uid="uid://bw1ye1ydl48qg" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ชิ้นแซลม่อน.png" id="30_i7xh5"]
 [ext_resource type="Texture2D" uid="uid://6eq1u1fejowj" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ผ้าฟ้า.png" id="33_7gvbo"]
 [ext_resource type="Texture2D" uid="uid://b5es6dnvocbmu" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/หม้อทอด.png" id="34_2sd3y"]
 [ext_resource type="Texture2D" uid="uid://b77ondbsdoist" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เฟรนฟรายง.png" id="35_y2153"]
+[ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/Home.gd" id="44_44l7h"]
+[ext_resource type="Texture2D" uid="uid://dg8vkcg53wx1n" path="res://หน้าตั้งค่าใหม่/กรอบสีเขียว.png" id="45_ob12r"]
+[ext_resource type="Texture2D" uid="uid://dnul2hd3pap1x" path="res://หน้าตั้งค่าใหม่/เสียงเปิดเขียว.png" id="46_osbch"]
+[ext_resource type="Texture2D" uid="uid://bginhcf68ym1q" path="res://หน้าตั้งค่าใหม่/เสียงปิดเขียว.png" id="47_s5c7a"]
+[ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/กลับหน้าเลือกด่าน.gd" id="48_hiald"]
+
+[sub_resource type="GDScript" id="GDScript_2bsw5"]
+script/source = "extends TextureButton
+var audio_enabled = true
+var is_clicked = false
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass  # Replace with function body.
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+func _on_pressed():
+	if audio_enabled:
+		AudioServer.set_bus_mute(AudioServer.get_bus_index(\"Master\"), true)
+		audio_enabled = false
+	else:
+		AudioServer.set_bus_mute(AudioServer.get_bus_index(\"Master\"), false)
+		audio_enabled = true
+
+	# เปลี่ยนรูปภาพของ TextureButton เมื่อถูกคลิก
+	if is_clicked:
+		texture_normal = load(\"res://หน้าตั้งค่าใหม่/เสียงเปิดเขียว.png\")
+	else:
+		texture_normal = load(\"res://หน้าตั้งค่าใหม่/เสียงปิดเขียว.png\")
+
+	is_clicked = not is_clicked
+"
 
 [node name="ร้านอาหารทะเล" type="Node2D"]
 position = Vector2(-16, -69)
@@ -78,10 +104,6 @@ theme_override_font_sizes/font_size = 70
 text = "120"
 script = ExtResource("3_43xoi")
 metadata/_edit_use_anchors_ = true
-
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-visible = false
-script = ExtResource("4_dmhge")
 
 [node name="มันม่าวง" type="Sprite2D" parent="."]
 position = Vector2(1171, 322)
@@ -548,14 +570,14 @@ scale = Vector2(0.965366, 0.965366)
 [node name="คู่มือเกม" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_left = 52.3984
-offset_top = 34.6462
-offset_right = 92.3984
-offset_bottom = 74.6462
+offset_left = 117.0
+offset_top = 88.0
+offset_right = 177.0
+offset_bottom = 149.0
 script = ExtResource("19_mx2ga")
 
 [node name="ไอคอน" type="Sprite2D" parent="คู่มือเกม"]
-position = Vector2(73.6016, 73.3538)
+position = Vector2(20, 25)
 scale = Vector2(0.0585319, 0.0585319)
 texture = ExtResource("20_tyk1n")
 
@@ -572,10 +594,10 @@ texture = ExtResource("21_n53y7")
 [node name="Button" type="Button" parent="คู่มือเกม"]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 0
-offset_left = 42.6016
-offset_top = 45.3538
-offset_right = 102.601
-offset_bottom = 103.354
+offset_left = -14.0
+offset_top = -2.0
+offset_right = 45.9994
+offset_bottom = 56.0002
 
 [node name="จานผักซอสปลา" type="Sprite2D" parent="."]
 position = Vector2(1296, 166)
@@ -583,50 +605,54 @@ scale = Vector2(0.0600743, 0.0600743)
 texture = ExtResource("22_xukbd")
 
 [node name="Home" type="TextureButton" parent="."]
-offset_left = 26.0
-offset_top = 78.0
-offset_right = 1776.0
-offset_bottom = 1828.0
+offset_left = 30.0
+offset_top = 80.0
+offset_right = 1780.0
+offset_bottom = 1830.0
 scale = Vector2(0.0363166, 0.0363166)
 texture_normal = ExtResource("23_krrxm")
 texture_hover = ExtResource("24_swqqp")
-script = ExtResource("25_l3pir")
+script = ExtResource("44_44l7h")
 
-[node name="เซ็ทติ้ง" type="TextureRect" parent="Home"]
+[node name="หน้าตั้งค่า" type="TextureRect" parent="Home"]
+visible = false
+offset_left = 8838.91
+offset_top = 2670.95
+offset_right = 31328.9
+offset_bottom = 18218.0
+scale = Vector2(0.745627, 0.745627)
+texture = ExtResource("45_ob12r")
+
+[node name="เปิดเสียง" type="TextureButton" parent="Home/หน้าตั้งค่า"]
+layout_mode = 0
+offset_left = 4579.29
+offset_top = 4726.98
+offset_right = 4822.29
+offset_bottom = 4959.98
+scale = Vector2(14.3492, 14.3492)
+texture_normal = ExtResource("46_osbch")
+script = SubResource("GDScript_2bsw5")
+
+[node name="ปิดเสียง" type="TextureRect" parent="Home/หน้าตั้งค่า/เปิดเสียง"]
 visible = false
 layout_mode = 0
-offset_left = 5424.53
-offset_top = 1872.42
-offset_right = 42426.5
-offset_bottom = 25580.4
-scale = Vector2(0.67015, 0.67015)
-texture = ExtResource("26_divcl")
+offset_left = -1.78711
+offset_top = 3.57471
+offset_right = 628.213
+offset_bottom = 603.575
+scale = Vector2(0.384583, 0.384583)
+texture = ExtResource("47_s5c7a")
 
-[node name="เสียง" type="TextureRect" parent="Home/เซ็ทติ้ง"]
+[node name="กลับหน้าเลือกด่าน" type="TextureButton" parent="Home/หน้าตั้งค่า"]
 layout_mode = 0
-offset_left = 6409.84
-offset_top = 8628.63
-offset_right = 13898.8
-offset_bottom = 15604.6
-scale = Vector2(0.759762, 0.759762)
-texture = ExtResource("27_u778j")
-
-[node name="ย้อนกลับ" type="TextureRect" parent="Home/เซ็ทติ้ง"]
-layout_mode = 0
-offset_left = 13107.3
-offset_top = 8710.81
-offset_right = 18630.3
-offset_bottom = 14233.8
-scale = Vector2(1.04899, 0.972427)
-texture = ExtResource("28_pvwug")
-
-[node name="ไปหน้าหลัก" type="TextureRect" parent="Home/เซ็ทติ้ง"]
-layout_mode = 0
-offset_left = 19969.1
-offset_top = 8875.16
-offset_right = 25563.1
-offset_bottom = 14175.2
-texture = ExtResource("29_yjd3p")
+offset_left = 6130.34
+offset_top = 10007.9
+offset_right = 7880.34
+offset_bottom = 11757.9
+scale = Vector2(1.93884, 1.93884)
+texture_normal = ExtResource("23_krrxm")
+texture_hover = ExtResource("24_swqqp")
+script = ExtResource("48_hiald")
 
 [connection signal="pressed" from="ถังไอติม/ถังไอติม" to="ถังไอติม" method="_on_ถังไอติม_pressed"]
 [connection signal="pressed" from="ถาดผักกาด" to="ถาดผักกาด" method="_on_pressed"]
@@ -640,3 +666,5 @@ texture = ExtResource("29_yjd3p")
 [connection signal="pressed" from="Menu/Button" to="Menu" method="_on_button_pressed"]
 [connection signal="pressed" from="คู่มือเกม/Button" to="คู่มือเกม" method="_on_button_pressed"]
 [connection signal="pressed" from="Home" to="Home" method="_on_pressed"]
+[connection signal="pressed" from="Home/หน้าตั้งค่า/เปิดเสียง" to="Home/หน้าตั้งค่า/เปิดเสียง" method="_on_pressed"]
+[connection signal="pressed" from="Home/หน้าตั้งค่า/กลับหน้าเลือกด่าน" to="Home/หน้าตั้งค่า/กลับหน้าเลือกด่าน" method="_on_pressed"]

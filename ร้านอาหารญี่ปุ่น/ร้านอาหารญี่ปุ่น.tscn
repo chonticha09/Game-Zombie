@@ -49,7 +49,7 @@
 [ext_resource type="Texture2D" uid="uid://bginhcf68ym1q" path="res://หน้าตั้งค่าใหม่/เสียงปิดเขียว.png" id="47_au6ru"]
 [ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/กลับหน้าเลือกด่าน.gd" id="48_vr2am"]
 
-[sub_resource type="GDScript" id="GDScript_ted8u"]
+[sub_resource type="GDScript" id="GDScript_4r062"]
 script/source = "extends TextureButton
 var audio_enabled = true
 var is_clicked = false
@@ -440,15 +440,6 @@ theme_override_font_sizes/font_size = 35
 text = "120"
 script = ExtResource("33_t808b")
 
-[node name="ตั้งค่า" type="TextureButton" parent="."]
-offset_left = 144.0
-offset_top = 47.0
-offset_right = 1894.0
-offset_bottom = 1797.0
-scale = Vector2(0.0371855, 0.0371855)
-texture_normal = ExtResource("42_njulb")
-texture_hover = ExtResource("43_75ejs")
-
 [node name="Home" type="TextureButton" parent="."]
 offset_left = 11.0
 offset_top = 14.0
@@ -461,23 +452,22 @@ script = ExtResource("44_0wjbt")
 
 [node name="หน้าตั้งค่า" type="TextureRect" parent="Home"]
 visible = false
-layout_mode = 0
-offset_left = 9665.0
-offset_top = 3854.98
-offset_right = 28251.0
-offset_bottom = 15998.0
+offset_left = 8838.91
+offset_top = 2670.95
+offset_right = 31328.9
+offset_bottom = 18218.0
 scale = Vector2(0.745627, 0.745627)
 texture = ExtResource("45_ovg68")
 
 [node name="เปิดเสียง" type="TextureButton" parent="Home/หน้าตั้งค่า"]
 layout_mode = 0
-offset_left = 7076.55
-offset_top = 7159.39
-offset_right = 7319.55
-offset_bottom = 7392.39
-scale = Vector2(15.406, 15.406)
+offset_left = 4579.29
+offset_top = 4726.98
+offset_right = 4822.29
+offset_bottom = 4959.98
+scale = Vector2(14.3492, 14.3492)
 texture_normal = ExtResource("46_6plrg")
-script = SubResource("GDScript_ted8u")
+script = SubResource("GDScript_4r062")
 
 [node name="ปิดเสียง" type="TextureRect" parent="Home/หน้าตั้งค่า/เปิดเสียง"]
 visible = false
@@ -491,11 +481,11 @@ texture = ExtResource("47_au6ru")
 
 [node name="กลับหน้าเลือกด่าน" type="TextureButton" parent="Home/หน้าตั้งค่า"]
 layout_mode = 0
-offset_left = 13437.3
-offset_top = 3497.16
-offset_right = 15187.3
-offset_bottom = 5247.16
-scale = Vector2(1.67477, 1.67477)
+offset_left = 6130.34
+offset_top = 10007.9
+offset_right = 7880.34
+offset_bottom = 11757.9
+scale = Vector2(1.93884, 1.93884)
 texture_normal = ExtResource("42_njulb")
 texture_hover = ExtResource("43_75ejs")
 script = ExtResource("48_vr2am")
@@ -506,8 +496,6 @@ script = ExtResource("48_vr2am")
 [connection signal="pressed" from="ไข่หวาน" to="ไข่หวาน" method="_on_pressed"]
 [connection signal="pressed" from="ถาดแซลมอน" to="ถาดแซลมอน" method="_on_pressed"]
 [connection signal="pressed" from="Menu/Button" to="Menu" method="_on_button_pressed"]
-[connection signal="mouse_entered" from="ตั้งค่า" to="ตั้งค่า" method="_on_mouse_entered"]
-[connection signal="pressed" from="ตั้งค่า" to="ตั้งค่า" method="_on_pressed"]
 [connection signal="pressed" from="Home" to="Home" method="_on_pressed"]
 [connection signal="pressed" from="Home/หน้าตั้งค่า/เปิดเสียง" to="Home/หน้าตั้งค่า/เปิดเสียง" method="_on_pressed"]
 [connection signal="pressed" from="Home/หน้าตั้งค่า/กลับหน้าเลือกด่าน" to="Home/หน้าตั้งค่า/กลับหน้าเลือกด่าน" method="_on_pressed"]

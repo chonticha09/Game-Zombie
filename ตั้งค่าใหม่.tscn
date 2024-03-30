@@ -1,0 +1,79 @@
+[gd_scene load_steps=8 format=3 uid="uid://ca8y7t0q1aet4"]
+
+[ext_resource type="Texture2D" uid="uid://dg8vkcg53wx1n" path="res://หน้าตั้งค่าใหม่/กรอบสีเขียว.png" id="1_nftu0"]
+[ext_resource type="Texture2D" uid="uid://dnul2hd3pap1x" path="res://หน้าตั้งค่าใหม่/เสียงเปิดเขียว.png" id="2_ttc6r"]
+[ext_resource type="Texture2D" uid="uid://bginhcf68ym1q" path="res://หน้าตั้งค่าใหม่/เสียงปิดเขียว.png" id="3_yxykp"]
+[ext_resource type="Texture2D" uid="uid://bwqyscirbjxok" path="res://เพิ่มเติม/R1.png" id="4_osjui"]
+[ext_resource type="Texture2D" uid="uid://d0usu5d6oirt5" path="res://เพิ่มเติม/R.png" id="5_fql3o"]
+[ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/กลับหน้าเลือกด่าน.gd" id="6_laf6s"]
+
+[sub_resource type="GDScript" id="GDScript_16q5d"]
+script/source = "extends TextureButton
+var audio_enabled = true
+var is_clicked = false
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass  # Replace with function body.
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+func _on_pressed():
+	if audio_enabled:
+		AudioServer.set_bus_mute(AudioServer.get_bus_index(\"Master\"), true)
+		audio_enabled = false
+	else:
+		AudioServer.set_bus_mute(AudioServer.get_bus_index(\"Master\"), false)
+		audio_enabled = true
+
+	# เปลี่ยนรูปภาพของ TextureButton เมื่อถูกคลิก
+	if is_clicked:
+		texture_normal = load(\"res://หน้าตั้งค่าใหม่/เสียงเปิดเขียว.png\")
+	else:
+		texture_normal = load(\"res://หน้าตั้งค่าใหม่/เสียงปิดเขียว.png\")
+
+	is_clicked = not is_clicked
+"
+
+[node name="ตั้งค่าใหม่" type="Node2D"]
+
+[node name="หน้าตั้งค่า" type="TextureRect" parent="."]
+offset_left = 237.0
+offset_top = 37.0
+offset_right = 1301.0
+offset_bottom = 732.0
+scale = Vector2(0.745627, 0.745627)
+texture = ExtResource("1_nftu0")
+
+[node name="เปิดเสียง" type="TextureButton" parent="หน้าตั้งค่า"]
+layout_mode = 0
+offset_left = 211.902
+offset_top = 213.243
+offset_right = 454.902
+offset_bottom = 446.243
+scale = Vector2(0.838072, 0.838072)
+texture_normal = ExtResource("2_ttc6r")
+script = SubResource("GDScript_16q5d")
+
+[node name="ปิดเสียง" type="TextureRect" parent="หน้าตั้งค่า/เปิดเสียง"]
+visible = false
+layout_mode = 0
+offset_left = -1.78711
+offset_top = 3.57471
+offset_right = 628.213
+offset_bottom = 603.575
+scale = Vector2(0.384583, 0.384583)
+texture = ExtResource("3_yxykp")
+
+[node name="กลับหน้าเลือกด่าน" type="TextureButton" parent="หน้าตั้งค่า"]
+layout_mode = 0
+offset_left = 270.913
+offset_top = 425.146
+offset_right = 2020.91
+offset_bottom = 2175.15
+scale = Vector2(0.121064, 0.121064)
+texture_normal = ExtResource("4_osjui")
+texture_hover = ExtResource("5_fql3o")
+script = ExtResource("6_laf6s")
+
+[connection signal="pressed" from="หน้าตั้งค่า/เปิดเสียง" to="หน้าตั้งค่า/เปิดเสียง" method="_on_pressed"]
+[connection signal="pressed" from="หน้าตั้งค่า/กลับหน้าเลือกด่าน" to="หน้าตั้งค่า/กลับหน้าเลือกด่าน" method="_on_pressed"]

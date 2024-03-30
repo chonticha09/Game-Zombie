@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://btfbojisesrsv"]
+[gd_scene load_steps=14 format=3 uid="uid://btfbojisesrsv"]
 
 [ext_resource type="Texture2D" uid="uid://b2krk2ejcqsdb" path="res://ร้านอาหารญี่ปุ่น/ฉากหลังร้านอาหารญี่ปุ่น.png" id="1_7hvm4"]
 [ext_resource type="Script" path="res://รวมอาหารในจาน.gd" id="2_4rb68"]
@@ -9,7 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://6iijta6y8yle" path="res://ร้านอาหารญี่ปุ่น/อาหาร/ข้าวญี่ปุ่น.png" id="7_pil8p"]
 [ext_resource type="Texture2D" uid="uid://cvat67kd2at1x" path="res://ร้านอาหารญี่ปุ่น/ถาดไม้.png" id="8_rfsa1"]
 [ext_resource type="Texture2D" uid="uid://ck4iawrbj0pe5" path="res://ร้านอาหารญี่ปุ่น/ข้าว.png" id="9_np107"]
-[ext_resource type="Script" path="res://ข้าว1.gd" id="10_8vdxc"]
 [ext_resource type="Texture2D" uid="uid://dkrntsws1fsde" path="res://ร้านอาหารญี่ปุ่น/ซูซิไข่หวาน.png" id="10_siibb"]
 [ext_resource type="Texture2D" uid="uid://c3a3rodr1dlao" path="res://ร้านอาหารญี่ปุ่น/ซุซิทูน่า.png" id="11_wg5kv"]
 [ext_resource type="Texture2D" uid="uid://dnpxd00dwxadl" path="res://ร้านอาหารญี่ปุ่น/ซูซิกุ้ง.png" id="12_8alk6"]
@@ -79,21 +78,20 @@ offset_right = 755.27
 offset_bottom = 248.336
 texture = ExtResource("8_rfsa1")
 
-[node name="ข้าว1" type="TextureButton" parent="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน/ซูชิไข่หวาน"]
-visible = false
-layout_mode = 0
-offset_right = 1110.0
-offset_bottom = 616.0
-scale = Vector2(0.597999, 0.597999)
-texture_normal = ExtResource("9_np107")
-script = ExtResource("10_8vdxc")
+[node name="ข้าว1" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน/ซูชิไข่หวาน"]
+offset_left = 80.655
+offset_top = 17.1209
+offset_right = 1190.65
+offset_bottom = 633.121
+scale = Vector2(0.571365, 0.571365)
+texture = ExtResource("9_np107")
 
 [node name="ไข่หวาน" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน/ซูชิไข่หวาน/ข้าว1"]
 layout_mode = 0
-offset_left = 11.2396
-offset_top = -85.891
-offset_right = 1934.24
-offset_bottom = 1115.11
+offset_left = 47.054
+offset_top = -63.6755
+offset_right = 1970.05
+offset_bottom = 1137.32
 scale = Vector2(0.586465, 0.586465)
 texture = ExtResource("10_siibb")
 
@@ -171,4 +169,3 @@ texture = ExtResource("13_a4tab")
 [connection signal="pressed" from="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน/ไข่หวาน" to="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน" method="_on_ไข่หวาน_pressed"]
 [connection signal="pressed" from="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน/แซลม่อน" to="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน" method="_on_แซลม่อน_pressed"]
 [connection signal="pressed" from="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน/ข้าว" to="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน" method="_on_ข้าว_pressed"]
-[connection signal="pressed" from="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน/ซูชิไข่หวาน/ข้าว1" to="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน/ซูชิไข่หวาน/ข้าว1" method="_on_pressed"]

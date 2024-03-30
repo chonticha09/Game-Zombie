@@ -25,27 +25,27 @@ func hide_all_texture_rects():
 
 # Load sweet egg image
 func load_sweet_egg_texture(texture_rect: TextureRect) -> void:
-	var texture = preload("res://ร้านอาหารญี่ปุ่น/ซูซิไข่หวาน.png")
+	var texture = preload("res://ร้านอาหารญี่ปุ่น/อาหาร/ถาดไข่หวาน.png")
 	texture_rect.texture = texture
 
 # Load tuna image
 func load_tuna_texture(texture_rect: TextureRect) -> void:
-	var texture = preload("res://ร้านอาหารญี่ปุ่น/ซุซิทูน่า.png")
+	var texture = preload("res://ร้านอาหารญี่ปุ่น/อาหาร/ถาดทูน่า.png")
 	texture_rect.texture = texture
 
 # Load shrimp image
 func load_shrimp_texture(texture_rect: TextureRect) -> void:
-	var texture = preload("res://ร้านอาหารญี่ปุ่น/ซูซิกุ้ง.png")
+	var texture = preload("res://ร้านอาหารญี่ปุ่น/อาหาร/ถาดกุ้ง.png")
 	texture_rect.texture = texture
 	
 # Load salmon image
 func load_salmon_texture(texture_rect: TextureRect) -> void:
-	var texture = preload("res://ร้านอาหารญี่ปุ่น/ซุซิแซลม่อน.png")
+	var texture = preload("res://ร้านอาหารญี่ปุ่น/อาหาร/ถาดแซลม่อน.png")
 	texture_rect.texture = texture
 
 # Load rice image
 func load_rice_texture(texture_rect: TextureRect) -> void:
-	var texture = preload("res://ร้านอาหารญี่ปุ่น/ข้าว.png")
+	var texture = preload("res://ร้านอาหารญี่ปุ่น/อาหาร/ข้าวญี่ปุ่น.png")
 	texture_rect.texture = texture
 	
 	
@@ -72,8 +72,9 @@ func _on_ข้าว_pressed():
 func show_next_texture(texture_loader_func: Callable) -> void:
 	if current_texture_index < texture_rect_nodes.size():
 		var current_texture_rect = texture_rect_nodes[current_texture_index]
-		texture_loader_func(current_texture_rect)
 		current_texture_rect.visible = true
 		current_texture_index += 1
 	else:
 		print("All TextureRects have been shown.")
+		# Reset current_texture_index to 0 to enable buttons again
+		current_texture_index = 0
