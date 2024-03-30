@@ -1,10 +1,23 @@
 extends TextureRect
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	var random_food_node = Control.new()  # สร้างโหนด Control ใหม่
-	random_food_node.name = "สุ่มอาหาร"  # กำหนดชื่อให้กับโหนด Control
-	add_child(random_food_node)  # เพิ่มโหนด Control เข้าไปในโหนด TextureRect
+var textures = []  # อาร์เรย์เก็บรูปภาพที่ใช้สำหรับสุ่ม
 
-	# เรียกใช้งานฟังก์ชันหรือเมทอดของคลาส Control
-	random_food_node.some_control_function()  
+func _ready():
+	# เตรียมรูปภาพที่จะใช้สำหรับสุ่ม
+	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซุซิทูน่า.png"))
+	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซุซิแซลม่อน.png"))
+	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซูซิกุ้ง.png"))
+	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซูซิไข่หวาน.png"))
+	# เลือกรูปภาพแบบสุ่มเป็นรูปเริ่มต้น
+	set_random_texture()
+
+func set_random_texture():
+	# ตรวจสอบว่าอาร์เรย์ textures มีข้อมูลอยู่หรือไม่
+	if textures.size() > 0:
+		# เลือกรูปภาพสุ่มจากอาร์เรย์ของรูปภาพ
+		var random_index = randi_range(0, textures.size() - 1)
+		var selected_texture = textures[random_index]
+		# กำหนดรูปภาพให้กับ TextureRect
+		set_texture(selected_texture)
+	else:
+		print("Error: textures array is empty.")

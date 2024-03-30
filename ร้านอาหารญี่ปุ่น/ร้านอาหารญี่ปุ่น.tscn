@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://cufvf423vkgaa"]
+[gd_scene load_steps=52 format=3 uid="uid://cufvf423vkgaa"]
 
 [ext_resource type="Texture2D" uid="uid://b2krk2ejcqsdb" path="res://ร้านอาหารญี่ปุ่น/ฉากหลังร้านอาหารญี่ปุ่น.png" id="1_m8jqe"]
 [ext_resource type="Texture2D" uid="uid://1ajkhqu0wxxv" path="res://ร้านอาหารญี่ปุ่น/ครัว.png" id="2_4cb8c"]
@@ -9,8 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://c7x3itvoe431i" path="res://ร้านพิซซ่า/มันม่าวง.png" id="3_y3ibh"]
 [ext_resource type="Texture2D" uid="uid://dmnh3ne7uww8i" path="res://กล่องข้อความ.png" id="4_321kl"]
 [ext_resource type="Texture2D" uid="uid://brcmb0rmibxs0" path="res://ร้านอาหารญี่ปุ่น/ขวดสาเก๋.png" id="4_h7hay"]
-[ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/กล่องข้อความ.gd" id="5_yvrji"]
-[ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/Control.gd" id="6_7xyr7"]
 [ext_resource type="Texture2D" uid="uid://dkrntsws1fsde" path="res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซูซิไข่หวาน.png" id="6_a21h4"]
 [ext_resource type="Texture2D" uid="uid://dnpxd00dwxadl" path="res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซูซิกุ้ง.png" id="7_aq3hf"]
 [ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/กุ้ง.gd" id="7_fvqxv"]
@@ -106,38 +104,43 @@ offset_top = -864.362
 offset_right = 719.73
 offset_bottom = -193.362
 texture = ExtResource("4_321kl")
-script = ExtResource("5_yvrji")
 
-[node name="สุ่มอาหาร" type="Control" parent="ฉากหลังร้านอาหารญี่ปุ่น/มันม่าวง/กล่องข้อความ"]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-script = ExtResource("6_7xyr7")
-
-[node name="ซูซิไข่หวาน" type="Sprite2D" parent="ฉากหลังร้านอาหารญี่ปุ่น/มันม่าวง/กล่องข้อความ/สุ่มอาหาร"]
+[node name="ไข่หวาน" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/มันม่าวง/กล่องข้อความ"]
 visible = false
-position = Vector2(300.931, 310.238)
-scale = Vector2(0.26945, 0.262971)
+layout_mode = 0
+offset_left = 93.5962
+offset_top = 195.054
+offset_right = 1264.6
+offset_bottom = 926.054
+scale = Vector2(0.318939, 0.325701)
 texture = ExtResource("6_a21h4")
 
-[node name="ซูซิกุ้ง" type="Sprite2D" parent="ฉากหลังร้านอาหารญี่ปุ่น/มันม่าวง/กล่องข้อความ/สุ่มอาหาร"]
+[node name="ทูน่า" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/มันม่าวง/กล่องข้อความ"]
 visible = false
-position = Vector2(284.982, 322.69)
-scale = Vector2(0.268692, 0.26223)
+offset_left = 93.5962
+offset_top = 195.054
+offset_right = 1264.6
+offset_bottom = 926.054
+scale = Vector2(0.318939, 0.325701)
+texture = ExtResource("21_o0ivk")
+
+[node name="กุ้ง" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/มันม่าวง/กล่องข้อความ"]
+visible = false
+offset_left = 93.5962
+offset_top = 195.054
+offset_right = 1264.6
+offset_bottom = 926.054
+scale = Vector2(0.318939, 0.325701)
 texture = ExtResource("7_aq3hf")
 
-[node name="ซุซิแซลม่อน" type="Sprite2D" parent="ฉากหลังร้านอาหารญี่ปุ่น/มันม่าวง/กล่องข้อความ/สุ่มอาหาร"]
+[node name="แซลม่อน" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/มันม่าวง/กล่องข้อความ"]
 visible = false
-position = Vector2(297.741, 316.464)
-scale = Vector2(0.318977, 0.311306)
+offset_left = 93.5962
+offset_top = 195.054
+offset_right = 1264.6
+offset_bottom = 926.054
+scale = Vector2(0.318939, 0.325701)
 texture = ExtResource("26_hrw3v")
-
-[node name="ซุซิทูน่า" type="Sprite2D" parent="ฉากหลังร้านอาหารญี่ปุ่น/มันม่าวง/กล่องข้อความ/สุ่มอาหาร"]
-visible = false
-position = Vector2(310.5, 279.107)
-scale = Vector2(0.291902, 0.284882)
-texture = ExtResource("21_o0ivk")
 
 [node name="ครัว" type="Sprite2D" parent="ฉากหลังร้านอาหารญี่ปุ่น"]
 position = Vector2(8.91192, 450.097)
