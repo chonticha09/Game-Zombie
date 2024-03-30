@@ -1,6 +1,6 @@
 extends Sprite2D
 
-var speed = 150  # ความเร็วในการเคลื่อนที่
+var speed = 30  # ความเร็วในการเคลื่อนที่
 var moving = true  # สถานะการเคลื่อนที่ของ Sprite
 var textures = []  # อาร์เรย์เก็บรูปภาพที่ใช้สำหรับสุ่ม
 
