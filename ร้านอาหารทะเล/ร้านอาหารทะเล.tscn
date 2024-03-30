@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://luyi6dqcdis7"]
+[gd_scene load_steps=53 format=3 uid="uid://luyi6dqcdis7"]
 
 [ext_resource type="AudioStream" uid="uid://qcbs3op7r83n" path="res://ร้านอาหารทะเล/very-lush-and-swag-loop-74140.mp3" id="1_a0s4p"]
 [ext_resource type="Texture2D" uid="uid://de038mx8pphaq" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ป้าย4.png" id="2_ccpjq"]
@@ -8,10 +8,14 @@
 [ext_resource type="Script" path="res://ร้านอาหารทะเล/มันม่าวง.gd" id="6_d7mkw"]
 [ext_resource type="Texture2D" uid="uid://dmnh3ne7uww8i" path="res://กล่องข้อความ.png" id="7_ywiy8"]
 [ext_resource type="Script" path="res://ร้านอาหารทะเล/ถังไอติม.gd" id="8_0ioli"]
+[ext_resource type="Script" path="res://ร้านอาหารทะเล/สุ่มอาหาร.gd" id="8_x5gyt"]
 [ext_resource type="Script" path="res://ร้านอาหารทะเล/จานเปล่า.gd" id="9_chtae"]
+[ext_resource type="Texture2D" uid="uid://djetnxapys18a" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/จานผักซอสปลา.png" id="9_s8ad0"]
 [ext_resource type="Texture2D" uid="uid://s8v0s175vlyb" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ครัว.png" id="9_xqmxv"]
 [ext_resource type="Script" path="res://ร้านอาหารทะเล/ถาดผักกาด.gd" id="10_0sx2y"]
 [ext_resource type="Texture2D" uid="uid://draaee8kij6aa" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ถาดฟ้า.png" id="10_g48yl"]
+[ext_resource type="Texture2D" uid="uid://ks0op8ln6d0b" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/จานเนื้อผักมะเขือ.png" id="10_qwhc0"]
+[ext_resource type="Texture2D" uid="uid://b0a80go1i1177" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/จานเนื้อมะเขื่อเทศซอส.png" id="11_lcdas"]
 [ext_resource type="Script" path="res://ร้านอาหารทะเล/เนื้อก่อนย่าง.gd" id="11_s0tlq"]
 [ext_resource type="Script" path="res://ร้านอาหารทะเล/ถาดมะเขือเทศ.gd" id="12_6a8xg"]
 [ext_resource type="Texture2D" uid="uid://dnwqkx4gf4nrg" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ถังไอศครีม.png" id="12_mut06"]
@@ -117,6 +121,44 @@ offset_top = -864.362
 offset_right = 719.73
 offset_bottom = -193.362
 texture = ExtResource("7_ywiy8")
+
+[node name="สุ่มอาหาร" type="Control" parent="มันม่าวง/กล่องข้อความ"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("8_x5gyt")
+
+[node name="แซลม่อนซอส" type="TextureRect" parent="มันม่าวง/กล่องข้อความ/สุ่มอาหาร"]
+offset_left = 110.01
+offset_top = 35.3604
+offset_right = 1468.01
+offset_bottom = 1246.36
+scale = Vector2(0.261145, 0.261145)
+texture = ExtResource("9_s8ad0")
+
+[node name="เนื้อมะเขือเทศ" type="TextureRect" parent="มันม่าวง/กล่องข้อความ/สุ่มอาหาร"]
+offset_left = 110.01
+offset_top = 35.3604
+offset_right = 1468.01
+offset_bottom = 1246.36
+scale = Vector2(0.261145, 0.261145)
+texture = ExtResource("10_qwhc0")
+
+[node name="เนื้อซอส" type="TextureRect" parent="มันม่าวง/กล่องข้อความ/สุ่มอาหาร"]
+offset_left = 110.01
+offset_top = 35.3604
+offset_right = 1468.01
+offset_bottom = 1246.36
+scale = Vector2(0.261145, 0.261145)
+texture = ExtResource("11_lcdas")
+
+[node name="แซลม่อนซอส2" type="TextureRect" parent="มันม่าวง/กล่องข้อความ/สุ่มอาหาร"]
+offset_left = 110.01
+offset_top = 35.3604
+offset_right = 1468.01
+offset_bottom = 1246.36
+scale = Vector2(0.261145, 0.261145)
+texture = ExtResource("9_s8ad0")
 
 [node name="ครัว2" type="Sprite2D" parent="."]
 position = Vector2(646, 558.5)
