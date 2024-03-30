@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://enqs25ysmuyn"]
+[gd_scene load_steps=29 format=3 uid="uid://enqs25ysmuyn"]
 
 [ext_resource type="Texture2D" uid="uid://cs5lxbhobrpjw" path="res://อาหารจีน/พื้นหลังอาหารจีน.png" id="1_huasp"]
 [ext_resource type="Texture2D" uid="uid://bi8qnd8lwyrm1" path="res://อาหารจีน/ครัวอาหารจีนnew.png" id="2_47thu"]
@@ -13,11 +13,6 @@
 [ext_resource type="Script" path="res://ซีนต่างๆ/Mainn.gd" id="8_2x5bi"]
 [ext_resource type="Texture2D" uid="uid://bwqyscirbjxok" path="res://เพิ่มเติม/R1.png" id="8_ka2q5"]
 [ext_resource type="Texture2D" uid="uid://d0usu5d6oirt5" path="res://เพิ่มเติม/R.png" id="9_o1jvg"]
-[ext_resource type="Script" path="res://ร้านอาหารทะเล/Home.gd" id="10_8ahyb"]
-[ext_resource type="Texture2D" uid="uid://cjihuyx26qsl1" path="res://เพิ่มเติม/หน้าตั้งค่า.png" id="11_gvrof"]
-[ext_resource type="Texture2D" uid="uid://cxwfd6sbr2rvx" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มเสียง.png" id="12_fo4qk"]
-[ext_resource type="Texture2D" uid="uid://0x72hgjpc72d" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มกลับ.png" id="13_qvms0"]
-[ext_resource type="Texture2D" uid="uid://eabganfyu3yb" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มออก.png" id="14_c5ams"]
 [ext_resource type="Texture2D" uid="uid://butmh0ttjwh6y" path="res://อาหารจีน/จาน+ซาลาเปา.png" id="15_gcxqw"]
 [ext_resource type="Texture2D" uid="uid://u24dy72l2p4k" path="res://อาหารจีน/จาน+ขนมจีบ.png" id="16_iy725"]
 [ext_resource type="Texture2D" uid="uid://bsbhm48p7fdx" path="res://อาหารจีน/ขนมจีบ3อัน.png" id="17_cucxf"]
@@ -25,8 +20,40 @@
 [ext_resource type="Texture2D" uid="uid://toa64l2r1gla" path="res://อาหารจีน/กาน้ำชา.png" id="19_00y0w"]
 [ext_resource type="Texture2D" uid="uid://cggcfrmmevena" path="res://อาหารจีน/ที่นึ่ง.png" id="19_2clxw"]
 [ext_resource type="Texture2D" uid="uid://bxvaphfu523vw" path="res://อาหารจีน/ชา.png" id="20_s5473"]
+[ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/Home.gd" id="21_mgx34"]
 [ext_resource type="Texture2D" uid="uid://dbg4kddcn8apa" path="res://อาหารจีน/แผ่นแป้ง.png" id="22_beloa"]
+[ext_resource type="Texture2D" uid="uid://dg8vkcg53wx1n" path="res://หน้าตั้งค่าใหม่/กรอบสีเขียว.png" id="22_jd7hg"]
+[ext_resource type="Texture2D" uid="uid://dnul2hd3pap1x" path="res://หน้าตั้งค่าใหม่/เสียงเปิดเขียว.png" id="23_kepuv"]
 [ext_resource type="Texture2D" uid="uid://d1vgbyyeenyc0" path="res://อาหารจีน/แป้ง.png" id="23_pyv45"]
+[ext_resource type="Texture2D" uid="uid://bginhcf68ym1q" path="res://หน้าตั้งค่าใหม่/เสียงปิดเขียว.png" id="24_7agm5"]
+[ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/กลับหน้าเลือกด่าน.gd" id="25_7uldb"]
+
+[sub_resource type="GDScript" id="GDScript_eyalg"]
+script/source = "extends TextureButton
+var audio_enabled = true
+var is_clicked = false
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass  # Replace with function body.
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+func _on_pressed():
+	if audio_enabled:
+		AudioServer.set_bus_mute(AudioServer.get_bus_index(\"Master\"), true)
+		audio_enabled = false
+	else:
+		AudioServer.set_bus_mute(AudioServer.get_bus_index(\"Master\"), false)
+		audio_enabled = true
+
+	# เปลี่ยนรูปภาพของ TextureButton เมื่อถูกคลิก
+	if is_clicked:
+		texture_normal = load(\"res://หน้าตั้งค่าใหม่/เสียงเปิดเขียว.png\")
+	else:
+		texture_normal = load(\"res://หน้าตั้งค่าใหม่/เสียงปิดเขียว.png\")
+
+	is_clicked = not is_clicked
+"
 
 [node name="ร้านอาหารจีน" type="Node2D"]
 
@@ -76,52 +103,6 @@ offset_right = 709.668
 offset_bottom = 1133.34
 scale = Vector2(0.168656, 0.168656)
 texture_normal = ExtResource("7_u2kfk")
-
-[node name="Home" type="TextureButton" parent="พื้นหลังอาหารจีน"]
-offset_left = -1371.48
-offset_top = -675.4
-offset_right = 378.523
-offset_bottom = 1074.6
-scale = Vector2(0.0783729, 0.0783729)
-texture_normal = ExtResource("8_ka2q5")
-texture_hover = ExtResource("9_o1jvg")
-script = ExtResource("10_8ahyb")
-
-[node name="เซ็ทติ้ง" type="TextureRect" parent="พื้นหลังอาหารจีน/Home"]
-visible = false
-layout_mode = 0
-offset_left = 5424.53
-offset_top = 1872.42
-offset_right = 42426.5
-offset_bottom = 25580.4
-scale = Vector2(0.67015, 0.67015)
-texture = ExtResource("11_gvrof")
-
-[node name="เสียง" type="TextureRect" parent="พื้นหลังอาหารจีน/Home/เซ็ทติ้ง"]
-layout_mode = 0
-offset_left = 6409.84
-offset_top = 8628.63
-offset_right = 13898.8
-offset_bottom = 15604.6
-scale = Vector2(0.759762, 0.759762)
-texture = ExtResource("12_fo4qk")
-
-[node name="ย้อนกลับ" type="TextureRect" parent="พื้นหลังอาหารจีน/Home/เซ็ทติ้ง"]
-layout_mode = 0
-offset_left = 13107.3
-offset_top = 8710.81
-offset_right = 18630.3
-offset_bottom = 14233.8
-scale = Vector2(1.04899, 0.972427)
-texture = ExtResource("13_qvms0")
-
-[node name="ไปหน้าหลัก" type="TextureRect" parent="พื้นหลังอาหารจีน/Home/เซ็ทติ้ง"]
-layout_mode = 0
-offset_left = 19969.1
-offset_top = 8875.16
-offset_right = 25563.1
-offset_bottom = 14175.2
-texture = ExtResource("14_c5ams")
 
 [node name="ซาลาเปา" type="TextureButton" parent="พื้นหลังอาหารจีน"]
 offset_left = 544.336
@@ -307,8 +288,61 @@ offset_bottom = 942.107
 scale = Vector2(0.260118, 0.260118)
 texture_normal = ExtResource("23_pyv45")
 
+[node name="Home" type="TextureButton" parent="พื้นหลังอาหารจีน/แผ่นแป้ง"]
+offset_left = -3772.82
+offset_top = -3412.69
+offset_right = -2022.82
+offset_bottom = -1662.69
+scale = Vector2(0.290316, 0.290316)
+texture_normal = ExtResource("8_ka2q5")
+texture_hover = ExtResource("9_o1jvg")
+script = ExtResource("21_mgx34")
+
+[node name="หน้าตั้งค่า" type="TextureRect" parent="พื้นหลังอาหารจีน/แผ่นแป้ง/Home"]
+visible = false
+layout_mode = 0
+offset_left = 8838.91
+offset_top = 2670.95
+offset_right = 31328.9
+offset_bottom = 18218.0
+scale = Vector2(0.745627, 0.745627)
+texture = ExtResource("22_jd7hg")
+
+[node name="เปิดเสียง" type="TextureButton" parent="พื้นหลังอาหารจีน/แผ่นแป้ง/Home/หน้าตั้งค่า"]
+layout_mode = 0
+offset_left = 4579.29
+offset_top = 4726.98
+offset_right = 4822.29
+offset_bottom = 4959.98
+scale = Vector2(14.3492, 14.3492)
+texture_normal = ExtResource("23_kepuv")
+script = SubResource("GDScript_eyalg")
+
+[node name="ปิดเสียง" type="TextureRect" parent="พื้นหลังอาหารจีน/แผ่นแป้ง/Home/หน้าตั้งค่า/เปิดเสียง"]
+visible = false
+layout_mode = 0
+offset_left = -1.78711
+offset_top = 3.57471
+offset_right = 628.213
+offset_bottom = 603.575
+scale = Vector2(0.384583, 0.384583)
+texture = ExtResource("24_7agm5")
+
+[node name="กลับหน้าเลือกด่าน" type="TextureButton" parent="พื้นหลังอาหารจีน/แผ่นแป้ง/Home/หน้าตั้งค่า"]
+layout_mode = 0
+offset_left = 6130.34
+offset_top = 10007.9
+offset_right = 7880.34
+offset_bottom = 11757.9
+scale = Vector2(1.93884, 1.93884)
+texture_normal = ExtResource("8_ka2q5")
+texture_hover = ExtResource("9_o1jvg")
+script = ExtResource("25_7uldb")
+
 [node name="Mainn" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_0ob4d")
 script = ExtResource("8_2x5bi")
 
-[connection signal="pressed" from="พื้นหลังอาหารจีน/Home" to="พื้นหลังอาหารจีน/Home" method="_on_pressed"]
+[connection signal="pressed" from="พื้นหลังอาหารจีน/แผ่นแป้ง/Home" to="พื้นหลังอาหารจีน/แผ่นแป้ง/Home" method="_on_pressed"]
+[connection signal="pressed" from="พื้นหลังอาหารจีน/แผ่นแป้ง/Home/หน้าตั้งค่า/เปิดเสียง" to="พื้นหลังอาหารจีน/แผ่นแป้ง/Home/หน้าตั้งค่า/เปิดเสียง" method="_on_pressed"]
+[connection signal="pressed" from="พื้นหลังอาหารจีน/แผ่นแป้ง/Home/หน้าตั้งค่า/กลับหน้าเลือกด่าน" to="พื้นหลังอาหารจีน/แผ่นแป้ง/Home/หน้าตั้งค่า/กลับหน้าเลือกด่าน" method="_on_pressed"]
