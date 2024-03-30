@@ -1,49 +1,45 @@
 extends Sprite2D
 
-var speed = 80
-var moving = true
-var stopPosition = 950
-var waitTime = 5.0
-var elapsedTime = 0.0
-
-var textureRect = null
-var pictureTexture = null
-
-# Initial position of the character
-var initialPosition = Vector2(0, 0)
-
-func _ready():
-	textureRect = get_node("กล่องข้อความ")
-	show_textureRect()  # เรียกใช้ฟังก์ชันเพื่อให้กล่องข้อความแสดง
-	initialPosition = position  # เก็บตำแหน่งเริ่มต้น
+var speed = 150  # ความเร็วในการเคลื่อนที่
+var moving = true  # สถานะการเคลื่อนที่ของ Sprite
+var textures = []  # อาร์เรย์เก็บรูปภาพที่ใช้สำหรับสุ่ม
 
 func _process(delta):
 	if moving:
+		# คำนวณการเคลื่อนที่ของ Sprite ไปทางขวา
 		var movement = Vector2.LEFT * speed * delta
 		position += movement
 
-		if position.x <= stopPosition:
-			show_textureRect()
-			moving = false
-			elapsedTime = 0.0
+		# ตรวจสอบว่า Sprite ได้เคลื่อนที่ออกนอกหน้าจอหรือไม่
+		if position.x > get_viewport_rect().size.x:
+			# ถ้าออกนอกหน้าจอให้สร้าง Sprite ใหม่ที่ตำแหน่งเริ่มต้น
+			position.x = 0
 
-	if !moving:
-		elapsedTime += delta
+func _ready():
+	# โหลดรูปภาพของ Sprite
+	var texture = preload("res://กล่องข้อความ.png")
 
-		if elapsedTime >= waitTime:
-			hide_textureRect()
-			moving = true
-			elapsedTime = 0.0
-			
-	if position.x < -100:  # Check if character goes out of frame
-		position = initialPosition  # Reset position to initial position
+	# เตรียมรูปภาพที่จะใช้สำหรับสุ่ม
+	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซุซิทูน่า.png"))
+	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซุซิแซลม่อน.png"))
+	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซูซิกุ้ง.png"))
+	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซูซิไข่หวาน.png"))
 
-func show_textureRect():
-	if textureRect != null:
-		pictureTexture = preload("res://กล่องข้อความ.png")
-		textureRect.texture = pictureTexture
-		textureRect.visible = true
+	# เลือกรูปภาพแบบสุ่มเป็นรูปเริ่มต้น
+	set_random_texture()
 
-func hide_textureRect():
-	if textureRect != null:
-		textureRect.visible = false
+	# กำหนดรูปภาพให้กับ Sprite
+	texture = preload("res://ร้านพิซซ่า/มันม่าวง.png")
+	set_texture(texture)
+
+func set_random_texture():
+	# ตรวจสอบว่าอาร์เรย์ textures มีข้อมูลอยู่หรือไม่
+	if textures.size() > 0:
+		# เลือกรูปภาพสุ่มจากอาร์เรย์ของรูปภาพ
+		var random_index = randi_range(0, textures.size() - 1)
+		var selected_texture = textures[random_index]
+		# กำหนดรูปภาพให้กับ Sprite
+		texture = selected_texture
+		set_texture(texture)
+	else:
+		print("Error: textures array is empty.")

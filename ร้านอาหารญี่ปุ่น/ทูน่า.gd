@@ -14,7 +14,7 @@ func _ready():
 
 # Function to load mango texture
 func load_กุ้ง_texture(texture_rect: TextureRect) -> void:
-	var texture1 = preload("res://ร้านอาหารญี่ปุ่น/ซุซิทูน่า.png")
+	var texture1 = preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซุซิทูน่า.png")
 	texture_rect.texture = texture1
 
 # When the button is pressed (load mango texture)

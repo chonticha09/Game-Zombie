@@ -1,0 +1,139 @@
+[gd_scene load_steps=10 format=3 uid="uid://btfbojisesrsv"]
+
+[ext_resource type="Texture2D" uid="uid://b2krk2ejcqsdb" path="res://ร้านอาหารญี่ปุ่น/ฉากหลังร้านอาหารญี่ปุ่น.png" id="1_7hvm4"]
+[ext_resource type="Script" path="res://รวมอาหารในจาน.gd" id="2_4rb68"]
+[ext_resource type="Texture2D" uid="uid://xywdhvn5abj0" path="res://ร้านอาหารญี่ปุ่น/อาหาร/ถาดกุ้ง.png" id="3_s2344"]
+[ext_resource type="Texture2D" uid="uid://cxlx4iss6y0eq" path="res://ร้านอาหารญี่ปุ่น/อาหาร/ถาดทูน่า.png" id="4_npyxs"]
+[ext_resource type="Texture2D" uid="uid://dd1ocaa0x5kod" path="res://ร้านอาหารญี่ปุ่น/อาหาร/ถาดไข่หวาน.png" id="5_1daed"]
+[ext_resource type="Texture2D" uid="uid://dcud12j30hnx8" path="res://ร้านอาหารญี่ปุ่น/อาหาร/ถาดแซลม่อน.png" id="6_1v7ve"]
+[ext_resource type="Texture2D" uid="uid://6iijta6y8yle" path="res://ร้านอาหารญี่ปุ่น/อาหาร/ข้าวญี่ปุ่น.png" id="7_pil8p"]
+[ext_resource type="Texture2D" uid="uid://cvat67kd2at1x" path="res://ร้านอาหารญี่ปุ่น/ถาดไม้.png" id="8_rfsa1"]
+[ext_resource type="Texture2D" uid="uid://ck4iawrbj0pe5" path="res://ร้านอาหารญี่ปุ่น/ข้าว.png" id="9_np107"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ฉากหลังร้านอาหารญี่ปุ่น" type="Sprite2D" parent="."]
+position = Vector2(620, 316.5)
+scale = Vector2(0.446346, 0.467265)
+texture = ExtResource("1_7hvm4")
+
+[node name="รวมอาหารในจาน" type="Control" parent="ฉากหลังร้านอาหารญี่ปุ่น"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -1344.0
+offset_top = -403.0
+offset_right = 1420.0
+offset_bottom = 711.0
+script = ExtResource("2_4rb68")
+
+[node name="กุ้ง" type="TextureButton" parent="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน"]
+offset_left = -33.855
+offset_top = 791.43
+offset_right = 1095.15
+offset_bottom = 1444.43
+scale = Vector2(0.543299, 0.543299)
+texture_normal = ExtResource("3_s2344")
+
+[node name="ทูน่า" type="TextureButton" parent="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน"]
+offset_left = 376.141
+offset_top = 570.999
+offset_right = 1505.14
+offset_bottom = 1224.0
+scale = Vector2(0.543299, 0.543299)
+texture_normal = ExtResource("4_npyxs")
+
+[node name="ไข่หวาน" type="TextureButton" parent="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน"]
+offset_left = 815.262
+offset_top = 320.606
+offset_right = 1944.26
+offset_bottom = 973.606
+scale = Vector2(0.543299, 0.543299)
+texture_normal = ExtResource("5_1daed")
+
+[node name="แซลม่อน" type="TextureButton" parent="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน"]
+offset_left = 360.458
+offset_top = 324.886
+offset_right = 1156.46
+offset_bottom = 770.886
+scale = Vector2(0.543299, 0.543299)
+texture_normal = ExtResource("6_1v7ve")
+
+[node name="ข้าว" type="TextureButton" parent="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน"]
+offset_left = -98.8273
+offset_top = 318.466
+offset_right = 716.173
+offset_bottom = 783.466
+scale = Vector2(0.543299, 0.543299)
+texture_normal = ExtResource("7_pil8p")
+
+[node name="ซูชิไข่หวาน" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน"]
+layout_mode = 0
+offset_left = -4.72984
+offset_top = -248.664
+offset_right = 755.27
+offset_bottom = 248.336
+texture = ExtResource("8_rfsa1")
+
+[node name="ข้าว1" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน/ซูชิไข่หวาน"]
+offset_left = 80.655
+offset_top = 17.1209
+offset_right = 1190.65
+offset_bottom = 633.121
+scale = Vector2(0.571365, 0.571365)
+texture = ExtResource("9_np107")
+
+[node name="TextureRect" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน/ซูชิไข่หวาน"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ซูชิทูน่า" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน"]
+offset_left = 783.896
+offset_top = -225.123
+offset_right = 1543.9
+offset_bottom = 271.877
+texture = ExtResource("8_rfsa1")
+
+[node name="ข้าว2" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน/ซูชิทูน่า"]
+offset_left = 26.8848
+offset_top = 17.1211
+offset_right = 1136.88
+offset_bottom = 633.121
+scale = Vector2(0.571365, 0.571365)
+texture = ExtResource("9_np107")
+
+[node name="ซูชิกุ้ง" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน"]
+offset_left = 1581.48
+offset_top = -193.021
+offset_right = 2341.48
+offset_bottom = 303.979
+texture = ExtResource("8_rfsa1")
+
+[node name="ข้าว3" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน/ซูชิกุ้ง"]
+offset_left = 76.1738
+offset_top = 42.8025
+offset_right = 1186.17
+offset_bottom = 658.802
+scale = Vector2(0.571365, 0.571365)
+texture = ExtResource("9_np107")
+
+[node name="ซูชิแซลม่อน" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน"]
+offset_left = 1700.23
+offset_top = 474.694
+offset_right = 2460.23
+offset_bottom = 971.694
+texture = ExtResource("8_rfsa1")
+
+[node name="ข้าว4" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน/ซูชิแซลม่อน"]
+offset_left = 100.819
+offset_top = -8.56055
+offset_right = 1210.82
+offset_bottom = 607.439
+scale = Vector2(0.571365, 0.571365)
+texture = ExtResource("9_np107")
+
+[connection signal="pressed" from="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน/กุ้ง" to="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน" method="_on_กุ้ง_pressed"]
+[connection signal="pressed" from="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน/ทูน่า" to="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน" method="_on_ทูน่า_pressed"]
+[connection signal="pressed" from="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน/ไข่หวาน" to="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน" method="_on_ไข่หวาน_pressed"]
+[connection signal="pressed" from="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน/แซลม่อน" to="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน" method="_on_แซลม่อน_pressed"]
+[connection signal="pressed" from="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน/ข้าว" to="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน" method="_on_ข้าว_pressed"]

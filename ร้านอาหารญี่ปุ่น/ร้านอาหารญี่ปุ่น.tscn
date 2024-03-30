@@ -1,46 +1,41 @@
-<<<<<<< HEAD
-[gd_scene load_steps=42 format=3 uid="uid://cufvf423vkgaa"]
+[gd_scene load_steps=52 format=3 uid="uid://cufvf423vkgaa"]
 
 [ext_resource type="Texture2D" uid="uid://b2krk2ejcqsdb" path="res://ร้านอาหารญี่ปุ่น/ฉากหลังร้านอาหารญี่ปุ่น.png" id="1_m8jqe"]
 [ext_resource type="Texture2D" uid="uid://1ajkhqu0wxxv" path="res://ร้านอาหารญี่ปุ่น/ครัว.png" id="2_4cb8c"]
-=======
-[gd_scene load_steps=50 format=3 uid="uid://cufvf423vkgaa"]
-
-[ext_resource type="Texture2D" uid="uid://b2krk2ejcqsdb" path="res://ร้านอาหารญี่ปุ่น/ฉากหลังร้านอาหารญี่ปุ่น.png" id="1_m8jqe"]
-[ext_resource type="Texture2D" uid="uid://1ajkhqu0wxxv" path="res://ร้านอาหารญี่ปุ่น/ครัว.png" id="2_4cb8c"]
+[ext_resource type="Texture2D" uid="uid://dc7ch637jsl4u" path="res://ร้านอาหารญี่ปุ่น/ครัวใหม่.png" id="2_dso7i"]
 [ext_resource type="Script" path="res://ร้านอาหารทะเล/มันม่าวง.gd" id="3_i4sbl"]
->>>>>>> 2a03aaac627968a4438fb6cea82b6c4c085c4b45
 [ext_resource type="Texture2D" uid="uid://cehnb0dx2s7bv" path="res://ร้านอาหารญี่ปุ่น/ไข่กุ้งและสาหร่าย.png" id="3_j8lq5"]
 [ext_resource type="AudioStream" uid="uid://6qsw1dyfxddh" path="res://Sound/impatience-113686.mp3" id="3_lv08g"]
 [ext_resource type="Texture2D" uid="uid://c7x3itvoe431i" path="res://ร้านพิซซ่า/มันม่าวง.png" id="3_y3ibh"]
+[ext_resource type="Texture2D" uid="uid://dmnh3ne7uww8i" path="res://กล่องข้อความ.png" id="4_321kl"]
 [ext_resource type="Texture2D" uid="uid://brcmb0rmibxs0" path="res://ร้านอาหารญี่ปุ่น/ขวดสาเก๋.png" id="4_h7hay"]
-[ext_resource type="Script" path="res://ร้านอาหารที่ 2/มันม่าวง.gd" id="4_xldh6"]
-[ext_resource type="Texture2D" uid="uid://xywdhvn5abj0" path="res://ร้านอาหารญี่ปุ่น/ถาดกุ้ง.png" id="5_y7ghj"]
-[ext_resource type="Texture2D" uid="uid://cxlx4iss6y0eq" path="res://ร้านอาหารญี่ปุ่น/ถาดทูน่า.png" id="6_88ivh"]
+[ext_resource type="Texture2D" uid="uid://dkrntsws1fsde" path="res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซูซิไข่หวาน.png" id="6_a21h4"]
+[ext_resource type="Texture2D" uid="uid://dnpxd00dwxadl" path="res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซูซิกุ้ง.png" id="7_aq3hf"]
 [ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/กุ้ง.gd" id="7_fvqxv"]
-[ext_resource type="Texture2D" uid="uid://dd1ocaa0x5kod" path="res://ร้านอาหารญี่ปุ่น/ถาดไข่หวาน.png" id="7_rtnbt"]
-[ext_resource type="Texture2D" uid="uid://6iijta6y8yle" path="res://ร้านอาหารญี่ปุ่น/ข้าวญี่ปุ่น.png" id="8_nl7he"]
+[ext_resource type="Texture2D" uid="uid://6iijta6y8yle" path="res://ร้านอาหารญี่ปุ่น/อาหาร/ข้าวญี่ปุ่น.png" id="9_2dq7p"]
 [ext_resource type="Texture2D" uid="uid://bfb5fwm62tgra" path="res://ร้านอาหารญี่ปุ่น/หม้อทอด.png" id="9_v73by"]
 [ext_resource type="Texture2D" uid="uid://cvat67kd2at1x" path="res://ร้านอาหารญี่ปุ่น/ถาดไม้.png" id="10_k5il1"]
 [ext_resource type="Texture2D" uid="uid://b13sa4v87cjkf" path="res://ร้านอาหารญี่ปุ่น/โชยุ.png" id="11_4enpg"]
 [ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/ข้าวญี่ปุ่น.gd" id="12_3puq2"]
 [ext_resource type="Texture2D" uid="uid://b1ukibmlix3ga" path="res://ร้านอาหารญี่ปุ่น/วาซาบิ.png" id="12_h7lwf"]
+[ext_resource type="Texture2D" uid="uid://xywdhvn5abj0" path="res://ร้านอาหารญี่ปุ่น/อาหาร/ถาดกุ้ง.png" id="13_ltkgm"]
 [ext_resource type="Texture2D" uid="uid://bs61aigvw65yf" path="res://ร้านอาหารญี่ปุ่น/แก้วสาเก๋.png" id="13_phgiv"]
 [ext_resource type="Texture2D" uid="uid://bqcnwlj5jy0fi" path="res://ร้านอาหารญี่ปุ่น/กุ้งชุบแดป้งทอด.png" id="15_62kgo"]
 [ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/ทูน่า.gd" id="15_e8i0a"]
 [ext_resource type="Texture2D" uid="uid://xg6uvbuiv6i2" path="res://ร้านอาหารญี่ปุ่น/ผ้ารอง.png" id="16_fv6ov"]
+[ext_resource type="Texture2D" uid="uid://cxlx4iss6y0eq" path="res://ร้านอาหารญี่ปุ่น/อาหาร/ถาดทูน่า.png" id="16_qqcqu"]
 [ext_resource type="Texture2D" uid="uid://bstreyho5wx3v" path="res://ร้านอาหารญี่ปุ่น/กุ้งทอด.png" id="17_rttrr"]
-[ext_resource type="Texture2D" uid="uid://dkrntsws1fsde" path="res://ร้านอาหารญี่ปุ่น/ซูซิไข่หวาน.png" id="18_cjv5v"]
 [ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/ไข่หวาน.gd" id="18_y151y"]
-[ext_resource type="Texture2D" uid="uid://c3a3rodr1dlao" path="res://ร้านอาหารญี่ปุ่น/ซุซิทูน่า.png" id="19_abhai"]
+[ext_resource type="Texture2D" uid="uid://dd1ocaa0x5kod" path="res://ร้านอาหารญี่ปุ่น/อาหาร/ถาดไข่หวาน.png" id="19_rx20o"]
 [ext_resource type="Texture2D" uid="uid://ck4iawrbj0pe5" path="res://ร้านอาหารญี่ปุ่น/ข้าว.png" id="20_7yw6y"]
-[ext_resource type="Texture2D" uid="uid://dnpxd00dwxadl" path="res://ร้านอาหารญี่ปุ่น/ซูซิกุ้ง.png" id="20_mpvjj"]
 [ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/ถาดแซลมอน.gd" id="20_o6sad"]
-[ext_resource type="Texture2D" uid="uid://dcv482pniqs5c" path="res://ร้านอาหารญี่ปุ่น/ซุซิแซลม่อน.png" id="21_by6lo"]
+[ext_resource type="Texture2D" uid="uid://c3a3rodr1dlao" path="res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซุซิทูน่า.png" id="21_o0ivk"]
+[ext_resource type="Texture2D" uid="uid://dcud12j30hnx8" path="res://ร้านอาหารญี่ปุ่น/อาหาร/ถาดแซลม่อน.png" id="22_mhah8"]
 [ext_resource type="Script" path="res://โค้ด/Menu.gd" id="23_beylh"]
 [ext_resource type="Texture2D" uid="uid://dlw1hdxmkgic5" path="res://หน้าหลัก/ไอคอนเมนูจ้า.png" id="24_sylce"]
 [ext_resource type="Texture2D" uid="uid://cjihuyx26qsl1" path="res://เพิ่มเติม/หน้าตั้งค่า.png" id="25_hkx5c"]
 [ext_resource type="Texture2D" uid="uid://cxwfd6sbr2rvx" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มเสียง.png" id="26_8vn13"]
+[ext_resource type="Texture2D" uid="uid://dcv482pniqs5c" path="res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซุซิแซลม่อน.png" id="26_hrw3v"]
 [ext_resource type="Texture2D" uid="uid://0x72hgjpc72d" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มกลับ.png" id="27_6csxl"]
 [ext_resource type="Texture2D" uid="uid://eabganfyu3yb" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มออก.png" id="28_gvhvq"]
 [ext_resource type="Texture2D" uid="uid://de038mx8pphaq" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ป้าย4.png" id="29_nuswn"]
@@ -48,9 +43,6 @@
 [ext_resource type="Texture2D" uid="uid://bm7ost7qle6g0" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ป้าย2.png" id="31_f1elv"]
 [ext_resource type="Texture2D" uid="uid://dqooidv5hwmsu" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ป้าย1.png" id="32_ac6rh"]
 [ext_resource type="Script" path="res://โค้ด/Label.gd" id="33_t808b"]
-[ext_resource type="Texture2D" uid="uid://dcud12j30hnx8" path="res://ร้านอาหารญี่ปุ่น/ถาดแซลม่อน.png" id="42_afocw"]
-<<<<<<< HEAD
-=======
 [ext_resource type="Texture2D" uid="uid://bwqyscirbjxok" path="res://เพิ่มเติม/R1.png" id="42_njulb"]
 [ext_resource type="Texture2D" uid="uid://d0usu5d6oirt5" path="res://เพิ่มเติม/R.png" id="43_75ejs"]
 [ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/Home.gd" id="44_0wjbt"]
@@ -59,7 +51,7 @@
 [ext_resource type="Texture2D" uid="uid://bginhcf68ym1q" path="res://หน้าตั้งค่าใหม่/เสียงปิดเขียว.png" id="47_au6ru"]
 [ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/กลับหน้าเลือกด่าน.gd" id="48_vr2am"]
 
-[sub_resource type="GDScript" id="GDScript_ted8u"]
+[sub_resource type="GDScript" id="GDScript_4r062"]
 script/source = "extends TextureButton
 var audio_enabled = true
 var is_clicked = false
@@ -85,7 +77,6 @@ func _on_pressed():
 
 	is_clicked = not is_clicked
 "
->>>>>>> 2a03aaac627968a4438fb6cea82b6c4c085c4b45
 
 [node name="ร้านอาหารญี่ปุ่น" type="Node2D"]
 metadata/_edit_horizontal_guides_ = []
@@ -95,20 +86,64 @@ position = Vector2(622.5, 327)
 scale = Vector2(0.448841, 0.459901)
 texture = ExtResource("1_m8jqe")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="ฉากหลังร้านอาหารญี่ปุ่น"]
+[node name="ครัวใหม่" type="Sprite2D" parent="ฉากหลังร้านอาหารญี่ปุ่น"]
 visible = false
-position = Vector2(-1386.91, -711.023)
-scale = Vector2(2.22796, 2.17438)
+position = Vector2(10.0259, 401.173)
+scale = Vector2(1.00567, 1.13896)
+texture = ExtResource("2_dso7i")
 
 [node name="มันม่าวง" type="Sprite2D" parent="ฉากหลังร้านอาหารญี่ปุ่น"]
-position = Vector2(1219.81, -93.4984)
-scale = Vector2(0.567067, 0.55343)
+position = Vector2(1126.23, 4.34875)
+scale = Vector2(0.698471, 0.698471)
 texture = ExtResource("3_y3ibh")
-<<<<<<< HEAD
-script = ExtResource("4_xldh6")
-=======
 script = ExtResource("3_i4sbl")
->>>>>>> 2a03aaac627968a4438fb6cea82b6c4c085c4b45
+
+[node name="กล่องข้อความ" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/มันม่าวง"]
+offset_left = 180.73
+offset_top = -864.362
+offset_right = 719.73
+offset_bottom = -193.362
+texture = ExtResource("4_321kl")
+
+[node name="ไข่หวาน" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/มันม่าวง/กล่องข้อความ"]
+visible = false
+layout_mode = 0
+offset_left = 93.5962
+offset_top = 195.054
+offset_right = 1264.6
+offset_bottom = 926.054
+scale = Vector2(0.318939, 0.325701)
+texture = ExtResource("6_a21h4")
+
+[node name="ทูน่า" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/มันม่าวง/กล่องข้อความ"]
+visible = false
+layout_mode = 0
+offset_left = 93.5962
+offset_top = 195.054
+offset_right = 1264.6
+offset_bottom = 926.054
+scale = Vector2(0.318939, 0.325701)
+texture = ExtResource("21_o0ivk")
+
+[node name="กุ้ง" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/มันม่าวง/กล่องข้อความ"]
+visible = false
+layout_mode = 0
+offset_left = 93.5962
+offset_top = 195.054
+offset_right = 1264.6
+offset_bottom = 926.054
+scale = Vector2(0.318939, 0.325701)
+texture = ExtResource("7_aq3hf")
+
+[node name="แซลม่อน" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/มันม่าวง/กล่องข้อความ"]
+visible = false
+layout_mode = 0
+offset_left = 93.5962
+offset_top = 195.054
+offset_right = 1264.6
+offset_bottom = 926.054
+scale = Vector2(0.318939, 0.325701)
+texture = ExtResource("26_hrw3v")
 
 [node name="ครัว" type="Sprite2D" parent="ฉากหลังร้านอาหารญี่ปุ่น"]
 position = Vector2(8.91192, 450.097)
@@ -171,7 +206,7 @@ offset_right = 1505.0
 offset_bottom = 1129.0
 rotation = -1.57136
 scale = Vector2(0.142602, 0.142602)
-texture_normal = ExtResource("8_nl7he")
+texture_normal = ExtResource("9_2dq7p")
 script = ExtResource("12_3puq2")
 
 [node name="ซูชิไข่หวาน" type="TextureRect" parent="ข้าวญี่ปุ่น"]
@@ -229,8 +264,8 @@ offset_top = 569.0
 offset_right = 1124.0
 offset_bottom = 1222.0
 rotation = -0.158966
-scale = Vector2(0.148434, 0.145196)
-texture_normal = ExtResource("5_y7ghj")
+scale = Vector2(0.148617, 0.146544)
+texture_normal = ExtResource("13_ltkgm")
 script = ExtResource("7_fvqxv")
 
 [node name="ซูชิกุ้ง" type="TextureRect" parent="กุ้ง"]
@@ -241,7 +276,7 @@ offset_right = 10794.3
 offset_bottom = 4778.48
 rotation = 0.122263
 scale = Vector2(0.127369, 0.127369)
-texture = ExtResource("20_mpvjj")
+texture = ExtResource("7_aq3hf")
 
 [node name="ทูน่า" type="TextureButton" parent="."]
 offset_left = 152.0
@@ -250,7 +285,7 @@ offset_right = 1281.0
 offset_bottom = 1219.0
 rotation = -0.158966
 scale = Vector2(0.153951, 0.149501)
-texture_normal = ExtResource("6_88ivh")
+texture_normal = ExtResource("16_qqcqu")
 script = ExtResource("15_e8i0a")
 
 [node name="ซูชิทูน่า" type="TextureRect" parent="ทูน่า"]
@@ -262,7 +297,7 @@ offset_right = 10462.2
 offset_bottom = 5117.18
 rotation = 0.148384
 scale = Vector2(0.127369, 0.127369)
-texture = ExtResource("19_abhai")
+texture = ExtResource("21_o0ivk")
 
 [node name="ไข่หวาน" type="TextureButton" parent="."]
 offset_left = 318.0
@@ -271,7 +306,7 @@ offset_right = 1447.0
 offset_bottom = 1216.0
 rotation = -0.158966
 scale = Vector2(0.155766, 0.151264)
-texture_normal = ExtResource("7_rtnbt")
+texture_normal = ExtResource("19_rx20o")
 script = ExtResource("18_y151y")
 
 [node name="ซูชิไข่หวาน" type="TextureRect" parent="ไข่หวาน"]
@@ -282,7 +317,7 @@ offset_right = 10753.3
 offset_bottom = 4684.44
 rotation = 0.19213
 scale = Vector2(0.127369, 0.127369)
-texture = ExtResource("18_cjv5v")
+texture = ExtResource("6_a21h4")
 
 [node name="ถาดแซลมอน" type="TextureButton" parent="."]
 offset_left = 496.0
@@ -290,7 +325,7 @@ offset_top = 555.0
 offset_right = 1292.0
 offset_bottom = 1001.0
 scale = Vector2(0.226788, 0.190685)
-texture_normal = ExtResource("42_afocw")
+texture_normal = ExtResource("22_mhah8")
 script = ExtResource("20_o6sad")
 
 [node name="แซลมอน" type="TextureRect" parent="ถาดแซลมอน"]
@@ -300,7 +335,7 @@ offset_top = -755.176
 offset_right = 4820.45
 offset_bottom = 2735.82
 scale = Vector2(0.150216, 0.150216)
-texture = ExtResource("21_by6lo")
+texture = ExtResource("26_hrw3v")
 
 [node name="โชยุ" type="TextureButton" parent="."]
 offset_left = 16.0
@@ -365,6 +400,7 @@ scale = Vector2(0.0953791, 0.0953791)
 texture = ExtResource("17_rttrr")
 
 [node name="Menu" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = 88.0
@@ -454,17 +490,6 @@ theme_override_font_sizes/font_size = 35
 text = "120"
 script = ExtResource("33_t808b")
 
-<<<<<<< HEAD
-=======
-[node name="ตั้งค่า" type="TextureButton" parent="."]
-offset_left = 144.0
-offset_top = 47.0
-offset_right = 1894.0
-offset_bottom = 1797.0
-scale = Vector2(0.0371855, 0.0371855)
-texture_normal = ExtResource("42_njulb")
-texture_hover = ExtResource("43_75ejs")
-
 [node name="Home" type="TextureButton" parent="."]
 offset_left = 11.0
 offset_top = 14.0
@@ -478,22 +503,22 @@ script = ExtResource("44_0wjbt")
 [node name="หน้าตั้งค่า" type="TextureRect" parent="Home"]
 visible = false
 layout_mode = 0
-offset_left = 9665.0
-offset_top = 3854.98
-offset_right = 28251.0
-offset_bottom = 15998.0
+offset_left = 8838.91
+offset_top = 2670.95
+offset_right = 31328.9
+offset_bottom = 18218.0
 scale = Vector2(0.745627, 0.745627)
 texture = ExtResource("45_ovg68")
 
 [node name="เปิดเสียง" type="TextureButton" parent="Home/หน้าตั้งค่า"]
 layout_mode = 0
-offset_left = 7076.55
-offset_top = 7159.39
-offset_right = 7319.55
-offset_bottom = 7392.39
-scale = Vector2(15.406, 15.406)
+offset_left = 4579.29
+offset_top = 4726.98
+offset_right = 4822.29
+offset_bottom = 4959.98
+scale = Vector2(14.3492, 14.3492)
 texture_normal = ExtResource("46_6plrg")
-script = SubResource("GDScript_ted8u")
+script = SubResource("GDScript_4r062")
 
 [node name="ปิดเสียง" type="TextureRect" parent="Home/หน้าตั้งค่า/เปิดเสียง"]
 visible = false
@@ -507,27 +532,21 @@ texture = ExtResource("47_au6ru")
 
 [node name="กลับหน้าเลือกด่าน" type="TextureButton" parent="Home/หน้าตั้งค่า"]
 layout_mode = 0
-offset_left = 13437.3
-offset_top = 3497.16
-offset_right = 15187.3
-offset_bottom = 5247.16
-scale = Vector2(1.67477, 1.67477)
+offset_left = 6130.34
+offset_top = 10007.9
+offset_right = 7880.34
+offset_bottom = 11757.9
+scale = Vector2(1.93884, 1.93884)
 texture_normal = ExtResource("42_njulb")
 texture_hover = ExtResource("43_75ejs")
 script = ExtResource("48_vr2am")
 
->>>>>>> 2a03aaac627968a4438fb6cea82b6c4c085c4b45
 [connection signal="pressed" from="ข้าวญี่ปุ่น" to="ข้าวญี่ปุ่น" method="_on_pressed"]
 [connection signal="pressed" from="กุ้ง" to="กุ้ง" method="_on_pressed"]
 [connection signal="pressed" from="ทูน่า" to="ทูน่า" method="_on_pressed"]
 [connection signal="pressed" from="ไข่หวาน" to="ไข่หวาน" method="_on_pressed"]
 [connection signal="pressed" from="ถาดแซลมอน" to="ถาดแซลมอน" method="_on_pressed"]
 [connection signal="pressed" from="Menu/Button" to="Menu" method="_on_button_pressed"]
-<<<<<<< HEAD
-=======
-[connection signal="mouse_entered" from="ตั้งค่า" to="ตั้งค่า" method="_on_mouse_entered"]
-[connection signal="pressed" from="ตั้งค่า" to="ตั้งค่า" method="_on_pressed"]
 [connection signal="pressed" from="Home" to="Home" method="_on_pressed"]
 [connection signal="pressed" from="Home/หน้าตั้งค่า/เปิดเสียง" to="Home/หน้าตั้งค่า/เปิดเสียง" method="_on_pressed"]
 [connection signal="pressed" from="Home/หน้าตั้งค่า/กลับหน้าเลือกด่าน" to="Home/หน้าตั้งค่า/กลับหน้าเลือกด่าน" method="_on_pressed"]
->>>>>>> 2a03aaac627968a4438fb6cea82b6c4c085c4b45
