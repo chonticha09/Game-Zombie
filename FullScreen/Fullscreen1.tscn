@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://chivoajol0hyy"]
+
+[ext_resource type="Script" path="res://FullScreen/Fullscreen1.gd" id="1_rekxa"]
+
+[node name="Fullscreen1" type="Node2D"]
+script = ExtResource("1_rekxa")
+
+[node name="CheckButton" type="CheckButton" parent="."]
+offset_left = 468.0
+offset_top = 216.0
+offset_right = 600.0
+offset_bottom = 289.0
+text = "Full Screen"
+
+[connection signal="toggled" from="CheckButton" to="." method="_on_check_button_toggled"]
