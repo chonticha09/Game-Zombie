@@ -33,9 +33,9 @@
 [ext_resource type="Texture2D" uid="uid://6cklxth5g3d7" path="res://หน้าหลัก/สมุดเมนู.png" id="21_n53y7"]
 [ext_resource type="Texture2D" uid="uid://b42xwpe1evu26" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เนิ้อสุก.png" id="22_00qn2"]
 [ext_resource type="Texture2D" uid="uid://di4ynjpdp18kr" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ถาดมะเขื่อเทศ.png" id="22_atiqc"]
-[ext_resource type="Script" path="res://ร้านอาหารทะเล/เนื้อย่าง.gd" id="23_f1qrj"]
 [ext_resource type="Texture2D" uid="uid://bwqyscirbjxok" path="res://เพิ่มเติม/R1.png" id="23_krrxm"]
 [ext_resource type="Script" path="res://ร้านอาหารทะเล/เนื้อย่าง1.gd" id="23_wcewb"]
+[ext_resource type="Script" path="res://ร้านอาหารทะเล/เนื้อย่าง2.gd" id="24_j1uj7"]
 [ext_resource type="Texture2D" uid="uid://d0usu5d6oirt5" path="res://เพิ่มเติม/R.png" id="24_swqqp"]
 [ext_resource type="Texture2D" uid="uid://b8tpwsrfjy5sj" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ถาดส้ม.png" id="26_g2vfd"]
 [ext_resource type="Texture2D" uid="uid://chnupe4abe3le" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ถาดปลา.png" id="28_ccylc"]
@@ -303,14 +303,6 @@ scale = Vector2(0.083195, 0.0840525)
 texture_normal = ExtResource("20_f3bf8")
 script = ExtResource("11_s0tlq")
 
-[node name="เนื้อย่าง" type="TextureButton" parent="เนื้อก่อนย่าง"]
-layout_mode = 0
-offset_top = -1035.0
-offset_right = 1047.0
-offset_bottom = -62.9995
-texture_normal = ExtResource("22_00qn2")
-script = ExtResource("23_f1qrj")
-
 [node name="เนื้อย่าง1" type="TextureRect" parent="เนื้อก่อนย่าง"]
 offset_left = 1009.67
 offset_top = -2783.98
@@ -320,7 +312,7 @@ texture = ExtResource("22_00qn2")
 script = ExtResource("23_wcewb")
 
 [node name="Button" type="Button" parent="เนื้อก่อนย่าง/เนื้อย่าง1"]
-visible = false
+modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = -84.0
 offset_top = -59.0
@@ -334,6 +326,14 @@ offset_top = -1415.78
 offset_right = 2403.75
 offset_bottom = -166.782
 texture = ExtResource("22_00qn2")
+script = ExtResource("24_j1uj7")
+
+[node name="Button" type="Button" parent="เนื้อก่อนย่าง/เนื้อย่าง2"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -84.0
+offset_top = -59.0
+offset_right = 1382.0
+offset_bottom = 1237.0
 
 [node name="ถาดมะเขือเทศ" type="TextureButton" parent="."]
 offset_left = 675.0
@@ -688,8 +688,8 @@ texture_normal = ExtResource("47_r2d6c")
 [connection signal="pressed" from="ถังไอติม/ถังไอติม" to="ถังไอติม" method="_on_ถังไอติม_pressed"]
 [connection signal="pressed" from="ถาดผักกาด" to="ถาดผักกาด" method="_on_pressed"]
 [connection signal="pressed" from="เนื้อก่อนย่าง" to="เนื้อก่อนย่าง" method="_on_pressed"]
-[connection signal="pressed" from="เนื้อก่อนย่าง/เนื้อย่าง" to="เนื้อก่อนย่าง/เนื้อย่าง" method="_on_pressed"]
 [connection signal="pressed" from="เนื้อก่อนย่าง/เนื้อย่าง1/Button" to="เนื้อก่อนย่าง/เนื้อย่าง1" method="_on_button_pressed"]
+[connection signal="pressed" from="เนื้อก่อนย่าง/เนื้อย่าง2/Button" to="เนื้อก่อนย่าง/เนื้อย่าง2" method="_on_button_pressed"]
 [connection signal="pressed" from="ถาดมะเขือเทศ" to="ถาดมะเขือเทศ" method="_on_pressed"]
 [connection signal="pressed" from="ถาดซอส" to="ถาดซอส" method="_on_pressed"]
 [connection signal="pressed" from="ถาดมะนาว" to="ถาดมะนาว" method="_on_pressed"]
