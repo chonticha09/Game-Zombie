@@ -175,6 +175,7 @@ offset_bottom = 40.0
 script = ExtResource("6_ip1fc")
 
 [node name="ข้าวญี่ปุ่น" type="TextureButton" parent="Control"]
+layout_mode = 0
 offset_left = 560.0
 offset_top = 555.0
 offset_right = 1375.0
@@ -184,6 +185,7 @@ scale = Vector2(0.207551, 0.207551)
 texture_normal = ExtResource("9_2dq7p")
 
 [node name="กุ้ง" type="TextureButton" parent="Control"]
+layout_mode = 0
 offset_left = 4.0
 offset_top = 566.0
 offset_right = 1133.0
@@ -194,6 +196,7 @@ texture_normal = ExtResource("13_ltkgm")
 script = ExtResource("7_fvqxv")
 
 [node name="ข้าว1" type="TextureRect" parent="Control/กุ้ง"]
+layout_mode = 0
 offset_left = 910.527
 offset_top = -888.614
 offset_right = 2020.53
@@ -221,6 +224,7 @@ offset_right = 1026.69
 offset_bottom = 515.399
 
 [node name="ไข่หวาน" type="TextureButton" parent="Control"]
+layout_mode = 0
 offset_left = 175.0
 offset_top = 562.0
 offset_right = 1304.0
@@ -231,6 +235,7 @@ texture_normal = ExtResource("19_rx20o")
 script = ExtResource("18_y151y")
 
 [node name="ข้าว2" type="TextureRect" parent="Control/ไข่หวาน"]
+layout_mode = 0
 offset_left = 1053.05
 offset_top = -877.169
 offset_right = 2163.05
@@ -259,6 +264,7 @@ offset_right = 1029.77
 offset_bottom = 643.709
 
 [node name="แซลมอน" type="TextureButton" parent="Control"]
+layout_mode = 0
 offset_left = 379.0
 offset_top = 553.0
 offset_right = 1175.0
@@ -268,6 +274,7 @@ texture_normal = ExtResource("22_mhah8")
 script = ExtResource("20_o6sad")
 
 [node name="ข้าว3" type="TextureRect" parent="Control/แซลมอน"]
+layout_mode = 0
 offset_left = 642.247
 offset_top = -676.708
 offset_right = 1752.25

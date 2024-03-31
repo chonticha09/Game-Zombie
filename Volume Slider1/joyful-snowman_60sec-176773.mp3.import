@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://updpw3gvmwbe"
+path="res://.godot/imported/joyful-snowman_60sec-176773.mp3-7a0da742a34cdee5d4b68b047a5b0469.mp3str"
+
+[deps]
+
+source_file="res://Volume Slider1/joyful-snowman_60sec-176773.mp3"
+dest_files=["res://.godot/imported/joyful-snowman_60sec-176773.mp3-7a0da742a34cdee5d4b68b047a5b0469.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

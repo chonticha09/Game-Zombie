@@ -40,10 +40,10 @@ scale = Vector2(0.452583, 0.472203)
 texture = ExtResource("1_hclt0")
 
 [node name="ด่านที่1" type="TextureButton" parent="ฉากหลัง"]
-offset_left = -1371.02
-offset_top = 513.551
-offset_right = -497.019
-offset_bottom = 1263.55
+offset_left = -1362.18
+offset_top = 511.433
+offset_right = -488.18
+offset_bottom = 1261.43
 scale = Vector2(0.198839, 0.198839)
 texture_normal = ExtResource("2_s63al")
 texture_hover = ExtResource("3_bmlqs")
