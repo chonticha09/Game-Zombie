@@ -1,51 +1,46 @@
-[gd_scene load_steps=8 format=3 uid="uid://b3gg6avnuypx6"]
+[gd_scene load_steps=7 format=3 uid="uid://b3gg6avnuypx6"]
 
-[ext_resource type="Texture2D" uid="uid://c5q8meqy0gw8l" path="res://หน้าหลัก/ฉากกกกกก.png" id="1_7c4r1"]
-[ext_resource type="Texture2D" uid="uid://4vr3hvcfsr6a" path="res://หน้าหลัก/ฟอนซอมบี็.png" id="2_es13g"]
 [ext_resource type="AudioStream" uid="uid://cksppv16gcpua" path="res://Sound/multi-pop-1-188165.mp3" id="3_65d5p"]
-[ext_resource type="Texture2D" uid="uid://cj4h6gq25hdng" path="res://หน้าหลัก/ฟอนplay.png" id="3_tgk0f"]
 [ext_resource type="AudioStream" uid="uid://doutnasnxuaej" path="res://Sound/upbeat-funky-retro-131297 (1).mp3" id="4_cy848"]
 [ext_resource type="Script" path="res://โค้ด/Main.gd" id="4_ua0t8"]
-[ext_resource type="Texture2D" uid="uid://bbfunqn3iq2bp" path="res://หน้าหลัก/ฟอนplay1.png" id="7_oqj4f"]
+[ext_resource type="Texture2D" uid="uid://bn5d1uuwj5jpt" path="res://ฉากเริ่มเกมใหม่/ปุ่มplay.png" id="5_q83pn"]
+[ext_resource type="Texture2D" uid="uid://bkwg3sli83x1" path="res://ฉากเริ่มเกมใหม่/ปุ่มplay2.png" id="6_qix5o"]
+[ext_resource type="Texture2D" uid="uid://77a7rwra7hft" path="res://ฉากเริ่มเกมใหม่/ฉากเปิดอันใหม่ล่าสุด.png" id="8_jlh8o"]
 
 [node name="Main" type="Node2D"]
 
-[node name="ฉากกกกกก" type="Sprite2D" parent="."]
-position = Vector2(598, 328.5)
-scale = Vector2(0.458971, 0.465763)
-texture = ExtResource("1_7c4r1")
+[node name="ฉากเปิดอันใหม่ล่าสุด" type="Sprite2D" parent="."]
+position = Vector2(626, 323)
+scale = Vector2(0.448645, 0.467143)
+texture = ExtResource("8_jlh8o")
 
-[node name="Main" type="Control" parent="ฉากกกกกก"]
+[node name="Main" type="Control" parent="ฉากเปิดอันใหม่ล่าสุด"]
 layout_mode = 3
 anchors_preset = 0
-offset_left = -1082.04
-offset_top = -821.8
-offset_right = -1042.04
-offset_bottom = -781.8
+offset_left = -1169.35
+offset_top = -807.599
+offset_right = -1129.35
+offset_bottom = -767.599
 script = ExtResource("4_ua0t8")
 
-[node name="Sound_play" type="AudioStreamPlayer2D" parent="ฉากกกกกก/Main"]
+[node name="Sound_play" type="AudioStreamPlayer2D" parent="ฉากเปิดอันใหม่ล่าสุด/Main"]
 stream = ExtResource("3_65d5p")
 volume_db = 1.0
 
-[node name="Sound_main" type="AudioStreamPlayer2D" parent="ฉากกกกกก/Main"]
+[node name="Sound_main" type="AudioStreamPlayer2D" parent="ฉากเปิดอันใหม่ล่าสุด/Main"]
 stream = ExtResource("4_cy848")
 autoplay = true
 panning_strength = 0.5
 
-[node name="TextureButton" type="TextureButton" parent="ฉากกกกกก/Main"]
+[node name="TextureButton" type="TextureButton" parent="ฉากเปิดอันใหม่ล่าสุด/Main"]
 layout_mode = 0
-offset_left = 778.897
-offset_top = 1007.52
-offset_right = 1526.9
-offset_bottom = 1258.52
-texture_normal = ExtResource("7_oqj4f")
-texture_hover = ExtResource("3_tgk0f")
+offset_left = 663.386
+offset_top = 1066.62
+offset_right = 1220.39
+offset_bottom = 1256.62
+scale = Vector2(1.6849, 1.6849)
+texture_normal = ExtResource("5_q83pn")
+texture_hover = ExtResource("6_qix5o")
 
-[node name="ฟอนซอมบี็" type="Sprite2D" parent="ฉากกกกกก"]
-position = Vector2(60.595, -210.395)
-scale = Vector2(1.20822, 1.03837)
-texture = ExtResource("2_es13g")
-
-[connection signal="mouse_entered" from="ฉากกกกกก/Main/TextureButton" to="ฉากกกกกก/Main" method="_on_texture_button_mouse_entered"]
-[connection signal="pressed" from="ฉากกกกกก/Main/TextureButton" to="ฉากกกกกก/Main" method="_on_texture_button_pressed"]
+[connection signal="mouse_entered" from="ฉากเปิดอันใหม่ล่าสุด/Main/TextureButton" to="ฉากเปิดอันใหม่ล่าสุด/Main" method="_on_texture_button_mouse_entered"]
+[connection signal="pressed" from="ฉากเปิดอันใหม่ล่าสุด/Main/TextureButton" to="ฉากเปิดอันใหม่ล่าสุด/Main" method="_on_texture_button_pressed"]
