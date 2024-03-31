@@ -51,30 +51,32 @@ func load_rice_texture(texture_rect: TextureRect) -> void:
 	
 # When sweet egg button is pressed
 func _on_ไข่หวาน_pressed():
-	show_next_texture(load_sweet_egg_texture)
+	show_next_texture()
 
 # When tuna button is pressed
 func _on_ทูน่า_pressed():
-	show_next_texture(load_tuna_texture)
+	show_next_texture()
 
 # When shrimp button is pressed
 func _on_กุ้ง_pressed():
-	show_next_texture(load_shrimp_texture)
+	show_next_texture()
 
 # When salmon button is pressed
 func _on_แซลม่อน_pressed():
-	show_next_texture(load_salmon_texture)
+	show_next_texture()
 	
 # When rice button is pressed
 func _on_ข้าว_pressed():
-	show_next_texture(load_rice_texture)
+	show_next_texture()
 
-func show_next_texture(texture_loader_func: Callable) -> void:
+func show_next_texture() -> void:
 	if current_texture_index < texture_rect_nodes.size():
 		var current_texture_rect = texture_rect_nodes[current_texture_index]
 		current_texture_rect.visible = true
+
 		current_texture_index += 1
 	else:
 		print("All TextureRects have been shown.")
 		# Reset current_texture_index to 0 to enable buttons again
 		current_texture_index = 0
+		hide_all_texture_rects()  # Reset visibility of TextureRects

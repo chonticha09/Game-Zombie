@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://luyi6dqcdis7"]
+[gd_scene load_steps=52 format=3 uid="uid://luyi6dqcdis7"]
 
 [ext_resource type="AudioStream" uid="uid://qcbs3op7r83n" path="res://ร้านอาหารทะเล/very-lush-and-swag-loop-74140.mp3" id="1_a0s4p"]
 [ext_resource type="Texture2D" uid="uid://de038mx8pphaq" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ป้าย4.png" id="2_ccpjq"]
@@ -33,7 +33,9 @@
 [ext_resource type="Texture2D" uid="uid://6cklxth5g3d7" path="res://หน้าหลัก/สมุดเมนู.png" id="21_n53y7"]
 [ext_resource type="Texture2D" uid="uid://b42xwpe1evu26" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เนิ้อสุก.png" id="22_00qn2"]
 [ext_resource type="Texture2D" uid="uid://di4ynjpdp18kr" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ถาดมะเขื่อเทศ.png" id="22_atiqc"]
+[ext_resource type="Script" path="res://ร้านอาหารทะเล/เนื้อย่าง.gd" id="23_f1qrj"]
 [ext_resource type="Texture2D" uid="uid://bwqyscirbjxok" path="res://เพิ่มเติม/R1.png" id="23_krrxm"]
+[ext_resource type="Script" path="res://ร้านอาหารทะเล/เนื้อย่าง1.gd" id="23_wcewb"]
 [ext_resource type="Texture2D" uid="uid://d0usu5d6oirt5" path="res://เพิ่มเติม/R.png" id="24_swqqp"]
 [ext_resource type="Texture2D" uid="uid://b8tpwsrfjy5sj" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ถาดส้ม.png" id="26_g2vfd"]
 [ext_resource type="Texture2D" uid="uid://chnupe4abe3le" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ถาดปลา.png" id="28_ccylc"]
@@ -41,7 +43,7 @@
 [ext_resource type="Texture2D" uid="uid://bw1ye1ydl48qg" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ชิ้นแซลม่อน.png" id="30_i7xh5"]
 [ext_resource type="Texture2D" uid="uid://6eq1u1fejowj" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ผ้าฟ้า.png" id="33_7gvbo"]
 [ext_resource type="Texture2D" uid="uid://b5es6dnvocbmu" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/หม้อทอด.png" id="34_2sd3y"]
-[ext_resource type="Texture2D" uid="uid://b77ondbsdoist" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เฟรนฟรายง.png" id="35_y2153"]
+[ext_resource type="Texture2D" uid="uid://b77ondbsdoist" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/เฟรนฟรายง.png" id="37_xfbbv"]
 [ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/Home.gd" id="44_44l7h"]
 [ext_resource type="Texture2D" uid="uid://dg8vkcg53wx1n" path="res://หน้าตั้งค่าใหม่/กรอบสีเขียว.png" id="45_ob12r"]
 [ext_resource type="Texture2D" uid="uid://dnul2hd3pap1x" path="res://หน้าตั้งค่าใหม่/เสียงเปิดเขียว.png" id="46_osbch"]
@@ -113,17 +115,17 @@ texture = ExtResource("5_6cheu")
 script = ExtResource("6_d7mkw")
 
 [node name="กล่องข้อความ" type="TextureRect" parent="มันม่าวง"]
-offset_left = 180.73
-offset_top = -864.362
-offset_right = 719.73
-offset_bottom = -193.362
+offset_left = 181.0
+offset_top = -864.0
+offset_right = 861.0
+offset_bottom = -193.0
 texture = ExtResource("7_ywiy8")
 
 [node name="รูปอาหาร" type="TextureRect" parent="มันม่าวง"]
-offset_left = 271.095
-offset_top = -730.777
-offset_right = 330.095
-offset_bottom = -687.777
+offset_left = 322.171
+offset_top = -699.346
+offset_right = 381.171
+offset_bottom = -656.346
 script = ExtResource("8_qm3ol")
 
 [node name="ครัว2" type="Sprite2D" parent="."]
@@ -301,20 +303,36 @@ scale = Vector2(0.083195, 0.0840525)
 texture_normal = ExtResource("20_f3bf8")
 script = ExtResource("11_s0tlq")
 
-[node name="เนื้อย่าง1" type="TextureRect" parent="เนื้อก่อนย่าง"]
+[node name="เนื้อย่าง" type="TextureButton" parent="เนื้อก่อนย่าง"]
 layout_mode = 0
-offset_left = 1081.8
-offset_top = -2819.67
-offset_right = 2414.8
-offset_bottom = -1582.67
+offset_top = -1035.0
+offset_right = 1047.0
+offset_bottom = -62.9995
+texture_normal = ExtResource("22_00qn2")
+script = ExtResource("23_f1qrj")
+
+[node name="เนื้อย่าง1" type="TextureRect" parent="เนื้อก่อนย่าง"]
+offset_left = 1009.67
+offset_top = -2783.98
+offset_right = 2355.67
+offset_bottom = -1534.98
 texture = ExtResource("22_00qn2")
+script = ExtResource("23_wcewb")
+
+[node name="Button" type="Button" parent="เนื้อก่อนย่าง/เนื้อย่าง1"]
+visible = false
+layout_mode = 0
+offset_left = -84.0
+offset_top = -59.0
+offset_right = 1382.0
+offset_bottom = 1237.0
 
 [node name="เนื้อย่าง2" type="TextureRect" parent="เนื้อก่อนย่าง"]
 layout_mode = 0
-offset_left = 1021.7
-offset_top = -1463.37
-offset_right = 2367.7
-offset_bottom = -214.371
+offset_left = 1057.75
+offset_top = -1415.78
+offset_right = 2403.75
+offset_bottom = -166.782
 texture = ExtResource("22_00qn2")
 
 [node name="ถาดมะเขือเทศ" type="TextureButton" parent="."]
@@ -516,7 +534,7 @@ offset_top = 507.0
 offset_right = 1967.0
 offset_bottom = 1616.0
 scale = Vector2(0.097539, 0.097539)
-texture_normal = ExtResource("35_y2153")
+texture_normal = ExtResource("37_xfbbv")
 
 [node name="เฟรนฟราย2" type="TextureButton" parent="เฟรนฟราย"]
 layout_mode = 0
@@ -525,7 +543,7 @@ offset_top = 515.0
 offset_right = 2070.0
 offset_bottom = 1624.0
 scale = Vector2(0.097539, 0.097539)
-texture_normal = ExtResource("35_y2153")
+texture_normal = ExtResource("37_xfbbv")
 
 [node name="เฟรนฟราย3" type="TextureButton" parent="เฟรนฟราย"]
 layout_mode = 0
@@ -534,7 +552,7 @@ offset_top = 532.0
 offset_right = 2025.0
 offset_bottom = 1641.0
 scale = Vector2(0.097539, 0.097539)
-texture_normal = ExtResource("35_y2153")
+texture_normal = ExtResource("37_xfbbv")
 
 [node name="รวมในจานอาหาร" type="Control" parent="."]
 layout_mode = 3
@@ -670,6 +688,8 @@ texture_normal = ExtResource("47_r2d6c")
 [connection signal="pressed" from="ถังไอติม/ถังไอติม" to="ถังไอติม" method="_on_ถังไอติม_pressed"]
 [connection signal="pressed" from="ถาดผักกาด" to="ถาดผักกาด" method="_on_pressed"]
 [connection signal="pressed" from="เนื้อก่อนย่าง" to="เนื้อก่อนย่าง" method="_on_pressed"]
+[connection signal="pressed" from="เนื้อก่อนย่าง/เนื้อย่าง" to="เนื้อก่อนย่าง/เนื้อย่าง" method="_on_pressed"]
+[connection signal="pressed" from="เนื้อก่อนย่าง/เนื้อย่าง1/Button" to="เนื้อก่อนย่าง/เนื้อย่าง1" method="_on_button_pressed"]
 [connection signal="pressed" from="ถาดมะเขือเทศ" to="ถาดมะเขือเทศ" method="_on_pressed"]
 [connection signal="pressed" from="ถาดซอส" to="ถาดซอส" method="_on_pressed"]
 [connection signal="pressed" from="ถาดมะนาว" to="ถาดมะนาว" method="_on_pressed"]

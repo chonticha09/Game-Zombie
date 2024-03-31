@@ -16,7 +16,7 @@ func _ready():
 
 func load_texture(path: String, texture_button: TextureButton) -> void:
 	# โหลดรูปภาพจาก path และกำหนดให้ TextureButton
-	var texture = preload("res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เฟรนฟรายง.png")
+	var texture = preload("res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/เฟรนฟรายง.png")
 	if texture:
 		texture_button.texture_normal = texture
 	else:

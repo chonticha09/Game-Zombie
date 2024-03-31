@@ -1,6 +1,5 @@
 extends TextureButton
 
-# Called when the TextureButton is pressed.
+# Called when the button is clicked.
 func _on_pressed():
 	queue_free()
-

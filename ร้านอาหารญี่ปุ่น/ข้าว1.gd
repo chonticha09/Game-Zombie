@@ -1,6 +1,10 @@
 extends TextureRect
 
-
-func _on_button_pressed():
+func _on_button_1_pressed():
 	queue_free()
+
+
+
+
+
 

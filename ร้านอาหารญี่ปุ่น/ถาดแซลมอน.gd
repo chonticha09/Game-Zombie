@@ -1,13 +1,12 @@
 extends TextureButton
 
-
 var texture_rect_nodes: Array
 var current_texture_index: int = 0
 
 func _ready():
 	# Find TextureRects in the scene and store them in an array
 	texture_rect_nodes = [
-		get_node("แซลมอน")
+		get_node("ข้าว3/ซูชิแซลมอน")
 	]
 	# Hide all TextureRects
 	hide_all_texture_rects()
