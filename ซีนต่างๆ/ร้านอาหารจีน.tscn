@@ -289,6 +289,7 @@ scale = Vector2(0.260118, 0.260118)
 texture_normal = ExtResource("23_pyv45")
 
 [node name="Home" type="TextureButton" parent="พื้นหลังอาหารจีน/แผ่นแป้ง"]
+layout_mode = 0
 offset_left = -3772.82
 offset_top = -3412.69
 offset_right = -2022.82

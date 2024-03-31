@@ -1,15 +1,29 @@
 extends Control
 
-var sprites = [] # เก็บรูปภาพที่ต้องการสุ่ม
+var textures = []  # อาร์เรย์เก็บรูปภาพที่ใช้สำหรับสุ่ม
+var texture_rect: TextureRect
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	# เพิ่มรูปภาพลงในอาร์เรย์
-	sprites.append(load("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซุซิทูน่า.png")) # เปลี่ยน sprite1.png เป็นที่ตั้งของไฟล์รูปภาพที่คุณต้องการใช้
-	sprites.append(load("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซุซิแซลม่อน.png")) # เปลี่ยน sprite2.png เป็นที่ตั้งของไฟล์รูปภาพที่คุณต้องการใช้
-	# เพิ่มรูปภาพเพิ่มเติมตามต้องการ
+	# สร้าง TextureRect
+	texture_rect = TextureRect.new()
+	add_child(texture_rect)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	# สร้างตัวแปรสำหรับเก็บรูปภาพที่สุ่มได้
-	var random_sprite = sprites[randi_range(0, sprites.size() - 1)]
+	# เตรียมรูปภาพที่จะใช้สำหรับสุ่ม
+	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซุซิทูน่า.png"))
+	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซุซิแซลม่อน.png"))
+	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซูซิกุ้ง.png"))
+	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซูซิไข่หวาน.png"))
+
+	# เลือกรูปภาพแบบสุ่มเป็นรูปเริ่มต้น
+	set_random_texture()
+
+func set_random_texture():
+	# ตรวจสอบว่าอาร์เรย์ textures มีข้อมูลอยู่หรือไม่
+	if textures.size() > 0:
+		# เลือกรูปภาพสุ่มจากอาร์เรย์ของรูปภาพ
+		var random_index = randi_range(0, textures.size() - 1)
+		var selected_texture = textures[random_index]
+		# กำหนดรูปภาพให้กับ TextureRect
+		texture_rect.texture = selected_texture
+	else:
+		print("Error: textures array is empty.")

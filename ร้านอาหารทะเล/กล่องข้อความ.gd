@@ -1,43 +1,25 @@
 extends TextureRect
 
-# Called when the node enters the scene tree for the first time.
+
+var textures = []  # อาร์เรย์เก็บรูปภาพที่ใช้สำหรับสุ่ม
+
 func _ready():
-	# Replace with function body.
-	# Call the function to randomly set image from TextureRect.
-	randomize_image()
+	# เตรียมรูปภาพที่จะใช้สำหรับสุ่ม
+	textures.append(load("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซุซิทูน่า.png"))
+	textures.append(load("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซุซิแซลม่อน.png"))
+	textures.append(load("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซูซิกุ้ง.png"))
+	textures.append(load("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซูซิไข่หวาน.png"))
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+	# กำหนดรูปภาพเริ่มต้นให้กับ Sprite
+	set_random_texture()
 
-# Function to randomly set image from TextureRect.
-func randomize_image():
-	# Get the total number of textures in the TextureRect.
-	var num_textures = get_texture_count()
-	
-	# Check if there are textures available.
-	if num_textures > 0:
-		# Generate a random index within the range of available textures.
-		var random_index = randi() % num_textures
-		
-		# Set the texture based on the randomly generated index.
-		set_texture(get_texture(random_index))
+func set_random_texture():
+	# ตรวจสอบว่าอาร์เรย์ textures มีข้อมูลอยู่หรือไม่
+	if textures.size() > 0:
+		# เลือกรูปภาพสุ่มจากอาร์เรย์ของรูปภาพ
+		var random_index = randi_range(0, textures.size() - 1)
+		var selected_texture = textures[random_index]
+		# กำหนดรูปภาพให้กับ Sprite
+		texture = selected_texture
 	else:
-		print("No textures available in TextureRect!")
-
-# Function to get the total number of textures in the TextureRect.
-func get_texture_count() -> int:
-	return get_child_count()
-
-# Function to get the texture at a specific index from the TextureRect.
-func get_texture(index: int) -> Texture:
-	# Get the child node at the specified index.
-	var child_node = get_child(index)
-	
-	# Check if the child node is a TextureRect.
-	if child_node is TextureRect:
-		# Return the texture of the TextureRect.
-		return child_node.texture
-	else:
-		print("Child node at index", index, "is not a TextureRect!")
-		return null
+		print("Error: textures array is empty.")

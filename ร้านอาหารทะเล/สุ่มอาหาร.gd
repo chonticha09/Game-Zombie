@@ -1,34 +1,29 @@
 extends Control
 
-# List of image paths for seafood items
-var seafood_images: Array = [
-	"res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/จานผักซอสปลา.png",
-	"res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/จานผักมะนาวซอสปลา.png",
-	"res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/จานเนื้อผักมะเขือ.png"
-]
+var textures = []  # อาร์เรย์เก็บรูปภาพที่ใช้สำหรับสุ่ม
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	# Replace with function body.
-	# Randomize and set image from the list of seafood images
-	randomize_seafood_image()
+	# โหลดรูปภาพของ Sprite
+	var texture = preload("res://กล่องข้อความ.png")
 
-# Function to randomize and set image from the list of seafood images
-func randomize_seafood_image() -> void:
-	# Check if there are images in the list
-	if seafood_images.size() > 0:
-		# Generate a random index within the range of available images
-		var random_index = randi() % seafood_images.size()
-		
-		# Load the image from the randomly selected path
-		var image_texture = load(seafood_images[random_index])
-		
-		# Set the loaded texture to the TextureRect
-		if image_texture != null:
-			# Assuming there's a TextureRect node named "TextureRect" under this Control node
-			var texture_rect = $TextureRect
-			texture_rect.texture = image_texture
-		else:
-			print("Failed to load image from path:", seafood_images[random_index])
+	# เตรียมรูปภาพที่จะใช้สำหรับสุ่ม
+	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซุซิทูน่า.png"))
+	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซุซิแซลม่อน.png"))
+	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซูซิกุ้ง.png"))
+	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซูซิไข่หวาน.png"))
+
+	# เลือกรูปภาพแบบสุ่มเป็นรูปเริ่มต้น
+	set_random_texture()
+
+	# กำหนดรูปภาพให้กับ Sprite
+
+func set_random_texture():
+	# ตรวจสอบว่าอาร์เรย์ textures มีข้อมูลอยู่หรือไม่
+	if textures.size() > 0:
+		# เลือกรูปภาพสุ่มจากอาร์เรย์ของรูปภาพ
+		var random_index = randi_range(0, textures.size() - 1)
+		var selected_texture = textures[random_index]
+		# กำหนดรูปภาพให้กับ Sprite
+
 	else:
-		print("No seafood images available!")
+		print("Error: textures array is empty.")
