@@ -1,15 +1,35 @@
-[gd_scene load_steps=2 format=3 uid="uid://chivoajol0hyy"]
+[gd_scene load_steps=4 format=3 uid="uid://cv8y7xmqg55vk"]
 
 [ext_resource type="Script" path="res://FullScreen/Fullscreen1.gd" id="1_rekxa"]
+[ext_resource type="Texture2D" uid="uid://b1pog30y85s1j" path="res://FullScreen/fc1.png" id="2_61u3o"]
+[ext_resource type="Script" path="res://FullScreen/TextureButton.gd" id="3_2jcoy"]
 
 [node name="Fullscreen1" type="Node2D"]
 script = ExtResource("1_rekxa")
 
 [node name="CheckButton" type="CheckButton" parent="."]
-offset_left = 468.0
-offset_top = 216.0
-offset_right = 600.0
-offset_bottom = 289.0
-text = "Full Screen"
+offset_left = 624.0
+offset_top = 590.0
+offset_right = 668.0
+offset_bottom = 614.0
+
+[node name="fullscreen01" type="TextureButton" parent="."]
+offset_left = 384.0
+offset_top = 65.0
+offset_right = 896.0
+offset_bottom = 577.0
+texture_normal = ExtResource("2_61u3o")
+script = ExtResource("3_2jcoy")
+
+[node name="fc1" type="TextureRect" parent="fullscreen01"]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.078
+offset_top = 1.0
+offset_right = 512.0
+offset_bottom = 473.064
+texture = ExtResource("2_61u3o")
 
 [connection signal="toggled" from="CheckButton" to="." method="_on_check_button_toggled"]
+[connection signal="pressed" from="fullscreen01" to="fullscreen01" method="_on_fullscreen_01_pressed"]
+[connection signal="toggled" from="fullscreen01" to="fullscreen01" method="_on_toggled"]

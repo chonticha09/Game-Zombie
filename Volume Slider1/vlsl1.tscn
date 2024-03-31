@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1orbyax2lvgs"]
+
+[ext_resource type="Script" path="res://Volume Slider1/vl.gd" id="1_tu6il"]
+[ext_resource type="AudioStream" uid="uid://updpw3gvmwbe" path="res://Volume Slider1/joyful-snowman_60sec-176773.mp3" id="2_wdjb6"]
+
+[node name="vlsl1" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_tu6il")
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 0
+offset_right = 837.0
+offset_bottom = 352.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Control"]
+stream = ExtResource("2_wdjb6")
+volume_db = 1.361
+pitch_scale = 1.66
+autoplay = true
+max_polyphony = 2
+
+[node name="HSlider" type="HSlider" parent="Control"]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 42.0
+offset_right = 681.0
+offset_bottom = 297.0
+min_value = -30.0
+max_value = 0.0
+
+[connection signal="value_changed" from="Control/HSlider" to="Control" method="_on_h_slider_value_changed"]
