@@ -101,6 +101,7 @@ scale = Vector2(0.586465, 0.586465)
 texture = ExtResource("11_3x0uc")
 
 [node name="ข้าว2" type="TextureRect" parent="ฉากหลังร้านอาหารญี่ปุ่น/รวมอาหารในจาน/ซูชิไข่หวาน"]
+layout_mode = 0
 offset_left = 26.8848
 offset_top = 17.1211
 offset_right = 1136.88

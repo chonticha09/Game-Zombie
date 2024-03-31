@@ -5,13 +5,13 @@ var current_texture_index = 0
 
 func _ready():
 	# เพิ่ม TextureRect เข้าไปใน Array
-	texture_rect_nodes.append(get_node("เนื้อ"))
+	texture_rect_nodes.append(get_node("ไอติม3"))
 	# ซ่อน TextureRect ทุกตัว
 	hide_all_texture_rects()
 
 # ฟังก์ชันเพื่อแสดงภาพและแสดงบน TextureRect
 func load_texture(path: String, texture_rect: TextureRect) -> void:
-	var texture = preload("res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ชิ้นแซลม่อน.png")
+	var texture = preload("res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/ไอติมเขียว.png")
 	if texture:
 		texture_rect.texture = texture
 	else:
@@ -25,7 +25,7 @@ func _on_button_pressed():
 	if current_texture_index < texture_rect_nodes.size():
 		var current_texture_rect = texture_rect_nodes[current_texture_index]
 		# โหลดภาพและแสดงบน TextureRect
-		load_texture("res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ชิ้นแซลม่อน.png", current_texture_rect)
+		load_texture("res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/ไอติมเขียว.png", current_texture_rect)
 		current_texture_rect.visible = true
 		current_texture_index += 1
 	else:
