@@ -902,7 +902,6 @@ texture_hover = ExtResource("24_swqqp")
 script = ExtResource("44_44l7h")
 
 [node name="หน้าตั้งค่า" type="TextureRect" parent="Home"]
-visible = false
 layout_mode = 0
 offset_left = 8838.91
 offset_top = 2670.95
@@ -953,26 +952,24 @@ scale = Vector2(24.01, 24.01)
 script = ExtResource("68_n3g65")
 
 [node name="ColorRect" type="ColorRect" parent="Home/หน้าตั้งค่า/เพิ่มลดเสียง"]
+custom_minimum_size = Vector2(30, 30)
 layout_mode = 0
-offset_left = 63.0
-offset_top = -78.0
-offset_right = 675.0
-offset_bottom = -9.0
+offset_left = 93.4647
+offset_top = -28.6528
+offset_right = 705.465
+offset_bottom = 40.3472
 color = Color(1, 1, 1, 0)
 
 [node name="HSlider" type="HSlider" parent="Home/หน้าตั้งค่า/เพิ่มลดเสียง"]
 modulate = Color(0, 0.992157, 0.419608, 1)
 self_modulate = Color(0.945098, 1, 0, 1)
 layout_mode = 0
-offset_left = 107.205
-offset_top = -69.4442
-offset_right = 657.205
-offset_bottom = -50.4442
+offset_left = 133.745
+offset_top = 3.16187
+offset_right = 683.745
+offset_bottom = 22.1619
 min_value = -30.0
 max_value = 0.0
-
-[node name="เสียงกด" type="AudioStreamPlayer" parent="Home"]
-stream = ExtResource("18_p8ihf")
 
 [node name="คู่มือเกม" type="Control" parent="."]
 layout_mode = 3
