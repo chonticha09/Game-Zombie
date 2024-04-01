@@ -1,6 +1,6 @@
 extends Sprite2D
 
-var speed = 30  # ความเร็วในการเคลื่อนที่
+var speed = 25  # ความเร็วในการเคลื่อนที่
 var moving = true  # สถานะการเคลื่อนที่ของ Sprite
 var textures = []  # อาร์เรย์เก็บรูปภาพที่ใช้สำหรับสุ่ม
 
@@ -20,7 +20,6 @@ func _ready():
 	var texture = preload("res://กล่องข้อความ.png")
 
 	# เตรียมรูปภาพที่จะใช้สำหรับสุ่ม
-	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซุซิทูน่า.png"))
 	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซุซิแซลม่อน.png"))
 	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซูซิกุ้ง.png"))
 	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซูซิไข่หวาน.png"))
@@ -43,3 +42,11 @@ func set_random_texture():
 		set_texture(texture)
 	else:
 		print("Error: textures array is empty.")
+
+
+func _on_ข้าวญี่ปุ่น_focus_entered():
+	pass # Replace with function body.
+
+
+func _on_โชยุ_focus_entered():
+	pass # Replace with function body.

@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://bgup42pjy5r6"]
 
 [ext_resource type="Script" path="res://ซีนต่างๆ/โหลดดิ้ง.gd" id="1_mkykn"]
-[ext_resource type="VideoStream" path="res://Loading-Screen-Video.ogv" id="2_yfg4b"]
-[ext_resource type="AudioStream" uid="uid://bdjvcq4jsg2vl" path="res://Sound/start-computeraif-14572.mp3" id="3_k8hak"]
+[ext_resource type="VideoStream" path="res://ดีไซน์ที่ยังไม่ได้ตั้งชื่อ-_2_.ogv" id="2_s01rp"]
+[ext_resource type="AudioStream" uid="uid://b028n7e4njoga" path="res://ragtime-logo-standard-version-116100.mp3" id="3_el83l"]
 
 [node name="Screen1" type="Node2D"]
 
@@ -20,11 +20,11 @@ offset_top = -2.00003
 offset_right = 1921.0
 offset_bottom = 1086.0
 scale = Vector2(0.654703, 0.602813)
-stream = ExtResource("2_yfg4b")
+stream = ExtResource("2_s01rp")
 autoplay = true
 
 [node name="Loading" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_k8hak")
+stream = ExtResource("3_el83l")
 autoplay = true
 
 [connection signal="finished" from="Control/VideoStreamPlayer" to="Control" method="_on_video_stream_player_finished"]

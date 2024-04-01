@@ -1,6 +1,7 @@
-[gd_scene load_steps=32 format=3 uid="uid://dpaacrwry2qnk"]
+[gd_scene load_steps=34 format=3 uid="uid://dpaacrwry2qnk"]
 
 [ext_resource type="Texture2D" uid="uid://bsuax7duhxeco" path="res://ฉากเลือกด่านใหม่/ฉากหลัง.png" id="1_hclt0"]
+[ext_resource type="Script" path="res://Control.gd" id="1_o2wdv"]
 [ext_resource type="Texture2D" uid="uid://cc17us72xo044" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/1.png" id="2_s63al"]
 [ext_resource type="Texture2D" uid="uid://du4pkptmkyaub" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/1.png" id="3_bmlqs"]
 [ext_resource type="Texture2D" uid="uid://cgpun5td16ob8" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/2.png" id="4_y55s1"]
@@ -31,24 +32,33 @@
 [ext_resource type="Texture2D" uid="uid://3cl5qhocvl0w" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/14.png" id="29_mcyhn"]
 [ext_resource type="Texture2D" uid="uid://bhb7jalcmha1c" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/15.png" id="30_pt3eu"]
 [ext_resource type="Texture2D" uid="uid://blc0f7kv01f2r" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/15.png" id="31_acybo"]
+[ext_resource type="AudioStream" uid="uid://diyxxjmi1ay4g" path="res://cartoon-jump-6462.mp3" id="33_alr7r"]
 
 [node name="หน้าเลือกด่านแก้" type="Node2D"]
 
-[node name="ฉากหลัง" type="Sprite2D" parent="."]
-position = Vector2(632.5, 329.5)
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 632.5
+offset_top = 329.5
+offset_right = 672.5
+offset_bottom = 369.5
+script = ExtResource("1_o2wdv")
+
+[node name="ฉากหลัง" type="Sprite2D" parent="Control"]
 scale = Vector2(0.452583, 0.472203)
 texture = ExtResource("1_hclt0")
 
-[node name="ด่านที่1" type="TextureButton" parent="ฉากหลัง"]
-offset_left = -1371.02
-offset_top = 513.551
-offset_right = -497.019
-offset_bottom = 1263.55
+[node name="ด่านที่1" type="TextureButton" parent="Control/ฉากหลัง"]
+offset_left = -1362.18
+offset_top = 511.433
+offset_right = -488.18
+offset_bottom = 1261.43
 scale = Vector2(0.198839, 0.198839)
 texture_normal = ExtResource("2_s63al")
 texture_hover = ExtResource("3_bmlqs")
 
-[node name="ด่านที่2" type="TextureButton" parent="ฉากหลัง"]
+[node name="ด่านที่2" type="TextureButton" parent="Control/ฉากหลัง"]
 offset_left = -1320.2
 offset_top = 339.896
 offset_right = -446.2
@@ -57,7 +67,7 @@ scale = Vector2(0.198839, 0.198839)
 texture_normal = ExtResource("4_y55s1")
 texture_hover = ExtResource("5_l7yjd")
 
-[node name="ด่านที่3" type="TextureButton" parent="ฉากหลัง"]
+[node name="ด่านที่3" type="TextureButton" parent="Control/ฉากหลัง"]
 offset_left = -1167.74
 offset_top = 223.421
 offset_right = -293.741
@@ -66,7 +76,7 @@ scale = Vector2(0.198839, 0.198839)
 texture_normal = ExtResource("6_gen01")
 texture_hover = ExtResource("7_mnmmn")
 
-[node name="ด่านที่4" type="TextureButton" parent="ฉากหลัง"]
+[node name="ด่านที่4" type="TextureButton" parent="Control/ฉากหลัง"]
 offset_left = -966.673
 offset_top = 170.478
 offset_right = -92.6729
@@ -75,7 +85,7 @@ scale = Vector2(0.198839, 0.198839)
 texture_normal = ExtResource("8_xorao")
 texture_hover = ExtResource("9_bf055")
 
-[node name="ด่านที่5" type="TextureButton" parent="ฉากหลัง"]
+[node name="ด่านที่5" type="TextureButton" parent="Control/ฉากหลัง"]
 offset_left = -774.443
 offset_top = 123.887
 offset_right = 99.5566
@@ -84,7 +94,7 @@ scale = Vector2(0.198839, 0.198839)
 texture_normal = ExtResource("10_xvxi8")
 texture_hover = ExtResource("11_4subi")
 
-[node name="ด่านที่6" type="TextureButton" parent="ฉากหลัง"]
+[node name="ด่านที่6" type="TextureButton" parent="Control/ฉากหลัง"]
 offset_left = -577.794
 offset_top = 70.9443
 offset_right = 296.206
@@ -93,7 +103,7 @@ scale = Vector2(0.198839, 0.198839)
 texture_normal = ExtResource("12_lswg1")
 texture_hover = ExtResource("13_ytgh8")
 
-[node name="ด่านที่7" type="TextureButton" parent="ฉากหลัง"]
+[node name="ด่านที่7" type="TextureButton" parent="Control/ฉากหลัง"]
 offset_left = -405.45
 offset_top = -30.707
 offset_right = 468.55
@@ -102,7 +112,7 @@ scale = Vector2(0.198839, 0.198839)
 texture_normal = ExtResource("14_fybp0")
 texture_hover = ExtResource("15_ltev3")
 
-[node name="ด่านที่8" type="TextureButton" parent="ฉากหลัง"]
+[node name="ด่านที่8" type="TextureButton" parent="Control/ฉากหลัง"]
 offset_left = -213.221
 offset_top = -83.6504
 offset_right = 660.779
@@ -111,7 +121,7 @@ scale = Vector2(0.198839, 0.198839)
 texture_normal = ExtResource("16_r4w5b")
 texture_hover = ExtResource("17_ysrnt")
 
-[node name="ด่านที่9" type="TextureButton" parent="ฉากหลัง"]
+[node name="ด่านที่9" type="TextureButton" parent="Control/ฉากหลัง"]
 offset_left = -20.9907
 offset_top = -77.2971
 offset_right = 853.009
@@ -120,7 +130,7 @@ scale = Vector2(0.198839, 0.198839)
 texture_normal = ExtResource("18_1sjh1")
 texture_hover = ExtResource("19_heyta")
 
-[node name="ด่านที่10" type="TextureButton" parent="ฉากหลัง"]
+[node name="ด่านที่10" type="TextureButton" parent="Control/ฉากหลัง"]
 offset_left = 180.077
 offset_top = -56.1199
 offset_right = 1054.08
@@ -129,7 +139,7 @@ scale = Vector2(0.198839, 0.198839)
 texture_normal = ExtResource("20_4gmoj")
 texture_hover = ExtResource("21_bip4q")
 
-[node name="ด่านที่11" type="TextureButton" parent="ฉากหลัง"]
+[node name="ด่านที่11" type="TextureButton" parent="Control/ฉากหลัง"]
 offset_left = 378.936
 offset_top = -66.7085
 offset_right = 1252.94
@@ -138,7 +148,7 @@ scale = Vector2(0.198839, 0.198839)
 texture_normal = ExtResource("22_edqrr")
 texture_hover = ExtResource("23_nwayn")
 
-[node name="ด่านที่12" type="TextureButton" parent="ฉากหลัง"]
+[node name="ด่านที่12" type="TextureButton" parent="Control/ฉากหลัง"]
 offset_left = 568.956
 offset_top = -30.707
 offset_right = 1442.96
@@ -147,7 +157,7 @@ scale = Vector2(0.198839, 0.198839)
 texture_normal = ExtResource("24_te71o")
 texture_hover = ExtResource("25_jtxk5")
 
-[node name="ด่านที่13" type="TextureButton" parent="ฉากหลัง"]
+[node name="ด่านที่13" type="TextureButton" parent="Control/ฉากหลัง"]
 offset_left = 758.976
 offset_top = -26.4717
 offset_right = 1632.98
@@ -156,7 +166,7 @@ scale = Vector2(0.198839, 0.198839)
 texture_normal = ExtResource("26_ff2rl")
 texture_hover = ExtResource("27_yvgew")
 
-[node name="ด่านที่14" type="TextureButton" parent="ฉากหลัง"]
+[node name="ด่านที่14" type="TextureButton" parent="Control/ฉากหลัง"]
 offset_left = 960.045
 offset_top = -34.9426
 offset_right = 1834.04
@@ -165,7 +175,7 @@ scale = Vector2(0.198839, 0.198839)
 texture_normal = ExtResource("28_i7cub")
 texture_hover = ExtResource("29_mcyhn")
 
-[node name="ด่านที่15" type="TextureButton" parent="ฉากหลัง"]
+[node name="ด่านที่15" type="TextureButton" parent="Control/ฉากหลัง"]
 offset_left = 1172.16
 offset_top = -45.5313
 offset_right = 2046.16
@@ -173,3 +183,23 @@ offset_bottom = 704.469
 scale = Vector2(0.198839, 0.198839)
 texture_normal = ExtResource("30_pt3eu")
 texture_hover = ExtResource("31_acybo")
+
+[node name="Sound_play" type="AudioStreamPlayer" parent="Control"]
+stream = ExtResource("33_alr7r")
+autoplay = true
+
+[connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่1" to="Control" method="_on_ด่านที่1_mouse_entered"]
+[connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่2" to="Control" method="_on_ด่านที่2_mouse_entered"]
+[connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่3" to="Control" method="_on_ด่านที่3_mouse_entered"]
+[connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่4" to="Control" method="_on_ด่านที่4_mouse_entered"]
+[connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่5" to="Control" method="_on_ด่านที่5_mouse_entered"]
+[connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่6" to="Control" method="_on_ด่านที่6_mouse_entered"]
+[connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่7" to="Control" method="_on_ด่านที่7_mouse_entered"]
+[connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่8" to="Control" method="_on_ด่านที่8_mouse_entered"]
+[connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่9" to="Control" method="_on_ด่านที่9_mouse_entered"]
+[connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่10" to="Control" method="_on_ด่านที่10_mouse_entered"]
+[connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่11" to="Control" method="_on_ด่านที่11_mouse_entered"]
+[connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่12" to="Control" method="_on_ด่านที่12_mouse_entered"]
+[connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่13" to="Control" method="_on_ด่านที่13_mouse_entered"]
+[connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่14" to="Control" method="_on_ด่านที่14_mouse_entered"]
+[connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่15" to="Control" method="_on_ด่านที่15_mouse_entered"]

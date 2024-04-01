@@ -1,38 +1,37 @@
-extends Control
+extends TextureButton
 
-var texture_button_nodes: Array
+var texture_rect_nodes: Array
 var current_texture_index: int = 0
 
 func _ready():
-	# หา TextureButton ในฉากและเก็บไว้ใน Array
-	texture_button_nodes = [
-		get_node("ไอติม1"),
-		get_node("ไอติม2"),
-		get_node("ไอติม3")
+	# Find TextureRects in the scene and store them in an array
+	texture_rect_nodes = [
+		get_node("แซลม่อนย่าง3"),
+		get_node("แซลม่อนย่าง4")
 	]
-		
-	# ทำให้ TextureButton ทุกตัวไม่แสดง
-	hide_all_texture_buttons()
+	# Hide all TextureRects
+	hide_all_texture_rects()
 
-func load_texture(path: String, texture_button: TextureButton) -> void:
-	# โหลดรูปภาพจาก path และกำหนดให้ TextureButton
-	var texture = preload("res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/ไอติมเขียว.png")
-	if texture:
-		texture_button.texture_normal = texture
-	else:
-		print("Failed to load texture from path:", path)
+# Function to load mango texture
+func load_mango_texture(texture_rect: TextureRect) -> void:
+	var texture1 = preload("res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ชิ้นแซลม่อน.png")
+	texture_rect.texture = texture1
 
-# เมื่อปุ่มถูกกด
-func _on_ถังไอติม_pressed():
-	if current_texture_index < texture_button_nodes.size():
-		var current_texture_button = texture_button_nodes[current_texture_index]
-		load_texture("res://ร้านอาหารที่ 2/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/ไอติมเขียว.png", current_texture_button)
-		current_texture_button.visible = true
+# When the button is pressed (load mango texture)
+func _on_pressed():
+	show_next_mango_texture()
+
+func show_next_mango_texture() -> void:
+	if current_texture_index < texture_rect_nodes.size():
+		var current_texture_rect = texture_rect_nodes[current_texture_index]
+		load_mango_texture(current_texture_rect)
+		current_texture_rect.visible = true
 		current_texture_index += 1
 	else:
-		print("All TextureButtons have been shown.")
+		# Reset index and hide all TextureRects when all textures have been shown
+		current_texture_index = 0
+		hide_all_texture_rects()
 
-func hide_all_texture_buttons():
-	# ทำให้ทุก TextureButton ไม่แสดง
-	for texture_button in texture_button_nodes:
-		texture_button.visible = false
+func hide_all_texture_rects():
+	for texture_rect in texture_rect_nodes:
+		texture_rect.visible = false

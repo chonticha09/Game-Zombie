@@ -7,7 +7,7 @@ var current_texture_index: int = 0
 func _ready():
 	# Find TextureRects in the scene and store them in an array
 	texture_rect_nodes = [
-		get_node("ซูชิกุ้ง")
+		get_node("ข้าว1/ซูชิกุ้ง")
 	]
 	# Hide all TextureRects
 	hide_all_texture_rects()
@@ -19,6 +19,7 @@ func load_กุ้ง_texture(texture_rect: TextureRect) -> void:
 
 # When the button is pressed (load mango texture)
 func _on_pressed():
+	$เสียงกด.play()
 	show_next_กุ้ง_texture()
 
 func show_next_กุ้ง_texture() -> void:

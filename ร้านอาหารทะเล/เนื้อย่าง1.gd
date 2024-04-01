@@ -1,13 +1,37 @@
-extends TextureButton
+extends TextureRect
 
-# Called when the node enters the scene tree for the first time.
+var texture_rect_nodes = []
+var current_texture_index = 0
+
 func _ready():
-	pass # Replace with function body.
+	# เพิ่ม TextureRect เข้าไปใน Array
+	texture_rect_nodes.append(get_node("เนื้อ"))
+	# ซ่อน TextureRect ทุกตัว
+	hide_all_texture_rects()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+# ฟังก์ชันเพื่อแสดงภาพและแสดงบน TextureRect
+func load_texture(path: String, texture_rect: TextureRect) -> void:
+	var texture = preload("res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ชิ้นแซลม่อน.png")
+	if texture:
+		texture_rect.texture = texture
+	else:
+		print("Failed to load texture from path:", path)
 
-# Called when the button is clicked.
-func _on_เนื้อย่าง1_pressed():
+# เมื่อปุ่มถูกกด
+func _on_button_pressed():
+	# ซ่อน TextureRect ปัจจุบัน
 	hide()
+	# เพิ่มค่าดัชนี TextureRect และตรวจสอบว่ายังมี TextureRect ที่ต้องแสดงหรือไม่
+	if current_texture_index < texture_rect_nodes.size():
+		var current_texture_rect = texture_rect_nodes[current_texture_index]
+		# โหลดภาพและแสดงบน TextureRect
+		load_texture("res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ชิ้นแซลม่อน.png", current_texture_rect)
+		current_texture_rect.visible = true
+		current_texture_index += 1
+	else:
+		print("All TextureRects have been shown.")
+
+# ฟังก์ชันเพื่อซ่อน TextureRect ทุกตัว
+func hide_all_texture_rects():
+	for texture_rect in texture_rect_nodes:
+		texture_rect.visible = false

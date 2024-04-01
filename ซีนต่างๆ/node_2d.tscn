@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://sebutmuadj6c"]
+[gd_scene load_steps=41 format=3 uid="uid://sebutmuadj6c"]
 
 [ext_resource type="Texture2D" uid="uid://52v0ets1jibd" path="res://ร้านพิซซ่า/ร้านพิซ่าาาาาาาา.png" id="1_vwu2x"]
 [ext_resource type="Texture2D" uid="uid://c46cxx2h76ag3" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ฉากฟ้า.png" id="1_wc5qa"]
@@ -37,7 +37,9 @@
 [ext_resource type="Script" path="res://โค้ด/คู่มือเกม.gd" id="37_5n7q1"]
 [ext_resource type="Texture2D" uid="uid://0x72hgjpc72d" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มกลับ.png" id="37_vqjdx"]
 [ext_resource type="Texture2D" uid="uid://eabganfyu3yb" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มออก.png" id="38_ser1u"]
+[ext_resource type="Script" path="res://โค้ด/Button.gd" id="39_16i03"]
 [ext_resource type="Texture2D" uid="uid://6cklxth5g3d7" path="res://หน้าหลัก/สมุดเมนู.png" id="39_dhnsu"]
+[ext_resource type="Texture2D" uid="uid://bn5d1uuwj5jpt" path="res://ฉากเริ่มเกมใหม่/ปุ่มplay.png" id="39_k61g3"]
 
 [node name="หน้าเกมร้านพิซซ่า" type="Node2D"]
 position = Vector2(1, 3)
@@ -600,14 +602,26 @@ offset_bottom = 597.751
 scale = Vector2(1.27452, 1.1815)
 texture = ExtResource("37_vqjdx")
 
-[node name="ไปหน้าหลัก" type="TextureRect" parent="Menu/เซ็ทติ้ง"]
-layout_mode = 0
-offset_left = 574.065
-offset_top = 471.752
-offset_right = 707.065
-offset_bottom = 597.752
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 298.0
+offset_top = 326.0
+offset_right = 855.0
+offset_bottom = 516.0
+texture_normal = ExtResource("39_k61g3")
+
+[node name="ไปหน้าหลัก" type="TextureRect" parent="."]
+offset_left = 244.906
+offset_top = 537.658
+offset_right = 377.906
+offset_bottom = 663.658
 scale = Vector2(1.18601, 1.1819)
 texture = ExtResource("38_ser1u")
+
+[node name="Button" type="Button" parent="ไปหน้าหลัก"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 129.0
+script = ExtResource("39_16i03")
 
 [connection signal="pressed" from="ชั้นแป้งพิซซ่า/Control/ชั้นแป้งพิซซ่า" to="รวมอาหารพิซซ่า" method="_on_ชั้นแป้งพิซซ่า_pressed"]
 [connection signal="pressed" from="ซุปแดง/Control/ซอส" to="รวมอาหารพิซซ่า" method="_on_ซอส_pressed"]
@@ -617,3 +631,5 @@ texture = ExtResource("38_ser1u")
 [connection signal="pressed" from="สมอง/Control/สมอง" to="รวมอาหารพิซซ่า" method="_on_สมอง_pressed"]
 [connection signal="pressed" from="คู่มือเกม/Button" to="คู่มือเกม" method="_on_button_pressed"]
 [connection signal="pressed" from="Menu/Button" to="Menu" method="_on_button_pressed"]
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
+[connection signal="pressed" from="ไปหน้าหลัก/Button" to="ไปหน้าหลัก/Button" method="_on_pressed"]

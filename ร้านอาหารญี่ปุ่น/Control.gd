@@ -1,29 +1,39 @@
 extends Control
 
-var textures = []  # อาร์เรย์เก็บรูปภาพที่ใช้สำหรับสุ่ม
-var texture_rect: TextureRect
+var texture_rect_nodes: Array
+var current_texture_index: int = 0
 
 func _ready():
-	# สร้าง TextureRect
-	texture_rect = TextureRect.new()
-	add_child(texture_rect)
+	# Find TextureRects in the scene and store them in an array
+	texture_rect_nodes = [
+		get_node("กุ้ง/ข้าว1"),
+		get_node("ไข่หวาน/ข้าว2"),
+		get_node("แซลมอน/ข้าว3")
+		
+	]
+	# Hide all TextureRects
+	hide_all_texture_rects()
 
-	# เตรียมรูปภาพที่จะใช้สำหรับสุ่ม
-	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซุซิทูน่า.png"))
-	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซุซิแซลม่อน.png"))
-	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซูซิกุ้ง.png"))
-	textures.append(preload("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซูซิไข่หวาน.png"))
+# Function to load mango texture
+func load_mango_texture(texture_rect: TextureRect) -> void:
+	var texture1 = preload("res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/ไอติมเขียว.png")
+	texture_rect.texture = texture1
 
-	# เลือกรูปภาพแบบสุ่มเป็นรูปเริ่มต้น
-	set_random_texture()
+# When the button is pressed (load mango texture)
+func _on_pressed():
+	show_next_mango_texture()
 
-func set_random_texture():
-	# ตรวจสอบว่าอาร์เรย์ textures มีข้อมูลอยู่หรือไม่
-	if textures.size() > 0:
-		# เลือกรูปภาพสุ่มจากอาร์เรย์ของรูปภาพ
-		var random_index = randi_range(0, textures.size() - 1)
-		var selected_texture = textures[random_index]
-		# กำหนดรูปภาพให้กับ TextureRect
-		texture_rect.texture = selected_texture
+func show_next_mango_texture() -> void:
+	if current_texture_index < texture_rect_nodes.size():
+		var current_texture_rect = texture_rect_nodes[current_texture_index]
+		load_mango_texture(current_texture_rect)
+		current_texture_rect.visible = true
+		current_texture_index += 1
 	else:
-		print("Error: textures array is empty.")
+		# Reset index and hide all TextureRects when all textures have been shown
+		current_texture_index = 0
+		hide_all_texture_rects()
+
+func hide_all_texture_rects():
+	for texture_rect in texture_rect_nodes:
+		texture_rect.visible = false

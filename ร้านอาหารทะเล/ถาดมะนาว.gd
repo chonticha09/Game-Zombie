@@ -7,9 +7,7 @@ func _ready():
 	# Find TextureRects in the scene and store them in an array
 	texture_rect_nodes = [
 		get_node("เลม่อน1"),
-		get_node("เลม่อน2"),
-		get_node("เลม่อน3"),
-		get_node("เลม่อน4")
+		get_node("เลม่อน2")
 		
 	]
 	# Hide all TextureRects
@@ -22,6 +20,7 @@ func load_mango_texture(texture_rect: TextureRect) -> void:
 
 # When the button is pressed (load mango texture)
 func _on_pressed():
+	$เสียงกด.play()
 	show_next_mango_texture()
 
 func show_next_mango_texture() -> void:

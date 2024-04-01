@@ -7,7 +7,9 @@ func _ready():
 	# Find TextureRects in the scene and store them in an array
 	texture_rect_nodes = [
 		get_node("ผัก1"),
-		get_node("ผัก2")
+		get_node("ผัก2"),
+		get_node("ผัก3"),
+		get_node("ผัก4")
 		
 	]
 	# Hide all TextureRects
@@ -15,11 +17,12 @@ func _ready():
 
 # Function to load mango texture
 func load_mango_texture(texture_rect: TextureRect) -> void:
-	var texture1 = preload"res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ผัก.png"()
+	var texture1 = preload("res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ผัก.png")
 	texture_rect.texture = texture1
 
 # When the button is pressed (load mango texture)
 func _on_pressed():
+	$เสียงกด.play()
 	show_next_mango_texture()
 
 func show_next_mango_texture() -> void:
