@@ -16,10 +16,10 @@ func _ready():
 # Function to load mango texture
 func load_mango_texture(texture_rect: TextureRect, index: int) -> void:
 	if index == 0:
-		var texture1 = preload("res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/จานผักซอสปลา.png")
+		var texture1 = preload("res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/จานผักมะนาวซอสปลา.png")
 		texture_rect.texture = texture1
 	elif index == 1:
-		var texture2 = preload("res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/จานผักมะนาวซอสปลา.png")
+		var texture2 = preload("res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/จานผักซอสปลา.png")
 		texture_rect.texture = texture2
 	elif index == 2: # เพิ่มเงื่อนไขเพื่อโหลดรูปภาพในลำดับที่ 3
 		var texture3 = preload("res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/จานเนื้อมะเขื่อเทศซอส.png") # ระบุเส้นทางของไฟล์รูปภาพที่ต้องการโหลด

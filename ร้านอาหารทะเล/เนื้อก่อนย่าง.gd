@@ -6,8 +6,8 @@ var current_texture_index: int = 0
 func _ready():
 	# Find TextureRects in the scene and store them in an array
 	texture_rect_nodes = [
-		get_node("เนื้อย่าง1"),
-		get_node("เนื้อย่าง2")
+		get_node("Control3/เนื้อย่าง1"),
+		get_node("Control4/เนื้อย่าง2")
 	]
 	# Hide all TextureRects
 	hide_all_texture_rects()

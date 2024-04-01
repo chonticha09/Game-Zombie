@@ -37,7 +37,7 @@
 [ext_resource type="Script" path="res://โค้ด/คู่มือเกม.gd" id="37_5n7q1"]
 [ext_resource type="Texture2D" uid="uid://0x72hgjpc72d" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มกลับ.png" id="37_vqjdx"]
 [ext_resource type="Texture2D" uid="uid://eabganfyu3yb" path="res://เพิ่มเติม/หน้าตั้งค่าปุ่มออก.png" id="38_ser1u"]
-[ext_resource type="Script" path="res://ซีนต่างๆ/Button.gd" id="39_16i03"]
+[ext_resource type="Script" path="res://โค้ด/Button.gd" id="39_16i03"]
 [ext_resource type="Texture2D" uid="uid://6cklxth5g3d7" path="res://หน้าหลัก/สมุดเมนู.png" id="39_dhnsu"]
 [ext_resource type="Texture2D" uid="uid://bn5d1uuwj5jpt" path="res://ฉากเริ่มเกมใหม่/ปุ่มplay.png" id="39_k61g3"]
 

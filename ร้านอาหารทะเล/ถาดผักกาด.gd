@@ -7,7 +7,9 @@ func _ready():
 	# Find TextureRects in the scene and store them in an array
 	texture_rect_nodes = [
 		get_node("ผัก1"),
-		get_node("ผัก2")
+		get_node("ผัก2"),
+		get_node("ผัก3"),
+		get_node("ผัก4")
 		
 	]
 	# Hide all TextureRects

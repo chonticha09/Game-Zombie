@@ -15,6 +15,7 @@ func load_ไข่หวาน_texture(texture_rect: TextureRect) -> void:
 	texture_rect.texture = texture1
 
 func _on_pressed():
+	$เสียงกด.play()
 	show_next_ไข่หวาน_texture()
 
 func show_next_ไข่หวาน_texture() -> void:

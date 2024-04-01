@@ -19,6 +19,7 @@ func load_กุ้ง_texture(texture_rect: TextureRect) -> void:
 
 # When the button is pressed (load mango texture)
 func _on_pressed():
+	$เสียงกด.play()
 	show_next_กุ้ง_texture()
 
 func show_next_กุ้ง_texture() -> void:

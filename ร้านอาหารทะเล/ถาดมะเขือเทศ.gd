@@ -19,7 +19,7 @@ func load_mango_texture(texture_rect: TextureRect, index: int) -> void:
 		var texture1 = preload("res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/มะเขื่อเทศ.png")
 		texture_rect.texture = texture1
 	elif index == 1:
-		var texture2 = preload("res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/จานเนื้อมะเขื่อเทศซอส.png")
+		var texture2 = preload("res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เมนูอาหารทะเล/จานเนื้อผักมะเขือ.png")
 		texture_rect.texture = texture2
 
 # When the button is pressed (load mango texture)

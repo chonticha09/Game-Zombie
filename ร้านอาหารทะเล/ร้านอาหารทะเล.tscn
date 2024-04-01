@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=3 uid="uid://luyi6dqcdis7"]
+[gd_scene load_steps=66 format=3 uid="uid://luyi6dqcdis7"]
 
 [ext_resource type="AudioStream" uid="uid://qcbs3op7r83n" path="res://ร้านอาหารทะเล/very-lush-and-swag-loop-74140.mp3" id="1_a0s4p"]
 [ext_resource type="Texture2D" uid="uid://de038mx8pphaq" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ป้าย4.png" id="2_ccpjq"]
@@ -23,12 +23,10 @@
 [ext_resource type="Script" path="res://ร้านอาหารทะเล/ถาดมะนาว.gd" id="14_khdwh"]
 [ext_resource type="Script" path="res://ร้านอาหารทะเล/ไอติม1.gd" id="15_g7d60"]
 [ext_resource type="Script" path="res://ร้านอาหารทะเล/ปลาก่อนย่าง.gd" id="15_v7ij7"]
-[ext_resource type="Script" path="res://ร้านอาหารทะเล/แซลม่อนย่าง3.gd" id="16_4ktgc"]
 [ext_resource type="Script" path="res://ร้านอาหารทะเล/ไอติม2.gd" id="16_t7303"]
 [ext_resource type="Texture2D" uid="uid://68wtwb23o6s5" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ถาดผักกาดดด.png" id="16_x8xm8"]
 [ext_resource type="Script" path="res://ร้านอาหารทะเล/จาน1.gd" id="17_2jjm7"]
 [ext_resource type="Script" path="res://ร้านอาหารทะเล/ไอติม3.gd" id="17_4w2b6"]
-[ext_resource type="Script" path="res://ร้านอาหารทะเล/เฟรนฟราย.gd" id="17_6f7vr"]
 [ext_resource type="Texture2D" uid="uid://dpf0hfyot1w1o" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ผัก.png" id="19_17twb"]
 [ext_resource type="Script" path="res://โค้ด/คู่มือเกม.gd" id="19_mx2ga"]
 [ext_resource type="Texture2D" uid="uid://b146lb0htk0u" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/น้ำจิ้มหัวสมอง.png" id="20_cboob"]
@@ -38,12 +36,14 @@
 [ext_resource type="Texture2D" uid="uid://b42xwpe1evu26" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เนิ้อสุก.png" id="22_00qn2"]
 [ext_resource type="Texture2D" uid="uid://di4ynjpdp18kr" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ถาดมะเขื่อเทศ.png" id="22_atiqc"]
 [ext_resource type="Texture2D" uid="uid://bwqyscirbjxok" path="res://เพิ่มเติม/R1.png" id="23_krrxm"]
-[ext_resource type="Script" path="res://ร้านอาหารทะเล/เนื้อย่าง2.gd" id="24_j1uj7"]
 [ext_resource type="Texture2D" uid="uid://d0usu5d6oirt5" path="res://เพิ่มเติม/R.png" id="24_swqqp"]
 [ext_resource type="Texture2D" uid="uid://b8tpwsrfjy5sj" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ถาดส้ม.png" id="26_g2vfd"]
+[ext_resource type="Script" path="res://ร้านอาหารทะเล/Control3.gd" id="26_o84vd"]
 [ext_resource type="Texture2D" uid="uid://chnupe4abe3le" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ถาดปลา.png" id="28_ccylc"]
+[ext_resource type="Script" path="res://ร้านอาหารทะเล/Control4.gd" id="28_gpjv0"]
 [ext_resource type="Texture2D" uid="uid://b5mt735b50e7j" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/เลม่อนซีก.png" id="29_f2ont"]
 [ext_resource type="Texture2D" uid="uid://bw1ye1ydl48qg" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ชิ้นแซลม่อน.png" id="30_i7xh5"]
+[ext_resource type="Script" path="res://ร้านอาหารทะเล/Control2.gd" id="30_mrwk5"]
 [ext_resource type="Script" path="res://ร้านอาหารทะเล/แซลม่อนชิ้นที่ 1.gd" id="32_6s0in"]
 [ext_resource type="Texture2D" uid="uid://bwo5g5ovhn4e0" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ชิ้นแซลม่อน2.png" id="33_6b886"]
 [ext_resource type="Texture2D" uid="uid://6eq1u1fejowj" path="res://ร้านอาหารทะเล/ร้านอาหารทะเลใหม่/ผ้าฟ้า.png" id="33_7gvbo"]
@@ -60,6 +60,10 @@
 [ext_resource type="Texture2D" uid="uid://bn5d1uuwj5jpt" path="res://ฉากเริ่มเกมใหม่/ปุ่มplay.png" id="47_r2d6c"]
 [ext_resource type="Texture2D" uid="uid://bginhcf68ym1q" path="res://หน้าตั้งค่าใหม่/เสียงปิดเขียว.png" id="47_s5c7a"]
 [ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/กลับหน้าเลือกด่าน.gd" id="48_hiald"]
+[ext_resource type="Script" path="res://ร้านอาหารทะเล/หม้อทอด.gd" id="49_e4fcs"]
+[ext_resource type="Script" path="res://ร้านอาหารทะเล/เฟรนฟราย1.gd" id="51_8mp1l"]
+[ext_resource type="Script" path="res://ร้านอาหารทะเล/เฟรนฟราย2.gd" id="52_jatlc"]
+[ext_resource type="Script" path="res://ร้านอาหารทะเล/เฟรนฟราย3.gd" id="53_08ww3"]
 
 [sub_resource type="GDScript" id="GDScript_2bsw5"]
 script/source = "extends TextureButton
@@ -170,6 +174,7 @@ texture_normal = ExtResource("12_mut06")
 script = ExtResource("13_4trtq")
 
 [node name="ไอติม1" type="TextureRect" parent="ส่งออเดอร์/ถังไอติม2"]
+layout_mode = 0
 offset_left = -165.376
 offset_top = -566.663
 offset_right = 814.624
@@ -180,18 +185,13 @@ texture = ExtResource("13_i20gn")
 script = ExtResource("15_g7d60")
 
 [node name="ไอติม1" type="TextureRect" parent="ส่งออเดอร์/ถังไอติม2/ไอติม1"]
+layout_mode = 0
 offset_left = 16.0947
 offset_top = 45.0688
 offset_right = 2183.09
 offset_bottom = 3245.07
 rotation = -0.0355219
 scale = Vector2(0.427375, 0.427375)
-texture = ExtResource("13_i20gn")
-
-[node name="TextureRect" type="TextureRect" parent="ส่งออเดอร์/ถังไอติม2/ไอติม1"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
 texture = ExtResource("13_i20gn")
 
 [node name="Button" type="Button" parent="ส่งออเดอร์/ถังไอติม2/ไอติม1"]
@@ -204,6 +204,7 @@ offset_right = 1003.0
 offset_bottom = 1249.0
 
 [node name="ไอติม2" type="TextureRect" parent="ส่งออเดอร์/ถังไอติม2"]
+layout_mode = 0
 offset_left = 150.197
 offset_top = -690.445
 offset_right = 1130.2
@@ -214,6 +215,7 @@ texture = ExtResource("13_i20gn")
 script = ExtResource("16_t7303")
 
 [node name="ไอติม2" type="TextureRect" parent="ส่งออเดอร์/ถังไอติม2/ไอติม2"]
+layout_mode = 0
 offset_left = 16.0947
 offset_top = 45.0684
 offset_right = 2183.09
@@ -224,12 +226,14 @@ texture = ExtResource("13_i20gn")
 
 [node name="Button" type="Button" parent="ส่งออเดอร์/ถังไอติม2/ไอติม2"]
 clip_children = 1
+layout_mode = 0
 offset_left = 45.0698
 offset_top = -16.0942
 offset_right = 1124.07
 offset_bottom = 1230.91
 
 [node name="ไอติม3" type="TextureRect" parent="ส่งออเดอร์/ถังไอติม2"]
+layout_mode = 0
 offset_left = 139.401
 offset_top = -253.811
 offset_right = 1119.4
@@ -240,6 +244,7 @@ texture = ExtResource("13_i20gn")
 script = ExtResource("17_4w2b6")
 
 [node name="ไอติม3" type="TextureRect" parent="ส่งออเดอร์/ถังไอติม2/ไอติม3"]
+layout_mode = 0
 offset_left = 16.0946
 offset_top = 45.0684
 offset_right = 2183.09
@@ -250,6 +255,7 @@ texture = ExtResource("13_i20gn")
 
 [node name="Button" type="Button" parent="ส่งออเดอร์/ถังไอติม2/ไอติม3"]
 clip_children = 1
+layout_mode = 0
 offset_left = -57.9478
 offset_top = 122.329
 offset_right = 1021.05
@@ -299,6 +305,7 @@ script = ExtResource("17_2jjm7")
 
 [node name="จาน1" type="TextureRect" parent="ส่งออเดอร์/จาน1"]
 visible = false
+layout_mode = 0
 offset_left = -22.7109
 offset_top = -11.0017
 offset_right = 17769.3
@@ -308,12 +315,14 @@ texture = ExtResource("14_ctaki")
 
 [node name="Button" type="Button" parent="ส่งออเดอร์/จาน1/จาน1"]
 visible = false
+layout_mode = 0
 offset_left = -130.0
 offset_top = 520.0
 offset_right = 17674.0
 offset_bottom = 14816.0
 
 [node name="จาน2" type="TextureRect" parent="ส่งออเดอร์"]
+layout_mode = 0
 offset_left = 235.963
 offset_top = 308.991
 offset_right = 1592.96
@@ -323,6 +332,7 @@ texture = ExtResource("14_ctaki")
 
 [node name="จาน5" type="TextureRect" parent="ส่งออเดอร์/จาน2"]
 visible = false
+layout_mode = 0
 offset_left = 11.0156
 offset_top = 10.7227
 offset_right = 13915.0
@@ -332,12 +342,14 @@ texture = ExtResource("14_ctaki")
 
 [node name="Button" type="Button" parent="ส่งออเดอร์/จาน2/จาน5"]
 visible = false
+layout_mode = 0
 offset_left = -225.75
 offset_top = 338.688
 offset_right = 14152.3
 offset_bottom = 12019.7
 
 [node name="จาน3" type="TextureRect" parent="ส่งออเดอร์"]
+layout_mode = 0
 offset_left = 99.0
 offset_top = 419.0
 offset_right = 1456.0
@@ -348,6 +360,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="จาน7" type="TextureRect" parent="ส่งออเดอร์/จาน3"]
 visible = false
+layout_mode = 0
 offset_left = 21.0313
 offset_top = 10.5195
 offset_right = 13925.0
@@ -357,12 +370,14 @@ texture = ExtResource("14_ctaki")
 
 [node name="Button" type="Button" parent="ส่งออเดอร์/จาน3/จาน7"]
 visible = false
+layout_mode = 0
 offset_left = -225.0
 offset_top = 337.0
 offset_right = 14153.0
 offset_bottom = 12018.0
 
 [node name="จาน4" type="TextureRect" parent="ส่งออเดอร์"]
+layout_mode = 0
 offset_left = 242.0
 offset_top = 422.0
 offset_right = 1599.0
@@ -372,6 +387,7 @@ texture = ExtResource("14_ctaki")
 
 [node name="จาน8" type="TextureRect" parent="ส่งออเดอร์/จาน4"]
 visible = false
+layout_mode = 0
 offset_left = 42.2813
 offset_top = 10.5703
 offset_right = 13946.3
@@ -388,6 +404,7 @@ offset_right = 14153.0
 offset_bottom = 12018.0
 
 [node name="ถาดผักกาด" type="TextureButton" parent="ส่งออเดอร์"]
+layout_mode = 0
 offset_left = 154.0
 offset_top = 530.0
 offset_right = 1559.0
@@ -413,6 +430,7 @@ offset_bottom = -2342.79
 texture = ExtResource("19_17twb")
 
 [node name="ผัก3" type="TextureRect" parent="ส่งออเดอร์/ถาดผักกาด"]
+layout_mode = 0
 offset_left = -379.099
 offset_top = -1448.7
 offset_right = 647.901
@@ -420,6 +438,7 @@ offset_bottom = -758.695
 texture = ExtResource("19_17twb")
 
 [node name="ผัก4" type="TextureRect" parent="ส่งออเดอร์/ถาดผักกาด"]
+layout_mode = 0
 offset_left = 1516.39
 offset_top = -1448.7
 offset_right = 2543.39
@@ -427,6 +446,7 @@ offset_bottom = -758.695
 texture = ExtResource("19_17twb")
 
 [node name="เนื้อก่อนย่าง" type="TextureButton" parent="ส่งออเดอร์"]
+layout_mode = 0
 offset_left = -203.0
 offset_top = 516.0
 offset_right = 1275.0
@@ -435,7 +455,22 @@ scale = Vector2(0.083195, 0.0840525)
 texture_normal = ExtResource("20_f3bf8")
 script = ExtResource("11_s0tlq")
 
-[node name="เนื้อย่าง1" type="TextureRect" parent="ส่งออเดอร์/เนื้อก่อนย่าง"]
+[node name="Control3" type="Control" parent="ส่งออเดอร์/เนื้อก่อนย่าง"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("26_o84vd")
+
+[node name="เนื้อย่างเสร็จ1" type="TextureRect" parent="ส่งออเดอร์/เนื้อก่อนย่าง/Control3"]
+layout_mode = 0
+offset_left = 3966.59
+offset_top = -785.224
+offset_right = 5013.59
+offset_bottom = 186.776
+scale = Vector2(0.750754, 0.750754)
+texture = ExtResource("22_00qn2")
+
+[node name="เนื้อย่าง1" type="TextureRect" parent="ส่งออเดอร์/เนื้อก่อนย่าง/Control3"]
 layout_mode = 0
 offset_left = 1009.67
 offset_top = -2783.98
@@ -443,51 +478,49 @@ offset_right = 2355.67
 offset_bottom = -1534.98
 texture = ExtResource("22_00qn2")
 
-[node name="เนื้อย่างเสร็จ1" type="TextureRect" parent="ส่งออเดอร์/เนื้อก่อนย่าง/เนื้อย่าง1"]
-offset_left = 2956.92
-offset_top = 1998.76
-offset_right = 4003.92
-offset_bottom = 2970.76
-scale = Vector2(0.750754, 0.750754)
-texture = ExtResource("22_00qn2")
-
-[node name="Button" type="Button" parent="ส่งออเดอร์/เนื้อก่อนย่าง/เนื้อย่าง1"]
+[node name="Button" type="Button" parent="ส่งออเดอร์/เนื้อก่อนย่าง/Control3"]
 modulate = Color(1, 1, 1, 0)
 clip_children = 1
 layout_mode = 0
-offset_left = -84.0
-offset_top = -59.0
-offset_right = 1382.0
-offset_bottom = 1237.0
+offset_left = 925.67
+offset_top = -2842.98
+offset_right = 2391.67
+offset_bottom = -1546.98
 
-[node name="เนื้อย่าง2" type="TextureRect" parent="ส่งออเดอร์/เนื้อก่อนย่าง"]
+[node name="Control4" type="Control" parent="ส่งออเดอร์/เนื้อก่อนย่าง"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("28_gpjv0")
+
+[node name="เนื้อย่าง2" type="TextureRect" parent="ส่งออเดอร์/เนื้อก่อนย่าง/Control4"]
 layout_mode = 0
 offset_left = 1057.75
 offset_top = -1415.78
 offset_right = 2403.75
-offset_bottom = -166.782
+offset_bottom = -166.781
 texture = ExtResource("22_00qn2")
-script = ExtResource("24_j1uj7")
 
-[node name="เนื้อย่างเสร็จ2" type="TextureRect" parent="ส่งออเดอร์/เนื้อก่อนย่าง/เนื้อย่าง2"]
+[node name="เนื้อย่างเสร็จ2" type="TextureRect" parent="ส่งออเดอร์/เนื้อก่อนย่าง/Control4"]
 layout_mode = 0
-offset_left = 4579.6
-offset_top = 642.453
-offset_right = 5626.6
-offset_bottom = 1614.45
+offset_left = 5637.35
+offset_top = -773.327
+offset_right = 6684.35
+offset_bottom = 198.673
 scale = Vector2(0.750754, 0.750754)
 texture = ExtResource("22_00qn2")
 
-[node name="Button" type="Button" parent="ส่งออเดอร์/เนื้อก่อนย่าง/เนื้อย่าง2"]
+[node name="Button" type="Button" parent="ส่งออเดอร์/เนื้อก่อนย่าง/Control4"]
 modulate = Color(1, 1, 1, 0)
 clip_children = 1
 layout_mode = 0
-offset_left = -84.0
-offset_top = -59.0
-offset_right = 1382.0
-offset_bottom = 1237.0
+offset_left = 973.75
+offset_top = -1474.78
+offset_right = 2439.75
+offset_bottom = -178.78
 
 [node name="แซลม่อนก่อนย่าง" type="TextureButton" parent="ส่งออเดอร์"]
+layout_mode = 0
 offset_left = -397.0
 offset_top = 528.0
 offset_right = 1942.0
@@ -496,31 +529,37 @@ scale = Vector2(0.0778088, 0.0778088)
 texture_normal = ExtResource("28_ccylc")
 script = ExtResource("15_v7ij7")
 
-[node name="แซลม่อนย่าง3" type="TextureRect" parent="ส่งออเดอร์/แซลม่อนก่อนย่าง"]
+[node name="Control2" type="Control" parent="ส่งออเดอร์/แซลม่อนก่อนย่าง"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("30_mrwk5")
+
+[node name="แซลม่อนย่าง3" type="TextureRect" parent="ส่งออเดอร์/แซลม่อนก่อนย่าง/Control2"]
 layout_mode = 0
 offset_left = 578.341
 offset_top = -3174.45
 offset_right = 1865.34
 offset_bottom = -2017.45
 texture = ExtResource("30_i7xh5")
-script = ExtResource("16_4ktgc")
 
-[node name="แซลม่อน2" type="TextureRect" parent="ส่งออเดอร์/แซลม่อนก่อนย่าง/แซลม่อนย่าง3"]
+[node name="แซลม่อน2" type="TextureRect" parent="ส่งออเดอร์/แซลม่อนก่อนย่าง/Control2"]
 layout_mode = 0
-offset_left = 5860.51
-offset_top = 822.533
-offset_right = 7179.51
-offset_bottom = 2167.53
+offset_left = 6438.85
+offset_top = -2351.92
+offset_right = 7757.85
+offset_bottom = -1006.92
 rotation = -0.369177
 scale = Vector2(0.621857, 0.621857)
 texture = ExtResource("30_i7xh5")
 
-[node name="Button" type="Button" parent="ส่งออเดอร์/แซลม่อนก่อนย่าง/แซลม่อนย่าง3"]
+[node name="Button" type="Button" parent="ส่งออเดอร์/แซลม่อนก่อนย่าง/Control2"]
 clip_children = 1
-offset_left = -111.0
-offset_top = 54.0
-offset_right = 1529.0
-offset_bottom = 1182.0
+layout_mode = 0
+offset_left = 467.341
+offset_top = -3120.45
+offset_right = 2107.34
+offset_bottom = -1992.45
 
 [node name="Control" type="Control" parent="ส่งออเดอร์/แซลม่อนก่อนย่าง"]
 anchors_preset = 0
@@ -537,6 +576,7 @@ offset_bottom = -462.947
 texture = ExtResource("30_i7xh5")
 
 [node name="แซลม่อน3" type="TextureRect" parent="ส่งออเดอร์/แซลม่อนก่อนย่าง/Control"]
+layout_mode = 0
 offset_left = 8366.67
 offset_top = -2249.11
 offset_right = 9685.67
@@ -562,7 +602,55 @@ offset_right = 1607.6
 offset_bottom = -546.722
 texture_normal = ExtResource("33_6b886")
 
+[node name="จานแซลม่อน" type="TextureButton" parent="ส่งออเดอร์"]
+layout_mode = 0
+offset_left = 258.0
+offset_top = 530.0
+offset_right = 1437.0
+offset_bottom = 1467.0
+scale = Vector2(0.0920784, 0.0920784)
+texture_normal = ExtResource("20_cboob")
+script = ExtResource("13_e7xs5")
+
+[node name="ซอส1" type="TextureRect" parent="ส่งออเดอร์/จานแซลม่อน"]
+layout_mode = 0
+offset_left = -1835.39
+offset_top = -2497.88
+offset_right = 2689.61
+offset_bottom = 1536.13
+scale = Vector2(0.323027, 0.323027)
+texture = ExtResource("37_kr31x")
+
+[node name="Button" type="Button" parent="ส่งออเดอร์/จานแซลม่อน/ซอส1"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="ซอส2" type="TextureRect" parent="ส่งออเดอร์/จานแซลม่อน"]
+layout_mode = 0
+offset_left = -272.0
+offset_top = -2520.0
+offset_right = 4268.0
+offset_bottom = 1582.0
+scale = Vector2(0.323027, 0.323027)
+texture = ExtResource("39_6vxlq")
+
+[node name="Button" type="Button" parent="ส่งออเดอร์/จานแซลม่อน/ซอส2"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="ซอส3" type="TextureRect" parent="ส่งออเดอร์/จานแซลม่อน"]
+layout_mode = 0
+offset_left = -184.625
+offset_top = -1238.08
+offset_right = 1173.38
+offset_bottom = -27.0757
+scale = Vector2(1.03358, 1.03358)
+texture = ExtResource("44_furi0")
+
 [node name="ถาดมะนาว" type="TextureButton" parent="ส่งออเดอร์"]
+layout_mode = 0
 offset_left = -66.0
 offset_top = 530.0
 offset_right = 1356.0
@@ -590,6 +678,7 @@ scale = Vector2(0.0752618, 0.0752618)
 texture = ExtResource("29_f2ont")
 
 [node name="ถาดมะเขือเทศ" type="TextureButton" parent="ส่งออเดอร์"]
+layout_mode = 0
 offset_left = 38.0
 offset_top = 519.0
 offset_right = 1595.0
@@ -616,108 +705,109 @@ offset_bottom = 993.641
 scale = Vector2(0.640742, 0.640742)
 texture = ExtResource("35_v3dgs")
 
-[node name="จานแซลม่อน" type="TextureButton" parent="ส่งออเดอร์"]
-offset_left = 258.0
-offset_top = 530.0
-offset_right = 1437.0
-offset_bottom = 1467.0
-scale = Vector2(0.0920784, 0.0920784)
-texture_normal = ExtResource("20_cboob")
-script = ExtResource("13_e7xs5")
-
-[node name="ซอส1" type="TextureRect" parent="ส่งออเดอร์/จานแซลม่อน"]
-visible = false
+[node name="ถาด" type="TextureRect" parent="ส่งออเดอร์/ถาดมะเขือเทศ"]
 layout_mode = 0
-offset_left = -1835.39
-offset_top = -2497.88
-offset_right = 2689.61
-offset_bottom = 1536.13
-scale = Vector2(0.323027, 0.323027)
-texture = ExtResource("37_kr31x")
-
-[node name="Button" type="Button" parent="ส่งออเดอร์/จานแซลม่อน/ซอส1"]
-layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
-
-[node name="ซอส2" type="TextureRect" parent="ส่งออเดอร์/จานแซลม่อน"]
-visible = false
-layout_mode = 0
-offset_left = -272.0
-offset_top = -2520.0
-offset_right = 4268.0
-offset_bottom = 1582.0
-scale = Vector2(0.323027, 0.323027)
-texture = ExtResource("39_6vxlq")
-
-[node name="Button" type="Button" parent="ส่งออเดอร์/จานแซลม่อน/ซอส2"]
-layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
-
-[node name="ซอส3" type="TextureRect" parent="ส่งออเดอร์/จานแซลม่อน"]
-layout_mode = 0
-offset_left = -184.625
-offset_top = -1238.08
-offset_right = 1173.38
-offset_bottom = -27.0757
-scale = Vector2(1.03358, 1.03358)
-texture = ExtResource("44_furi0")
-
-[node name="เฟรนฟราย" type="Control" parent="ส่งออเดอร์"]
-layout_mode = 3
-anchors_preset = 0
-offset_left = -637.0
-offset_top = -97.0
-offset_right = -597.0
-offset_bottom = -57.0
-script = ExtResource("17_6f7vr")
-
-[node name="ถาด" type="TextureRect" parent="ส่งออเดอร์/เฟรนฟราย"]
-layout_mode = 0
-offset_left = 1284.0
-offset_top = 509.0
-offset_right = 1878.0
-offset_bottom = 1742.0
+offset_left = 8015.0
+offset_top = -1322.0
+offset_right = 16037.0
+offset_bottom = 13962.0
 rotation = 1.56127
 scale = Vector2(0.215629, 0.215629)
 texture = ExtResource("33_7gvbo")
 
-[node name="หม้อทอด" type="TextureButton" parent="ส่งออเดอร์/เฟรนฟราย"]
+[node name="หม้อทอด" type="TextureButton" parent="ส่งออเดอร์"]
 layout_mode = 0
-offset_left = 1046.0
-offset_top = 292.0
-offset_right = 2311.0
-offset_bottom = 1389.0
+offset_left = 409.0
+offset_top = 195.0
+offset_right = 1674.0
+offset_bottom = 1292.0
 scale = Vector2(0.194927, 0.194927)
 texture_normal = ExtResource("34_2sd3y")
+script = ExtResource("49_e4fcs")
 
-[node name="เฟรนฟราย1" type="TextureButton" parent="ส่งออเดอร์/เฟรนฟราย"]
-layout_mode = 0
-offset_left = 1044.0
-offset_top = 507.0
-offset_right = 1967.0
-offset_bottom = 1616.0
-scale = Vector2(0.097539, 0.097539)
-texture_normal = ExtResource("37_xfbbv")
+[node name="เฟรนฟราย1" type="TextureRect" parent="ส่งออเดอร์/หม้อทอด"]
+offset_left = 400.15
+offset_top = 949.074
+offset_right = 1380.15
+offset_bottom = 2396.08
+rotation = -0.0166916
+scale = Vector2(0.349984, 0.349984)
+texture = ExtResource("37_xfbbv")
+script = ExtResource("51_8mp1l")
 
-[node name="เฟรนฟราย2" type="TextureButton" parent="ส่งออเดอร์/เฟรนฟราย"]
+[node name="เฟรนฟารยทอด1" type="TextureRect" parent="ส่งออเดอร์/หม้อทอด/เฟรนฟราย1"]
 layout_mode = 0
-offset_left = 1147.0
-offset_top = 515.0
-offset_right = 2070.0
-offset_bottom = 1624.0
-scale = Vector2(0.097539, 0.097539)
-texture_normal = ExtResource("37_xfbbv")
+offset_left = 43.4805
+offset_top = 30.0439
+offset_right = 2210.48
+offset_bottom = 3230.05
+rotation = 0.0396164
+scale = Vector2(0.427375, 0.427375)
+texture = ExtResource("37_xfbbv")
 
-[node name="เฟรนฟราย3" type="TextureButton" parent="ส่งออเดอร์/เฟรนฟราย"]
+[node name="Button" type="Button" parent="ส่งออเดอร์/หม้อทอด/เฟรนฟราย1"]
+clip_children = 1
 layout_mode = 0
-offset_left = 1102.0
-offset_top = 532.0
-offset_right = 2025.0
-offset_bottom = 1641.0
-scale = Vector2(0.097539, 0.097539)
-texture_normal = ExtResource("37_xfbbv")
+offset_left = -61.3154
+offset_top = 160.234
+offset_right = 1017.68
+offset_bottom = 1407.24
+
+[node name="เฟรนฟราย2" type="TextureRect" parent="ส่งออเดอร์/หม้อทอด"]
+offset_left = 35.9106
+offset_top = 1262.01
+offset_right = 1015.91
+offset_bottom = 2709.01
+rotation = -0.0166916
+scale = Vector2(0.349984, 0.349984)
+texture = ExtResource("37_xfbbv")
+script = ExtResource("52_jatlc")
+
+[node name="เฟรนฟารย2" type="TextureRect" parent="ส่งออเดอร์/หม้อทอด/เฟรนฟราย2"]
+layout_mode = 0
+offset_left = 72.0547
+offset_top = 74.5
+offset_right = 2239.05
+offset_bottom = 3274.5
+rotation = 0.0396164
+scale = Vector2(0.427375, 0.427375)
+texture = ExtResource("37_xfbbv")
+
+[node name="Button" type="Button" parent="ส่งออเดอร์/หม้อทอด/เฟรนฟราย2"]
+clip_children = 1
+layout_mode = 0
+offset_left = -3.18164
+offset_top = 190.526
+offset_right = 1075.82
+offset_bottom = 1437.53
+
+[node name="เฟรนฟราย3" type="TextureRect" parent="ส่งออเดอร์/หม้อทอด"]
+offset_left = 728.478
+offset_top = 1246.62
+offset_right = 1708.48
+offset_bottom = 2693.62
+rotation = -0.0166916
+scale = Vector2(0.349984, 0.349984)
+texture = ExtResource("37_xfbbv")
+script = ExtResource("53_08ww3")
+
+[node name="เฟรนฟารย3" type="TextureRect" parent="ส่งออเดอร์/หม้อทอด/เฟรนฟราย3"]
+layout_mode = 0
+offset_left = 29.0664
+offset_top = 15.1484
+offset_right = 2196.06
+offset_bottom = 3215.15
+rotation = 0.0396164
+scale = Vector2(0.427375, 0.427375)
+texture = ExtResource("37_xfbbv")
+
+[node name="Button" type="Button" parent="ส่งออเดอร์/หม้อทอด/เฟรนฟราย3"]
+clip_children = 1
+layout_mode = 0
+offset_left = 11.7188
+offset_top = 176.121
+offset_right = 1090.72
+offset_bottom = 1423.12
 
 [node name="รวมในจานอาหาร" type="Control" parent="."]
 layout_mode = 3
@@ -839,15 +929,18 @@ texture_normal = ExtResource("47_r2d6c")
 [connection signal="pressed" from="ส่งออเดอร์/ถังไอติม2/ไอติม3/Button" to="ส่งออเดอร์/ถังไอติม2/ไอติม3" method="_on_button_pressed"]
 [connection signal="pressed" from="ส่งออเดอร์/ถาดผักกาด" to="ส่งออเดอร์/ถาดผักกาด" method="_on_pressed"]
 [connection signal="pressed" from="ส่งออเดอร์/เนื้อก่อนย่าง" to="ส่งออเดอร์/เนื้อก่อนย่าง" method="_on_pressed"]
-[connection signal="pressed" from="ส่งออเดอร์/เนื้อก่อนย่าง/เนื้อย่าง1/Button" to="ส่งออเดอร์/เนื้อก่อนย่าง/เนื้อย่าง1" method="_on_button_pressed"]
-[connection signal="pressed" from="ส่งออเดอร์/เนื้อก่อนย่าง/เนื้อย่าง2/Button" to="ส่งออเดอร์/เนื้อก่อนย่าง/เนื้อย่าง2" method="_on_button_pressed"]
+[connection signal="pressed" from="ส่งออเดอร์/เนื้อก่อนย่าง/Control3/Button" to="ส่งออเดอร์/เนื้อก่อนย่าง/Control3" method="_on_button_pressed"]
+[connection signal="pressed" from="ส่งออเดอร์/เนื้อก่อนย่าง/Control4/Button" to="ส่งออเดอร์/เนื้อก่อนย่าง/Control4" method="_on_button_pressed"]
 [connection signal="pressed" from="ส่งออเดอร์/แซลม่อนก่อนย่าง" to="ส่งออเดอร์/แซลม่อนก่อนย่าง" method="_on_pressed"]
-[connection signal="pressed" from="ส่งออเดอร์/แซลม่อนก่อนย่าง/แซลม่อนย่าง3/Button" to="ส่งออเดอร์/แซลม่อนก่อนย่าง/แซลม่อนย่าง3" method="_on_button_pressed"]
+[connection signal="pressed" from="ส่งออเดอร์/แซลม่อนก่อนย่าง/Control2/Button" to="ส่งออเดอร์/แซลม่อนก่อนย่าง/Control2" method="_on_button_pressed"]
 [connection signal="pressed" from="ส่งออเดอร์/แซลม่อนก่อนย่าง/Control/Button" to="ส่งออเดอร์/แซลม่อนก่อนย่าง/Control" method="_on_button_pressed"]
+[connection signal="pressed" from="ส่งออเดอร์/จานแซลม่อน" to="ส่งออเดอร์/จานแซลม่อน" method="_on_pressed"]
 [connection signal="pressed" from="ส่งออเดอร์/ถาดมะนาว" to="ส่งออเดอร์/ถาดมะนาว" method="_on_pressed"]
 [connection signal="pressed" from="ส่งออเดอร์/ถาดมะเขือเทศ" to="ส่งออเดอร์/ถาดมะเขือเทศ" method="_on_pressed"]
-[connection signal="pressed" from="ส่งออเดอร์/จานแซลม่อน" to="ส่งออเดอร์/จานแซลม่อน" method="_on_pressed"]
-[connection signal="pressed" from="ส่งออเดอร์/เฟรนฟราย/หม้อทอด" to="ส่งออเดอร์/เฟรนฟราย" method="_on_หม้อทอด_pressed"]
+[connection signal="pressed" from="ส่งออเดอร์/หม้อทอด" to="ส่งออเดอร์/หม้อทอด" method="_on_pressed"]
+[connection signal="pressed" from="ส่งออเดอร์/หม้อทอด/เฟรนฟราย1/Button" to="ส่งออเดอร์/หม้อทอด/เฟรนฟราย1" method="_on_button_pressed"]
+[connection signal="pressed" from="ส่งออเดอร์/หม้อทอด/เฟรนฟราย2/Button" to="ส่งออเดอร์/หม้อทอด/เฟรนฟราย2" method="_on_button_pressed"]
+[connection signal="pressed" from="ส่งออเดอร์/หม้อทอด/เฟรนฟราย3/Button" to="ส่งออเดอร์/หม้อทอด/เฟรนฟราย3" method="_on_button_pressed"]
 [connection signal="pressed" from="Menu/Button" to="Menu" method="_on_button_pressed"]
 [connection signal="pressed" from="คู่มือเกม/Button" to="คู่มือเกม" method="_on_button_pressed"]
 [connection signal="pressed" from="Home" to="Home" method="_on_pressed"]

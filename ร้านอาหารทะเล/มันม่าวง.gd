@@ -42,3 +42,7 @@ func set_random_texture():
 		set_texture(texture)
 	else:
 		print("Error: textures array is empty.")
+
+
+func _on_ข้าวญี่ปุ่น_focus_entered():
+	pass # Replace with function body.
