@@ -780,6 +780,7 @@ volume_db = -17.584
 bus = &"SFX"
 
 [node name="เฟรนฟราย1" type="TextureRect" parent="ส่งออเดอร์/หม้อทอด"]
+layout_mode = 0
 offset_left = 400.15
 offset_top = 949.074
 offset_right = 1380.15
@@ -811,6 +812,7 @@ offset_bottom = 1407.24
 stream = ExtResource("18_p8ihf")
 
 [node name="เฟรนฟราย2" type="TextureRect" parent="ส่งออเดอร์/หม้อทอด"]
+layout_mode = 0
 offset_left = 35.9106
 offset_top = 1262.01
 offset_right = 1015.91
@@ -842,6 +844,7 @@ offset_bottom = 1437.53
 stream = ExtResource("18_p8ihf")
 
 [node name="เฟรนฟราย3" type="TextureRect" parent="ส่งออเดอร์/หม้อทอด"]
+layout_mode = 0
 offset_left = 728.478
 offset_top = 1246.62
 offset_right = 1708.48

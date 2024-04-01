@@ -457,6 +457,7 @@ offset_right = -258.0
 offset_bottom = -441.0
 
 [node name="กุ้งทอดเสร็จ1" type="TextureRect" parent="กุ้งสด/กุ้งทอด1"]
+layout_mode = 0
 offset_left = -1660.0
 offset_top = -549.517
 offset_right = -552.998
@@ -472,6 +473,7 @@ offset_bottom = 149.0
 script = ExtResource("36_phjc8")
 
 [node name="กุ้งทอด2" type="TextureRect" parent="กุ้งสด/กุ้งทอด2"]
+layout_mode = 0
 offset_left = -646.826
 offset_top = -223.241
 offset_right = 460.174
@@ -481,12 +483,14 @@ texture = ExtResource("35_g0dwk")
 
 [node name="Button" type="Button" parent="กุ้งสด/กุ้งทอด2"]
 clip_children = 1
+layout_mode = 0
 offset_left = -653.0
 offset_top = -183.0
 offset_right = -298.0
 offset_bottom = 63.0
 
 [node name="กุ้งทอดเสร็จ2" type="TextureRect" parent="กุ้งสด/กุ้งทอด2"]
+layout_mode = 0
 offset_left = -1694.34
 offset_top = -103.034
 offset_right = -587.344
