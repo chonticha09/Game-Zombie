@@ -11,26 +11,40 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_tu6il")
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect" type="ColorRect" parent="Control"]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.025
+anchor_top = 0.1
+anchor_right = 0.025
+anchor_bottom = 0.1
 offset_right = 837.0
 offset_bottom = 352.0
+metadata/_edit_use_anchors_ = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Control"]
 stream = ExtResource("2_wdjb6")
 volume_db = 1.361
 pitch_scale = 1.66
 autoplay = true
-max_polyphony = 2
 
 [node name="HSlider" type="HSlider" parent="Control"]
-layout_mode = 0
-offset_left = 150.0
-offset_top = 42.0
-offset_right = 681.0
-offset_bottom = 297.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 2.0
+anchor_top = 0.65
+anchor_right = 2.75
+anchor_bottom = 0.65
+offset_left = 200.0
+offset_top = 285.0
+offset_right = 441.0
+offset_bottom = 526.0
+rotation = -0.000688195
+scale = Vector2(1.19892, -0.996836)
 min_value = -30.0
 max_value = 0.0
+metadata/_edit_use_anchors_ = true
 
 [connection signal="value_changed" from="Control/HSlider" to="Control" method="_on_h_slider_value_changed"]

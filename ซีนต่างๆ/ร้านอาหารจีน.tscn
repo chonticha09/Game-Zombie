@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://enqs25ysmuyn"]
+[gd_scene load_steps=32 format=3 uid="uid://enqs25ysmuyn"]
 
 [ext_resource type="Texture2D" uid="uid://cs5lxbhobrpjw" path="res://อาหารจีน/พื้นหลังอาหารจีน.png" id="1_huasp"]
 [ext_resource type="Texture2D" uid="uid://bi8qnd8lwyrm1" path="res://อาหารจีน/ครัวอาหารจีนnew.png" id="2_47thu"]
@@ -56,6 +56,12 @@ func _on_pressed():
 
 	is_clicked = not is_clicked
 "
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_04v07"]
+color = Color(0, 0.607843, 0, 1)
+grow_begin = 5.0
+grow_end = 5.0
+thickness = 17
 
 [node name="ร้านอาหารจีน" type="Node2D"]
 
@@ -362,10 +368,11 @@ color = Color(1, 1, 1, 0)
 modulate = Color(0, 0.992157, 0.419608, 1)
 self_modulate = Color(0.945098, 1, 0, 1)
 layout_mode = 0
-offset_left = 107.205
-offset_top = -69.4442
-offset_right = 657.205
-offset_bottom = -50.4442
+offset_left = 107.0
+offset_top = -75.0
+offset_right = 743.0
+offset_bottom = -50.0
+theme_override_styles/slider = SubResource("StyleBoxLine_04v07")
 min_value = -30.0
 max_value = 0.0
 
