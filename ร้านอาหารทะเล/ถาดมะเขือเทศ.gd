@@ -24,6 +24,7 @@ func load_mango_texture(texture_rect: TextureRect, index: int) -> void:
 
 # When the button is pressed (load mango texture)
 func _on_pressed():
+	$เสียงกด.play()
 	show_next_mango_texture()
 
 func show_next_mango_texture() -> void:

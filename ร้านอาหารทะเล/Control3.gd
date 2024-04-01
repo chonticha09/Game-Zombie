@@ -13,5 +13,7 @@ func _on_button_pressed():
 	image_visible = not image_visible
 	$"เนื้อย่าง1".visible =  image_visible
 	$"เนื้อย่างเสร็จ1".visible = not image_visible
+	
+	$เสียงกด.play()
 
 

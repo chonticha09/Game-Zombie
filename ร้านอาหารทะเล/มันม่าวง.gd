@@ -46,3 +46,7 @@ func set_random_texture():
 
 func _on_ข้าวญี่ปุ่น_focus_entered():
 	pass # Replace with function body.
+
+
+func _on_โชยุ_focus_entered():
+	pass # Replace with function body.

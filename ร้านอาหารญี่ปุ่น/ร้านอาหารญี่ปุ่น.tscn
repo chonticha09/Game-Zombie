@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=3 uid="uid://cufvf423vkgaa"]
+[gd_scene load_steps=64 format=3 uid="uid://cufvf423vkgaa"]
 
 [ext_resource type="Texture2D" uid="uid://b2krk2ejcqsdb" path="res://ร้านอาหารญี่ปุ่น/ฉากหลังร้านอาหารญี่ปุ่น.png" id="1_m8jqe"]
 [ext_resource type="Texture2D" uid="uid://1ajkhqu0wxxv" path="res://ร้านอาหารญี่ปุ่น/ครัว.png" id="2_4cb8c"]
@@ -46,10 +46,13 @@
 [ext_resource type="Texture2D" uid="uid://qwg5esari85g" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ป้าย3.png" id="30_ufgty"]
 [ext_resource type="Texture2D" uid="uid://bm7ost7qle6g0" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ป้าย2.png" id="31_f1elv"]
 [ext_resource type="Texture2D" uid="uid://dqooidv5hwmsu" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ป้าย1.png" id="32_ac6rh"]
+[ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/โชยุ.gd" id="33_iac2g"]
 [ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/กุ้งสด.gd" id="33_k1xvn"]
 [ext_resource type="Script" path="res://โค้ด/Label.gd" id="33_t808b"]
+[ext_resource type="AudioStream" uid="uid://ce8tyn6wb6ac8" path="res://Sound/water_drop-6707.mp3" id="34_ijjub"]
 [ext_resource type="AudioStream" uid="uid://xp70lqeiabkx" path="res://crepe-swoosh-103867.mp3" id="34_y0qnh"]
 [ext_resource type="Texture2D" uid="uid://bq1clt8x7s7i" path="res://ร้านอาหารญี่ปุ่น/เทมปุระสุก.png" id="35_g0dwk"]
+[ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/วาซาบิ.gd" id="36_61aqo"]
 [ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/กุ้งทอด2.gd" id="36_phjc8"]
 [ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/กุ้งทอด1.gd" id="36_ysxxi"]
 [ext_resource type="Texture2D" uid="uid://bwqyscirbjxok" path="res://เพิ่มเติม/R1.png" id="42_njulb"]
@@ -375,6 +378,11 @@ offset_right = 901.0
 offset_bottom = 980.0
 scale = Vector2(0.086259, 0.086259)
 texture_normal = ExtResource("11_4enpg")
+script = ExtResource("33_iac2g")
+
+[node name="จิ้ม" type="AudioStreamPlayer2D" parent="โชยุ"]
+stream = ExtResource("34_ijjub")
+volume_db = 10.0
 
 [node name="วาซาบิ" type="TextureButton" parent="."]
 offset_left = 19.0
@@ -383,6 +391,11 @@ offset_right = 904.0
 offset_bottom = 1044.0
 scale = Vector2(0.086259, 0.086259)
 texture_normal = ExtResource("12_h7lwf")
+script = ExtResource("36_61aqo")
+
+[node name="จิ้ม" type="AudioStreamPlayer2D" parent="วาซาบิ"]
+stream = ExtResource("34_ijjub")
+volume_db = 10.0
 
 [node name="แก้วสาเก1" type="TextureButton" parent="."]
 offset_left = 1122.0
@@ -623,6 +636,9 @@ texture_normal = ExtResource("42_njulb")
 texture_hover = ExtResource("43_75ejs")
 script = ExtResource("48_vr2am")
 
+[node name="เสียงกด" type="AudioStreamPlayer" parent="Home"]
+stream = ExtResource("16_sarrn")
+
 [connection signal="pressed" from="ขวดสาเก" to="ขวดสาเก" method="_on_pressed"]
 [connection signal="focus_entered" from="Control/ข้าวญี่ปุ่น" to="Control/ข้าวญี่ปุ่น" method="_on_focus_entered"]
 [connection signal="pressed" from="Control/ข้าวญี่ปุ่น" to="Control/ข้าวญี่ปุ่น" method="_on_pressed"]
@@ -632,7 +648,8 @@ script = ExtResource("48_vr2am")
 [connection signal="pressed" from="Control/ข้าวญี่ปุ่น/ไข่หวาน/ข้าว2/Button2" to="Control/ข้าวญี่ปุ่น/ไข่หวาน/ข้าว2" method="_on_button_2_pressed"]
 [connection signal="pressed" from="Control/ข้าวญี่ปุ่น/แซลมอน" to="Control/ข้าวญี่ปุ่น/แซลมอน" method="_on_pressed"]
 [connection signal="pressed" from="Control/ข้าวญี่ปุ่น/แซลมอน/ข้าว3/Button3" to="Control/ข้าวญี่ปุ่น/แซลมอน/ข้าว3" method="_on_button_3_pressed"]
-[connection signal="focus_entered" from="กุ้งสด" to="กุ้งสด" method="_on_focus_entered"]
+[connection signal="pressed" from="โชยุ" to="โชยุ" method="_on_pressed"]
+[connection signal="pressed" from="วาซาบิ" to="วาซาบิ" method="_on_pressed"]
 [connection signal="pressed" from="กุ้งสด" to="กุ้งสด" method="_on_pressed"]
 [connection signal="pressed" from="กุ้งสด/กุ้งทอด1/Button" to="กุ้งสด/กุ้งทอด1" method="_on_button_pressed"]
 [connection signal="focus_entered" from="กุ้งสด/กุ้งทอด2/Button" to="กุ้งสด/กุ้งทอด2" method="_on_button_focus_entered"]

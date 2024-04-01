@@ -19,6 +19,7 @@ func load_texture(path: String, texture_rect: TextureRect) -> void:
 
 # เมื่อปุ่มถูกกด
 func _on_button_pressed():
+	$เสียงกด.play()
 	# ซ่อน TextureRect ปัจจุบัน
 	hide()
 	# เพิ่มค่าดัชนี TextureRect และตรวจสอบว่ายังมี TextureRect ที่ต้องแสดงหรือไม่
