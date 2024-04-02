@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://c11478acf356h"]
+[gd_scene load_steps=2 format=3 uid="uid://c11478acf356h"]
+
+[ext_resource type="Texture2D" uid="uid://dgm14dudufp64" path="res://ร้านผลไม้/ครัววว.png" id="1_aguqg"]
 
 [node name="ร้านถังหูลู่" type="Node2D"]
+
+[node name="ครัววว" type="Sprite2D" parent="."]
+position = Vector2(626.686, 467)
+scale = Vector2(0.448081, 0.46402)
+texture = ExtResource("1_aguqg")
