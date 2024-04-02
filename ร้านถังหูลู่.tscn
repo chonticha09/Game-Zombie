@@ -1,20 +1,29 @@
-[gd_scene load_steps=51 format=3 uid="uid://c11478acf356h"]
+[gd_scene load_steps=77 format=3 uid="uid://c11478acf356h"]
 
 [ext_resource type="Texture2D" uid="uid://cg7kfjd2bt0jc" path="res://ร้านผลไม้/พื้นหลัง.png" id="1_4okoo"]
 [ext_resource type="Texture2D" uid="uid://dgm14dudufp64" path="res://ร้านผลไม้/ครัววว.png" id="1_aguqg"]
 [ext_resource type="Texture2D" uid="uid://y5upsqtudwor" path="res://ร้านผลไม้/จาน.png" id="2_mtv3b"]
+[ext_resource type="Texture2D" uid="uid://de038mx8pphaq" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ป้าย4.png" id="2_pjob1"]
+[ext_resource type="Texture2D" uid="uid://qwg5esari85g" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ป้าย3.png" id="3_8g11r"]
 [ext_resource type="Texture2D" uid="uid://dfrey1csmd3s2" path="res://ร้านผลไม้/คัพเค้กฃ.png" id="3_qfxvn"]
+[ext_resource type="Texture2D" uid="uid://bm7ost7qle6g0" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ป้าย2.png" id="4_6w73s"]
 [ext_resource type="Script" path="res://คัพเค้ก1.gd" id="4_onsdy"]
 [ext_resource type="Script" path="res://คัพเค้กก้อน1.gd" id="5_cju46"]
+[ext_resource type="Texture2D" uid="uid://dqooidv5hwmsu" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ป้าย1.png" id="5_uhamh"]
 [ext_resource type="Script" path="res://คัพเค้ก2.gd" id="5_xej10"]
 [ext_resource type="Script" path="res://คัพเค้ก3.gd" id="6_3cqkw"]
+[ext_resource type="Script" path="res://โค้ด/Label.gd" id="6_7b2os"]
 [ext_resource type="AudioStream" uid="uid://cksppv16gcpua" path="res://Sound/multi-pop-1-188165.mp3" id="6_fjb3d"]
+[ext_resource type="Texture2D" uid="uid://c7x3itvoe431i" path="res://ร้านพิซซ่า/มันม่าวง.png" id="7_1p6bk"]
 [ext_resource type="Texture2D" uid="uid://cluaqxdpve6k4" path="res://ร้านผลไม้/หม้อช๊อกโกเเลต.png" id="7_4xxby"]
 [ext_resource type="Script" path="res://คัพเค้กก้อน2.gd" id="7_bv4cl"]
+[ext_resource type="Script" path="res://ร้านอาหารทะเล/มันม่าวง.gd" id="8_2coiw"]
 [ext_resource type="Texture2D" uid="uid://besenvekai5ma" path="res://ร้านผลไม้/หม้อน้ำตาล.png" id="8_yw6a2"]
+[ext_resource type="Texture2D" uid="uid://dmnh3ne7uww8i" path="res://กล่องข้อความ.png" id="9_cvfwe"]
 [ext_resource type="Texture2D" uid="uid://csvgdv4cdh6w" path="res://ร้านผลไม้/ถาดกีวี่.png" id="9_d72u8"]
 [ext_resource type="Script" path="res://คัพเค้กก้อน3.gd" id="9_w3q4o"]
 [ext_resource type="Texture2D" uid="uid://bky5mtccfeihq" path="res://ร้านผลไม้/ถาดสตอรี่่่่.png" id="10_mg6mx"]
+[ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/รูปอาหาร.gd" id="10_ytdw2"]
 [ext_resource type="Texture2D" uid="uid://qnllp13hb2t5" path="res://ร้านผลไม้/ถาดส้ม.png" id="11_jegwu"]
 [ext_resource type="Texture2D" uid="uid://cqwtserkrfvck" path="res://ร้านผลไม้/พุดช๊อก.png" id="12_4bgb2"]
 [ext_resource type="Texture2D" uid="uid://ycy4x85tyr81" path="res://ร้านผลไม้/ถาดพุดซา.png" id="12_8504b"]
@@ -38,18 +47,61 @@
 [ext_resource type="Script" path="res://ถาดองุ่น.gd" id="28_dm2w5"]
 [ext_resource type="Texture2D" uid="uid://c0oqffr7andyh" path="res://ร้านผลไม้/องุ่นเสีอบไม้.png" id="29_jp2a8"]
 [ext_resource type="Script" path="res://ไม้พุดซา.gd" id="30_xmlty"]
+[ext_resource type="Texture2D" uid="uid://530cvf6xpvrs" path="res://ร้านผลไม้/สตอช๊อก.png" id="34_6x6hx"]
 [ext_resource type="Texture2D" uid="uid://cbepk2jqx166" path="res://ร้านผลไม้/กี่วี่ช๊อก.png" id="34_db2wa"]
 [ext_resource type="Script" path="res://ไม้องุ่น.gd" id="34_pxd0x"]
 [ext_resource type="Texture2D" uid="uid://c4ov40agujo8w" path="res://ร้านผลไม้/ส้มช๊อก.png" id="35_esfcv"]
 [ext_resource type="Texture2D" uid="uid://hnj81cnl0w3" path="res://ร้านผลไม้/องุ่นช๊อก.png" id="36_et2p0"]
+[ext_resource type="Texture2D" uid="uid://cjs67568f8v2j" path="res://ร้านผลไม้/สตอเคลือบ.png" id="39_676wd"]
+[ext_resource type="Script" path="res://หม้อน้ำตาล.gd" id="39_asdh7"]
 [ext_resource type="Script" path="res://ถาดวิปครัม.gd" id="40_sg3s6"]
+[ext_resource type="Texture2D" uid="uid://b7muyv2doj3au" path="res://ร้านผลไม้/กี่วี่เคลือบ.png" id="40_wolg4"]
 [ext_resource type="Texture2D" uid="uid://dvngv7e77avjk" path="res://ร้านผลไม้/คัพเค้กวิปขาว.png" id="41_fuvjk"]
+[ext_resource type="Texture2D" uid="uid://cxel5g8c1whhw" path="res://ร้านผลไม้/ส้มเคลือบ.png" id="41_phpe4"]
+[ext_resource type="Texture2D" uid="uid://dn3vxo5ty3rc7" path="res://ร้านผลไม้/องุ่นเขียวเคลือบ.png" id="42_lklxb"]
 [ext_resource type="Script" path="res://ถาดสตอเบอรี่2.gd" id="43_it2qa"]
 [ext_resource type="Texture2D" uid="uid://ccv87hb7xhx1i" path="res://ร้านผลไม้/คัพเค้กเชอร์.png" id="43_skj1v"]
 [ext_resource type="Texture2D" uid="uid://btwhfue7h2n3q" path="res://ร้านผลไม้/คัพเค้กสตอ.png" id="44_wbbqu"]
 [ext_resource type="Script" path="res://ถาดบลูเบอรี่.gd" id="46_jn4ud"]
 [ext_resource type="Texture2D" uid="uid://b4kfbnu0ktn07" path="res://ร้านผลไม้/คัพเค้กบลูเบอร์รี่.png" id="47_rh5mi"]
 [ext_resource type="Script" path="res://ถาดเชอรี่.gd" id="48_b6wph"]
+[ext_resource type="Texture2D" uid="uid://bwqyscirbjxok" path="res://เพิ่มเติม/R1.png" id="66_0h6ed"]
+[ext_resource type="Texture2D" uid="uid://d0usu5d6oirt5" path="res://เพิ่มเติม/R.png" id="67_xlpyo"]
+[ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/Home.gd" id="68_mj8ia"]
+[ext_resource type="Texture2D" uid="uid://dg8vkcg53wx1n" path="res://หน้าตั้งค่าใหม่/กรอบสีเขียว.png" id="69_q8cc0"]
+[ext_resource type="Texture2D" uid="uid://dnul2hd3pap1x" path="res://หน้าตั้งค่าใหม่/เสียงเปิดเขียว.png" id="70_1foe1"]
+[ext_resource type="Texture2D" uid="uid://bginhcf68ym1q" path="res://หน้าตั้งค่าใหม่/เสียงปิดเขียว.png" id="71_pkd64"]
+[ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/กลับหน้าเลือกด่าน.gd" id="72_kqttp"]
+[ext_resource type="Script" path="res://Volume Slider1/vl.gd" id="73_ejk18"]
+[ext_resource type="Texture2D" uid="uid://btgkiw38sy5xl" path="res://เพิ่มเติม/ย้อน.png" id="74_ij7fx"]
+[ext_resource type="Texture2D" uid="uid://d0ihe1vq5mpx1" path="res://เพิ่มเติม/ย้อน2.png" id="75_01kwr"]
+
+[sub_resource type="GDScript" id="GDScript_dv7v7"]
+script/source = "extends TextureButton
+var audio_enabled = true
+var is_clicked = false
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass  # Replace with function body.
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+func _on_pressed():
+	if audio_enabled:
+		AudioServer.set_bus_mute(AudioServer.get_bus_index(\"Master\"), true)
+		audio_enabled = false
+	else:
+		AudioServer.set_bus_mute(AudioServer.get_bus_index(\"Master\"), false)
+		audio_enabled = true
+
+	# เปลี่ยนรูปภาพของ TextureButton เมื่อถูกคลิก
+	if is_clicked:
+		texture_normal = load(\"res://หน้าตั้งค่าใหม่/เสียงเปิดเขียว.png\")
+	else:
+		texture_normal = load(\"res://หน้าตั้งค่าใหม่/เสียงปิดเขียว.png\")
+
+	is_clicked = not is_clicked
+"
 
 [node name="ร้านถังหูลู่" type="Node2D"]
 
@@ -57,6 +109,60 @@
 position = Vector2(629.5, 332)
 scale = Vector2(0.449643, 0.461429)
 texture = ExtResource("1_4okoo")
+
+[node name="ป้าย4" type="Sprite2D" parent="พื้นหลัง"]
+position = Vector2(-28.1307, -634.518)
+scale = Vector2(0.628509, 0.626683)
+texture = ExtResource("2_pjob1")
+
+[node name="ป้าย3" type="Sprite2D" parent="พื้นหลัง"]
+visible = false
+position = Vector2(732.378, 32.6718)
+scale = Vector2(0.322665, 0.343082)
+texture = ExtResource("3_8g11r")
+
+[node name="ป้าย2" type="Sprite2D" parent="พื้นหลัง"]
+visible = false
+position = Vector2(603, 46)
+scale = Vector2(0.437, 0.437)
+texture = ExtResource("4_6w73s")
+
+[node name="ป้าย1" type="Sprite2D" parent="พื้นหลัง"]
+visible = false
+position = Vector2(603, 46)
+scale = Vector2(0.437, 0.437)
+texture = ExtResource("5_uhamh")
+
+[node name="Label" type="Label" parent="พื้นหลัง"]
+offset_left = -316.776
+offset_top = -667.501
+offset_right = -256.776
+offset_bottom = -613.501
+scale = Vector2(1.24491, 1.24491)
+theme_override_font_sizes/font_size = 35
+text = "120"
+script = ExtResource("6_7b2os")
+
+[node name="มันม่าวง" type="Sprite2D" parent="."]
+position = Vector2(1198, 231)
+scale = Vector2(0.249709, 0.274531)
+texture = ExtResource("7_1p6bk")
+script = ExtResource("8_2coiw")
+
+[node name="กล่องข้อความ" type="TextureRect" parent="มันม่าวง"]
+offset_left = 252.0
+offset_top = -681.0
+offset_right = 907.0
+offset_bottom = -10.0
+scale = Vector2(0.769743, 0.769743)
+texture = ExtResource("9_cvfwe")
+
+[node name="รูปอาหาร" type="TextureRect" parent="มันม่าวง"]
+offset_left = 394.03
+offset_top = -580.809
+offset_right = 453.03
+offset_bottom = -537.809
+script = ExtResource("10_ytdw2")
 
 [node name="ครัววว" type="Sprite2D" parent="."]
 position = Vector2(626.686, 467)
@@ -423,8 +529,8 @@ offset_left = 2461.83
 offset_top = -566.442
 offset_right = 3034.83
 offset_bottom = 1423.56
-scale = Vector2(0.2989, 0.2989)
-texture = ExtResource("12_4bgb2")
+scale = Vector2(0.316834, 0.295136)
+texture = ExtResource("34_6x6hx")
 
 [node name="กีวี่ช้อค" type="TextureRect" parent="ครัววว/หม้อช้อค"]
 offset_left = 2420.26
@@ -460,17 +566,50 @@ offset_right = 1239.72
 offset_bottom = 570.31
 scale = Vector2(0.353815, 0.353815)
 texture_normal = ExtResource("8_yw6a2")
-
-[node name="พุดน้ำตาล" type="TextureRect" parent="ครัววว/หม้อน้ำตาล"]
-offset_left = 1653.0
-offset_top = 177.0
-offset_right = 2045.0
-offset_bottom = 1411.0
-scale = Vector2(0.656845, 0.656845)
-texture = ExtResource("14_k1avp")
+script = ExtResource("39_asdh7")
 
 [node name="เสียงกด" type="AudioStreamPlayer" parent="ครัววว/หม้อน้ำตาล"]
 stream = ExtResource("6_fjb3d")
+
+[node name="พุดช้อค" type="TextureRect" parent="ครัววว/หม้อน้ำตาล"]
+offset_left = 1658.91
+offset_top = 171.746
+offset_right = 2231.91
+offset_bottom = 2161.75
+scale = Vector2(0.407632, 0.407632)
+texture = ExtResource("14_k1avp")
+
+[node name="สตอช้อค" type="TextureRect" parent="ครัววว/หม้อน้ำตาล"]
+offset_left = 3368.28
+offset_top = 152.274
+offset_right = 3941.28
+offset_bottom = 2142.27
+scale = Vector2(0.584792, 0.421888)
+texture = ExtResource("39_676wd")
+
+[node name="กีวี่ช้อค" type="TextureRect" parent="ครัววว/หม้อน้ำตาล"]
+offset_left = 3330.0
+offset_top = 164.0
+offset_right = 4765.0
+offset_bottom = 2874.0
+scale = Vector2(0.2989, 0.2989)
+texture = ExtResource("40_wolg4")
+
+[node name="ส้มช้อค" type="TextureRect" parent="ครัววว/หม้อน้ำตาล"]
+offset_left = 2529.0
+offset_top = 158.0
+offset_right = 3171.0
+offset_bottom = 2203.0
+scale = Vector2(0.451782, 0.405036)
+texture = ExtResource("41_phpe4")
+
+[node name="องุ่นช้อค" type="TextureRect" parent="ครัววว/หม้อน้ำตาล"]
+offset_left = 2536.0
+offset_top = 207.0
+offset_right = 3401.0
+offset_bottom = 2795.0
+scale = Vector2(0.2989, 0.2989)
+texture = ExtResource("42_lklxb")
 
 [node name="ถาดวิปครัม" type="TextureButton" parent="ครัววว"]
 offset_left = -1278.08
@@ -555,6 +694,96 @@ texture = ExtResource("43_skj1v")
 [node name="เสียงกด" type="AudioStreamPlayer" parent="ครัววว/ถาดเชอรี่"]
 stream = ExtResource("6_fjb3d")
 
+[node name="Home" type="TextureButton" parent="ครัววว/ถาดเชอรี่"]
+offset_left = 22.3789
+offset_top = -2178.82
+offset_right = 1772.38
+offset_bottom = -428.82
+scale = Vector2(0.245305, 0.241562)
+texture_normal = ExtResource("66_0h6ed")
+texture_hover = ExtResource("67_xlpyo")
+script = ExtResource("68_mj8ia")
+
+[node name="หน้าตั้งค่า" type="TextureRect" parent="ครัววว/ถาดเชอรี่/Home"]
+layout_mode = 0
+offset_left = 5747.0
+offset_top = 2005.0
+offset_right = 25497.0
+offset_bottom = 15658.0
+scale = Vector2(0.745627, 0.745627)
+texture = ExtResource("69_q8cc0")
+
+[node name="เปิดเสียง" type="TextureButton" parent="ครัววว/ถาดเชอรี่/Home/หน้าตั้งค่า"]
+layout_mode = 0
+offset_left = 3046.82
+offset_top = 7856.95
+offset_right = 3289.82
+offset_bottom = 8089.95
+scale = Vector2(14.3492, 14.3492)
+texture_normal = ExtResource("70_1foe1")
+script = SubResource("GDScript_dv7v7")
+
+[node name="ปิดเสียง" type="TextureRect" parent="ครัววว/ถาดเชอรี่/Home/หน้าตั้งค่า/เปิดเสียง"]
+visible = false
+layout_mode = 0
+offset_left = -1.78711
+offset_top = 3.57471
+offset_right = 628.213
+offset_bottom = 603.575
+scale = Vector2(0.384583, 0.384583)
+texture = ExtResource("71_pkd64")
+
+[node name="กลับหน้าเลือกด่าน" type="TextureButton" parent="ครัววว/ถาดเชอรี่/Home/หน้าตั้งค่า"]
+layout_mode = 0
+offset_left = 7677.63
+offset_top = 7946.58
+offset_right = 9427.67
+offset_bottom = 9696.58
+scale = Vector2(1.93884, 1.93884)
+texture_normal = ExtResource("66_0h6ed")
+texture_hover = ExtResource("67_xlpyo")
+script = ExtResource("72_kqttp")
+
+[node name="เพิ่มลดเสียง" type="Control" parent="ครัววว/ถาดเชอรี่/Home/หน้าตั้งค่า"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1125.0
+offset_top = 8091.0
+offset_right = 1983.0
+offset_bottom = 8091.0
+scale = Vector2(24.01, 24.01)
+script = ExtResource("73_ejk18")
+
+[node name="ColorRect" type="ColorRect" parent="ครัววว/ถาดเชอรี่/Home/หน้าตั้งค่า/เพิ่มลดเสียง"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 0
+offset_left = 93.4647
+offset_top = -28.6528
+offset_right = 705.465
+offset_bottom = 40.3472
+color = Color(1, 1, 1, 0)
+
+[node name="HSlider" type="HSlider" parent="ครัววว/ถาดเชอรี่/Home/หน้าตั้งค่า/เพิ่มลดเสียง"]
+modulate = Color(0, 0.992157, 0.419608, 1)
+self_modulate = Color(0.945098, 1, 0, 1)
+layout_mode = 0
+offset_left = 86.387
+offset_top = -100.581
+offset_right = 636.387
+offset_bottom = -81.5805
+min_value = -30.0
+max_value = 0.0
+
+[node name="ย้อนกลับ" type="TextureButton" parent="ครัววว/ถาดเชอรี่/Home/หน้าตั้งค่า"]
+layout_mode = 0
+offset_left = 12064.7
+offset_top = 7946.57
+offset_right = 12667.7
+offset_bottom = 8531.57
+scale = Vector2(5.74034, 5.74034)
+texture_normal = ExtResource("74_ij7fx")
+texture_hover = ExtResource("75_01kwr")
+
 [connection signal="pressed" from="ครัววว/คัพเค้ก1" to="ครัววว/คัพเค้ก1" method="_on_pressed"]
 [connection signal="pressed" from="ครัววว/คัพเค้ก1/คัพเค้กก้อน1/Button" to="ครัววว/คัพเค้ก1/คัพเค้กก้อน1" method="_on_button_pressed"]
 [connection signal="pressed" from="ครัววว/คัพเค้ก2" to="ครัววว/คัพเค้ก2" method="_on_pressed"]
@@ -568,7 +797,13 @@ stream = ExtResource("6_fjb3d")
 [connection signal="pressed" from="ครัววว/ถาดส้ม/ไม้ส้ม/Button" to="ครัววว/ถาดส้ม/ไม้ส้ม" method="_on_button_pressed"]
 [connection signal="pressed" from="ครัววว/ถาดพุดซา" to="ครัววว/ถาดพุดซา" method="_on_pressed"]
 [connection signal="pressed" from="ครัววว/ถาดองุ่น" to="ครัววว/ถาดองุ่น" method="_on_pressed"]
+[connection signal="pressed" from="ครัววว/หม้อน้ำตาล" to="ครัววว/หม้อน้ำตาล" method="_on_pressed"]
 [connection signal="pressed" from="ครัววว/ถาดวิปครัม" to="ครัววว/ถาดวิปครัม" method="_on_pressed"]
 [connection signal="pressed" from="ครัววว/ถาดสตอเบอรี่2" to="ครัววว/ถาดสตอเบอรี่2" method="_on_pressed"]
 [connection signal="pressed" from="ครัววว/ถาดบลูเบอรี่" to="ครัววว/ถาดบลูเบอรี่" method="_on_pressed"]
 [connection signal="pressed" from="ครัววว/ถาดเชอรี่" to="ครัววว/ถาดเชอรี่" method="_on_pressed"]
+[connection signal="pressed" from="ครัววว/ถาดเชอรี่/Home" to="ครัววว/ถาดเชอรี่/Home" method="_on_pressed"]
+[connection signal="pressed" from="ครัววว/ถาดเชอรี่/Home/หน้าตั้งค่า/เปิดเสียง" to="ครัววว/ถาดเชอรี่/Home/หน้าตั้งค่า/เปิดเสียง" method="_on_pressed"]
+[connection signal="pressed" from="ครัววว/ถาดเชอรี่/Home/หน้าตั้งค่า/กลับหน้าเลือกด่าน" to="ครัววว/ถาดเชอรี่/Home/หน้าตั้งค่า/กลับหน้าเลือกด่าน" method="_on_pressed"]
+[connection signal="value_changed" from="ครัววว/ถาดเชอรี่/Home/หน้าตั้งค่า/เพิ่มลดเสียง/HSlider" to="ครัววว/ถาดเชอรี่/Home/หน้าตั้งค่า/เพิ่มลดเสียง" method="_on_h_slider_value_changed"]
+[connection signal="pressed" from="ครัววว/ถาดเชอรี่/Home/หน้าตั้งค่า/ย้อนกลับ" to="ครัววว/ถาดเชอรี่/Home/หน้าตั้งค่า/ย้อนกลับ" method="_on_pressed"]
