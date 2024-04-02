@@ -271,7 +271,6 @@ offset_left = 7381.3
 offset_top = 3929.24
 offset_right = 8340.3
 offset_bottom = 4859.24
-scale = Vector2(0.993509, 1)
 
 [node name="เสียงกด" type="AudioStreamPlayer" parent="พื้นหลังอาหารจีน/ซาลาเปา2/ซาลาเปา1"]
 stream = ExtResource("26_ppygm")

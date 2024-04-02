@@ -6,7 +6,7 @@ var current_texture_index: int = 0
 func _ready():
 	# Find TextureRects in the scene and store them in an array
 	texture_rect_nodes = [
-		get_node("คัพเค้กก้อน2")
+		get_node("เค้กวิปครีม")
 		
 	]
 	# Hide all TextureRects
@@ -14,7 +14,7 @@ func _ready():
 
 # Function to load mango texture
 func load_mango_texture(texture_rect: TextureRect) -> void:
-	var texture1 = preload("res://ร้านผลไม้/คัพเค้กฃ.png")
+	var texture1 = preload("res://ร้านผลไม้/คัพเค้กวิปขาว.png")
 	texture_rect.texture = texture1
 
 # When the button is pressed (load mango texture)
