@@ -12,3 +12,5 @@ func _on_h_slider_value_changed(value):
 		AudioServer.set_bus_mute(master_bus, true)
 	else:
 		AudioServer.set_bus_mute(master_bus, false)
+
+
