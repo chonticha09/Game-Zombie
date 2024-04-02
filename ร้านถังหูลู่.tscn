@@ -218,6 +218,7 @@ texture = ExtResource("3_qfxvn")
 script = ExtResource("5_cju46")
 
 [node name="คัพเค้กก้อน1_1" type="TextureRect" parent="ครัววว/คัพเค้ก1/คัพเค้กก้อน1"]
+layout_mode = 0
 offset_top = 43.1914
 offset_right = 1834.0
 offset_bottom = 2015.19
@@ -226,6 +227,7 @@ texture = ExtResource("3_qfxvn")
 [node name="Button" type="Button" parent="ครัววว/คัพเค้ก1/คัพเค้กก้อน1"]
 show_behind_parent = true
 clip_children = 1
+layout_mode = 0
 offset_left = 89.0
 offset_top = 38.0
 offset_right = 1833.0
@@ -247,6 +249,7 @@ texture_normal = ExtResource("3_qfxvn")
 script = ExtResource("5_xej10")
 
 [node name="คัพเค้กก้อน2" type="TextureRect" parent="ครัววว/คัพเค้ก2"]
+layout_mode = 0
 offset_left = 0.00390625
 offset_top = -3023.16
 offset_right = 1834.0
@@ -255,6 +258,7 @@ texture = ExtResource("3_qfxvn")
 script = ExtResource("7_bv4cl")
 
 [node name="คัพเค้กก้อน2_1" type="TextureRect" parent="ครัววว/คัพเค้ก2/คัพเค้กก้อน2"]
+layout_mode = 0
 offset_top = 28.793
 offset_right = 1834.0
 offset_bottom = 2000.79
@@ -263,6 +267,7 @@ texture = ExtResource("3_qfxvn")
 [node name="Button" type="Button" parent="ครัววว/คัพเค้ก2/คัพเค้กก้อน2"]
 show_behind_parent = true
 clip_children = 1
+layout_mode = 0
 offset_left = 89.0
 offset_top = 38.0
 offset_right = 1788.0
@@ -284,6 +289,7 @@ texture_normal = ExtResource("3_qfxvn")
 script = ExtResource("6_3cqkw")
 
 [node name="คัพเค้กก้อน3" type="TextureRect" parent="ครัววว/คัพเค้ก3"]
+layout_mode = 0
 offset_left = -1311.92
 offset_top = -2994.36
 offset_right = 522.079
@@ -292,6 +298,7 @@ texture = ExtResource("3_qfxvn")
 script = ExtResource("9_w3q4o")
 
 [node name="คัพเค้กก้อน3_1" type="TextureRect" parent="ครัววว/คัพเค้ก3/คัพเค้กก้อน3"]
+layout_mode = 0
 offset_left = -29.8164
 offset_top = -0.000976563
 offset_right = 1804.18
@@ -301,6 +308,7 @@ texture = ExtResource("3_qfxvn")
 [node name="Button" type="Button" parent="ครัววว/คัพเค้ก3/คัพเค้กก้อน3"]
 show_behind_parent = true
 clip_children = 1
+layout_mode = 0
 offset_left = 89.0
 offset_top = 38.0
 offset_right = 1774.0
@@ -322,6 +330,7 @@ texture_normal = ExtResource("9_d72u8")
 script = ExtResource("16_wmedq")
 
 [node name="ไม้กีวี่" type="TextureRect" parent="ครัววว/ถาดกีวี่"]
+layout_mode = 0
 offset_left = 609.972
 offset_top = -1365.03
 offset_right = 3377.97
@@ -331,6 +340,7 @@ texture = ExtResource("17_5nhj5")
 script = ExtResource("18_h6jr3")
 
 [node name="ไม้กีวี่2" type="TextureRect" parent="ครัววว/ถาดกีวี่/ไม้กีวี่"]
+layout_mode = 0
 offset_top = -14.7476
 offset_right = 14645.0
 offset_bottom = 3103.25
@@ -340,6 +350,7 @@ texture = ExtResource("17_5nhj5")
 [node name="Button" type="Button" parent="ครัววว/ถาดกีวี่/ไม้กีวี่"]
 show_behind_parent = true
 clip_children = 1
+layout_mode = 0
 offset_left = 352.258
 offset_top = 0.000488281
 offset_right = 2265.26
@@ -361,6 +372,7 @@ texture_normal = ExtResource("10_mg6mx")
 script = ExtResource("19_1yhjl")
 
 [node name="ไม้สตอ" type="TextureRect" parent="ครัววว/ถาดสตอเบอรี่"]
+layout_mode = 0
 offset_left = 2255.93
 offset_top = -1393.08
 offset_right = 4089.93
@@ -370,6 +382,7 @@ texture = ExtResource("20_e1qbo")
 script = ExtResource("22_7cajg")
 
 [node name="ไม้สตอ2" type="TextureRect" parent="ครัววว/ถาดสตอเบอรี่/ไม้สตอ"]
+layout_mode = 0
 offset_top = -0.00146484
 offset_right = 9677.0
 offset_bottom = 3094.0
@@ -379,6 +392,7 @@ texture = ExtResource("20_e1qbo")
 [node name="Button" type="Button" parent="ครัววว/ถาดสตอเบอรี่/ไม้สตอ"]
 show_behind_parent = true
 clip_children = 1
+layout_mode = 0
 offset_left = 150.953
 offset_top = -29.4985
 offset_right = 1835.95
@@ -400,6 +414,7 @@ texture_normal = ExtResource("11_jegwu")
 script = ExtResource("22_clkl8")
 
 [node name="ไม้ส้ม" type="TextureRect" parent="ครัววว/ถาดส้ม"]
+layout_mode = 0
 offset_left = 367.918
 offset_top = -2281.29
 offset_right = 2201.92
@@ -409,6 +424,7 @@ texture = ExtResource("23_v3g6h")
 script = ExtResource("26_ndynm")
 
 [node name="ไม้ส้ม2" type="TextureRect" parent="ครัววว/ถาดส้ม/ไม้ส้ม"]
+layout_mode = 0
 offset_top = 0.00292969
 offset_right = 9937.0
 offset_bottom = 3117.0
@@ -418,6 +434,7 @@ texture = ExtResource("23_v3g6h")
 [node name="Button" type="Button" parent="ครัววว/ถาดส้ม/ไม้ส้ม"]
 show_behind_parent = true
 clip_children = 1
+layout_mode = 0
 offset_left = 50.3281
 offset_top = 29.4995
 offset_right = 1735.33
@@ -439,6 +456,7 @@ texture_normal = ExtResource("12_8504b")
 script = ExtResource("25_xwbbv")
 
 [node name="ไม้พุดซา" type="TextureRect" parent="ครัววว/ถาดพุดซา"]
+layout_mode = 0
 offset_left = 493.786
 offset_top = -2262.59
 offset_right = 2327.79
@@ -448,6 +466,7 @@ texture = ExtResource("26_4imdv")
 script = ExtResource("30_xmlty")
 
 [node name="ไม้พุดซา2" type="TextureRect" parent="ครัววว/ถาดพุดซา/ไม้พุดซา"]
+layout_mode = 0
 offset_left = -50.3125
 offset_top = 14.7456
 offset_right = 9888.69
@@ -458,6 +477,7 @@ texture = ExtResource("26_4imdv")
 [node name="Button" type="Button" parent="ครัววว/ถาดพุดซา/ไม้พุดซา"]
 show_behind_parent = true
 clip_children = 1
+layout_mode = 0
 offset_left = 5686.4
 offset_top = -486.692
 offset_right = 7371.4
@@ -479,6 +499,7 @@ texture_normal = ExtResource("13_ajnbn")
 script = ExtResource("28_dm2w5")
 
 [node name="ไม้องุ่น" type="TextureRect" parent="ครัววว/ถาดองุ่น"]
+layout_mode = 0
 offset_left = -1152.0
 offset_top = -2300.0
 offset_right = 760.0
@@ -488,6 +509,7 @@ texture = ExtResource("29_jp2a8")
 script = ExtResource("34_pxd0x")
 
 [node name="ไม้องุ้น2" type="TextureRect" parent="ครัววว/ถาดองุ่น/ไม้องุ่น"]
+layout_mode = 0
 offset_top = 59.0
 offset_right = 9934.0
 offset_bottom = 3060.0
@@ -497,6 +519,7 @@ texture = ExtResource("29_jp2a8")
 [node name="Button" type="Button" parent="ครัววว/ถาดองุ่น/ไม้องุ่น"]
 show_behind_parent = true
 clip_children = 1
+layout_mode = 0
 offset_left = 99.75
 offset_top = -58.9702
 offset_right = 1784.75
@@ -517,6 +540,7 @@ scale = Vector2(0.483183, 0.483183)
 texture_normal = ExtResource("7_4xxby")
 
 [node name="พุดช้อค" type="TextureRect" parent="ครัววว/หม้อช้อค"]
+layout_mode = 0
 offset_left = 1191.66
 offset_top = -570.902
 offset_right = 1764.66
@@ -525,6 +549,7 @@ scale = Vector2(0.2989, 0.2989)
 texture = ExtResource("12_4bgb2")
 
 [node name="สตอช้อค" type="TextureRect" parent="ครัววว/หม้อช้อค"]
+layout_mode = 0
 offset_left = 2461.83
 offset_top = -566.442
 offset_right = 3034.83
@@ -533,6 +558,7 @@ scale = Vector2(0.316834, 0.295136)
 texture = ExtResource("34_6x6hx")
 
 [node name="กีวี่ช้อค" type="TextureRect" parent="ครัววว/หม้อช้อค"]
+layout_mode = 0
 offset_left = 2420.26
 offset_top = -584.283
 offset_right = 3440.26
@@ -541,6 +567,7 @@ scale = Vector2(0.2989, 0.2989)
 texture = ExtResource("34_db2wa")
 
 [node name="ส้มช้อค" type="TextureRect" parent="ครัววว/หม้อช้อค"]
+layout_mode = 0
 offset_left = 1838.29
 offset_top = -575.362
 offset_right = 2411.29
@@ -549,6 +576,7 @@ scale = Vector2(0.2989, 0.2989)
 texture = ExtResource("35_esfcv")
 
 [node name="องุ่นช้อค" type="TextureRect" parent="ครัววว/หม้อช้อค"]
+layout_mode = 0
 offset_left = 1847.53
 offset_top = -570.902
 offset_right = 2420.53
@@ -572,6 +600,7 @@ script = ExtResource("39_asdh7")
 stream = ExtResource("6_fjb3d")
 
 [node name="พุดช้อค" type="TextureRect" parent="ครัววว/หม้อน้ำตาล"]
+layout_mode = 0
 offset_left = 1658.91
 offset_top = 171.746
 offset_right = 2231.91
@@ -580,6 +609,7 @@ scale = Vector2(0.407632, 0.407632)
 texture = ExtResource("14_k1avp")
 
 [node name="สตอช้อค" type="TextureRect" parent="ครัววว/หม้อน้ำตาล"]
+layout_mode = 0
 offset_left = 3368.28
 offset_top = 152.274
 offset_right = 3941.28
@@ -588,6 +618,7 @@ scale = Vector2(0.584792, 0.421888)
 texture = ExtResource("39_676wd")
 
 [node name="กีวี่ช้อค" type="TextureRect" parent="ครัววว/หม้อน้ำตาล"]
+layout_mode = 0
 offset_left = 3330.0
 offset_top = 164.0
 offset_right = 4765.0
@@ -596,6 +627,7 @@ scale = Vector2(0.2989, 0.2989)
 texture = ExtResource("40_wolg4")
 
 [node name="ส้มช้อค" type="TextureRect" parent="ครัววว/หม้อน้ำตาล"]
+layout_mode = 0
 offset_left = 2529.0
 offset_top = 158.0
 offset_right = 3171.0
@@ -604,6 +636,7 @@ scale = Vector2(0.451782, 0.405036)
 texture = ExtResource("41_phpe4")
 
 [node name="องุ่นช้อค" type="TextureRect" parent="ครัววว/หม้อน้ำตาล"]
+layout_mode = 0
 offset_left = 2536.0
 offset_top = 207.0
 offset_right = 3401.0
@@ -621,6 +654,7 @@ texture_normal = ExtResource("14_qqukl")
 script = ExtResource("40_sg3s6")
 
 [node name="เค้กวิปครีม" type="TextureRect" parent="ครัววว/ถาดวิปครัม"]
+layout_mode = 0
 offset_left = 1534.0
 offset_top = -48.0
 offset_right = 4054.0
@@ -642,6 +676,7 @@ script = ExtResource("43_it2qa")
 
 [node name="เค้กสตอเบอรี่" type="TextureRect" parent="ครัววว/ถาดสตอเบอรี่2"]
 visible = false
+layout_mode = 0
 offset_left = 1264.0
 offset_top = -932.0
 offset_right = 4677.0
@@ -663,6 +698,7 @@ script = ExtResource("46_jn4ud")
 
 [node name="เค้กบลู" type="TextureRect" parent="ครัววว/ถาดบลูเบอรี่"]
 visible = false
+layout_mode = 0
 offset_left = 1740.0
 offset_top = -1140.0
 offset_right = 4479.0
@@ -684,6 +720,7 @@ script = ExtResource("48_b6wph")
 
 [node name="เค้กเชอรี่" type="TextureRect" parent="ครัววว/ถาดเชอรี่"]
 visible = false
+layout_mode = 0
 offset_left = 2040.0
 offset_top = -887.0
 offset_right = 5208.0
@@ -695,6 +732,7 @@ texture = ExtResource("43_skj1v")
 stream = ExtResource("6_fjb3d")
 
 [node name="Home" type="TextureButton" parent="ครัววว/ถาดเชอรี่"]
+layout_mode = 0
 offset_left = 22.3789
 offset_top = -2178.82
 offset_right = 1772.38
