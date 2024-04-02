@@ -1,34 +1,59 @@
+<<<<<<< HEAD
 [gd_scene load_steps=32 format=3 uid="uid://enqs25ysmuyn"]
+=======
+[gd_scene load_steps=52 format=3 uid="uid://enqs25ysmuyn"]
+>>>>>>> dcdbff43805664642b758f44559d5b972437e7b9
 
 [ext_resource type="Texture2D" uid="uid://cs5lxbhobrpjw" path="res://อาหารจีน/พื้นหลังอาหารจีน.png" id="1_huasp"]
 [ext_resource type="Texture2D" uid="uid://bi8qnd8lwyrm1" path="res://อาหารจีน/ครัวอาหารจีนnew.png" id="2_47thu"]
 [ext_resource type="Texture2D" uid="uid://c7x3itvoe431i" path="res://ร้านพิซซ่า/มันม่าวง.png" id="2_h27hj"]
 [ext_resource type="Script" path="res://ร้านอาหารทะเล/มันม่าวง.gd" id="3_d0fde"]
 [ext_resource type="Texture2D" uid="uid://btfm6apq0j1c5" path="res://อาหารจีน/ต้นหอม+จาน.png" id="3_g5uch"]
+[ext_resource type="Texture2D" uid="uid://dmnh3ne7uww8i" path="res://กล่องข้อความ.png" id="4_t1ivs"]
 [ext_resource type="Texture2D" uid="uid://bkg5ianvpqg8l" path="res://อาหารจีน/จาน+เป็ด.png" id="4_tepdu"]
+[ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/รูปอาหาร.gd" id="5_r4x86"]
 [ext_resource type="Texture2D" uid="uid://ptgbe6hgld36" path="res://อาหารจีน/แตงกวา+จาน.png" id="5_w8o44"]
 [ext_resource type="Texture2D" uid="uid://b3ftt6rgvl84n" path="res://อาหารจีน/จาน.png" id="6_h7h7f"]
 [ext_resource type="AudioStream" uid="uid://cu4e1yscnd4bt" path="res://a-ride-through-chinese-valley-62241.mp3" id="7_0ob4d"]
 [ext_resource type="Texture2D" uid="uid://78jah1reb6ru" path="res://อาหารจีน/ถังซอส.png" id="7_u2kfk"]
 [ext_resource type="Script" path="res://ซีนต่างๆ/Mainn.gd" id="8_2x5bi"]
+[ext_resource type="Script" path="res://ซีนต่างๆ/ขนมจีบ4.gd" id="8_3s0ls"]
 [ext_resource type="Texture2D" uid="uid://bwqyscirbjxok" path="res://เพิ่มเติม/R1.png" id="8_ka2q5"]
 [ext_resource type="Texture2D" uid="uid://d0usu5d6oirt5" path="res://เพิ่มเติม/R.png" id="9_o1jvg"]
-[ext_resource type="Texture2D" uid="uid://butmh0ttjwh6y" path="res://อาหารจีน/จาน+ซาลาเปา.png" id="15_gcxqw"]
-[ext_resource type="Texture2D" uid="uid://u24dy72l2p4k" path="res://อาหารจีน/จาน+ขนมจีบ.png" id="16_iy725"]
+[ext_resource type="Script" path="res://ซีนต่างๆ/ขนมจีบ.gd" id="10_twvhk"]
+[ext_resource type="Texture2D" uid="uid://butmh0ttjwh6y" path="res://อาหารจีน/รวมอาหารจีน/จาน+ซาลาเปา.png" id="11_hh0vy"]
+[ext_resource type="Texture2D" uid="uid://u24dy72l2p4k" path="res://อาหารจีน/รวมอาหารจีน/จาน+ขนมจีบ.png" id="12_3jy5k"]
+[ext_resource type="Script" path="res://ซีนต่างๆ/ซาลาเปา2.gd" id="12_67by1"]
+[ext_resource type="Script" path="res://ซีนต่างๆ/ขนมจีบ2.gd" id="13_bll8m"]
+[ext_resource type="Script" path="res://ซีนต่างๆ/ซอส.gd" id="16_c7b4i"]
+[ext_resource type="Script" path="res://ซีนต่างๆ/ซาลาเปา1.gd" id="16_wkrdg"]
+[ext_resource type="Script" path="res://ซีนต่างๆ/ต้นหอม.gd" id="17_cjxjs"]
 [ext_resource type="Texture2D" uid="uid://bsbhm48p7fdx" path="res://อาหารจีน/ขนมจีบ3อัน.png" id="17_cucxf"]
+[ext_resource type="Texture2D" uid="uid://bxvaphfu523vw" path="res://อาหารจีน/รวมอาหารจีน/ชา.png" id="17_xlsuf"]
+[ext_resource type="Script" path="res://ซีนต่างๆ/ซาลาเปาสุก2.gd" id="18_1i5xw"]
+[ext_resource type="Texture2D" uid="uid://cpbwxwfxmh5rx" path="res://อาหารจีน/ต้นหอม.png" id="18_6mui2"]
 [ext_resource type="Texture2D" uid="uid://dw1eeehymspd8" path="res://อาหารจีน/ซาลาเปา3ลูก.png" id="18_big84"]
 [ext_resource type="Texture2D" uid="uid://toa64l2r1gla" path="res://อาหารจีน/กาน้ำชา.png" id="19_00y0w"]
 [ext_resource type="Texture2D" uid="uid://cggcfrmmevena" path="res://อาหารจีน/ที่นึ่ง.png" id="19_2clxw"]
-[ext_resource type="Texture2D" uid="uid://bxvaphfu523vw" path="res://อาหารจีน/ชา.png" id="20_s5473"]
+[ext_resource type="Script" path="res://ซีนต่างๆ/เป็ด.gd" id="19_okir3"]
+[ext_resource type="Script" path="res://ซีนต่างๆ/แผ่นแป้ง.gd" id="20_8gelk"]
+[ext_resource type="Script" path="res://ซีนต่างๆ/กาน้ำชา.gd" id="20_025xs"]
+[ext_resource type="Texture2D" uid="uid://ornryjdotig8" path="res://อาหารจีน/เป็ด.png" id="20_awkja"]
+[ext_resource type="Script" path="res://ซีนต่างๆ/แตงกวา.gd" id="20_hjux5"]
 [ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/Home.gd" id="21_mgx34"]
+[ext_resource type="Texture2D" uid="uid://cjwrhh2qkhtr3" path="res://อาหารจีน/แตงกวา.png" id="21_ym6l2"]
+[ext_resource type="Script" path="res://ซีนต่างๆ/ชา1.gd" id="22_155r5"]
 [ext_resource type="Texture2D" uid="uid://dbg4kddcn8apa" path="res://อาหารจีน/แผ่นแป้ง.png" id="22_beloa"]
 [ext_resource type="Texture2D" uid="uid://dg8vkcg53wx1n" path="res://หน้าตั้งค่าใหม่/กรอบสีเขียว.png" id="22_jd7hg"]
+[ext_resource type="Script" path="res://ซีนต่างๆ/ชา2.gd" id="23_1gkiq"]
 [ext_resource type="Texture2D" uid="uid://dnul2hd3pap1x" path="res://หน้าตั้งค่าใหม่/เสียงเปิดเขียว.png" id="23_kepuv"]
 [ext_resource type="Texture2D" uid="uid://d1vgbyyeenyc0" path="res://อาหารจีน/แป้ง.png" id="23_pyv45"]
 [ext_resource type="Texture2D" uid="uid://bginhcf68ym1q" path="res://หน้าตั้งค่าใหม่/เสียงปิดเขียว.png" id="24_7agm5"]
+[ext_resource type="Script" path="res://ซีนต่างๆ/ชา3.gd" id="24_wa8yc"]
 [ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/กลับหน้าเลือกด่าน.gd" id="25_7uldb"]
 [ext_resource type="Script" path="res://Volume Slider1/vl.gd" id="26_5ajxm"]
 [ext_resource type="AudioStream" uid="uid://cksppv16gcpua" path="res://Sound/multi-pop-1-188165.mp3" id="26_ppygm"]
+[ext_resource type="Texture2D" uid="uid://d3jhrrwjgnxbd" path="res://อาหารจีน/ถ้วยน้ำจิ้ม.png" id="31_0sbom"]
 
 [sub_resource type="GDScript" id="GDScript_q1smy"]
 script/source = "extends TextureButton
@@ -71,86 +96,29 @@ scale = Vector2(0.44733, 0.4675)
 texture = ExtResource("1_huasp")
 
 [node name="มันม่าวง" type="Sprite2D" parent="พื้นหลังอาหารจีน"]
-position = Vector2(1219.45, -196.257)
-scale = Vector2(0.567067, 0.55343)
+position = Vector2(1127.8, -89.3048)
+scale = Vector2(0.62933, 0.712741)
 texture = ExtResource("2_h27hj")
 script = ExtResource("3_d0fde")
+
+[node name="กล่องข้อความ" type="TextureRect" parent="พื้นหลังอาหารจีน/มันม่าวง"]
+offset_left = 252.0
+offset_top = -681.0
+offset_right = 907.0
+offset_bottom = -10.0
+scale = Vector2(0.769743, 0.769743)
+texture = ExtResource("4_t1ivs")
+
+[node name="รูปอาหาร" type="TextureRect" parent="พื้นหลังอาหารจีน/มันม่าวง"]
+offset_left = 404.944
+offset_top = -510.194
+offset_right = 463.944
+offset_bottom = -467.194
+script = ExtResource("5_r4x86")
 
 [node name="ครัวอาหารจีนnew" type="Sprite2D" parent="พื้นหลังอาหารจีน"]
 position = Vector2(-3.3573, 314.973)
 texture = ExtResource("2_47thu")
-
-[node name="ต้นหอม" type="TextureButton" parent="พื้นหลังอาหารจีน"]
-offset_left = -1360.3
-offset_top = 456.15
-offset_right = -439.298
-offset_bottom = 1115.15
-scale = Vector2(0.357986, 0.357986)
-texture_normal = ExtResource("3_g5uch")
-
-[node name="เป็ด" type="TextureButton" parent="พื้นหลังอาหารจีน"]
-offset_left = -1000.38
-offset_top = 451.872
-offset_right = -79.3843
-offset_bottom = 1114.87
-scale = Vector2(0.364783, 0.364783)
-texture_normal = ExtResource("4_tepdu")
-
-[node name="แตงกวา" type="TextureButton" parent="พื้นหลังอาหารจีน"]
-offset_left = -642.707
-offset_top = 449.733
-offset_right = 278.293
-offset_bottom = 1115.73
-scale = Vector2(0.37013, 0.37013)
-texture_normal = ExtResource("5_w8o44")
-
-[node name="ซอส" type="TextureButton" parent="พื้นหลังอาหารจีน"]
-offset_left = -392.332
-offset_top = 28.342
-offset_right = 709.668
-offset_bottom = 1133.34
-scale = Vector2(0.168656, 0.168656)
-texture_normal = ExtResource("7_u2kfk")
-
-[node name="ซาลาเปา" type="TextureButton" parent="พื้นหลังอาหารจีน"]
-offset_left = 544.336
-offset_top = 445.455
-offset_right = 1381.34
-offset_bottom = 1064.45
-scale = Vector2(0.314734, 0.314734)
-texture_normal = ExtResource("15_gcxqw")
-
-[node name="ขนมจีบ2" type="TextureButton" parent="พื้นหลังอาหารจีน"]
-offset_left = 544.336
-offset_top = 252.941
-offset_right = 1381.34
-offset_bottom = 871.941
-scale = Vector2(0.314734, 0.314734)
-texture_normal = ExtResource("16_iy725")
-
-[node name="ขนมจีบ3" type="TextureButton" parent="พื้นหลังอาหารจีน"]
-offset_left = 544.336
-offset_top = 56.1498
-offset_right = 1381.34
-offset_bottom = 675.15
-scale = Vector2(0.314734, 0.314734)
-texture_normal = ExtResource("16_iy725")
-
-[node name="ขนมจีบ4" type="TextureButton" parent="พื้นหลังอาหารจีน"]
-offset_left = 231.368
-offset_top = 492.513
-offset_right = 1501.37
-offset_bottom = 1491.51
-scale = Vector2(0.189063, 0.189063)
-texture_normal = ExtResource("17_cucxf")
-
-[node name="ซาลาเปา2" type="TextureButton" parent="พื้นหลังอาหารจีน"]
-offset_left = -137.487
-offset_top = 511.765
-offset_right = 1147.51
-offset_bottom = 1510.76
-scale = Vector2(0.174749, 0.174749)
-texture_normal = ExtResource("18_big84")
 
 [node name="ที่นึ่ง" type="TextureButton" parent="พื้นหลังอาหารจีน"]
 offset_left = -150.9
@@ -160,15 +128,6 @@ offset_bottom = 712.064
 scale = Vector2(0.371824, 0.371824)
 texture_normal = ExtResource("19_2clxw")
 
-[node name="ซาลาเปา3" type="TextureButton" parent="พื้นหลังอาหารจีน/ที่นึ่ง"]
-layout_mode = 0
-offset_left = 162.329
-offset_top = 5.75244
-offset_right = 1447.33
-offset_bottom = 1004.75
-scale = Vector2(0.350943, 0.350943)
-texture_normal = ExtResource("18_big84")
-
 [node name="ที่นึ่ง2" type="TextureButton" parent="พื้นหลังอาหารจีน"]
 offset_left = 137.478
 offset_top = 26.2031
@@ -176,15 +135,6 @@ offset_right = 889.478
 offset_bottom = 714.203
 scale = Vector2(0.371824, 0.371824)
 texture_normal = ExtResource("19_2clxw")
-
-[node name="ขนมจีบ2" type="TextureButton" parent="พื้นหลังอาหารจีน/ที่นึ่ง2"]
-layout_mode = 0
-offset_left = 150.306
-offset_top = -28.7639
-offset_right = 1420.31
-offset_bottom = 970.236
-scale = Vector2(0.370661, 0.370661)
-texture_normal = ExtResource("17_cucxf")
 
 [node name="ที่นึ่ง3" type="TextureButton" parent="พื้นหลังอาหารจีน"]
 offset_left = -155.371
@@ -194,15 +144,6 @@ offset_bottom = 900.299
 scale = Vector2(0.371824, 0.371824)
 texture_normal = ExtResource("19_2clxw")
 
-[node name="ซาลาเปา4" type="TextureButton" parent="พื้นหลังอาหารจีน/ที่นึ่ง3"]
-layout_mode = 0
-offset_left = 138.274
-offset_top = -17.259
-offset_right = 1423.27
-offset_bottom = 981.741
-scale = Vector2(0.382469, 0.382469)
-texture_normal = ExtResource("18_big84")
-
 [node name="ที่นึ่ง4" type="TextureButton" parent="พื้นหลังอาหารจีน"]
 offset_left = 146.42
 offset_top = 216.577
@@ -211,14 +152,177 @@ offset_bottom = 904.577
 scale = Vector2(0.371824, 0.371824)
 texture_normal = ExtResource("19_2clxw")
 
-[node name="ขนมจีบ2" type="TextureButton" parent="พื้นหลังอาหารจีน/ที่นึ่ง4"]
-layout_mode = 0
-offset_left = 126.256
-offset_top = -51.7744
-offset_right = 1396.26
-offset_bottom = 947.226
-scale = Vector2(0.389879, 0.389879)
+[node name="ขนมจีบ4" type="TextureButton" parent="พื้นหลังอาหารจีน"]
+offset_left = 231.368
+offset_top = 492.513
+offset_right = 1501.37
+offset_bottom = 1491.51
+scale = Vector2(0.189063, 0.189063)
 texture_normal = ExtResource("17_cucxf")
+script = ExtResource("8_3s0ls")
+
+[node name="ขนมจีบ" type="Control" parent="พื้นหลังอาหารจีน/ขนมจีบ4"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("10_twvhk")
+
+[node name="ขนมจีบ1" type="TextureRect" parent="พื้นหลังอาหารจีน/ขนมจีบ4/ขนมจีบ"]
+layout_mode = 0
+offset_left = -354.72
+offset_top = -2624.82
+offset_right = 915.28
+offset_bottom = -1625.82
+scale = Vector2(0.877228, 0.877228)
+texture = ExtResource("17_cucxf")
+
+[node name="ขนมจีบ2" type="TextureRect" parent="พื้นหลังอาหารจีน/ขนมจีบ4/ขนมจีบ"]
+layout_mode = 0
+offset_left = 1608.07
+offset_top = -1312.41
+offset_right = 2445.07
+offset_bottom = -719.409
+scale = Vector2(1.73492, 1.73492)
+texture = ExtResource("12_3jy5k")
+
+[node name="Button" type="Button" parent="พื้นหลังอาหารจีน/ขนมจีบ4/ขนมจีบ"]
+modulate = Color(1, 1, 1, 0)
+clip_children = 1
+layout_mode = 0
+offset_left = -212.828
+offset_top = -2545.62
+offset_right = 746.172
+offset_bottom = -1615.62
+
+[node name="เสียงกด" type="AudioStreamPlayer" parent="พื้นหลังอาหารจีน/ขนมจีบ4/ขนมจีบ"]
+stream = ExtResource("26_ppygm")
+
+[node name="ขนมจีบ2" type="Control" parent="พื้นหลังอาหารจีน/ขนมจีบ4"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("13_bll8m")
+
+[node name="ขนมจีบ3" type="TextureRect" parent="พื้นหลังอาหารจีน/ขนมจีบ4/ขนมจีบ2"]
+layout_mode = 0
+offset_left = -260.127
+offset_top = -1550.0
+offset_right = 1009.87
+offset_bottom = -551.0
+scale = Vector2(0.880378, 0.880378)
+texture = ExtResource("17_cucxf")
+
+[node name="ขนมจีบ4" type="TextureRect" parent="พื้นหลังอาหารจีน/ขนมจีบ4/ขนมจีบ2"]
+layout_mode = 0
+offset_left = 1643.54
+offset_top = -2341.97
+offset_right = 2480.54
+offset_bottom = -1748.97
+scale = Vector2(1.66867, 1.66867)
+texture = ExtResource("12_3jy5k")
+
+[node name="Button" type="Button" parent="พื้นหลังอาหารจีน/ขนมจีบ4/ขนมจีบ2"]
+modulate = Color(1, 1, 1, 0)
+clip_children = 1
+layout_mode = 0
+offset_left = -189.188
+offset_top = -1459.49
+offset_right = 769.813
+offset_bottom = -529.488
+
+[node name="เสียงกด" type="AudioStreamPlayer" parent="พื้นหลังอาหารจีน/ขนมจีบ4/ขนมจีบ2"]
+stream = ExtResource("26_ppygm")
+
+[node name="เสียงกด" type="AudioStreamPlayer" parent="พื้นหลังอาหารจีน/ขนมจีบ4"]
+stream = ExtResource("26_ppygm")
+
+[node name="ซาลาเปา2" type="TextureButton" parent="พื้นหลังอาหารจีน"]
+offset_left = -137.487
+offset_top = 511.765
+offset_right = 1147.51
+offset_bottom = 1510.76
+scale = Vector2(0.174749, 0.174749)
+texture_normal = ExtResource("18_big84")
+script = ExtResource("12_67by1")
+
+[node name="ซาลาเปา1" type="Control" parent="พื้นหลังอาหารจีน/ซาลาเปา2"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -7202.21
+offset_top = -6928.2
+offset_right = -7162.21
+offset_bottom = -6888.2
+script = ExtResource("16_wkrdg")
+
+[node name="ซาลาเปาสุก1" type="TextureRect" parent="พื้นหลังอาหารจีน/ซาลาเปา2/ซาลาเปา1"]
+layout_mode = 0
+offset_left = 11142.3
+offset_top = 6658.9
+offset_right = 11979.3
+offset_bottom = 7277.9
+scale = Vector2(1.66568, 1.66568)
+texture = ExtResource("11_hh0vy")
+
+[node name="ซาลาเปา3" type="TextureRect" parent="พื้นหลังอาหารจีน/ซาลาเปา2/ซาลาเปา1"]
+layout_mode = 0
+offset_left = 7368.52
+offset_top = 3978.2
+offset_right = 8653.52
+offset_bottom = 4941.2
+scale = Vector2(0.884701, 0.884701)
+texture = ExtResource("18_big84")
+
+[node name="Button" type="Button" parent="พื้นหลังอาหารจีน/ซาลาเปา2/ซาลาเปา1"]
+modulate = Color(1, 1, 1, 0)
+clip_children = 1
+layout_mode = 0
+offset_left = 7381.3
+offset_top = 3929.24
+offset_right = 8340.3
+offset_bottom = 4859.24
+
+[node name="เสียงกด" type="AudioStreamPlayer" parent="พื้นหลังอาหารจีน/ซาลาเปา2/ซาลาเปา1"]
+stream = ExtResource("26_ppygm")
+
+[node name="ซาลาเปาสุก2" type="Control" parent="พื้นหลังอาหารจีน/ซาลาเปา2"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("18_1i5xw")
+
+[node name="ซาลาเปาสุก2" type="TextureRect" parent="พื้นหลังอาหารจีน/ซาลาเปา2/ซาลาเปาสุก2"]
+layout_mode = 0
+offset_left = 3940.11
+offset_top = -293.776
+offset_right = 4777.11
+offset_bottom = 325.224
+scale = Vector2(1.66568, 1.66568)
+texture = ExtResource("11_hh0vy")
+
+[node name="ซาลาเปา4" type="TextureRect" parent="พื้นหลังอาหารจีน/ซาลาเปา2/ซาลาเปาสุก2"]
+layout_mode = 0
+offset_left = 140.719
+offset_top = -1872.81
+offset_right = 1425.72
+offset_bottom = -909.813
+scale = Vector2(0.931079, 0.931079)
+texture = ExtResource("18_big84")
+
+[node name="Button" type="Button" parent="พื้นหลังอาหารจีน/ซาลาเปา2/ซาลาเปาสุก2"]
+modulate = Color(1, 1, 1, 0)
+clip_children = 1
+layout_mode = 0
+offset_left = 115.133
+offset_top = -1885.06
+offset_right = 1317.13
+offset_bottom = -955.057
+
+[node name="เสียงกด" type="AudioStreamPlayer" parent="พื้นหลังอาหารจีน/ซาลาเปา2/ซาลาเปาสุก2"]
+stream = ExtResource("26_ppygm")
+
+[node name="เสียงกด" type="AudioStreamPlayer" parent="พื้นหลังอาหารจีน/ซาลาเปา2"]
+stream = ExtResource("26_ppygm")
 
 [node name="กาน้ำชา" type="TextureButton" parent="พื้นหลังอาหารจีน"]
 offset_left = 902.014
@@ -227,30 +331,94 @@ offset_right = 2551.01
 offset_bottom = 1153.2
 scale = Vector2(0.224845, 0.224845)
 texture_normal = ExtResource("19_00y0w")
+script = ExtResource("20_025xs")
 
-[node name="น้ำชา" type="TextureButton" parent="พื้นหลังอาหารจีน"]
-offset_left = 895.308
-offset_top = 276.471
-offset_right = 1483.31
-offset_bottom = 1073.47
-scale = Vector2(0.23878, 0.23878)
-texture_normal = ExtResource("20_s5473")
+[node name="ชา1" type="TextureRect" parent="พื้นหลังอาหารจีน/กาน้ำชา"]
+layout_mode = 0
+offset_left = 9.94238
+offset_top = 1027.45
+offset_right = 597.942
+offset_bottom = 1824.45
+texture = ExtResource("17_xlsuf")
+script = ExtResource("22_155r5")
 
-[node name="น้ำชา2" type="TextureButton" parent="พื้นหลังอาหารจีน"]
-offset_left = 1024.97
-offset_top = 304.278
-offset_right = 1612.97
-offset_bottom = 1101.28
-scale = Vector2(0.23878, 0.23878)
-texture_normal = ExtResource("20_s5473")
+[node name="ชา1_1" type="TextureRect" parent="พื้นหลังอาหารจีน/กาน้ำชา/ชา1"]
+layout_mode = 0
+offset_top = 9.5127
+offset_right = 588.0
+offset_bottom = 806.513
+texture = ExtResource("17_xlsuf")
 
-[node name="น้ำชา3" type="TextureButton" parent="พื้นหลังอาหารจีน"]
-offset_left = 1165.8
-offset_top = 291.444
-offset_right = 1753.8
-offset_bottom = 1088.44
-scale = Vector2(0.23878, 0.23878)
-texture_normal = ExtResource("20_s5473")
+[node name="Button" type="Button" parent="พื้นหลังอาหารจีน/กาน้ำชา/ชา1"]
+show_behind_parent = true
+clip_children = 1
+layout_mode = 0
+offset_left = 89.4814
+offset_top = 38.0532
+offset_right = 546.481
+offset_bottom = 769.053
+
+[node name="เสียงกด" type="AudioStreamPlayer" parent="พื้นหลังอาหารจีน/กาน้ำชา/ชา1"]
+stream = ExtResource("26_ppygm")
+
+[node name="ชา2" type="TextureRect" parent="พื้นหลังอาหารจีน/กาน้ำชา"]
+layout_mode = 0
+offset_left = 616.425
+offset_top = 1322.36
+offset_right = 1204.42
+offset_bottom = 2119.36
+texture = ExtResource("17_xlsuf")
+script = ExtResource("23_1gkiq")
+
+[node name="ชา2_1" type="TextureRect" parent="พื้นหลังอาหารจีน/กาน้ำชา/ชา2"]
+layout_mode = 0
+offset_top = -0.000976563
+offset_right = 588.0
+offset_bottom = 796.999
+texture = ExtResource("17_xlsuf")
+
+[node name="Button" type="Button" parent="พื้นหลังอาหารจีน/กาน้ำชา/ชา2"]
+show_behind_parent = true
+clip_children = 1
+layout_mode = 0
+offset_left = 89.0
+offset_top = 29.0
+offset_right = 536.0
+offset_bottom = 759.0
+
+[node name="เสียงกด" type="AudioStreamPlayer" parent="พื้นหลังอาหารจีน/กาน้ำชา/ชา2"]
+stream = ExtResource("26_ppygm")
+
+[node name="ชา3" type="TextureRect" parent="พื้นหลังอาหารจีน/กาน้ำชา"]
+layout_mode = 0
+offset_left = 1232.85
+offset_top = 1017.93
+offset_right = 1820.85
+offset_bottom = 1814.93
+texture = ExtResource("17_xlsuf")
+script = ExtResource("24_wa8yc")
+
+[node name="ชา3_1" type="TextureRect" parent="พื้นหลังอาหารจีน/กาน้ำชา/ชา3"]
+layout_mode = 0
+offset_top = 19.0273
+offset_right = 588.0
+offset_bottom = 816.027
+texture = ExtResource("17_xlsuf")
+
+[node name="Button" type="Button" parent="พื้นหลังอาหารจีน/กาน้ำชา/ชา3"]
+show_behind_parent = true
+clip_children = 1
+layout_mode = 0
+offset_left = 40.0
+offset_top = 2.0
+offset_right = 527.0
+offset_bottom = 828.0
+
+[node name="เสียงกด" type="AudioStreamPlayer" parent="พื้นหลังอาหารจีน/กาน้ำชา/ชา3"]
+stream = ExtResource("26_ppygm")
+
+[node name="เสียงกด" type="AudioStreamPlayer" parent="พื้นหลังอาหารจีน/กาน้ำชา"]
+stream = ExtResource("26_ppygm")
 
 [node name="จาน1" type="TextureButton" parent="พื้นหลังอาหารจีน"]
 offset_left = -1246.29
@@ -260,16 +428,6 @@ offset_bottom = 1774.71
 scale = Vector2(0.202934, 0.190478)
 texture_normal = ExtResource("6_h7h7f")
 
-[node name="แป้ง1" type="TextureRect" parent="พื้นหลังอาหารจีน/จาน1"]
-layout_mode = 0
-offset_left = 457.788
-offset_top = 1409.92
-offset_right = 1140.79
-offset_bottom = 2229.92
-rotation = -1.17653
-scale = Vector2(0.72821, 0.72821)
-texture = ExtResource("22_beloa")
-
 [node name="จาน2" type="TextureButton" parent="พื้นหลังอาหารจีน"]
 offset_left = -864.02
 offset_top = 62.5669
@@ -278,15 +436,97 @@ offset_bottom = 1772.57
 scale = Vector2(0.202934, 0.190478)
 texture_normal = ExtResource("6_h7h7f")
 
-[node name="แป้ง2" type="TextureRect" parent="พื้นหลังอาหารจีน/จาน2"]
+[node name="ต้นหอม" type="TextureButton" parent="พื้นหลังอาหารจีน"]
+offset_left = -1360.3
+offset_top = 456.15
+offset_right = -439.298
+offset_bottom = 1115.15
+scale = Vector2(0.357986, 0.357986)
+texture_normal = ExtResource("3_g5uch")
+script = ExtResource("17_cjxjs")
+
+[node name="ต้นหอม1" type="TextureRect" parent="พื้นหลังอาหารจีน/ต้นหอม"]
 layout_mode = 0
-offset_left = 457.788
-offset_top = 1409.92
-offset_right = 1140.79
-offset_bottom = 2229.92
-rotation = -1.17653
-scale = Vector2(0.72821, 0.72821)
-texture = ExtResource("22_beloa")
+offset_left = 848.782
+offset_top = -789.12
+offset_right = 1411.78
+offset_bottom = -310.12
+rotation = 0.157775
+scale = Vector2(0.793048, 0.793048)
+texture = ExtResource("18_6mui2")
+
+[node name="ต้นหอม2" type="TextureRect" parent="พื้นหลังอาหารจีน/ต้นหอม"]
+layout_mode = 0
+offset_left = 1928.52
+offset_top = -807.968
+offset_right = 2491.52
+offset_bottom = -328.968
+rotation = 0.157775
+scale = Vector2(0.793048, 0.793048)
+texture = ExtResource("18_6mui2")
+
+[node name="เสียงกด" type="AudioStreamPlayer" parent="พื้นหลังอาหารจีน/ต้นหอม"]
+stream = ExtResource("26_ppygm")
+
+[node name="แตงกวา" type="TextureButton" parent="พื้นหลังอาหารจีน"]
+offset_left = -642.707
+offset_top = 449.733
+offset_right = 278.293
+offset_bottom = 1115.73
+scale = Vector2(0.37013, 0.37013)
+texture_normal = ExtResource("5_w8o44")
+script = ExtResource("20_hjux5")
+
+[node name="แตงกวา1" type="TextureRect" parent="พื้นหลังอาหารจีน/แตงกวา"]
+layout_mode = 0
+offset_left = -1250.22
+offset_top = -1028.69
+offset_right = -699.224
+offset_bottom = -515.69
+scale = Vector2(0.849447, 0.849447)
+texture = ExtResource("21_ym6l2")
+
+[node name="แตงกวา2" type="TextureRect" parent="พื้นหลังอาหารจีน/แตงกวา"]
+layout_mode = 0
+offset_left = -199.311
+offset_top = -1005.57
+offset_right = 351.689
+offset_bottom = -492.574
+scale = Vector2(0.849447, 0.849447)
+texture = ExtResource("21_ym6l2")
+
+[node name="เสียงกด" type="AudioStreamPlayer" parent="พื้นหลังอาหารจีน/แตงกวา"]
+stream = ExtResource("26_ppygm")
+
+[node name="เป็ด" type="TextureButton" parent="พื้นหลังอาหารจีน"]
+offset_left = -1000.38
+offset_top = 451.872
+offset_right = -79.38
+offset_bottom = 1114.87
+scale = Vector2(0.364783, 0.364783)
+texture_normal = ExtResource("4_tepdu")
+script = ExtResource("19_okir3")
+
+[node name="เป็ด1" type="TextureRect" parent="พื้นหลังอาหารจีน/เป็ด"]
+layout_mode = 0
+offset_left = -674.121
+offset_top = -914.764
+offset_right = -194.121
+offset_bottom = -312.764
+rotation = -0.180873
+texture = ExtResource("20_awkja")
+
+[node name="เป็ด2" type="TextureRect" parent="พื้นหลังอาหารจีน/เป็ด"]
+layout_mode = 0
+offset_left = 390.567
+offset_top = -924.24
+offset_right = 870.567
+offset_bottom = -322.24
+rotation = -0.180873
+texture = ExtResource("20_awkja")
+
+[node name="เสียงกด" type="AudioStreamPlayer" parent="พื้นหลังอาหารจีน/เป็ด"]
+stream = ExtResource("26_ppygm")
 
 [node name="แผ่นแป้ง" type="TextureButton" parent="พื้นหลังอาหารจีน"]
 offset_left = -383.39
@@ -295,6 +535,62 @@ offset_right = 311.61
 offset_bottom = 942.107
 scale = Vector2(0.260118, 0.260118)
 texture_normal = ExtResource("23_pyv45")
+script = ExtResource("20_8gelk")
+
+[node name="แป้ง1" type="TextureRect" parent="พื้นหลังอาหารจีน/แผ่นแป้ง"]
+layout_mode = 0
+offset_left = -2872.99
+offset_top = -32.7046
+offset_right = -2189.99
+offset_bottom = 787.295
+rotation = -0.142375
+scale = Vector2(0.72821, 0.72821)
+texture = ExtResource("22_beloa")
+
+[node name="แป้ง2" type="TextureRect" parent="พื้นหลังอาหารจีน/แผ่นแป้ง"]
+layout_mode = 0
+offset_left = -1396.43
+offset_top = -16.4312
+offset_right = -713.429
+offset_bottom = 803.569
+rotation = -0.247772
+scale = Vector2(0.72821, 0.72821)
+texture = ExtResource("22_beloa")
+
+[node name="เสียงกด" type="AudioStreamPlayer" parent="พื้นหลังอาหารจีน/แผ่นแป้ง"]
+stream = ExtResource("26_ppygm")
+
+[node name="ซอส" type="TextureButton" parent="พื้นหลังอาหารจีน"]
+offset_left = -392.332
+offset_top = 28.342
+offset_right = 709.668
+offset_bottom = 1133.34
+scale = Vector2(0.168656, 0.168656)
+texture_normal = ExtResource("7_u2kfk")
+script = ExtResource("16_c7b4i")
+
+[node name="ซอส1" type="TextureRect" parent="พื้นหลังอาหารจีน/ซอส"]
+layout_mode = 0
+offset_left = -4253.89
+offset_top = 786.795
+offset_right = -3690.89
+offset_bottom = 1282.79
+rotation = 0.157775
+scale = Vector2(1.15211, 1.15211)
+texture = ExtResource("31_0sbom")
+
+[node name="ซอส2" type="TextureRect" parent="พื้นหลังอาหารจีน/ซอส"]
+layout_mode = 0
+offset_left = -1938.01
+offset_top = 821.602
+offset_right = -1375.01
+offset_bottom = 1317.6
+rotation = 0.157775
+scale = Vector2(1.15211, 1.15211)
+texture = ExtResource("31_0sbom")
+
+[node name="เสียงกด" type="AudioStreamPlayer" parent="พื้นหลังอาหารจีน/ซอส"]
+stream = ExtResource("26_ppygm")
 
 [node name="Home" type="TextureButton" parent="พื้นหลังอาหารจีน"]
 offset_left = -1342.41
@@ -307,6 +603,7 @@ texture_hover = ExtResource("9_o1jvg")
 script = ExtResource("21_mgx34")
 
 [node name="หน้าตั้งค่า" type="TextureRect" parent="พื้นหลังอาหารจีน/Home"]
+visible = false
 layout_mode = 0
 offset_left = 8838.91
 offset_top = 2670.95
@@ -383,6 +680,21 @@ stream = ExtResource("26_ppygm")
 stream = ExtResource("7_0ob4d")
 script = ExtResource("8_2x5bi")
 
+[connection signal="pressed" from="พื้นหลังอาหารจีน/ขนมจีบ4" to="พื้นหลังอาหารจีน/ขนมจีบ4" method="_on_pressed"]
+[connection signal="pressed" from="พื้นหลังอาหารจีน/ขนมจีบ4/ขนมจีบ/Button" to="พื้นหลังอาหารจีน/ขนมจีบ4/ขนมจีบ" method="_on_button_pressed"]
+[connection signal="pressed" from="พื้นหลังอาหารจีน/ขนมจีบ4/ขนมจีบ2/Button" to="พื้นหลังอาหารจีน/ขนมจีบ4/ขนมจีบ2" method="_on_button_pressed"]
+[connection signal="pressed" from="พื้นหลังอาหารจีน/ซาลาเปา2" to="พื้นหลังอาหารจีน/ซาลาเปา2" method="_on_pressed"]
+[connection signal="pressed" from="พื้นหลังอาหารจีน/ซาลาเปา2/ซาลาเปา1/Button" to="พื้นหลังอาหารจีน/ซาลาเปา2/ซาลาเปา1" method="_on_button_pressed"]
+[connection signal="pressed" from="พื้นหลังอาหารจีน/ซาลาเปา2/ซาลาเปาสุก2/Button" to="พื้นหลังอาหารจีน/ซาลาเปา2/ซาลาเปาสุก2" method="_on_button_pressed"]
+[connection signal="pressed" from="พื้นหลังอาหารจีน/กาน้ำชา" to="พื้นหลังอาหารจีน/กาน้ำชา" method="_on_pressed"]
+[connection signal="pressed" from="พื้นหลังอาหารจีน/กาน้ำชา/ชา1/Button" to="พื้นหลังอาหารจีน/กาน้ำชา/ชา1" method="_on_button_pressed"]
+[connection signal="pressed" from="พื้นหลังอาหารจีน/กาน้ำชา/ชา2/Button" to="พื้นหลังอาหารจีน/กาน้ำชา/ชา2" method="_on_button_pressed"]
+[connection signal="pressed" from="พื้นหลังอาหารจีน/กาน้ำชา/ชา3/Button" to="พื้นหลังอาหารจีน/กาน้ำชา/ชา3" method="_on_button_pressed"]
+[connection signal="pressed" from="พื้นหลังอาหารจีน/ต้นหอม" to="พื้นหลังอาหารจีน/ต้นหอม" method="_on_pressed"]
+[connection signal="pressed" from="พื้นหลังอาหารจีน/แตงกวา" to="พื้นหลังอาหารจีน/แตงกวา" method="_on_pressed"]
+[connection signal="pressed" from="พื้นหลังอาหารจีน/เป็ด" to="พื้นหลังอาหารจีน/เป็ด" method="_on_pressed"]
+[connection signal="pressed" from="พื้นหลังอาหารจีน/แผ่นแป้ง" to="พื้นหลังอาหารจีน/แผ่นแป้ง" method="_on_pressed"]
+[connection signal="pressed" from="พื้นหลังอาหารจีน/ซอส" to="พื้นหลังอาหารจีน/ซอส" method="_on_pressed"]
 [connection signal="pressed" from="พื้นหลังอาหารจีน/Home" to="พื้นหลังอาหารจีน/Home" method="_on_pressed"]
 [connection signal="pressed" from="พื้นหลังอาหารจีน/Home/หน้าตั้งค่า/เปิดเสียง" to="พื้นหลังอาหารจีน/Home/หน้าตั้งค่า/เปิดเสียง" method="_on_pressed"]
 [connection signal="pressed" from="พื้นหลังอาหารจีน/Home/หน้าตั้งค่า/กลับหน้าเลือกด่าน" to="พื้นหลังอาหารจีน/Home/หน้าตั้งค่า/กลับหน้าเลือกด่าน" method="_on_pressed"]

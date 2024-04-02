@@ -1,7 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://d1orbyax2lvgs"]
+[gd_scene load_steps=4 format=3 uid="uid://d1orbyax2lvgs"]
 
 [ext_resource type="Script" path="res://Volume Slider1/vl.gd" id="1_tu6il"]
 [ext_resource type="AudioStream" uid="uid://updpw3gvmwbe" path="res://Volume Slider1/joyful-snowman_60sec-176773.mp3" id="2_wdjb6"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_5wubh"]
+color = Color(0, 0, 0.890196, 1)
+grow_begin = 2.0
+thickness = 10
 
 [node name="vlsl1" type="Node2D"]
 
@@ -43,6 +48,7 @@ offset_right = 441.0
 offset_bottom = 526.0
 rotation = -0.000688195
 scale = Vector2(1.19892, -0.996836)
+theme_override_styles/slider = SubResource("StyleBoxLine_5wubh")
 min_value = -30.0
 max_value = 0.0
 metadata/_edit_use_anchors_ = true

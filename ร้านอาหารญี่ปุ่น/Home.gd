@@ -26,8 +26,7 @@ func _on_pressed():
 		load_texture("res://หน้าตั้งค่าใหม่/กรอบสีเขียว.png")
 		texture_rect_node.visible = true
 		
-		$เสียงกด.play()
-		
+
 func hide_texture_rect():
 	# ทำให้ TextureRect ไม่แสดง
 	texture_rect_node.visible = false

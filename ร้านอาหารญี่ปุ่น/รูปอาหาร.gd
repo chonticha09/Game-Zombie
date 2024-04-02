@@ -5,9 +5,10 @@ var textures = []  # อาร์เรย์เก็บรูปภาพท�
 
 func _ready():
 	# เตรียมรูปภาพที่จะใช้สำหรับสุ่ม
-	textures.append(load("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซุซิแซลม่อน.png"))
-	textures.append(load("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซูซิกุ้ง.png"))
-	textures.append(load("res://ร้านอาหารญี่ปุ่น/สุ่มอาหาร/ซูซิไข่หวาน.png"))
+	textures.append(load("res://ร้านพิซซ่าใหม่/แก้วน้ำ.png"))
+	textures.append(load("res://ร้านพิซซ่าใหม่/9.png"))
+	textures.append(load("res://ร้านพิซซ่าใหม่/เค้ก.png"))
+
 
 	# กำหนดรูปภาพเริ่มต้นให้กับ Sprite
 	set_random_texture()
