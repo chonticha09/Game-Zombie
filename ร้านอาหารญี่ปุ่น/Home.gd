@@ -17,6 +17,7 @@ func load_texture(path: String):
 # เมื่อปุ่มถูกกด
 
 func _on_pressed():
+	$เสียงกด.play()
 	# ถ้า TextureRect กำลังแสดง
 	if texture_rect_node.visible:
 		# ทำให้ TextureRect ไม่แสดง

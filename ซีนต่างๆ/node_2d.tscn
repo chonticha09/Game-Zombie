@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://sebutmuadj6c"]
+[gd_scene load_steps=46 format=3 uid="uid://sebutmuadj6c"]
 
 [ext_resource type="Texture2D" uid="uid://52v0ets1jibd" path="res://ร้านพิซซ่า/ร้านพิซ่าาาาาาาา.png" id="1_vwu2x"]
 [ext_resource type="Texture2D" uid="uid://c46cxx2h76ag3" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/ฉากฟ้า.png" id="1_wc5qa"]
@@ -29,6 +29,7 @@
 [ext_resource type="Texture2D" uid="uid://cxgnvub1w6aqb" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/จานตา.png" id="25_3s67w"]
 [ext_resource type="Texture2D" uid="uid://d3mglnxrfa1ec" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/พซซอส.png" id="25_pr7pw"]
 [ext_resource type="Texture2D" uid="uid://dxqnge8opvww0" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/หน้าพริกหยวก.png" id="26_ask3d"]
+[ext_resource type="AudioStream" uid="uid://cksppv16gcpua" path="res://Sound/multi-pop-1-188165.mp3" id="26_mienu"]
 [ext_resource type="AudioStream" uid="uid://cf81wx4181bw0" path="res://Sound/a-jazz-piano-110481.mp3" id="29_42cr0"]
 [ext_resource type="Texture2D" uid="uid://b7qfgmmb8mx22" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/หน้าลูกตา.png" id="29_sbu4u"]
 [ext_resource type="Texture2D" uid="uid://ctga8jmxufgxu" path="res://ร้านพิซซ่า/ร้านพิซซ่าใหม่/หน้าสมอง.png" id="32_7xvxw"]
@@ -69,6 +70,8 @@ func _on_pressed():
 		texture_normal = load(\"res://หน้าตั้งค่าใหม่/เสียงปิดเขียว.png\")
 
 	is_clicked = not is_clicked
+	
+	$เสียงกด.play()
 "
 
 [node name="หน้าเกมร้านพิซซ่า" type="Node2D"]
@@ -430,6 +433,9 @@ offset_right = 796.122
 offset_bottom = 695.304
 texture = ExtResource("32_7xvxw")
 
+[node name="เสียงกด" type="AudioStreamPlayer" parent="รวมอาหารพิซซ่า"]
+stream = ExtResource("26_mienu")
+
 [node name="ชั้นแป้งพิซซ่า" type="Sprite2D" parent="."]
 position = Vector2(186.812, 746.113)
 scale = Vector2(0.165731, 0.151813)
@@ -448,6 +454,9 @@ offset_left = -687.0
 offset_top = -511.0
 offset_right = 660.0
 offset_bottom = 436.0
+
+[node name="เสียงกด" type="AudioStreamPlayer" parent="ชั้นแป้งพิซซ่า/Control"]
+stream = ExtResource("26_mienu")
 
 [node name="ซุปแดง" type="Sprite2D" parent="."]
 position = Vector2(1088.98, 608.234)
@@ -478,6 +487,9 @@ position = Vector2(-1127.2, -4459.75)
 scale = Vector2(6.03387, 6.03387)
 stream = ExtResource("24_r646c")
 
+[node name="เสียงกด" type="AudioStreamPlayer" parent="ซุปแดง/Control"]
+stream = ExtResource("26_mienu")
+
 [node name="จานเขื่อเทศ" type="Sprite2D" parent="."]
 position = Vector2(920.39, 699.34)
 scale = Vector2(0.103932, 0.0928071)
@@ -498,6 +510,9 @@ offset_left = 8330.0
 offset_top = 7051.0
 offset_right = 9481.0
 offset_bottom = 7922.0
+
+[node name="เสียงกด" type="AudioStreamPlayer" parent="จานเขื่อเทศ/Control"]
+stream = ExtResource("26_mienu")
 
 [node name="จานพริกหยวก" type="Sprite2D" parent="."]
 position = Vector2(926.778, 493.586)
@@ -520,6 +535,9 @@ offset_top = 4.51999
 offset_right = 607.0
 offset_bottom = 541.0
 
+[node name="เสียงกด" type="AudioStreamPlayer" parent="จานพริกหยวก/Control"]
+stream = ExtResource("26_mienu")
+
 [node name="จานตา" type="Sprite2D" parent="."]
 position = Vector2(926.162, 603.298)
 scale = Vector2(0.10288, 0.10189)
@@ -541,6 +559,9 @@ offset_top = 5427.97
 offset_right = 9666.34
 offset_bottom = 6447.97
 
+[node name="เสียงกด" type="AudioStreamPlayer" parent="จานตา/Control"]
+stream = ExtResource("26_mienu")
+
 [node name="สมอง" type="Node2D" parent="."]
 position = Vector2(858.878, 553.056)
 scale = Vector2(0.10288, 0.10189)
@@ -558,6 +579,9 @@ offset_left = 1639.0
 offset_top = -957.0
 offset_right = 2857.0
 offset_bottom = -63.0
+
+[node name="เสียงกด" type="AudioStreamPlayer" parent="สมอง/Control"]
+stream = ExtResource("26_mienu")
 
 [node name="หน้าเกม" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("29_42cr0")
@@ -640,6 +664,9 @@ offset_bottom = 603.575
 scale = Vector2(0.384583, 0.384583)
 texture = ExtResource("41_1uush")
 
+[node name="เสียงกด" type="AudioStreamPlayer" parent="Home/หน้าตั้งค่า/เปิดเสียง"]
+stream = ExtResource("26_mienu")
+
 [node name="กลับหน้าเลือกด่าน" type="TextureButton" parent="Home/หน้าตั้งค่า"]
 layout_mode = 0
 offset_left = 9117.86
@@ -650,6 +677,9 @@ scale = Vector2(1.93884, 1.93884)
 texture_normal = ExtResource("36_45svi")
 texture_hover = ExtResource("37_ryvrm")
 script = ExtResource("42_gfmj7")
+
+[node name="เสียงกด" type="AudioStreamPlayer" parent="Home/หน้าตั้งค่า/กลับหน้าเลือกด่าน"]
+stream = ExtResource("26_mienu")
 
 [node name="เพิ่มลดเสียง" type="Control" parent="Home/หน้าตั้งค่า"]
 layout_mode = 3
@@ -680,6 +710,9 @@ offset_right = 683.745
 offset_bottom = 22.1619
 min_value = -30.0
 max_value = 0.0
+
+[node name="เสียงกด" type="AudioStreamPlayer" parent="Home"]
+stream = ExtResource("26_mienu")
 
 [connection signal="pressed" from="ชั้นแป้งพิซซ่า/Control/ชั้นแป้งพิซซ่า" to="รวมอาหารพิซซ่า" method="_on_ชั้นแป้งพิซซ่า_pressed"]
 [connection signal="pressed" from="ซุปแดง/Control/ซอส" to="รวมอาหารพิซซ่า" method="_on_ซอส_pressed"]

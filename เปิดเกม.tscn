@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cw1csqgg8u5dn"]
 
 [ext_resource type="Script" path="res://คลิปเปิดเกม.gd" id="1_jhwq3"]
-[ext_resource type="VideoStream" path="res://mp4.ogv" id="2_jctm6"]
+[ext_resource type="VideoStream" path="res://ใน_1.ogv" id="2_5uayc"]
 
 [node name="เปิดเกม" type="Node2D"]
 
@@ -17,7 +17,7 @@ layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1088.0
 scale = Vector2(0.659095, 0.608965)
-stream = ExtResource("2_jctm6")
+stream = ExtResource("2_5uayc")
 autoplay = true
 
 [connection signal="finished" from="คลิปเปิดเกม/VideoStreamPlayer" to="คลิปเปิดเกม" method="_on_video_stream_player_finished"]

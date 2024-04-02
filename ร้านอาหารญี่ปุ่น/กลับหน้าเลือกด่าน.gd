@@ -11,7 +11,7 @@ func _process(delta):
 
 
 func _on_texture_button_mouse_entered():
-	$Sound_play.play()
+	$เสียงกด.play()
 	pass # Replace with function body.
 
 

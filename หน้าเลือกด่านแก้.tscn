@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://dpaacrwry2qnk"]
+[gd_scene load_steps=37 format=3 uid="uid://dpaacrwry2qnk"]
 
 [ext_resource type="Texture2D" uid="uid://bsuax7duhxeco" path="res://ฉากเลือกด่านใหม่/ฉากหลัง.png" id="1_hclt0"]
 [ext_resource type="Script" path="res://Control.gd" id="1_o2wdv"]
@@ -33,6 +33,9 @@
 [ext_resource type="Texture2D" uid="uid://bhb7jalcmha1c" path="res://ฉากเลือกด่านใหม่/สีขาวใหม่/15.png" id="30_pt3eu"]
 [ext_resource type="Texture2D" uid="uid://blc0f7kv01f2r" path="res://ฉากเลือกด่านใหม่/ปุ่มมีเงา/15.png" id="31_acybo"]
 [ext_resource type="AudioStream" uid="uid://diyxxjmi1ay4g" path="res://cartoon-jump-6462.mp3" id="33_alr7r"]
+[ext_resource type="Texture2D" uid="uid://ia2j8bh8vo30" path="res://ย้อนกลับ/Back-Button-PNG-Picture.png" id="33_mv82g"]
+[ext_resource type="Texture2D" uid="uid://bxrjgyvhbk8af" path="res://ย้อนกลับ/Back.png" id="34_x5rkw"]
+[ext_resource type="Script" path="res://ย้อนกลับหน้าแรก.gd" id="35_1lb3j"]
 
 [node name="หน้าเลือกด่านแก้" type="Node2D"]
 
@@ -184,22 +187,53 @@ scale = Vector2(0.198839, 0.198839)
 texture_normal = ExtResource("30_pt3eu")
 texture_hover = ExtResource("31_acybo")
 
-[node name="Sound_play" type="AudioStreamPlayer" parent="Control"]
+[node name="ย้อนกลับหน้าแรก" type="TextureButton" parent="Control/ฉากหลัง"]
+offset_left = -1386.49
+offset_top = -682.969
+offset_right = -666.486
+offset_bottom = 37.031
+scale = Vector2(0.272716, 0.272716)
+texture_normal = ExtResource("33_mv82g")
+texture_hover = ExtResource("34_x5rkw")
+script = ExtResource("35_1lb3j")
+
+[node name="ดึ๋ง" type="AudioStreamPlayer" parent="Control/ฉากหลัง/ย้อนกลับหน้าแรก"]
+stream = ExtResource("33_alr7r")
+autoplay = true
+
+[node name="ดึ๋ง" type="AudioStreamPlayer" parent="Control"]
 stream = ExtResource("33_alr7r")
 autoplay = true
 
 [connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่1" to="Control" method="_on_ด่านที่1_mouse_entered"]
+[connection signal="pressed" from="Control/ฉากหลัง/ด่านที่1" to="Control" method="_on_ด่านที่1_pressed"]
 [connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่2" to="Control" method="_on_ด่านที่2_mouse_entered"]
+[connection signal="pressed" from="Control/ฉากหลัง/ด่านที่2" to="Control" method="_on_ด่านที่2_pressed"]
 [connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่3" to="Control" method="_on_ด่านที่3_mouse_entered"]
+[connection signal="pressed" from="Control/ฉากหลัง/ด่านที่3" to="Control" method="_on_ด่านที่3_pressed"]
 [connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่4" to="Control" method="_on_ด่านที่4_mouse_entered"]
+[connection signal="pressed" from="Control/ฉากหลัง/ด่านที่4" to="Control" method="_on_ด่านที่4_pressed"]
 [connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่5" to="Control" method="_on_ด่านที่5_mouse_entered"]
+[connection signal="pressed" from="Control/ฉากหลัง/ด่านที่5" to="Control" method="_on_ด่านที่5_pressed"]
 [connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่6" to="Control" method="_on_ด่านที่6_mouse_entered"]
+[connection signal="pressed" from="Control/ฉากหลัง/ด่านที่6" to="Control" method="_on_ด่านที่6_pressed"]
 [connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่7" to="Control" method="_on_ด่านที่7_mouse_entered"]
+[connection signal="pressed" from="Control/ฉากหลัง/ด่านที่7" to="Control" method="_on_ด่านที่7_pressed"]
 [connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่8" to="Control" method="_on_ด่านที่8_mouse_entered"]
+[connection signal="pressed" from="Control/ฉากหลัง/ด่านที่8" to="Control" method="_on_ด่านที่8_pressed"]
 [connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่9" to="Control" method="_on_ด่านที่9_mouse_entered"]
+[connection signal="pressed" from="Control/ฉากหลัง/ด่านที่9" to="Control" method="_on_ด่านที่9_pressed"]
 [connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่10" to="Control" method="_on_ด่านที่10_mouse_entered"]
+[connection signal="pressed" from="Control/ฉากหลัง/ด่านที่10" to="Control" method="_on_ด่านที่10_pressed"]
 [connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่11" to="Control" method="_on_ด่านที่11_mouse_entered"]
+[connection signal="pressed" from="Control/ฉากหลัง/ด่านที่11" to="Control" method="_on_ด่านที่11_pressed"]
 [connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่12" to="Control" method="_on_ด่านที่12_mouse_entered"]
+[connection signal="pressed" from="Control/ฉากหลัง/ด่านที่12" to="Control" method="_on_ด่านที่12_pressed"]
 [connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่13" to="Control" method="_on_ด่านที่13_mouse_entered"]
+[connection signal="pressed" from="Control/ฉากหลัง/ด่านที่13" to="Control" method="_on_ด่านที่13_pressed"]
 [connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่14" to="Control" method="_on_ด่านที่14_mouse_entered"]
+[connection signal="pressed" from="Control/ฉากหลัง/ด่านที่14" to="Control" method="_on_ด่านที่14_pressed"]
 [connection signal="mouse_entered" from="Control/ฉากหลัง/ด่านที่15" to="Control" method="_on_ด่านที่15_mouse_entered"]
+[connection signal="pressed" from="Control/ฉากหลัง/ด่านที่15" to="Control" method="_on_ด่านที่15_pressed"]
+[connection signal="mouse_entered" from="Control/ฉากหลัง/ย้อนกลับหน้าแรก" to="Control/ฉากหลัง/ย้อนกลับหน้าแรก" method="_on_mouse_entered"]
+[connection signal="pressed" from="Control/ฉากหลัง/ย้อนกลับหน้าแรก" to="Control/ฉากหลัง/ย้อนกลับหน้าแรก" method="_on_pressed"]

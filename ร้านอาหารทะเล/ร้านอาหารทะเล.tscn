@@ -93,6 +93,9 @@ func _on_pressed():
 		texture_normal = load(\"res://หน้าตั้งค่าใหม่/เสียงปิดเขียว.png\")
 
 	is_clicked = not is_clicked
+
+
+	$เสียงกด.play()
 "
 
 [node name="ร้านอาหารทะเล" type="Node2D"]
@@ -766,11 +769,11 @@ stream = ExtResource("18_p8ihf")
 
 [node name="หม้อทอด" type="TextureButton" parent="ส่งออเดอร์"]
 layout_mode = 0
-offset_left = 409.0
-offset_top = 195.0
-offset_right = 1674.0
-offset_bottom = 1292.0
-scale = Vector2(0.194927, 0.194927)
+offset_left = 404.0
+offset_top = 210.0
+offset_right = 1669.0
+offset_bottom = 1307.0
+scale = Vector2(0.189993, 0.189993)
 texture_normal = ExtResource("34_2sd3y")
 script = ExtResource("49_e4fcs")
 
@@ -902,6 +905,7 @@ texture_hover = ExtResource("24_swqqp")
 script = ExtResource("44_44l7h")
 
 [node name="หน้าตั้งค่า" type="TextureRect" parent="Home"]
+visible = false
 layout_mode = 0
 offset_left = 8838.91
 offset_top = 2670.95
@@ -930,6 +934,9 @@ offset_bottom = 603.575
 scale = Vector2(0.384583, 0.384583)
 texture = ExtResource("47_s5c7a")
 
+[node name="เสียงกด" type="AudioStreamPlayer" parent="Home/หน้าตั้งค่า/เปิดเสียง"]
+stream = ExtResource("18_p8ihf")
+
 [node name="กลับหน้าเลือกด่าน" type="TextureButton" parent="Home/หน้าตั้งค่า"]
 layout_mode = 0
 offset_left = 8883.45
@@ -940,6 +947,9 @@ scale = Vector2(1.93884, 1.93884)
 texture_normal = ExtResource("23_krrxm")
 texture_hover = ExtResource("24_swqqp")
 script = ExtResource("48_hiald")
+
+[node name="เสียงกด" type="AudioStreamPlayer" parent="Home/หน้าตั้งค่า/กลับหน้าเลือกด่าน"]
+stream = ExtResource("18_p8ihf")
 
 [node name="เพิ่มลดเสียง" type="Control" parent="Home/หน้าตั้งค่า"]
 layout_mode = 3
@@ -970,6 +980,9 @@ offset_right = 683.745
 offset_bottom = 22.1619
 min_value = -30.0
 max_value = 0.0
+
+[node name="เสียงกด" type="AudioStreamPlayer" parent="Home"]
+stream = ExtResource("18_p8ihf")
 
 [node name="คู่มือเกม" type="Control" parent="."]
 layout_mode = 3

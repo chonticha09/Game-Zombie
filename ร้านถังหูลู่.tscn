@@ -23,7 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://csvgdv4cdh6w" path="res://ร้านผลไม้/ถาดกีวี่.png" id="9_d72u8"]
 [ext_resource type="Script" path="res://คัพเค้กก้อน3.gd" id="9_w3q4o"]
 [ext_resource type="Texture2D" uid="uid://bky5mtccfeihq" path="res://ร้านผลไม้/ถาดสตอรี่่่่.png" id="10_mg6mx"]
-[ext_resource type="Script" path="res://ร้านอาหารญี่ปุ่น/รูปอาหาร.gd" id="10_ytdw2"]
+[ext_resource type="Script" path="res://รูปอาหาร.gd" id="10_styij"]
 [ext_resource type="Texture2D" uid="uid://qnllp13hb2t5" path="res://ร้านผลไม้/ถาดส้ม.png" id="11_jegwu"]
 [ext_resource type="Texture2D" uid="uid://cqwtserkrfvck" path="res://ร้านผลไม้/พุดช๊อก.png" id="12_4bgb2"]
 [ext_resource type="Texture2D" uid="uid://ycy4x85tyr81" path="res://ร้านผลไม้/ถาดพุดซา.png" id="12_8504b"]
@@ -152,17 +152,17 @@ script = ExtResource("8_2coiw")
 [node name="กล่องข้อความ" type="TextureRect" parent="มันม่าวง"]
 offset_left = 252.0
 offset_top = -681.0
-offset_right = 907.0
+offset_right = 970.0
 offset_bottom = -10.0
 scale = Vector2(0.769743, 0.769743)
 texture = ExtResource("9_cvfwe")
 
 [node name="รูปอาหาร" type="TextureRect" parent="มันม่าวง"]
-offset_left = 394.03
-offset_top = -580.809
-offset_right = 453.03
-offset_bottom = -537.809
-script = ExtResource("10_ytdw2")
+offset_left = 434.076
+offset_top = -602.665
+offset_right = 493.076
+offset_bottom = -559.665
+script = ExtResource("10_styij")
 
 [node name="ครัววว" type="Sprite2D" parent="."]
 position = Vector2(626.686, 467)
@@ -743,6 +743,7 @@ texture_hover = ExtResource("67_xlpyo")
 script = ExtResource("68_mj8ia")
 
 [node name="หน้าตั้งค่า" type="TextureRect" parent="ครัววว/ถาดเชอรี่/Home"]
+visible = false
 layout_mode = 0
 offset_left = 5747.0
 offset_top = 2005.0

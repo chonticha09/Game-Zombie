@@ -65,21 +65,27 @@ func load_สมอง_texture(texture_rect: TextureRect) -> void:
 # เมื่อปุ่มถูกกด (โหลดรูปภาพเลม่อน)
 func _on_ชั้นแป้งพิซซ่า_pressed():
 	show_next_ชั้นแป้งพิซซ่า_texture()
+	$เสียงกด.play()
 
 func _on_ซอส_pressed():
 	show_next_ซอส_texture()
+	$เสียงกด.play()
 	
 func _on_มะเขือเทศ_pressed():
 	show_next_มะเขือเทศ_texture()
+	$เสียงกด.play()
 	
 func _on_พริกหยวก_pressed():
 	show_next_พริกหยวก_texture()
+	$เสียงกด.play()
 	
 func _on_ตา_pressed():
 	show_next_ตา_texture()
+	$เสียงกด.play()
 	
 func _on_สมอง_pressed():
 	show_next_สมอง_texture()
+	$เสียงกด.play()
 	
 
 func show_next_ชั้นแป้งพิซซ่า_texture() -> void:
