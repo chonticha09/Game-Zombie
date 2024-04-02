@@ -46,10 +46,10 @@ texture = ExtResource("1_nftu0")
 
 [node name="เปิดเสียง" type="TextureButton" parent="หน้าตั้งค่า"]
 layout_mode = 0
-offset_left = 655.824
-offset_top = 427.828
-offset_right = 898.824
-offset_bottom = 660.828
+offset_left = 211.902
+offset_top = 213.243
+offset_right = 454.902
+offset_bottom = 446.243
 scale = Vector2(0.838072, 0.838072)
 texture_normal = ExtResource("2_ttc6r")
 script = SubResource("GDScript_16q5d")
