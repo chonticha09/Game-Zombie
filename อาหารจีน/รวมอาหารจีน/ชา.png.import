@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxvaphfu523vw"
-path="res://.godot/imported/ชา.png-5e614af5604f8c0bfb789c7a6707232c.ctex"
+path="res://.godot/imported/ชา.png-de2745b2a14dc2db1f73382e1eb26e36.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://อาหารจีน/ชา.png"
-dest_files=["res://.godot/imported/ชา.png-5e614af5604f8c0bfb789c7a6707232c.ctex"]
+source_file="res://อาหารจีน/รวมอาหารจีน/ชา.png"
+dest_files=["res://.godot/imported/ชา.png-de2745b2a14dc2db1f73382e1eb26e36.ctex"]
 
 [params]
 

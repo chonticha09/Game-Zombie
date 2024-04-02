@@ -8,6 +8,7 @@ func _ready():
 	textures.append(load("res://อาหารจีน/รวมอาหารจีน/จาน+ขนมจีบ.png"))
 	textures.append(load("res://อาหารจีน/รวมอาหารจีน/จาน+ซาลาเปา.png"))
 	textures.append(load("res://อาหารจีน/รวมอาหารจีน/เป็ดปักกิ่ง.png"))
+	textures.append(load("res://อาหารจีน/รวมอาหารจีน/ชา.png"))
 
 	# กำหนดรูปภาพเริ่มต้นให้กับ Sprite
 	set_random_texture()
